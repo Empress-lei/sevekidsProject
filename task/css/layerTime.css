@@ -1,0 +1,127 @@
+.choiceDate {
+  display: block;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.choiceDate .dateBox {
+  width: 100%;
+  height: 7rem;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+}
+.choiceDate .dateBox .dateHeader {
+  width: 100%;
+  height: 1.5rem;
+  padding: 0 0.4rem;
+  color: #fff;
+  background-color: #ff9933;
+}
+.choiceDate .dateBox .dateHeader .headerLeft {
+  float: left;
+  line-height: 1.5rem;
+  font-size: 0.4rem;
+}
+.choiceDate .dateBox .dateHeader .headerRight {
+  float: right;
+  font-size: 0.4rem;
+  padding: 0.1rem 0.4rem;
+  margin-top: 0.35rem;
+  border-radius: 0.08rem;
+  border: 0.02666667rem solid #ffffff;
+}
+.choiceDate .dateBox .dateTime {
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+}
+.choiceDate .dateBox .dateTime .timeText {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  font-size: 0.36rem;
+  border-bottom: 0.02666667rem solid #f2f2f2;
+}
+.choiceDate .dateBox .dateTime .timeText .startTime {
+  float: left;
+  width: 30%;
+}
+.choiceDate .dateBox .dateTime .timeText img {
+  float: left;
+  padding: 0.5rem  1rem;
+}
+.choiceDate .dateBox .dateTime .timeText .endTime {
+  float: right;
+  width: 30%;
+}
+.choiceDate .dateBox .dateTime .timeNum {
+  width: 100%;
+  padding-top: 0.4rem;
+  min-height: 5.5rem;
+}
+.choiceDate .dateBox .dateTime .timeNum .startNum {
+  float: left;
+  width: 50%;
+  width: 3rem;
+  height: 4rem;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  z-index: 99;
+}
+.choiceDate .dateBox .dateTime .timeNum .startNum .startHour {
+  float: left;
+  font-size: 0.4rem;
+  width: 47.5%;
+  line-height: 1rem;
+}
+.choiceDate .dateBox .dateTime .timeNum .startNum .startMinute {
+  float: left;
+  font-size: 0.4rem;
+  width: 47.5%;
+  line-height: 1rem;
+}
+.choiceDate .dateBox .dateTime .timeNum .startNum .colon {
+  float: left;
+  width: 5%;
+  line-height: 1rem;
+}
+.choiceDate .dateBox .dateTime .timeNum .endNum {
+  float: right;
+  width: 50%;
+  width: 3rem;
+  height: 4rem;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  z-index: 99;
+}
+.choiceDate .dateBox .dateTime .timeNum .endNum .endHour {
+  float: left;
+  font-size: 0.4rem;
+  width: 47.5%;
+  line-height: 1rem;
+}
+.choiceDate .dateBox .dateTime .timeNum .endNum .endMinute {
+  float: left;
+  font-size: 0.4rem;
+  width: 47.5%;
+  line-height: 1rem;
+}
+.choiceDate .dateBox .dateTime .timeNum .endNum .colon {
+  float: left;
+  width: 5%;
+  line-height: 1rem;
+}
+.choiceDate .dateBox .dateTime .timeNum .slide {
+  color: #ff9963;
+}

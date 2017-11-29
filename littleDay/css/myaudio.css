@@ -1,0 +1,117 @@
+@charset "utf-8";
+.myaudio{
+    padding: 0 0.54rem;
+}
+.myaudio .mywrap{
+    position: relative;
+	border-radius: 12px;
+	height: 1.2rem;
+    color: #fff;
+    z-index: 1;
+    background: #ff9615;
+}
+.myaudio .playpause{
+position:absolute;
+top: 0;
+left: 0;
+width:1.2em; /* 40 */
+height: 100%;
+text-align: left;
+cursor: pointer;
+z-index: 2;
+
+}
+.myaudio .playpause audio{
+display: none;
+}
+.myaudio .playpause .play{
+	background: url(../img/Shape@1x.png) no-repeat center center;
+    height: 1.2rem;
+    width: 1.2rem;
+    line-height: 1.2rem;
+    background-size: 0.5rem;
+    text-shadow: none;
+    display: block;
+    z-index: 2;
+}
+.myaudio .playpause .pause{
+	background: url(../img/sqw-pause.png) no-repeat center center;
+	background-size: 50%;
+}
+
+
+.myaudio .time{
+	position:absolute;
+	left: 1.2rem;
+    font-size: 12px;
+    line-height: 1.2rem;
+    height: 100%;
+    text-align: center;
+    z-index: 2;
+    top: 0;
+    padding: 0 0.1rem
+}
+
+.myaudio .bar{
+	position:absolute;
+    top: 0;
+    left: 2.4rem;
+    line-height: 1.2rem;
+    width: 5.2rem;
+    text-align: center;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+/*     background-color : #333; */
+}
+.myaudio .bar div:first-child{
+    height: 100%;
+    z-index: 5;
+    position:absolute;
+    top: 0;
+    left:0;
+    line-height: 1.2rem;
+    width: 5.2rem;
+}
+.myaudio .bar .bgfreetxt{
+    background:url(../img/background-freetxt.png) no-repeat center center; 
+    background-size: 5.2rem 1.2rem;
+}
+.myaudio .bar .bgfree{
+    background:url(../img/background-free.png) no-repeat center center; 
+    background-size: 5.2rem 1.2rem;
+}
+.myaudio .bar .bg1{
+    background:url(../img/background-1.png) no-repeat center center; 
+    background-size: 5.2rem 1.2rem;
+}
+.myaudio .bar .bg2{
+    background:url(../img/background-2.png) no-repeat center center; 
+    background-size: 5.2rem 1.2rem;
+}
+.myaudio .bar .bg3{
+    background:url(../img/background-3.png) no-repeat center center; 
+    background-size: 5.2rem 1.2rem;
+}
+
+.myaudio .bar .white{
+    height: 100%;
+    z-index: 1;
+    position:absolute;
+    top: 0;
+    left:0;
+    line-height: 1.2rem;
+    width: 0rem;
+    background-color: white;
+}
+
+.myaudio .duration{
+	position:absolute;
+    font-size: 12px;
+    line-height: 1.2rem;
+    height: 100%;
+    text-align: center;
+    z-index: 2;
+    top: 0;
+    right: 0.8em;
+}

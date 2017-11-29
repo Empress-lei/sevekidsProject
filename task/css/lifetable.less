@@ -1,0 +1,767 @@
+// 任务列表点击显示隐藏的弹层
+.share1 {
+    display: none;
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.05);
+    .shareBox {
+        width: 80%;
+        height: 100%;
+        padding-left: 10/37.5rem;
+        background-color:#fff;
+        position: relative;  
+        left: -5rem;  
+        padding-top: 10/37.5rem;      
+        .shareHeader {
+            width: 100%;  
+            padding: 0 15/37.5rem;
+            border-bottom: 1/37.5rem solid #f2f2f2;
+            color: #333;
+            h3 {
+                font-size: 0.44rem;
+                padding: 10/37.5rem 0;  
+                span {
+                    font-size: 0.34rem;
+                    color: #A1A1A1;
+                }
+            }
+            .navLeft {
+                float: left;
+                line-height: 1rem;
+                width: 50%;
+                background: url('../img/lifetable/u7421.png') no-repeat left center;
+                background-size: 15%;
+                padding-left: 0.8rem;
+                font-size: 0.38rem;
+                color: #333;
+            }
+            .shareSurface {
+                 background: url('../img/lifetable/u7465.png') no-repeat left center;
+                 background-size: 15%;
+                 padding-left: 0.8rem;
+            }
+            .timeTable {
+                 background: url('../img/lifetable/u7467.png') no-repeat left center;
+                 background-size: 15%;
+                 padding-left: 0.8rem;
+            }
+            .navImg {
+                line-height: 1rem;
+                width: 50%;
+                font-size: 0.38rem;
+                color: #333;
+                background: url('../img/lifetable/u2666.png') no-repeat left center;
+                background-size: 15%;
+                padding-left: 0.8rem;
+            }
+            .navRight {
+                float: right;
+                width: 50%;
+                line-height: 1rem;
+                span {
+                    margin-left: 88%;;
+                }
+                
+                img {
+                    width: 15%;
+                    margin-left: 83%;;
+                }
+            }
+            .card {
+                width: 100%;
+                padding-left: 0.8rem;
+                text-align: left;
+                color: #AEAEAE;
+                font-size: 0.34rem;
+            }
+            .navText {
+                padding-left: 0.8rem;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+                padding-top: 0.1rem;
+                p {
+                   font-size: 0.34rem; 
+                   padding: 0 0 15/37.5rem;
+                   display:block;
+                   white-space:nowrap; 
+                   overflow:hidden; 
+                   text-overflow:ellipsis;
+                }
+            }
+        }
+    }
+}
+// 时间样式
+.choiceDate {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.4);
+  .layer {
+      width: 100%;
+      height: 11rem;
+      position: absolute;
+      top: 0;
+      p {
+          text-align: center;
+          padding-top: 8rem;
+          color: #fff;
+          font-size: 0.3rem;
+          
+      }
+  }
+  .dateBox {
+        width: 100%;
+        // height: 7rem;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        // <!--顶部的确定和时间-->
+        .dateHeader {
+            width: 100%;
+            // height: 1.5rem;
+            padding: 0 15/37.5rem;
+            color: #fff;
+            background-color: rgba(255, 153, 51, 1);
+            .headerLeft {
+                float: left;
+                line-height: 1.5rem;
+                font-size: 0.4rem;
+                .leftImg {
+                    width: 0.8rem;
+                }
+            }
+            .headerRight {
+                float: right;
+                font-size: 0.4rem;
+                line-height: 1.5rem;
+            }
+        }
+        .dateTime {
+            width: 90%;
+            margin: 0 auto;
+            height: auto;
+            // 开始结束文字
+            .timeText {
+                width: 100%;
+                line-height: 1.5rem;
+                font-size: 0.36rem;
+                .startTime {
+                    float: left;
+                    width: 45%;
+                    text-align: center;
+                }
+                img {
+                    float: left;
+                    // width: 2.5rem;
+                    // margin-left: 0.5rem;
+                    padding: 0.5rem  0 0.5rem 1.8rem;
+                }
+                .endTime {
+                    float: right;
+                    width: 45%;
+                    text-align: center;
+                }
+            }
+            // 左右时间
+            .timeNum {
+                width: 100%;
+                // padding-top: 15/37.5rem;
+                // min-height: 5.5rem;
+                .startNum {
+                    float: left;
+                    width: 45%;
+                    height: 4.5rem;
+                    text-align: center;
+                    overflow: hidden;
+                    position: relative;
+                    top: 50%;
+                    z-index: 99;
+                    .startHour {
+                        float: left;
+                        font-size: 0.5rem;
+                        width: 47.5%;
+                    }
+                    .startMinute {
+                        float: left;
+                        font-size: 0.5rem;
+                        width: 47.5%;
+                    }
+                    .colon {
+                        float: left;
+                        width: 5%;
+                        span {
+                            padding: 0.1rem 0 1rem;
+                            display: block;
+                        }
+                    }
+                }
+                .endNum {
+                        float: right;
+                        width: 45%;
+                        height: 4.5rem;
+                        text-align: center;
+                        overflow: hidden;
+                        position: relative;
+                        top: 50%;
+                        z-index: 99;
+                     .endHour {
+                        float: left;
+                        font-size: 0.5rem;
+                        width: 47.5%;
+                    }
+                    .endMinute {
+                        float: left;
+                        font-size: 0.5rem;
+                        width: 47.5%;
+                    }
+                    .colon {
+                        float: left;
+                        width: 5%;
+                        span {
+                            padding: 0.1rem 0 1rem;
+                            display: block;
+                        }
+                    }
+                }
+                .slide {
+                    color: #ff9963;
+                }
+            }
+        }
+    }
+}
+// 页面开始
+.wrapPage {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    // overflow: auto;
+    -webkit-overflow-scrolling:touch;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    // 顶部的导航条和图片
+    .headerImg {
+        width: 100%;
+        .lifeNav {
+            width: 100%;
+            max-width: 540px;
+            padding: 0 20/37.5rem;
+            height: 1.3rem;
+            z-index: 1;
+            position: fixed;
+            top: 0;
+            background-color: #f2f2f2;
+            .navLeft {
+                float: left;
+                line-height: 1.3rem;
+                background: url('../img/lifetable/u2640.png') no-repeat left center;
+                background-size: 20%;
+                padding-left: 0.6rem;
+                font-size: 0.38rem;
+                color: #949494;
+            }
+            .navRight {
+                float: right;
+                line-height: 1.3rem;
+                color: #949494;
+                font-size: 0.4rem;
+                span {
+                    color: #ff9963;
+                }
+            }
+        }
+        img {
+            width: 100%;
+            height: 3.5rem;
+        }
+    }
+    // 制作生活常规表
+    .mark {
+        width: 100%;
+        padding: 0 15/37.5rem;
+        h3 {
+            font-size: 0.52rem;
+            padding: 15/37.5rem 0 0.5rem;
+            font-weight: bold;
+            color: #141414;
+        }
+        .target {
+            font-size: 0.4rem;
+            color: #303030;
+            font-weight: bold;
+            line-height: 0.75rem;
+            background: url(../img/lifetable/u452.png) no-repeat left center;
+            background-size: 0.4rem;
+            padding-left: 0.55rem;
+        }
+        .targetCon {
+            color: #434343;
+            font-size: 0.36rem;
+            line-height: 0.7rem;
+            padding: 8/37.5rem 0 0;
+        }
+        .targetCon1 {
+            font-size: 0.36rem;
+            line-height: 0.7rem;
+            padding: 12/37.5rem 0 0;
+            color: #797979;
+        }
+    }
+    .markTitle {
+        width: 100%;
+        min-height: 1rem;
+        background-color: #f2f2f2;
+        line-height: 1rem;
+        h3 {
+            padding: 0 0.4rem;
+            font-size: 0.4rem;
+            font-weight: bold;
+            margin-top: 15/37.5rem;
+        }
+    }
+    .blank {
+        width: 100%;
+        height: 5rem;
+    }
+    .meet {
+        width: 100%;
+        padding: 0 0.4rem;
+        color: #333;      
+        min-height: 6.5rem;
+        h4 {
+            font-size: 0.38rem;
+            font-weight: bold;
+            background: url('../img/lifetable/u3174.png') no-repeat left center;
+            padding-left: 20/37.5rem;
+        }
+        p {
+            padding:  5/37.5rem 20/37.5rem;
+            color: #333;
+            font-size: 0.36rem;
+            line-height: 0.75rem;
+        }
+    }
+    // 自评题目
+    .subject {
+        width: 100%;
+        // min-height: 5rem;
+        padding: 0.4rem 0.6rem;
+        background-color: #f2f2f2;
+        .subH {
+            // padding-left: 20/37.5rem;
+            font-size: 0.38rem;
+        }
+        h3 {
+            color: #333;
+            padding: 0 0 0 15/37.5rem;
+            margin: 15/37.5rem 0 15/37.5rem;
+            font-weight: bold;
+            font-size: 0.44rem;
+            background: url("../img/selfrating/u4007.png") no-repeat left center;
+        }
+        .selfTxt {
+              width: 100%;
+              .txtOpt {
+                   float: left;
+                   padding-top: 0.1rem;
+                }
+                .txtSize {
+                        padding-left: 0.6rem;
+                        line-height: 0.7rem;
+               }
+         }
+        .selfTxtCurrent {
+            width: 100%;
+            background: url('../img/selfrating/dg.png') no-repeat left 0.1rem;
+            background-size: 0.26666667rem;
+            // padding-left: 13/37.5rem;
+            // margin-left: 0.35rem;
+                .selectionBox {
+                    width: 10/37.5rem;
+                    height: 10/37.5rem;
+                    float: left;
+                }
+                .txtOpt {
+                    float: left;
+                    font-size: 0.34rem;
+                    line-height: 0.6rem;
+                    color: #FF9933;
+                    padding: 0 0.1rem 0 0.25rem;
+                }
+                .txtSize {
+                    overflow: hidden;
+                    line-height: 0.6rem;
+                    padding-bottom: 0.3rem;
+                    color: #FF9933;
+                    font-size: 0.34rem;
+                    overflow: hidden;
+                }
+                     
+            }
+    }
+    .planJoin {
+        width: 70%;
+        padding: 0.21333333rem 0;
+        margin: 0.5rem auto 0.4rem;
+        text-align: center;
+        -webkit-border-radius: 1.33333333rem;
+        -moz-border-radius: 1.33333333rem;
+        -ms-border-radius: 1.33333333rem;
+        border-radius: 1.33333333rem;
+        background-color: #ff9900;
+        a {
+            color: #fff;
+            font-size: 0.4rem;
+        }
+    }
+    // 作息表
+    .surface {
+        width: 100%;
+        margin: 0 auto;
+        // min-height: 10rem;
+        background-color: #f2f2f2;
+        // padding: 0 15/37.5rem;
+        
+        .surfaceDiv {
+            width: 92%;
+            margin: 0 auto;
+            .surTitle {
+                font-size: 0.38rem;
+                padding: 10/37.5rem 0;
+                font-weight: bold;
+            }
+            .workSurfaceRight {
+                float: right;
+                width: 20%;
+                text-align: right;
+                padding: 11/37.5rem 0;
+                font-size: 0.3rem;
+                color: #949494;
+                background: url('../img/lifetable/u1283.png') no-repeat right center;
+                padding-right: 20/37.5rem;
+                background-size: 0.4rem;
+            }
+        }
+        
+        
+        .workSurface {
+            width: 100%;
+            .workSurfaceLeft {
+                float: left;
+                .workSche {
+                    font-size: 0.46rem;
+                    padding: 10/37.5rem 0 10/37.5rem 30/37.5rem;
+                    font-weight: bold;
+                    background: url('../img/lifetable/u3244.png') no-repeat left center;
+                    background-size: 7%;
+                }
+                .workScheText {
+                    font-size: 0.38rem;
+                    padding: 0 0 15/37.5rem 0;
+                }
+            }
+            .workSurfaceRight {
+                float: right;
+                width: 20%;
+                padding: 10/37.5rem 0 10/37.5rem 16/37.5rem;
+                background: url('../img/lifetable/u1283.png') no-repeat 1.3rem center;
+                background-size: 0.5rem;
+            }
+            
+        }
+        
+        .surTime {
+            width: 92%;
+            margin: 0 auto  5/37.5rem;
+            background-color: #fff;
+            min-height: 1rem;
+            img {
+                float: left;
+                width: 20%;
+                padding: 15/37.5rem 15/37.5rem 20/37.5rem;
+            }
+            .timeArrange {
+                float: left;
+                width: 80%;
+                padding-top: 20/37.5rem; 
+                p {
+                    font-size: 0.36rem;
+                    padding-left: 10/37.5rem;
+                }
+                .timeD {
+                    padding-top: 10/37.5rem;
+                    .timeLeft {
+                        width: 33.33%;
+                        // background: url('../img/lifetable/u2041.png') no-repeat 1.8rem center;
+                        // padding-left: 10/37.5rem;
+                        color: #A1A1A1;
+                        font-size: 0.34rem;
+                    }
+                    .timeImg {
+                        margin-top: -0.2rem;
+                    }
+                    .timeRight {
+                        width: 33.33%;
+                        // background: url('../img/lifetable/u2041.png') no-repeat 1.8rem center;
+                        // padding-left: 10/37.5rem;
+                        color: #A1A1A1;
+                        font-size: 0.34rem;
+                    }
+                    .timeCol {
+                        width: 33.33%;
+                        background: url('../img/lifetable/u2041.png') no-repeat right center;
+                        padding-left: 10/37.5rem;
+                        color: #A1A1A1;
+                    }
+                }
+            }
+        }
+        .timeNit {
+            width: 92%;
+            margin: 0 auto  5/37.5rem;
+            background-color: #fff;
+            min-height: 1rem;
+                img {
+                    float: left;
+                    width: 20%;
+                    padding: 20/37.5rem 15/37.5rem 20/37.5rem;
+                }
+                .timeArrange {
+                    float: left;
+                    width: 80%;
+                    padding-top: 25/37.5rem; 
+                    p {
+                        font-size: 0.36rem;
+                    }
+                    .arran {
+                        padding-right: 20/37.5rem;
+                        float: left;
+                    }
+                    .timeD {
+                        .arranImg {
+                            display: block;
+                            float: left;
+                            width: 33.33%;
+                            color: #A1A1A1;
+                            font-size: 0.34rem;
+                            padding-top: 0.1rem;
+                            // background: url('../img/lifetable/u2041.png') no-repeat 1.8rem center;
+                            // padding-left: 10/37.5rem;
+                        }
+                    }
+                    .arranDiv {
+                        padding: 0;
+                    }
+                    
+                }
+        }
+    }
+    .edit {
+        width: 100%;
+        margin: 0 auto;
+        background-color: #f2f2f2; 
+        .surTime {
+            width: 92%;
+            margin: 0 auto  5/37.5rem;
+            background-color: #fff;
+            min-height: 1rem;
+            img {
+                float: left;
+                width: 20%;
+                padding: 15/37.5rem 15/37.5rem 20/37.5rem;
+            }
+            .timeArrange {
+                float: left;
+                width: 80%;
+                padding-top: 20/37.5rem; 
+                p {
+                    font-size: 0.36rem;
+                    padding-left: 10/37.5rem;
+                }
+                .timeD {
+                    padding-top: 10/37.5rem;
+                    .timeLeft {
+                        width: 33.33%;
+                        background: url('../img/lifetable/u2041.png') no-repeat 1.8rem center;
+                        padding-left: 10/37.5rem;
+                        color: #A1A1A1;
+                        font-size: 0.34rem;
+                    }
+                    .timeImg {
+                        margin-top: -0.2rem;
+                    }
+                    .timeRight {
+                        width: 33.33%;
+                        background: url('../img/lifetable/u2041.png') no-repeat 1.8rem center;
+                        padding-left: 10/37.5rem;
+                        color: #A1A1A1;
+                        font-size: 0.34rem;
+                    }
+                    .timeCol {
+                        width: 33.33%;
+                        background: url('../img/lifetable/u2041.png') no-repeat right center;
+                        padding-left: 10/37.5rem;
+                        color: #A1A1A1;
+                    }
+                }
+            }
+        }
+        .timeNit {
+            width: 92%;
+            margin: 0 auto  5/37.5rem;
+            background-color: #fff;
+            min-height: 1rem;
+                img {
+                    float: left;
+                    width: 20%;
+                    padding: 20/37.5rem 15/37.5rem 20/37.5rem;
+                }
+                .timeArrange {
+                    float: left;
+                    width: 80%;
+                    padding-top: 25/37.5rem; 
+                    p {
+                        font-size: 0.36rem;
+                    }
+                    .arran {
+                        padding-right: 20/37.5rem;
+                        float: left;
+                    }
+                    .timeD {
+                        .arranImg {
+                            display: block;
+                            float: left;
+                            width: 33.33%;
+                            color: #A1A1A1;
+                            font-size: 0.34rem;
+                            padding-top: 0.1rem;
+                            background: url('../img/lifetable/u2041.png') no-repeat 1.8rem center;
+                            padding-left: 10/37.5rem;
+                        }
+                    }
+                    .arranDiv {
+                        padding: 0;
+                    }
+                    
+                }
+        }
+    }
+    .line {
+        width: 30%;
+        height: 5/37.5rem;
+        margin-bottom: 0.4rem;
+        border-radius: 50/37.5rem 50/37.5rem;
+        background-color: #f2f2f2;
+    }
+    //下面的按钮
+    .liftBot {
+        width: 100%;
+        padding: 15/37.5rem 0 10/37.5rem;
+        min-height: 3.5rem;
+        p {
+            text-align: center;
+            color: #AEAEAE;
+            padding: 0 0.4rem;
+        }
+        .planJoin {
+            width: 70%;
+            padding: 0.21333333rem 0;
+            margin: 0.5rem auto 0.4rem;
+            text-align: center;
+            -webkit-border-radius: 1.33333333rem;
+            -moz-border-radius: 1.33333333rem;
+            -ms-border-radius: 1.33333333rem;
+            border-radius: 1.33333333rem;
+            background-color: #ff9900;
+            a {
+                color: #fff;
+                font-size: 0.4rem;
+            }
+        }
+    }
+    .lifeBottom {
+        width: 100%;
+        max-width: 540px;
+        height: 1.5rem;
+        position: absolute;
+        margin-top: 0.4rem;
+        line-height: 1.4rem;
+        // background-color: #f2f2f2;
+        border-top: 1/37.5rem solid #e3e2e1;
+        padding: 0 0.4rem 0;
+        font-size: 0.38rem;
+        .navLeft {
+            float: left;
+            background: url('../img/lifetable/u2307.png') no-repeat left center;
+            background-size: 22%;
+            padding-left: 20/37.5rem;
+        }
+        .navRight {
+            float: right;
+            background: url('../img/lifetable/u2744.png') no-repeat right center;
+            background-size: 25%;
+            padding-right: 20/37.5rem;
+        }
+    }
+    .lifeBottomLast {
+        width: 100%;
+        height: 1.5rem;
+        // max-width: 540px;
+        // background-color: #f2f2f2;
+        // border-top: 2/37.5rem solid #f2f2f2;
+        // padding: 10/37.5rem 0.8rem 30/37.5rem 0.8rem;
+        .navLeft {
+            float: left;
+            background: url('../img/lifetable/u2307.png') no-repeat left center;
+            background-size: 23%;
+            padding-left: 20/37.5rem;
+        }
+        .navRight {
+            float: right;
+            background: url('../img/lifetable/u2313.png') no-repeat right center;
+            background-size: 13%;
+            padding-right: 20/37.5rem;
+        }
+    }
+    .markSubject {
+        position: fixed;
+        bottom: 1rem;
+        max-width: 540px;
+    }
+}
+.time {
+    display: none;
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+.workSchedule {
+    min-height: 100%;
+    .mark {
+        min-height: 6rem;
+    }
+}

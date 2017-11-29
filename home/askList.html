@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>喵姐早教说</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no,address=no,email=no">
+		<meta name="keywords" content="喵姐,喵姐早教说,0到6岁早期教育,家庭教育,家长教育,父母课堂,育儿知识,儿童教育,母婴育儿,0-6岁,宝宝成长,教育问题,语音,答疑库,专业,解答,困惑">
+		<meta name="description" content="喵姐早教说是喵姐高寿岩创办的为家庭教育提供专业靠谱的0到6岁早期教育、育儿知识的平台。0-6岁宝宝成长遇到的所有教育问题的语音答疑库，每天保持更新，让妈妈们拿起手机即可搜到想要的靠谱答案，避免非专业解答给自己和宝宝带来更多困惑。">
+		<link rel="shortcut icon" type="image/x-icon" href="http://c.static.sevenkids.cn/res/img/favicon.ico?v=2.3.59" media="screen">
+		<link rel="apple-touch-icon" href="http://c.static.sevenkids.cn/res/img/favicon.ico?v=2.3.59">
+		<script src="http://c.static.sevenkids.cn/res/js/custom/constant/constant.js?v=2.3.59"></script>
+		<link rel="stylesheet" href="http://c.static.sevenkids.cn/res/css/style-v2.0.css?v=2.3.59">
+		<script src="http://c.static.sevenkids.cn/res/js/jquery-2.1.1.min.js?v=2.3.59"></script>
+		<script src="./js/jquery-2.1.1.min.js"></script>
+		<style type="text/css">
+			.cuowu {
+				width: 100%;
+				max-width: 540px;
+				height: 100%;
+				position: fixed;
+				z-index: 99999999;
+				top: 0;
+			}
+			.cuowu>div {
+				position: absolute;
+				width: 62%;
+				left: 50%;
+				margin-left: -31%;
+				background: rgba(0, 0, 0, 0.5);
+				margin-top: -1.78666667rem;
+				padding: 0.61333333rem 0;
+				top: 50%;
+				border-radius: 6px;
+			}
+			.cuowu>div span {
+				display: block;
+				text-align: center;
+				color: #fff;
+				line-height: 0.48rem;
+				margin-top: 0.21333333rem;
+				font-size: 15px;
+			}
+			.cuowu>div img {
+				display: block;
+				width: 1.06666667rem;
+				height: 1.09333333rem;
+				margin: 0 auto;
+			}
+			
+			.cuowu .cw2 {
+				padding: 0.42666667rem 0.26666667rem;
+				line-height: 10px;
+			}
+			.load {
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				left: 0;
+				top: 0;
+				z-index: 99999999;
+			}
+			.load .loading {
+				width: 1.16rem;
+				height: 1.16rem;
+				position: relative;
+				top: 50%;
+				margin: -0.58rem auto 0 auto;
+				background: url(/res/img/load-miao.png) no-repeat center center;
+				background-size: 0.66666667rem;
+			}
+			.load .loadbg {
+				width: 1.16rem;
+				height: 1.16rem;
+				background: url(/res/img/loadbg.png) no-repeat center center;
+				background-size: 1.16rem 1.13333333rem;
+				animation: rotate 1s linear infinite;
+				-webkit-animation: rotate 1s linear infinite;
+				-moz-animation: rotate 1s linear infinite;
+				-o-animation: rotate 1s linear infinite;
+			}
+			@keyframes rotate {
+				0% {
+					transform: rotate(0deg);
+					-webkit-transform: rotate(0deg);
+					-moz-transform: rotate(0deg);
+					-o-transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+					-webkit-transform: rotate(360deg);
+					-moz-transform: rotate(360deg);
+					-o-transform: rotate(360deg);
+				}
+			}
+			@-webkit-keyframes rotate {
+				0% {
+					transform: rotate(0deg);
+					-webkit-transform: rotate(0deg);
+					-moz-transform: rotate(0deg);
+					-o-transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+					-webkit-transform: rotate(360deg);
+					-moz-transform: rotate(360deg);
+					-o-transform: rotate(360deg);
+				}
+			}
+			@-moz-keyframes rotate {
+				0% {
+					transform: rotate(0deg);
+					-webkit-transform: rotate(0deg);
+					-moz-transform: rotate(0deg);
+					-o-transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+					-webkit-transform: rotate(360deg);
+					-moz-transform: rotate(360deg);
+					-o-transform: rotate(360deg);
+				}
+			}
+			@-o-keyframes rotate {
+				0% {
+					transform: rotate(0deg);
+					-webkit-transform: rotate(0deg);
+					-moz-transform: rotate(0deg);
+					-o-transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+					-webkit-transform: rotate(360deg);
+					-moz-transform: rotate(360deg);
+					-o-transform: rotate(360deg);
+				}
+			}
+		</style>
+		<link rel="stylesheet" href="http://c.static.sevenkids.cn/res/css/loginBar.css?v=2.3.59">
+		<script src="http://c.static.sevenkids.cn/res/js/scrollpaginationme.js?v=2.3.59"></script>
+		<link rel="stylesheet" href="http://c.static.sevenkids.cn/res/css/swiper.css?v=2.3.59">
+		<link rel="stylesheet" href="http://c.static.sevenkids.cn/res/css/navigator.css?v=2.3.59">
+		<script src="http://c.static.sevenkids.cn/res/js/swiper-3.3.0.min.js?v=2.3.59"></script>
+		<script src="http://c.static.sevenkids.cn/res/js/home/banner/homebanner.js?v=2.3.59"></script>
+		<script src="http://c.static.sevenkids.cn/res/js/jquery.json-2.4.min.js?v=2.3.59"></script>
+
+		<style type="text/css">
+			.resultEmpty {
+				margin-top: 5.373333rem;
+			}
+			/*三千问浮球功能*/
+			
+			.circleLayer {
+				display: block;
+				width: 100*@base;
+				height: 100*@base;
+				border-radius: 100%;
+				position: fixed;
+				z-index: 102;
+				right: 0.24rem;
+				bottom: 1.46666667rem;
+			}
+			
+			.circleLayer img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				border-radius: 100%;
+				-webkit-animation: rotate 13s linear infinite;
+			}
+			
+			.sectionTopBottom {
+				width: 100%;
+				max-width: 540px;
+				margin: 0 auto;
+				padding: 0.4rem;
+				overflow: auto;
+				border-bottom: 0.12rem solid #efeff4;
+			}
+			
+			.u45_div {
+				width: 3px;
+				height: 0.43rem;
+				background-color: rgba(0, 0, 0, 1);
+				float: left;
+				margin-top: 0px !important;
+			}
+			
+			b {
+				font-size: 0.43rem;
+			}
+			
+			.activityList .word {
+				font-size: 0.39rem;
+			}
+			/* 喵问喵答部分 */
+			
+			.fastAsk {
+				font-size: 0.4rem;
+				line-height: 25px;
+				margin-top: 0;
+				margin-left: 2rem;
+				border: 1px solid #ff9900;
+				border-radius: 20px;
+				width: 177px;
+				height: 30px;
+				text-align: center;
+				color: #ff9900;
+			}
+			
+			.questionAsk {
+				font-size: 19px;
+				line-height: 19px;
+				text-align: center;
+			}
+			
+			.asktitle {
+				font-weight: 400;
+				font-style: normal;
+				font-size: 20px;
+				color: #ff99cc;
+				margin: 40px 0 0 0;
+			}
+			
+			.askimg {
+				float: right;
+				width: 2rem;
+				margin-top: 0.5rem;
+			}
+			
+			.askmain {
+				height: 112px;
+			}
+			
+			.askname {
+				color: #ffcc99;
+				font-size: 0.4rem;
+			}
+			
+			.ask {
+				margin-top: 0.2rem;
+				font-size: 10px;
+				color: #9E9E9E;
+			}
+			
+			.miaoAsk {
+				padding: 0.4rem;
+			}
+			
+			.miaoAsk p {
+				font-size: 0.35rem;
+				color: rgba(72, 72, 72, 1);
+				margin-top: 0.2rem;
+				overflow: hidden;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+			}
+			
+			.sectitle {
+				margin-left: 5px;
+			}
+			
+			.freebutton {
+				width: 52px;
+				height: 16px;
+				font-family: 'PingFangSC-Regular', 'PingFang SC';
+				font-weight: 400;
+				font-style: normal;
+				font-size: 9px;
+				text-align: center;
+				line-height: normal;
+				position: absolute;
+				margin: -20px 0 0 2rem;
+			}
+			
+			.freebutton_div {
+				width: 52px;
+				height: 16px;
+				background: inherit;
+				box-sizing: border-box;
+				border-width: 0px;
+				border-style: solid;
+				-moz-box-shadow: none;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+				font-family: 'PingFangSC-Regular', 'PingFang SC';
+				font-weight: 400;
+				font-style: normal;
+				font-size: 9px;
+				color: #33CC33;
+			}
+			
+			.freebutton_div1 {
+				width: 48px;
+				word-wrap: break-word;
+			}
+			
+			.box_align {}
+			
+			.box_align_right {
+				/* Firefox */
+				display: -moz-box;
+				-moz-box-pack: end;
+				-moz-box-align: center;
+				/* Safari, Chrome, and Opera */
+				display: -webkit-box;
+				-webkit-box-pack: end;
+				-webkit-box-align: center;
+				/* W3C */
+				display: box;
+				box-pack: end;
+				box-align: center;
+			}
+			
+			.newshare {
+				text-align: center;
+			}
+			
+			.newshare img {
+				width: 100%;
+			}
+			
+			.sectionTit {
+				font-size: 0.34rem;
+			    color: #797979;
+			    padding-left: 0.3rem;
+			}
+			
+			* {
+				font-family: 'myFont' !important;
+			}
+		</style>
+		<script>
+			$(function() {
+				var newStyle = $("<style> @font-face {font-family: 'myFont';  src: url('./font/HYQiHei-45S.ttf');} </style>");
+				$('body').append(newStyle);
+				var font = "src: url('./font/HYQiHei-45S.ttf')";
+				if(font === true) {
+					$('body').css = newStyle;
+				} else {
+					$('body').css = "微软雅黑", "PingFangSC-Light";
+				}
+			});
+		</script>
+	</head>
+
+	<body style="font-family:'myFont' !important">
+
+		<script src="http://c.static.sevenkids.cn/res/js/wxmppay.js?v=2.3.59"></script>
+
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript">
+			//jsapi 是否可用
+			var canwxaudio = "true" == "true";
+			if(canwxaudio) {
+				wx.config({
+					debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+					appId: 'wx19ef81f716120b52', // 必填，公众号的唯一标识
+					timestamp: '1505455627603', // 必填，生成签名的时间戳
+					nonceStr: 'i0J3koj1n7Or9yh28wB8AEG2', // 必填，生成签名的随机串
+					signature: '85b15cd91e72811a2694b13f9be0e57d1f99218e', // 必填，签名，见附录1
+					jsApiList: ['startRecord', 'stopRecord', 'onVoiceRecordEnd', 'playVoice', 'pauseVoice', 'stopVoice', 'onVoicePlayEnd', 'uploadVoice', 'downloadVoice', 'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone', 'closeWindow'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+				});
+				wx.error(function(res) {
+					// config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新签名。
+					canwxaudio = false;
+				});
+			}
+		</script>
+		<script src="http://c.static.sevenkids.cn/res/js/share/wxfxyy.js?v=2.3.59"></script>
+		<div id="mainFrameWarpDiv" onclick="clearDetail()" style="display:none;position: fixed;z-index: 9999999;height:100%;max-width:540px;width:100%;top:110%;background-color: rgba(0,0,0,0.3);"></div>
+		<script type="text/javascript">
+			var wxfenxiangcb_list = {
+				title: '喵姐专业答疑，摆平育儿难题', // 分享标题
+				link: 'http://c.sevenkids.cn/yzmm/share/sqwlist/113ffbaec6d1e4a4961bcdab9a05521da11c/0?serviceType=3&serviceId=', // 分享链接
+				imgUrl: 'http://c.sevenkids.cn/res/img/share/share_knowledge.png', // 分享图标
+				desc: '那些困扰你的育儿难题答案全在这里了！',
+				shareTimeline: function(bool) {},
+				shareAppMessage: function(bool) {}
+			}
+			initwxfx(wxfenxiangcb_list);
+
+			var vNewIframe; //新建的iframe
+			var playIframe;
+
+			function removeOver() {
+				var mfwd = $("#mainFrameWarpDiv");
+				mfwd.children().each(function() {
+					var o = $(this);
+					var c = o.children();
+					if(!playIframe || playIframe.attr("id") != c.attr("id")) {
+						o.remove();
+					}
+				});
+			}
+
+			function newIframe(id) {
+				var mfwd = $("#mainFrameWarpDiv");
+				removeOver();
+				var mainFrameDiv = $('<div style="display:none;height:100%;width:100%;"></div>');
+				var h = document.documentElement.clientHeight;
+				var iframe = $('<iframe id="iframe' + id + '" width="100%" height="' + h + 'px" style="border: 0;" scrolling="no" src="" ></iframe>');
+				mainFrameDiv.append(iframe);
+				mfwd.append(mainFrameDiv);
+				return iframe;
+			}
+
+			function viewDetail(id) {
+				if(playIframe) {
+					if(("iframe" + id) == playIframe.attr("id")) {
+						showIframe(playIframe);
+						return;
+					}
+				}
+				var src = "/yzmm/account/knowledge/viewDetail?knowledgeId=" + id;
+				toastWaiting();
+				vNewIframe = newIframe(id);
+				vNewIframe.bind("load", function() {
+					vNewIframe.get(0).contentWindow.top_iframe_id = vNewIframe.attr("id");
+					var aa = vNewIframe.get(0).contentWindow.wxfenxiangcb_dtl;
+					initwxfx(aa);
+				});
+				vNewIframe.get(0).src = src;
+				showIframe(vNewIframe);
+			}
+
+			function showIframe(iframeDiv) {
+				iframeDiv.parent().fadeIn(300);
+				$("#mainFrameWarpDiv").show();
+				$("#mainFrameWarpDiv").animate({
+					top: "0%"
+				}, 200, function() {
+					toastWaitingColse();
+					$("html").css("overflow", "hidden");
+				});
+			}
+
+			function clearDetail() {
+				toastWaiting();
+				$("html").css("overflow", "auto");
+				vNewIframe.parent().fadeOut(300);
+				$("#mainFrameWarpDiv").animate({
+					top: "110%"
+				}, 200, function() {
+					initwxfx(wxfenxiangcb_list);
+					toastWaitingColse();
+					$("#mainFrameWarpDiv").hide();
+					$("#mainFrameWarpDiv div").hide();
+				});
+			}
+
+			function clearPlay(top_iframe_id) {
+				playIframe = $("#" + top_iframe_id);
+				removeOver();
+			}
+			/**
+			 * 浮球
+			 */
+			function fuqiu(img) {
+				var temp = $("#floatingBallTemp");
+				$("#floatingBallTemp .circleLayer").show();
+				$("#floatingBallTemp .circleLayer #circleLayerImg").attr("src", img);
+				temp.click(function() {
+					showIframe(playIframe);
+				});
+				temp.show();
+			}
+		</script>
+		<div class="wrap parent">
+			<!--头部轮播-->
+			<div class="swiper-container hdBanner swiper-container-horizontal" style="display: none;">
+				<div class="swiper-wrapper" style="height: 120px;">
+					<!-- banner内容 -->
+					<div class="swiper-slide swiper-slide-active" style="height: 120px; width: 375px;">
+						<a href="/yzmm/account/home/toReading?id=75" class="img"><img src="http://onlinefile.sevenkids.cn/uploadm/201706/20/14979455461799O8k.jpg"></a>
+					</div>
+					<div class="swiper-slide swiper-slide-next" style="height: 120px; width: 375px;">
+						<a href="/yzmm/account/home/toReading?id=76" class="img"><img src="http://onlinefile.sevenkids.cn/uploadm/201706/20/14979545377393wqL.jpg"></a>
+					</div>
+				</div>
+				<div class="swiper-pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span></div>
+			</div>
+			<!--三千问修改样式-->
+			<style type="text/css">
+				.section {
+					border-bottom: 0.12rem solid #F2F2F2;
+				}
+				.askListBanner {
+					width: 100%;
+					height: 4rem;
+					position: relative;
+					background-color: #FFAF2F;
+				}
+				.askListBanner .bannerPic {
+					width: 100%;
+					height: 4rem;
+				}
+				.askListBanner .bannerText p:nth-child(1) {
+					font-size: 0.54rem;
+					color: #fff;
+					position: absolute;
+					bottom: 0.9rem;
+					left: 0.3rem;
+					font-weight: bold;
+					-webkit-text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+					-moz-text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+					-ms-text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+					-o-text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+					text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+					filter:progid:DXImageTransform.Microsoft.MotionBlur(strength=5, direction=145);
+				}
+				.askListBanner .bannerText p:nth-child(2) {
+					font-size: 0.36rem;
+					color: #fff;
+					position: absolute;
+					bottom: 0.3rem;
+					left: 0.3rem;
+					-webkit-text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+					-moz-text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+					-ms-text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+					-o-text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+					text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+					filter:progid:DXImageTransform.Microsoft.MotionBlur(strength=5, direction=145);
+				}
+				.searchInput {
+					display: block;
+					width: 93%;
+					height: 1rem;
+					line-height: 1rem;
+					overflow: hidden;
+					text-align: left;
+					padding-left: 0.8rem;
+					background-color: rgba(255, 255, 255, 0.6);
+					border: 1px solid #d2d2d2;
+					border-radius: 50px;
+					font-size: 0.32rem;
+					color: #333;
+				}
+				:-moz-placeholder {
+					/* Mozilla Firefox 4 to 18 */
+					color: #c6c6c6;
+					opacity: 1;
+					font-size: 0.36rem;
+				}
+				::-moz-placeholder {
+					/* Mozilla Firefox 19+ */
+					color: #c6c6c6;
+					opacity: 1;
+					font-size: 0.32rem;
+				}
+				input:-ms-input-placeholder {
+					color: #c6c6c6;
+					opacity: 1;
+					font-size: 0.32rem;
+				}
+				input::-webkit-input-placeholder {
+					color: #c6c6c6;
+					opacity: 1;
+					font-size: 0.32rem;
+				}
+				.textSearch {
+					font-size: 0.36rem;
+					position: absolute;
+					top: 0.3rem;
+					right: 0;
+					color: #FF9933;
+					text-align: right;
+				}
+				.selectedAudio {
+					width: 100%;
+					padding: 0.3rem;
+					min-height: 2rem;
+					border-bottom: 0.12rem solid #F2F2F2;
+				}
+				.selectedAudio .audioTitle {
+					font-size: 0.34rem;
+				    color: #797979;
+				    padding-bottom: 0.3rem;
+				    padding-left: 0.3rem;
+				}
+				.selectedAudio .selectedAudioP {
+					font-size: 0.34rem;
+					color: #868686;
+					padding-top: 0.2rem;
+				}
+				.test1 {
+					width: 100%;
+					height: 3.6rem !important;
+					overflow: hidden;
+				}
+				.selectedAudio .test1 .slide {
+					width: 2.5rem;
+					height: 3.2rem !important;
+					margin: 0.26666667rem 0;
+					padding: 0.2rem;
+					text-align: center;
+					border-top: 1px solid #F2F2F2;
+					border-left: 1px solid #F2F2F2;
+					-webkit-border-radius: 0.08rem;
+					-moz-border-radius: 0.08rem;
+					-ms-border-radius: 0.08rem;
+					border-radius: 0.08rem;
+					-webkit-box-shadow: 2px 2px 3px rgba(161, 161, 161, 0.3);
+					-moz-box-shadow: 2px 2px 3px rgba(161, 161, 161, 0.3);
+					-ms-box-shadow: 2px 2px 3px rgba(161, 161, 161, 0.3);
+					-o-box-shadow: 2px 2px 3px rgba(161, 161, 161, 0.3);
+					box-shadow: 2px 2px 3px rgba(161, 161, 161, 0.3);
+				}
+				.selectedAudio .test1 .slide .slideImg {
+					width: 100%;
+					height: 1.5rem;
+				}
+				.selectedAudio .test1 .slide .slideTitle {
+					font-size: 0.34rem;
+					color: #333;
+					padding: 0.2rem 0 0.1rem;
+				}
+				.selectedAudio .test1 .slide .slideContent {
+					font-size: 0.3rem;
+					color: #AEAEAE;
+				}
+				.recommendLi {
+					width: 100%;
+					min-height: 2rem;
+					border: 1px solid #F2F2F2 !important;
+					border-bottom: none;
+				    -webkit-border-radius: 0.08rem;
+				    -moz-border-radius: 0.08rem;
+				    -ms-border-radius: 0.08rem;
+				    -o-border-radius: 0.08rem;
+				    border-radius: 0.08rem;
+				    -webkit-box-shadow:2px 2px 3px rgba(161, 161, 161, 0.3);
+	                -moz-box-shadow:2px 2px 3px rgba(161, 161, 161, 0.3);
+	                -ms-box-shadow:2px 2px 3px rgba(161, 161, 161, 0.3);
+	                -o-box-shadow:2px 2px 3px rgba(161, 161, 161, 0.3);
+	                box-shadow:2px 2px 3px rgba(161, 161, 161, 0.3);
+				    margin-bottom: 0.4rem;
+				}
+				.searchlabel {
+				    height: 1rem;
+				    float: right !important;
+				    font-size: 0.36rem;
+				    color: #FFA12E;
+				    line-height: 1rem;
+				}
+				.searchBox {
+				    display: block;
+				    height: 0.81333333rem;
+				    line-height: 0.71333333rem;
+				    overflow: hidden;
+				    text-align: left;
+				    padding-left: 10px;
+				    background-color: rgba(255, 255, 255, 0.6);
+				    border: 1px solid #d2d2d2;
+				    -webkit-border-radius: 50px;
+				    -moz-border-radius: 50px;
+				    -ms-border-radius: 50px;
+				    -o-border-radius: 50px;
+				    border-radius: 50px;
+				    font-size: 0.32rem;
+				    color: #c6c6c6;
+				}
+				
+			</style>
+			<!--搜索框修改-->
+			<div class="askListBanner">
+				<img src="./img/askList/listBanner.png"/ class="bannerPic">
+				<div class="bannerText">
+					<p>育儿3000问</p>
+					<p>有问题立即查询靠谱答案</p>
+				</div>
+			</div>
+			<div class="section">
+				<!--<div class="searchBar" style="position: relative;padding-left: 0;">
+					<input type="text" placeholder="点击这里查找你喜欢的内容..." / class="searchInput">
+					<span class="showInput"></span>
+					<span class="textSearch">搜 索</span>
+				</div>-->
+				<div class="searchBar" style="position: relative;padding-left: 0;">
+					<span class="textSearch">搜 索</span>
+					<a href="javascript:void(0)" class="searchInput" style="display:block;width: 90%;height:1rem;line-height:1rem;">
+						<input type="text" placeholder="点击这里查找你喜欢的内容..." id="keyword" style="display:block;width: 100%;height:1rem;line-height:1rem;padding-left: 0.15rem;padding-right: 0.3rem;">
+						<span style="display:block;width: 0.4rem;height: 0.4rem;padding-left: 0.4rem;background: url(./img/search@2x.png) left center no-repeat;background-size: 0.4rem;position: absolute;top: 0.3rem;left: 0.3rem;"></span>
+					</a>
+				</div>
+				<!--<div class="mySearch">
+					<button type="button" class="searchlabel searchcourse">搜索</button>
+					<a href="javascript:void(0)" class="searchBox inputFocus" style="display:block;width: 90%;height:1rem;line-height:1rem;">
+						<span class="showInput" style="display:block;padding-left: 0.4rem;height:1rem;line-height:1rem;background: url(./img/search@2x.png) left center no-repeat;background-size: 0.4rem;">
+							<input type="text" placeholder="点击这里查找你喜欢的内容..." id="keyword" class="inputFocus searchTitle mySearchTitle" style="display:block;width: 100%;height:1rem;line-height:1rem;padding-left: 0.15rem;">
+						</span>
+					</a>
+				</div>-->
+			</div>
+			<!--音频分类修改-->
+			<div class="selectedAudio">
+				<span class="audioTitle">精选音频分类</span>
+				<!--<p class="selectedAudioP">帮你快速解决育儿难题</p>-->
+				<div class="test1">
+					<div class="swiper-wrapper">
+						<!--睡觉-->
+						<div class="swiper-slide slide swiper-slide-active" style="margin-right: 10px;">
+							<img src="./img/answer/sleep.jpg" alt="" class="slideImg">
+							<p class="slideTitle">睡觉</p>
+							<p class="slideContent">27条音频答疑</p>
+						</div>
+						<!--吃饭-->
+						<div class="swiper-slide slide swiper-slide-next" style="margin-right: 10px;">
+							<img src="./img/answer/eat.jpg" alt="" class="slideImg">
+							<p class="slideTitle">吃饭</p>
+							<p class="slideContent">19条音频答疑</p>
+						</div>
+						<div class="swiper-slide slide" style="margin-right: 10px;">
+							<img src="./img/answer/speak.jpg" alt="" class="slideImg">
+							<p class="slideTitle">说话</p>
+							<p class="slideContent">20条音频答疑</p>
+						</div>
+						<div class="swiper-slide slide" style="margin-right: 10px;">
+							<img src="./img/answer/sleep.jpg" alt="" class="slideImg">
+							<p class="slideTitle">睡觉</p>
+							<p class="slideContent">27条音频答疑</p>
+						</div>
+						<div class="swiper-slide slide" style="margin-right: 10px;">
+							<img src="./img/answer/eat.jpg" alt="" class="slideImg">
+							<p class="slideTitle">吃饭</p>
+							<p class="slideContent">19条音频答疑</p>
+						</div>
+						<div class="swiper-slide slide" style="margin-right: 10px;">
+							<img src="./img/answer/speak.jpg" alt="" class="slideImg">
+							<p class="slideTitle">说话</p>
+							<p class="slideContent">20条音频答疑</p>
+						</div>
+						<div class="swiper-slide slide" style="margin-right: 10px;">
+							<img src="./img/answer/sleep.jpg" alt="" class="slideImg">
+							<p class="slideTitle">睡觉</p>
+							<p class="slideContent">27条音频答疑</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--音频分类修改完毕-->
+			<div class="section sectionBorder0">
+				<div class="sectionTit box_align" style="margin-bottom: 0.3rem;">
+					<span class="sectitle">小喵推荐</span>
+					<!--<p style="font-size: 0.34rem;color: #868686;padding-top: 0.2rem;">最适合你的育儿知识全在这里</p>-->
+				</div>
+				<ul class="recommendList">
+					<li class="recommendLi" style="padding: 0.4rem 0.3rem;">
+						<a href="javascript:void(0)">
+							<div class="photo1" style="width: 1.1rem;height: 1.1rem;float: left;">
+								<img src="./img/play.png" style="width: 1.1rem;height: 1.1rem;">
+							</div>
+							<div class="info" style="padding-left: 0.32rem;padding-top: 0.1rem;">
+								<h2 style="cursor: pointer;font-size: 0.36rem;color: #333;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;" onclick="viewDetail(106)" class="hottagTitle">
+									<span class="hottag"></span>这些给力绘本，让宝宝远离零食
+								</h2>
+								<div class="other" style="font-size: 0.3rem;color: #BCBCBC;"><span>时长：20分51秒   |  7170 次播放</span></div>
+							</div>
+						</a>
+					</li>
+					<li class="recommendLi" style="padding: 0.4rem 0.3rem;">
+						<a href="javascript:void(0)">
+							<div class="photo1" style="width: 1.1rem;height: 1.1rem;float: left;">
+								<img src="./img/play.png" style="width: 1.1rem;height: 1.1rem;">
+							</div>
+							<div class="info" style="padding-left: 0.32rem;padding-top: 0.1rem;">
+								<h2 style="cursor: pointer;font-size: 0.36rem;color: #333;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;" onclick="viewDetail(106)" class="hottagTitle">
+									<span class="hottag"></span>爸妈用对方法，让孩子95%的胆小害怕
+								</h2>
+								<div class="other" style="font-size: 0.3rem;color: #BCBCBC;"><span>时长：20分51秒   |  7170 次播放</span></div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<script type="text/javascript">
+				var swiper = new Swiper('.test1', {
+					slidesPerView: 'auto',
+					spaceBetween: 10,
+				});
+			</script>
+			<div class="section" style="display: none;">
+				<div class="sectionTit box_align">
+					<div id="" class="u45_div"></div>
+					<span class="sectitle" style="font-size:0.40rem;color:rgba(72, 72, 72, 1)"><b>每日一喵</b></span>
+				</div>
+				<div style="font-size: 15px;border-bottom: 0.022rem solid rgba(217, 217, 217, 0.58);margin: 10px 0 0 0;width: 100%;"></div>
+				<ul class="activityList">
+					<li class="hotlistitem" style="height: 2.63333333rem;">
+						<div class="info">
+							<p class="word" onclick="viewDetail(257)" style="padding: 0.5rem 0.4rem 0.3rem 0;color:rgba(72, 72, 72, 1);cursor: pointer;">宝宝爱穿大人鞋怎么办？</p>
+							<p class="word" style="color:#9E9E9E;font-size:0.33rem;">适合1岁-6岁 | 11108 位家长觉着有用</p>
+							<ul style="padding: 0.27rem 0.4rem 0.4rem 0">
+								<li class="word" style="font-size:0.32rem;color:#9E9E9E;">时长：&nbsp;02分05秒</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<div class="audioCont topaudio" style="display: none">
+					<audio preload="auto" id="audio" src=""></audio>
+					<span class="playBtn play"></span>
+					<div class="topaudioBox">
+						<span class="txt">00:00</span>
+						<div class="audioLine">
+							<span class="lineaft"></span>
+							<div class="active"></div>
+							<a href="javascript:void(0)" class="circle" id="drag"></a>
+						</div>
+						<span class="txt2" data-sec="">02分05秒</span>
+					</div>
+				</div>
+				<div class="toDayMiao" style="width: 1.5rem;margin: -2rem 0.9rem 0rem 8rem;position: absolute;cursor: pointer;">
+					<img style="width: 1.5rem;height: 1.5rem" src="../../../res/img/u511.png">
+				</div>
+				<script src="http://c.static.sevenkids.cn/res/js/streamAudio_sqw_heartbeat.js?v=2.3.59"></script>
+			</div>
+			<!-- 喵问喵答 -->
+
+			<div class="section" style="display: none;">
+				<div class="sectionTit">
+					<div class="box_align" style="position: relative;width: 100%">
+						<div id="" class="u45_div"></div>
+						<span class="sectitle" style="font-size:0.40rem;color:rgba(72, 72, 72, 1)"><b>最新咨询</b></span>
+						<label style="font-size: 12px; color: #9E9E9E;float: right!important;" onclick="tomiaoqaList()">查看更多咨询&nbsp;&gt;</label>
+					</div>
+					<div style="font-size: 15px;border-bottom: 0.022rem solid rgba(217, 217, 217, 0.58);margin: 10px 0 0 0;width: 100%;"></div>
+				</div>
+				<ul class="activityList">
+					<li class="hotlistitem" style="height: 3.63333333rem;">
+						<img class="askimg" alt="" src="http://c.static.sevenkids.cn/res/img/rwsc.png?v=2.3.59">
+						<div class="askmain">
+							<div class="miaoAsk" onclick="tomiaoqaList()">
+								<label class="ask"><span class="askname">**a</span>&nbsp;小王子&nbsp;3岁3个月</label>
+								<p>请问我儿子刚去幼儿园半个月，我听说这个幼儿园老师打孩子，我今晚就问问孩子老师打没打他，他说打了，我问为什么，他说因为他抢小朋友玩具，我问他打哪里了，他说打屁股，打肚子了，说老师生气可吓人了，我不知道孩子学的事情可信度有多少，不知道怎么办了</p>
+							</div>
+							<div class="fastAsk" onclick="justAsk();">快速提问</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<!-- 新人专享礼 -->
+
+			<div class="newshareDiv" style="display: none;">
+			</div>
+			<!-- 签到活动 -->
+			<div class="signForGift">
+
+			</div>
+			<!--热门喵问-->
+			<div class="section" id="hotmeowask" style="display: none;">
+
+				<div class="hotask">
+					<a href="javascript:void(0)"><span onclick="indexLabelSearch(67,this)"><i style="background:url(http://onlinefile.sevenkids.cn/uploadm/201611/23/1479898533357bXuq.png) center center no-repeat;background-size: 100% 100%;"></i></span>睡觉</a>
+					<a href="javascript:void(0)"><span onclick="indexLabelSearch(69,this)"><i style="background:url(http://onlinefile.sevenkids.cn/uploadm/201611/23/147989860307139Qv.png) center center no-repeat;background-size: 100% 100%;"></i></span>幼儿园</a>
+					<a href="javascript:void(0)"><span onclick="indexLabelSearch(73,this)"><i style="background:url(http://onlinefile.sevenkids.cn/uploadm/201611/23/14798987174726L6z.png) center center no-repeat;background-size: 100% 100%;"></i></span>胆小</a>
+					<a href="javascript:void(0)"><span onclick="indexLabelSearch(74,this)"><i style="background:url(http://onlinefile.sevenkids.cn/uploadm/201611/23/1479898742515LJGN.png) center center no-repeat;background-size: 100% 100%;"></i></span>说话</a>
+				</div>
+				<div class="hotask">
+					<a href="javascript:void(0)"><span onclick="indexLabelSearch(90,this)"><i style="background:url(http://onlinefile.sevenkids.cn/uploadm/201611/23/14799053848465q93.png) center center no-repeat;background-size: 100% 100%;"></i></span>害羞</a>
+					<a href="javascript:void(0)"><span onclick="indexLabelSearch(91,this)"><i style="background:url(http://onlinefile.sevenkids.cn/uploadm/201611/23/147990541685249dn.png) center center no-repeat;background-size: 100% 100%;"></i></span>脾气大</a>
+					<a href="javascript:void(0)"><span onclick="indexLabelSearch(92,this)"><i style="background:url(http://onlinefile.sevenkids.cn/uploadm/201611/23/1479905445592k1M0.png) center center no-repeat;background-size: 100% 100%;"></i></span>自信</a>
+					<a href="javascript:void(0)"><span onclick="indexLabelSearch(66,this)"><i style="background:url(http://onlinefile.sevenkids.cn/uploadm/201611/23/1479898491577Dj2N.png) center center no-repeat;background-size: 100% 100%;"></i></span>吃饭</a>
+				</div>
+				<div style="text-align: center;font-size: 0.35rem;margin-top: 0.2rem;">
+					<div style="font-size: 15px;border-bottom: 0.022rem solid rgba(217, 217, 217, 0.58);margin: 0.3rem 0 0.3rem 0;width: 100%;"></div><span id="hotmewaskbottom" style="cursor: pointer;color:#9E9E9E ">查看全部</span></div>
+			</div>
+			<!--小喵推荐修改-->
+
+		</div>
+
+		<!-- 三千问足迹 -->
+
+		<!--<div class="hisList">
+		<div class="readListTit"><a href="javascript:void(0)" class="slidedownBtn"></a>我听过的</div>
+		<div class="section sectionBorder0">
+			<ul class="recommendList2">
+			</ul>
+		</div>
+	</div>-->
+		<!-- 底脚 -->
+
+		<style>
+			.redpoint {
+				width: 9px;
+				height: 9px;
+				margin-left: 8px;
+				display: none;
+			}
+			
+			.underpoint {
+				position: absolute;
+				top: 0.1rem;
+				right: 0.6rem;
+			}
+		</style>
+		<footer class="footer">
+			<div class="fixed">
+				<div class="font12 fixed-box">
+					<a href="#" class="ft1 active" onclick="tosqw()">
+						<p>三千问</p>
+					</a>
+					<a href="#" class="ft2" onclick="tocourse()">
+						<p>喵姐说</p>
+					</a>
+					<a href="#" class="ft4" onclick="toactivity()">
+						<p>活动</p>
+					</a>
+					<a href="#" class="ft3" onclick="tome()">
+						<p>我<img class="redpoint underpoint newcoupon" alt="redpoint.png" src="http://c.static.sevenkids.cn/res/img/redpoint.png?v=2.3.59" style="display: inline;"></p>
+					</a>
+				</div>
+			</div>
+
+		</footer>
+
+		<script type="text/javascript">
+			//三千问
+			function tosqw() {
+				top.location = "/yzmm/account/knowledge/index" + (la ? "?la=" + la : "");
+			}
+
+			//喵姐说
+			function tocourse() {
+				top.location = "/yzmm/account/course/list" + (la ? "?la=" + la : "");
+			}
+			//喵圈
+			function toactivity() {
+				top.location = "/yzmm/account/activitytype/list" + (la ? "?la=" + la : "");
+			}
+
+			//我
+			function tome() {
+				top.location = "/yzmm/account/user/info" + (la ? "?la=" + la : "");
+			}
+			window.onload = function() {
+				var sw = "1";
+				switch(sw) {
+					case "1": //三千问
+						selKnowledge();
+						break;
+					case "2": //喵姐说
+						selCourse()
+						break;
+					case "3": //喵圈
+						selActivity();
+						break;
+					case "4": //我
+						selMe();
+						break;
+					default:
+						return;
+				}
+			}
+
+			function selKnowledge() {
+				$(".ft1").addClass("active");
+				cancelSelActivity();
+				cancelSelCourse()
+				cancelSelMe();
+			}
+
+			function cancelSelKnowledge() {
+				$(".ft1").removeClass("active");
+				$(".ft1").removeAttr("style");
+			}
+
+			function selCourse() {
+				$(".ft2").addClass("active");
+				cancelSelActivity();
+				cancelSelKnowledge();
+				cancelSelMe();
+			}
+
+			function cancelSelCourse() {
+				$(".ft2").removeClass("active");
+				$(".ft2").removeAttr("style");
+			}
+
+			function selActivity() {
+				$(".ft4").addClass("active");
+				cancelSelKnowledge();
+				cancelSelCourse()
+				cancelSelMe();
+			}
+
+			function cancelSelActivity() {
+				$(".ft4").removeClass("active");
+				$(".ft4").removeAttr("style");
+			}
+
+			function selMe() {
+				$(".ft3").addClass("active");
+				cancelSelKnowledge();
+				cancelSelActivity();
+				cancelSelCourse();
+			}
+
+			function cancelSelMe() {
+				$(".ft3").removeClass("active");
+				$(".ft3").removeAttr("style");
+			}
+		</script>
+
+		<script type="text/javascript">
+			//三千问列表
+			$(".freebutton").click(function() {
+				top.location = "/yzmm/wxmppay/sqwlist";
+				return;
+			})
+		</script>
+		<script>
+			//每日一喵弹框事件
+			function backGroundPromptShow() {
+				$(".lineLayer").show();
+			}
+
+			function backGroundPromptHide() {
+				$(".lineLayer").hide();
+			}
+			//点击事件
+			$(".close,.lineLayerBox").click(function() {
+				backGroundPromptHide();
+			})
+
+			//每日一喵id
+			var dayMiaoViewDetail;
+			var playUrl = 'http://aliyun.vod.sevenkids.cn/uploadm/sqw/201608/10/20160810234248baobaoaichuandarenxiezenmeban.mp3?Expires=1505542027&OSSAccessKeyId=LTAINHsSoSOVExRW&Signature=R5d3Uuzezls25GQ9FOUJSM3%2BENE%3D';
+			var playImg = '../../../res/img/u511.png';
+			var pauseImg = '../../../res/img/u512.png';
+			$(".toDayMiao").click(function() {
+				var img = $(this).find('img');
+				var src = img.attr('src');
+
+				$("#audio").attr('src', playUrl);
+				$('.playBtn').click();
+
+				//清空iframe
+				window.frames.removeOver();
+				//隐藏浮球
+				$('#floatingBallTemp').css('display', 'none');
+				if(src == playImg) {
+					img.attr('src', pauseImg);
+				} else {
+					img.attr('src', playImg);
+				}
+			});
+
+			function dayPause() {
+				var img = $(".toDayMiao").find('img');
+				var src = img.attr('src');
+
+				$('.playBtn').click();
+
+				if(src == playImg) {
+					img.attr('src', pauseImg);
+				} else {
+					img.attr('src', playImg);
+				}
+			}
+		</script>
+		<!-- 初始化推荐列表 -->
+		<script type="text/javascript">
+			var enableDefaultImage = "false";
+			var userAuthorise = "SELFINFO";
+			var defaultImage = configuration.knowledge.indexDefaultImg;
+			var sm = {};
+			var pageIndex = 1;
+			var age = "0";
+			var sex = "UNKNOW";
+			var kdata = {
+				pageSize: 12,
+				age: age,
+				sex: sex,
+				fromIndex: true
+			};
+		</script>
+
+		<style>
+			.cancelImg {
+				display: inline;
+				width: 1rem;
+				float: right;
+				vertical-align: middle;
+				margin-top: -5px;
+			}
+		</style>
+		<div class="searchItem" style="display:none">
+			<form class="search mySearch" target="hideIframe">
+				<div class="searchBox">
+					<a href="javascript:void(0)" class="cancleBtn backBtn searchCancleBtn cancelShow" style="display:none;">取消</a>
+					<input type="submit" class="cancleBtn submitShow" value="搜索" style="display:block">
+					<div class="searchTxt">
+						<a href="javascript:void(0)" class="clear"></a>
+						<img class="cancelImg cancelImgDiv2" alt="" src="http://c.static.sevenkids.cn/res/img/cancelSearch.png?v=2.3.59">
+						<input type="text" onkeyup="fn2()" onblur="fn2()" id="keyword2" placeholder="请输入关键字,点击键盘'前往'" class="inputFocus searchTitle mySearchTitle">
+					</div>
+				</div>
+			</form>
+			<iframe id="hideIframe" name="hideIframe" style="display: none"></iframe>
+			<div class="empty emptyAndVip" style="display: none;">
+				<div class="icon"></div>
+				<div class="word">很抱歉,没有找到内容</div>
+				<a href="javascript:void(0)" class="quizBtn">我要提问</a>
+			</div>
+			<div class="empty emptyAndNovip" style="display: none;">
+				<div class="icon"></div>
+				<div class="word">很抱歉,没有找到内容</div>
+				<p>表急，换个关键词，或者秒变VIP,个性定制您的问题</p>
+				<a href="javascript:void(0)" class="vipBtn">我要成为VIP</a>
+			</div>
+			<div class="section">
+				<div class="sectionTit">按年龄段搜索</div>
+				<div class="tagList">
+					<a href="javascript:void(0)" id="age-01" class="age-1 age" data-minscope="0" data-maxscope="1">0-1岁</a>
+					<a href="javascript:void(0)" id="age-12" class="age-2 age" data-minscope="1" data-maxscope="2">1-2岁</a>
+					<a href="javascript:void(0)" id="age-23" class="age-3 age" data-minscope="2" data-maxscope="3">2-3岁</a>
+					<a href="javascript:void(0)" id="age-36" class="age-4 age" data-minscope="3" data-maxscope="6">3-6岁</a>
+				</div>
+			</div>
+			<div class="section">
+				<div class="sectionTit">大家都在搜</div>
+				<div class="tagList hotSearch">
+					<!-- <a href="javascript:void(0)" class="hotWord">不睡觉</a>
+			<a href="javascript:void(0)" class="hotWord">被蚊子咬就哭</a> -->
+					<a href="javascript:void(0)" class="hotWord">不听话</a>
+					<a href="javascript:void(0)" class="hotWord">吃手</a>
+					<a href="javascript:void(0)" class="hotWord">幼儿园</a>
+					<a href="javascript:void(0)" class="hotWord">打人</a>
+					<a href="javascript:void(0)" class="hotWord">分享</a>
+				</div>
+			</div>
+			<div class="section sectionBorder0 searchHistory">
+				<div class="sectionTit">你搜过的</div>
+				<div class="tagList mySearchHistory">
+					<!-- <a href="javascript:void(0)" class="memory">不睡觉<i class="remove"></i></a>
+			<a href="javascript:void(0)" class="memory">被蚊子咬就哭<i class="remove"></i></a> -->
+					<a href="javascript:void(0)" class="memory">脾气急<i class="remove"></i></a>
+					<a href="javascript:void(0)" class="memory">产后抑郁<i class="remove"></i></a>
+					<a href="javascript:void(0)" class="memory">睡觉<i class="remove"></i></a>
+					<a href="javascript:void(0)" class="memory">早教<i class="remove"></i></a>
+					<a href="javascript:void(0)" class="memory">摸咪咪睡觉<i class="remove"></i></a>
+					<a href="javascript:void(0)" class="memory">戒安抚奶嘴<i class="remove"></i></a>
+					<a href="javascript:void(0)" class="memory">绘本<i class="remove"></i></a>
+					<a href="javascript:void(0)" class="memory">看书<i class="remove"></i></a>
+				</div>
+			</div>
+		</div>
+		<!--<script src="http://c.static.sevenkids.cn/res/js/package/search.js?v=2.3.59"></script>-->
+		<div class="load" id="loadingwrapdiv" style="display: none;">
+			<div class="loading">
+				<div class="loadbg"></div>
+			</div>
+		</div>
+		<script>
+			function fn2() {
+
+				var len = $("#keyword2").val().length;
+				if(len) {
+					$(".cancelShow").hide();
+					$(".submitShow").show();
+					$(".cancelImgDiv2").show();
+				} else {
+					$(".cancelShow").show();
+					$(".submitShow").hide();
+				}
+			}
+			$(function() {
+				$(".cancelImgDiv2").click(function() {
+					$("#keyword2").val("");
+					$(".cancelShow").show();
+					$(".submitShow").hide();
+					$(".cancelImgDiv2").hide();
+				});
+			});
+		</script>
+		<script src="http://c.static.sevenkids.cn/res/js/wxmppay.js?v=2.3.59"></script>
+		<!--<script src="http://c.static.sevenkids.cn/res/js/package/knowledge/knowledgeList.js?v=2.3.59"></script>-->
+		<!-- 搜索框 -->
+		<script type="text/javascript">
+			//搜索条件
+//			$(".inputFocus").click(function() {
+//				searchObj.showSearch();
+//				//隐藏vip成为框
+//				searchObj.hideEmptyAndNoVip();
+//				searchObj.hideEmptyAndVip();
+//			});
+
+			//取消三千问
+			$(".slidedownBtn").click(function() {
+				$(".hisList").hide();
+				$(".wrap").show();
+			});
+		</script>
+		<script type="text/javascript">
+			//bannerList
+			var bannerList = '[com.sevenchildren.yzmm.model.dto.banner.HomePageBannerResp@435a184f, com.sevenchildren.yzmm.model.dto.banner.HomePageBannerResp@7e1db100]';
+			var kid = '257'; //每日一喵三千问id
+		</script>
+		<script type="text/javascript">
+			//新人分享礼相关
+			$(function() {
+				var userStatus = 'ACTIVED';
+
+				$(".payBtn").on('click', function() {
+					if('false' != "true") {
+						toast("请您进入微信支付");
+						return false;
+					}
+					var obj = $(this);
+					var id = obj.data("id");
+					wxmppayvirtualcard(id, function(orderId, result) {
+						if(result == "ok") {
+							window.location.href = "/yzmm/wxmppay/virtualcard/checkPay?orderId=" + orderId;
+						}
+					});
+				});
+
+				//由分享进来的用户显示 isVip
+				if('false' == 'true') {
+					_successTips("您已经是会员啦...");
+				}
+			});
+		</script>
+
+	</body>
+
+</html>

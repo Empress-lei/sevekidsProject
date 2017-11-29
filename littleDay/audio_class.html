@@ -1,0 +1,662 @@
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--忽略页面中的邮箱格式为邮箱-->
+		<meta name="format-detection" content="email=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no,address=no,email=no">
+		<meta name="keywords" content="喵姐,喵姐早教说,0到6岁早期教育,家庭教育,家长教育,父母课堂,育儿知识,儿童教育,母婴育儿,">
+		<meta name="description" content="喵姐早教说是喵姐高寿岩创办的为家庭教育提供专业靠谱的0到6岁早期教育、育儿知识的平台。">
+		<link rel="shortcut icon" type="image/x-icon" href="http://c.static.sevenkids.cn/res/img/favicon.ico?v=2.3.59" media="screen">
+		<link rel="apple-touch-icon" href="http://c.static.sevenkids.cn/res/img/favicon.ico?v=2.3.59">
+		<script src="http://c.static.sevenkids.cn/res/js/custom/constant/constant.js?v=2.3.59"></script>
+		<link rel="stylesheet" href="http://c.static.sevenkids.cn/res/css/style-v2.0.css?v=2.3.59">
+		<script src="http://c.static.sevenkids.cn/res/js/jquery-2.1.1.min.js?v=2.3.59"></script>
+		<script src="http://c.static.sevenkids.cn/res/js/custom/authorise/authorise.js?v=2.3.59"></script>
+		<link rel="stylesheet" href="http://c.static.sevenkids.cn/res/css/custom/userAuthorise/userAuthorise.css?v=2.3.59">
+		<script src="http://c.static.sevenkids.cn/res/js/hh.js?v=2.3.59"></script>
+		<script src="http://c.static.sevenkids.cn/res/js/toast-v1.js?v=2.3.59"></script>
+		<style type="text/css">
+			.cuowu {
+				width: 100%;
+				max-width: 540px;
+				height: 100%;
+				position: fixed;
+				z-index: 99999999;
+				top: 0;
+			}
+			
+			.cuowu>div {
+				position: absolute;
+				width: 62%;
+				left: 50%;
+				margin-left: -31%;
+				background: rgba(0, 0, 0, 0.5);
+				margin-top: -1.78666667rem;
+				padding: 0.61333333rem 0;
+				top: 50%;
+				border-radius: 6px;
+			}
+			
+			.cuowu>div span {
+				display: block;
+				text-align: center;
+				color: #fff;
+				line-height: 0.48rem;
+				margin-top: 0.21333333rem;
+				font-size: 15px;
+			}
+			
+			.cuowu>div img {
+				display: block;
+				width: 1.06666667rem;
+				height: 1.09333333rem;
+				margin: 0 auto;
+			}
+			
+			.cuowu .cw2 {
+				padding: 0.42666667rem 0.26666667rem;
+				line-height: 10px;
+			}
+			
+			.load {
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				left: 0;
+				top: 0;
+				z-index: 99999999;
+			}
+			
+			.load .loading {
+				width: 1.16rem;
+				height: 1.16rem;
+				position: relative;
+				top: 50%;
+				margin: -0.58rem auto 0 auto;
+				background: url(/res/img/load-miao.png) no-repeat center center;
+				background-size: 0.66666667rem;
+			}
+			
+			.load .loadbg {
+				width: 1.16rem;
+				height: 1.16rem;
+				background: url(/res/img/loadbg.png) no-repeat center center;
+				background-size: 1.16rem 1.13333333rem;
+				animation: rotate 1s linear infinite;
+				-webkit-animation: rotate 1s linear infinite;
+				-moz-animation: rotate 1s linear infinite;
+				-o-animation: rotate 1s linear infinite;
+			}
+			
+			@keyframes rotate {
+				0% {
+					transform: rotate(0deg);
+					-webkit-transform: rotate(0deg);
+					-moz-transform: rotate(0deg);
+					-o-transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+					-webkit-transform: rotate(360deg);
+					-moz-transform: rotate(360deg);
+					-o-transform: rotate(360deg);
+				}
+			}
+			
+			@-webkit-keyframes rotate {
+				0% {
+					transform: rotate(0deg);
+					-webkit-transform: rotate(0deg);
+					-moz-transform: rotate(0deg);
+					-o-transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+					-webkit-transform: rotate(360deg);
+					-moz-transform: rotate(360deg);
+					-o-transform: rotate(360deg);
+				}
+			}
+			
+			@-moz-keyframes rotate {
+				0% {
+					transform: rotate(0deg);
+					-webkit-transform: rotate(0deg);
+					-moz-transform: rotate(0deg);
+					-o-transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+					-webkit-transform: rotate(360deg);
+					-moz-transform: rotate(360deg);
+					-o-transform: rotate(360deg);
+				}
+			}
+			
+			@-o-keyframes rotate {
+				0% {
+					transform: rotate(0deg);
+					-webkit-transform: rotate(0deg);
+					-moz-transform: rotate(0deg);
+					-o-transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+					-webkit-transform: rotate(360deg);
+					-moz-transform: rotate(360deg);
+					-o-transform: rotate(360deg);
+				}
+			}
+		</style>
+		<script src="http://c.static.sevenkids.cn/res/js/common.js?v=2.3.59"></script>
+		<script src="http://c.static.sevenkids.cn/res/js/myValidity.js?v=2.3.59"></script>
+		<script type="text/javascript">
+			var la = '18235580527';
+			$(function() {
+				if(la) {
+					var currentUrl = location.href;
+					if(currentUrl.indexOf("?la=") == -1 && currentUrl.indexOf("&la=") == -1) {
+						var newUrl = currentUrl;
+						if(currentUrl.indexOf("?") == -1) {
+							newUrl += "?la=" + la;
+						} else {
+							newUrl += "&la=" + la;
+						}
+						history.replaceState(null, null, newUrl);
+					}
+				}
+			})
+		</script>
+		<link rel="stylesheet" href="http://c.static.sevenkids.cn/res/css/loginBar.css?v=2.3.59">
+		<script src="http://c.static.sevenkids.cn/res/js/loginBar.js?v=2.3.59"></script>
+
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript">
+			//jsapi 是否可用
+			var canwxaudio = "true" == "true";
+			if(canwxaudio) {
+				wx.config({
+					debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+					appId: 'wx19ef81f716120b52', // 必填，公众号的唯一标识
+					timestamp: '1504771854396', // 必填，生成签名的时间戳
+					nonceStr: 'X81PLQp58m39nk1TcOnn13Vc', // 必填，生成签名的随机串
+					signature: '6ae525fbc8535b47d5edf63f8981a8bd988d0228', // 必填，签名，见附录1
+					jsApiList: ['startRecord', 'stopRecord', 'onVoiceRecordEnd', 'playVoice', 'pauseVoice', 'stopVoice', 'onVoicePlayEnd', 'uploadVoice', 'downloadVoice', 'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone', 'closeWindow'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+				});
+				wx.error(function(res) {
+					// config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新签名。
+					canwxaudio = false;
+				});
+			}
+		</script>
+		<script src="http://c.static.sevenkids.cn/res/js/share/wxfxyy.js?v=2.3.59"></script>
+		<title>喵姐早教说</title>
+		<style type="text/css">
+			body {
+				color: #000000;
+				font-size: 0.32rem;
+			}
+			
+			.section {
+				position: relative;
+				font-size: 0.32rem;
+				font-weight: 400;
+				font-family: 'ArialMT', 'Arial';
+				font-style: normal;
+				line-height: 0.5rem;
+				overflow: visible!important;
+			}
+			
+			table {
+				width: 100%;
+				border: 0px;
+				border-color: transparent;
+				border-collapse: collapse;
+				border-spacing: 0;
+				color: #434343;
+				font-size: 0.32rem;
+			}
+			
+			table td {
+				position: relative;
+				padding-top: 0.1rem;
+			}
+			
+			.td1 {
+				width: 1.7rem;
+			}
+			
+			.td2 {}
+		</style>
+		<style type="text/css">
+			.share {
+				display: none;
+				width: 100%;
+				max-width: 540px;
+				margin: 0 auto;
+				height: 100%;
+				position: fixed;
+				top: 0;
+				z-index: 100;
+				background-color: rgba(0, 0, 0, 0.8);
+			}
+			
+			.share .shareBox {
+				width: 100%;
+				padding-top: 1.12rem;
+				position: relative;
+			}
+			
+			.share .sharearrow {
+				display: block;
+				width: 75px;
+				height: 84px;
+				position: absolute;
+				right: 0.48rem;
+				top: 0.21333333rem;
+				background-image: url(http://c.static.sevenkids.cn/res/img/share/share.png?v=2.3.59);
+				background-position: right top;
+				background-repeat: no-repeat;
+				background-size: 78px 72px;
+			}
+			
+			.share p {
+				margin-bottom: 0.26666667rem;
+				text-align: center;
+				color: #f8e71c;
+			}
+		</style>
+		<style type="text/css">
+			.shijianchangdu {
+				background-repeat: no-repeat;
+				background-size: auto 60%;
+				padding-left: 0.32rem;
+				background-position: left 40%;
+				background-image: url('http://c.static.sevenkids.cn/res/img/shijintubiao.png?v=2.3.59');
+			}
+			
+			.shiting {
+				color: #FF9900;
+				border: 1px #FF9900 solid;
+				border-radius: 0.3rem;
+				font-size: 0.32rem;
+				padding: 0.01rem 0.3rem;
+			}
+			
+			.xihuan {
+				background-repeat: no-repeat;
+				background-size: contain;
+				padding-left: 0.5rem;
+				background-position: left center;
+				background-image: url('http://c.static.sevenkids.cn/res/img/u1757.png?v=2.3.59');
+			}
+			
+			.fenxiang {
+				background-repeat: no-repeat;
+				background-size: contain;
+				padding-right: 0.66rem;
+				background-position: right center;
+				background-image: url('http://c.static.sevenkids.cn/res/img/u1755.png?v=2.3.59');
+			}
+			
+			.fenxiang2 {
+				background-repeat: no-repeat;
+				background-size: 0.66rem;
+				padding-right: 0.66rem;
+				background-position: right center;
+				background-image: url('http://c.static.sevenkids.cn/res/img/u35.png?v=2.3.59');
+			}
+			
+			.viponly {
+				display: block;
+				width: 1rem;
+				height: 1rem;
+				margin: 0 auto;
+			}
+			.hide {
+				display: none;
+			}
+			.playBtn {
+				height: 1rem!important;
+				width: 1rem!important;
+				float: inherit!important;
+				background-repeat: no-repeat;
+				background-size: contain!important;
+				background-position: center;
+				background-image: url('http://c.static.sevenkids.cn/res/img/bofang.png?v=2.3.59')!important;
+			}
+			
+			.topaudio .pause {
+				background-image: url('http://c.static.sevenkids.cn/res/img/zanting.png?v=2.3.59')!important;
+				background-size: contain!important;
+			}
+		</style>
+		<script type="text/javascript">
+			var mywxfenxiangcb = {
+				title: '我正在喵姐早教说学习《准爸妈新手爸妈必听6堂课》主题课，推荐一起来听哦！', // 分享标题
+				desc: '听了喵姐主题课，才知道育儿可以始此轻松',
+				link: 'http://c.sevenkids.cn/yzmm/share/ztklist/113ffbaec6d1e4a4961bcdab9a05521da11c/1?serviceType=3&serviceId=', // 分享链接
+				imgUrl: 'http://onlinefile.sevenkids.cn/uploadm/201705/25/1495679752354S0A9.jpg', // 分享图标
+				shareTimeline: function(bool) {},
+				shareAppMessage: function(bool) {}
+			};
+
+			initwxfx(mywxfenxiangcb);
+
+			function showmoreinfo(obj) {
+				var o = $(obj);
+				if(o.css("visibility") == "hidden") {
+					$(".moreinfo").slideUp();
+					o.css("visibility", "visible");
+				} else {
+					$(".moreinfo").slideDown();
+					o.css("visibility", "hidden");
+				}
+			}
+
+			function hidemoreinfo() {
+				showmoreinfo(".showmoreinfo");
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="bigImg section" style="width: 100%; height: 100%;display: none;">
+			<img src="" width="100%">
+			<h1 class="activityTitle" style="position: fixed;bottom: 1rem;right: 0.1rem;background: transparent"><span class="backBtn"></span></h1>
+			<script type="text/javascript">
+				function showBig(obj) {
+					var o = $(obj);
+					$(".bigImg img").attr("src", o.data("img90"));
+					$(".bigImg").show();
+					$(".mainWrap").hide();
+				}
+				$(function() {
+					$(".activityTitle").click(function() {
+						$(".bigImg").hide();
+						$(".mainWrap").show();
+					});
+				})
+
+				function like1() {
+					toast("喜欢 +1 ~")
+				}
+			</script>
+		</div>
+
+		<div class="mainWrap">
+			<div id="headDiv" class="section" style="padding: 0px; display: none;">
+				<div style="min-height: 3rem;position: relative;">
+					<img width="100%" src="http://file.dev.sevenkids.cn/uploadm/201705/24/1495599754308eAe8.jpg">
+					<div style="position: absolute;bottom: 0rem;color: white;padding: 0.32rem 0.32rem;  background: rgba(3,3,3,0.2); width: 100%;">
+						<p style="font-size: 0.64rem;font-weight: bold;line-height: 0.8rem;">准爸妈新手爸妈必听6堂课</p>
+						<p style="font-size: 0.32rem;font-weight: bold;padding-top: 0.3rem;">让你从容开始带娃的美好人生</p>
+						<div class="showmoreinfo" onclick="showmoreinfo(this)" style="width: 100%;text-align: center;">
+							<img style="margin: 0 auto;" src="http://c.static.sevenkids.cn/res/img/jiantou1.png?v=2.3.59">
+						</div>
+					</div>
+				</div>
+				<div class="moreinfo" style="display: none;width: 100%;">
+
+					<div class="section" style="line-height: 0.6rem;font-size: 0.34rem;color: #333333;">
+						<p style="font-size: 0.45rem;font-weight: bold;margin-bottom: 0.32rem;">课程介绍</p>
+						<p style="color: #949494;position: absolute;right: 0.1rem;top:0.42rem;">1364人订阅</p>
+						<p>生完孩子的这一年，是夫妻感情倍受考验的一年。<br>突然间多了好多人，各种关系都不好搞。<br>有宝宝之前，你觉得你的婆婆是个慈爱的老人家。<br>有宝宝之后，你发现你的婆婆是个搞事的老专家。<br>有宝宝之前，你觉得你的老公一定会是孩子的好爸爸。<br>有宝宝之后，你发现，呵呵，原来手机才是他亲生哒！<br>有宝宝之前，你没心没肺，疯玩疯睡。<br>有宝宝之后，你产后抑郁，还睡你妹。<br>有宝宝之前，你幻想他可爱乖巧，如同天使。<br>有宝宝之后，你才发现他不是哭，就是闹，不抱着就不睡觉。<br>有宝宝之前，你觉得养孩子就该放养，孩子快乐就好。<br>有宝宝之后，你看着别人上早教开始心焦，什么时候开始早教，教什么，怎么教？<br>……<br>怎么办？<br>往这看！<br>《准爸妈/新手爸妈必听6堂课》，特别针对生娃前后的变化以及你会遇到的各种状况，帮你提前做好生活计划、沟通计划和教育计划。<br>减少你初为人母时的手忙脚乱，让你从容开始带娃的美好人生。</p>
+					</div>
+
+					<div class="section" style="line-height: 0.6rem;font-size: 0.34rem;color: #333333;">
+						<p style="font-size: 0.45rem;font-weight: bold;margin-bottom: 0.32rem;">课程大纲</p>
+
+						<p style="font-weight: bold;">第1课 生完孩子鸡飞狗跳，因为带娃的人太不可靠</p>
+						<p>孩子谁来带，是怀孕之后首先要考虑的现实问题。因为它至少关系到你今后三年的生活质量！找谁带孩子？喵姐告诉你该如何权衡利弊，做出最适合的选择。</p>
+
+						<br>
+
+						<p style="font-weight: bold;">第2课 千种带娃神器，抵不过老公给力</p>
+						<p>男女搭配，干活不累，养娃尤其如此。可惜，男人并不是天生就能当好爸爸。培养一个给力的奶爸，不仅需要抓住关键期，还要有明确的改造方案。有喵姐不用愁，轻松打造好队友。</p>
+
+						<br>
+
+						<p style="font-weight: bold;">第3课 了解产后抑郁，才能让它有多远滚多远</p>
+						<p>产后抑郁很可怕，轻则影响夫妻关系、亲子关系，重则危及生命。产后抑郁很狡猾，它的到来常常神不知鬼不觉。为了让宝贝有一个幸福的家，你一定要听这节课。</p>
+
+						<br>
+
+						<p style="font-weight: bold;">第4课 破译哭声密码，听懂宝宝心里话</p>
+						<p>刚出生的宝宝，还不会说话，可是他也有表达。他想说的话全在哭声里啦，如果妈妈听懂了，就不会被宝宝的哭声搞得既心疼又心焦了。婴语新技能，妈妈们快点get起来！</p>
+
+						<br>
+
+						<p style="font-weight: bold;">第5课 当妈后最崩溃的事：哄娃睡，娃不睡</p>
+						<p>新妈妈最缺啥？缺觉！小娃娃自带磨人法宝，不是黑白睡颠倒，就是睡觉必须抱。要不了多久，熊猫眼就成了你的标配，内心真是纠结崩溃。来来来，听一听哄睡妙招。</p>
+
+						<br>
+
+						<p style="font-weight: bold;">第6课 最好的早教启蒙，应该是什么样</p>
+						<p>针对宝宝的早期教育任务，有最重要的三个关键词：安全感、好奇心、亲子交流。如果做到了这三个关键词的培养，就是给了宝宝最好的早期教育启蒙。</p>
+
+					</div>
+
+					<div class="section" style="line-height: 0.6rem;font-size: 0.34rem;color: #333333;">
+						<p style="font-size: 0.45rem;font-weight: bold;margin-bottom: 0.32rem;">导师介绍</p>
+						<p style="font-weight: bold;">喵姐-高寿岩</p>
+						<p>●&nbsp;北京师范大学学前教育硕士，资深学霸；</p>
+						<p>●&nbsp;早教圈的活久见，在儿童教育领域折腾和创新了27年；</p>
+						<p>●&nbsp;原全国最大的儿童教育机构红黄蓝高级副总裁；</p>
+						<p>●&nbsp;央视、腾讯教育专家及各母婴杂志嘉宾、顾问、专栏作家；</p>
+						<p>●&nbsp;学期教育领域研发产品最多的产品大牛：</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;✔&nbsp;早教课程体系服务1500+机构，100万0-6岁宝宝；</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;✔&nbsp;竹兜早教套装是巧虎在中国区最大的竞争对手；</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;✔&nbsp;大嘴呱呱说唱语言课程服务10000+幼儿园，让300万+幼儿园宝宝用语言闯世界；</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;✔&nbsp;在全国做过讲座500+场，著有图书、文章若干。</p>
+						<p>●&nbsp;创办喵姐早教说，在移动互联网时代用专业帮助全国2000万中产0-6岁新手妈妈“搞定熊孩子，继续做女神”。</p>
+					</div>
+
+					<div class="section" style="line-height: 0.6rem;font-size: 0.34rem;color: #333333;">
+						<p style="font-size: 0.45rem;font-weight: bold;margin-bottom: 0.32rem;">适合谁听</p>
+						<p>手忙脚乱的新手爸妈<br>对未来充满期望的准爸妈<br>准备怀孕的新手夫妻</p>
+					</div>
+
+					<div class="section" style="line-height: 0.6rem;font-size: 0.34rem;color: #333333;">
+						<p style="font-size: 0.45rem;font-weight: bold;margin-bottom: 0.32rem;">你将获得</p>
+						<p>适合带孩子的候选人的标准以及做全职妈妈的利弊<br>把老公改造成一个好爸爸的方法<br>产后抑郁的相关知识<br>正确对待宝宝哭闹的方法<br>正确哄孩子睡觉的方法<br>培养孩子安全感、好奇心和亲子交流的方法</p>
+					</div>
+
+					<div class="section" style="line-height: 0.6rem;font-size: 0.34rem;color: #333333;">
+						<p style="font-size: 0.45rem;font-weight: bold;margin-bottom: 0.32rem;">订阅须知</p>
+						<p>本课程为虚拟内容服务，一经订阅成功概不退款，请您理解。</p>
+					</div>
+
+					<div style="width: 100%;text-align: center;">
+						<img onclick="hidemoreinfo()" style="margin: 0 auto;" src="http://c.static.sevenkids.cn/res/img/jiantou2.png?v=2.3.59">
+					</div>
+				</div>
+			</div>
+			<div class="section" style="min-height: 5rem;">
+				<p class="showname" style="font-size: 0.46rem;padding: 0.6rem 0.1rem 0rem;color: #000;line-height: 0.6rem;font-weight: bold;">第 1 课 | 生完孩子鸡飞狗跳，因为带娃的人太不可靠.</p>
+				<div style="color: #A1A1A1;margin-top: 0.1rem;padding: 0rem 0.1rem 0.1rem;font-size: 0.32rem;">
+					<span class="showPlayEndTimeStr">05月19日</span>更新&nbsp;|&nbsp;<span class="showtingguo">4915</span>次播放
+				</div>
+				
+				<div class="audioCont topaudio">
+			        <!--音频标签-->
+			        <audio preload="auto" id="audio" src=""></audio>
+			        <!--上面的进度条，时间-->
+			        <div class="topaudioBox">
+			            <!--开始时间-->
+			            <span class="txt">00:00</span>
+			            <div class="audioLine">
+			                <!--进度条上的小圆点-->
+			                <span class="lineaft"></span>
+			                <div class="active"></div>
+			                <!--进度条上的小圆点-->
+			                <a href="javascript:void(0);" class="circle" id="drag"></a>
+			            </div>
+			            <!--结束时间-->
+			            <span class="txt2" data-sec="0">08:58</span>
+			        </div>
+			        <!--下面的暂停播放按钮-->
+			        <div>
+			            <table class="canplay">
+			                <tbody>
+				                <tr>
+				                    <!--喜欢-->
+				                    <td width="33.33%" align="center">
+				                    	<span class="xihuan" onclick="like1()">喜 欢</span>
+				                    </td>
+				                    <!--中间的暂停播放按钮-->
+				                    <td style="width: 33.33%; text-align: center;">
+				                        <!--默认的是：在不能听的情况下，默认显示的是灰色的按钮-->
+				                        <img class="viponly hide" src="http://c.static.sevenkids.cn/res/img/playviponly.png?v=2.3.59g" height="100%">
+				                        <!--成为会员后，此处是点击播放的切换-->
+				                        <div class="playBtn ui-play" style="display: block;margin: 0 auto;"></div>
+				                    </td>
+				                    <!--最右侧的分享-->
+				                    <td width="33.33%" align="center"><span class="fenxiang2">请朋友听</span></td>
+				                </tr>
+			                </tbody>
+			            </table>
+			        </div>
+			    </div>
+				<div id="mindDiv" style="text-align: center; margin-top: 1.2rem;">
+					<img id="mindImg" onclick="showBig(this)" data-img90="" width="90%" src="http://onlinefile.sevenkids.cn/uploadm/201705/19/14952066885846xHP.jpg">
+					<div style="margin-top: 0.32rem;color: #BCBCBC;">点击查看大图</div>
+				</div>
+			</div>
+			<script src="js/streamAudio_coursetopic_heartbeat.js?v=2.3.59"></script>
+			<script type="text/javascript">				
+			    var topicCid = "-1";
+			    var playUrl='dong.mp3';
+			    var isplay=false;
+			    $(function(){
+			 		$('.playBtn').on('click',function() {
+						if(!isplay) {
+							isplay = true;
+							$('#audio').attr('src', playUrl);
+						}
+					});
+				})
+			</script>
+			<div class="section">
+				<p style="font-size: 0.4rem;font-weight: bold;">课程列表</p>
+
+				<div class="kechenglist courseIdf8ca533813964a818f7613998f3c0f9b" style="margin-top: 0.32rem;" data-play="" data-title="第 1 课 | 生完孩子鸡飞狗跳，因为带娃的人太不可靠." data-pets="05月19日" data-id="f8ca533813964a818f7613998f3c0f9b" data-len="17:14" data-count="4915" data-img="http://onlinefile.sevenkids.cn/uploadm/201705/19/14952066885846xHP.jpg" data-img90="http://onlinefile.sevenkids.cn/uploadm/201705/19/1495206696660pcwK.jpg">
+					<table>
+						<tbody>
+							<tr>
+								<td class="td1" valign="top"><img style="margin: 0 auto;" src="http://c.static.sevenkids.cn/res/img/topiccourseplay.jpeg?v=2.3.59"></td>
+								<td class="td2">
+									<p class="name" style="font-size: 0.36rem;">第 1 课 生完孩子鸡飞狗跳，因为带娃的人太不可靠.</p>
+									<div style="color: #BCBCBC;margin-top: 0.1rem;">
+										<span class="playEndTimeStr">05月19日</span>更新&nbsp;&nbsp;&nbsp;<span class="tingguo">4915</span>人听过&nbsp;&nbsp;&nbsp;<span class="shijianchangdu">17:14</span>&nbsp;&nbsp;&nbsp;<span class="shiting" style="display:none">试听</span>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="lineDiv" style="height:1px;width: 100%;background-color: #F2F2F2;margin-top: 0.1rem;"></div>
+				</div>
+
+				<div class="kechenglist courseIdc0d9735c1e1e4c258040735d7c6165cb" style="margin-top: 0.32rem;" data-play="" data-title="第 2 课 | 千种带娃神器，抵不过老公给力" data-pets="05月19日" data-id="c0d9735c1e1e4c258040735d7c6165cb" data-len="15:51" data-count="4628" data-img="http://onlinefile.sevenkids.cn/uploadm/201705/19/1495206796629vQKA.jpg" data-img90="http://onlinefile.sevenkids.cn/uploadm/201705/19/1495206803751aPaq.jpg">
+					<table>
+						<tbody>
+							<tr>
+								<td class="td1" valign="top"><img style="margin: 0 auto;" src="http://c.static.sevenkids.cn/res/img/topiccourseplay.jpeg?v=2.3.59"></td>
+								<td class="td2">
+									<p class="name" style="font-size: 0.36rem;">第 2 课 千种带娃神器，抵不过老公给力</p>
+									<div style="color: #BCBCBC;margin-top: 0.1rem;">
+										<span class="playEndTimeStr">05月19日</span>更新&nbsp;&nbsp;&nbsp;<span class="tingguo">4628</span>人听过&nbsp;&nbsp;&nbsp;<span class="shijianchangdu">15:51</span>&nbsp;&nbsp;&nbsp;<span class="shiting" style="display:none">试听</span>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="lineDiv" style="height:1px;width: 100%;background-color: #F2F2F2;margin-top: 0.1rem;"></div>
+				</div>
+
+				<div class="kechenglist courseId7301d7a3bd8b41f5b2db10fb1601718e" style="margin-top: 0.32rem;" data-play="" data-title="第 3 课 | 了解产后抑郁，才能让它有多远滚多远" data-pets="06月03日" data-id="7301d7a3bd8b41f5b2db10fb1601718e" data-len="16:03" data-count="3947" data-img="http://onlinefile.sevenkids.cn/uploadm/201706/03/1496458706609JHC8.jpg" data-img90="http://onlinefile.sevenkids.cn/uploadm/201706/03/149645871950462PX.jpg">
+					<table>
+						<tbody>
+							<tr>
+								<td class="td1" valign="top"><img style="margin: 0 auto;" src="http://c.static.sevenkids.cn/res/img/topiccourseplay.jpeg?v=2.3.59"></td>
+								<td class="td2">
+									<p class="name" style="font-size: 0.36rem;">第 3 课 了解产后抑郁，才能让它有多远滚多远</p>
+									<div style="color: #BCBCBC;margin-top: 0.1rem;">
+										<span class="playEndTimeStr">06月03日</span>更新&nbsp;&nbsp;&nbsp;<span class="tingguo">3947</span>人听过&nbsp;&nbsp;&nbsp;<span class="shijianchangdu">16:03</span>&nbsp;&nbsp;&nbsp;<span class="shiting" style="display:none">试听</span>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="lineDiv" style="height:1px;width: 100%;background-color: #F2F2F2;margin-top: 0.1rem;"></div>
+				</div>
+
+				<div class="kechenglist courseId37e58506457b4e3bb34c0affd49bd538" style="margin-top: 0.32rem;" data-play="" data-title="第 4 课 | 破译哭声密码，听懂宝宝心里话" data-pets="06月07日" data-id="37e58506457b4e3bb34c0affd49bd538" data-len="15:33" data-count="3849" data-img="http://onlinefile.sevenkids.cn/uploadm/201706/07/149680077693089wr.jpg" data-img90="http://onlinefile.sevenkids.cn/uploadm/201706/07/149680078477326fx.jpg">
+					<table>
+						<tbody>
+							<tr>
+								<td class="td1" valign="top"><img style="margin: 0 auto;" src="http://c.static.sevenkids.cn/res/img/topiccourseplay.jpeg?v=2.3.59"></td>
+								<td class="td2">
+									<p class="name" style="font-size: 0.36rem;">第 4 课 破译哭声密码，听懂宝宝心里话</p>
+									<div style="color: #BCBCBC;margin-top: 0.1rem;">
+										<span class="playEndTimeStr">06月07日</span>更新&nbsp;&nbsp;&nbsp;<span class="tingguo">3849</span>人听过&nbsp;&nbsp;&nbsp;<span class="shijianchangdu">15:33</span>&nbsp;&nbsp;&nbsp;<span class="shiting" style="display:none">试听</span>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="lineDiv" style="height:1px;width: 100%;background-color: #F2F2F2;margin-top: 0.1rem;"></div>
+				</div>
+
+				<div class="kechenglist courseId83bc119dac584eda89046beca7069c83" style="margin-top: 0.32rem;" data-play="" data-title="第 5 课 | 当妈后最崩溃的事：哄娃睡，娃不睡" data-pets="06月19日" data-id="83bc119dac584eda89046beca7069c83" data-len="15:42" data-count="3232" data-img="http://onlinefile.sevenkids.cn/uploadm/201706/19/1497877599149B2r3.jpg" data-img90="http://onlinefile.sevenkids.cn/uploadm/201706/19/1497877609249PnWj.jpg">
+					<table>
+						<tbody>
+							<tr>
+								<td class="td1" valign="top"><img style="margin: 0 auto;" src="http://c.static.sevenkids.cn/res/img/topiccourseplay.jpeg?v=2.3.59"></td>
+								<td class="td2">
+									<p class="name" style="font-size: 0.36rem;">第 5 课 当妈后最崩溃的事：哄娃睡，娃不睡</p>
+									<div style="color: #BCBCBC;margin-top: 0.1rem;">
+										<span class="playEndTimeStr">06月19日</span>更新&nbsp;&nbsp;&nbsp;<span class="tingguo">3232</span>人听过&nbsp;&nbsp;&nbsp;<span class="shijianchangdu">15:42</span>&nbsp;&nbsp;&nbsp;<span class="shiting" style="display:none">试听</span>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="lineDiv" style="height:1px;width: 100%;background-color: #F2F2F2;margin-top: 0.1rem;"></div>
+				</div>
+
+				<div class="kechenglist courseId46feecdb976944cea027c3dd7110c895" style="margin-top: 0.32rem;" data-play="" data-title="第 6 课 | 最好的早教启蒙，应该是什么样" data-pets="06月19日" data-id="46feecdb976944cea027c3dd7110c895" data-len="15:54" data-count="3343" data-img="http://onlinefile.sevenkids.cn/uploadm/201706/19/14978776828535lXi.jpg" data-img90="http://onlinefile.sevenkids.cn/uploadm/201706/19/1497877691957bmC5.jpg">
+					<table>
+						<tbody>
+							<tr>
+								<td class="td1" valign="top"><img style="margin: 0 auto;" src="http://c.static.sevenkids.cn/res/img/topiccourseplay.jpeg?v=2.3.59"></td>
+								<td class="td2">
+									<p class="name" style="font-size: 0.36rem;">第 6 课 最好的早教启蒙，应该是什么样</p>
+									<div style="color: #BCBCBC;margin-top: 0.1rem;">
+										<span class="playEndTimeStr">06月19日</span>更新&nbsp;&nbsp;&nbsp;<span class="tingguo">3343</span>人听过&nbsp;&nbsp;&nbsp;<span class="shijianchangdu">15:54</span>&nbsp;&nbsp;&nbsp;<span class="shiting" style="display:none">试听</span>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="lineDiv" style="height:1px;width: 100%;background-color: #F2F2F2;margin-top: 0.1rem;"></div>
+				</div>
+
+			</div>
+			
+			<div class="share">
+				<div class="shareBox">
+					<div class="sharearrow"></div>
+					<p class="font15" style="margin-top: 40px;">独乐了不如众乐乐</p>
+					<p class="font15">点击屏幕右上角分享给好友！</p>
+				</div>
+			</div>
+		</div>
+		
+		
+
+	</body>
+
+</html>

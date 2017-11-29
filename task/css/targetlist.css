@@ -1,0 +1,107 @@
+.wrapPage {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0.2rem 0.4rem 0.4rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wrapPage .targetHeader {
+  width: 100%;
+  padding-bottom: 0.25rem;
+}
+.wrapPage .targetHeader .headerLeft {
+  width: 35%;
+  float: left;
+}
+.wrapPage .targetHeader .headerLeft .headerImg {
+  width: 100%;
+}
+.wrapPage .targetHeader .headerRight {
+  width: 60%;
+  float: left;
+  padding-top: 0.5rem;
+  color: #333;
+}
+.wrapPage .targetHeader .headerRight h3 {
+  font-size: 0.5rem;
+  font-weight: 600;
+}
+.wrapPage .targetHeader .headerRight p {
+  font-size: 0.3rem;
+  padding-top: 0.26666667rem;
+}
+.wrapPage .targetList {
+  width: 100%;
+  padding: 0.26666667rem 0.4rem;
+  -webkit-border-radius: 0.08rem;
+  -moz-border-radius: 0.08rem;
+  -o-border-radius: 0.08rem;
+  border-radius: 0.08rem;
+  background-size: 100%;
+  position: relative;
+}
+.wrapPage .targetList h4 {
+  font-size: 0.45rem;
+  font-weight: 600;
+  color: #FFCC33;
+}
+.wrapPage .targetList p {
+  font-size: 0.36rem;
+  line-height: 0.6rem;
+  color: #363636;
+  padding: 0.26666667rem 0 0 0.66666667rem;
+}
+.wrapPage .targetList .list1 {
+  background: url('../img/u2181.png') no-repeat left 0.3rem;
+  background-size: 6%;
+}
+.wrapPage .targetList .list2 {
+  background: url('../img/u2185.png') no-repeat left 0.3rem;
+  background-size: 6%;
+}
+.wrapPage .targetList .list3 {
+  background: url('../img/u2189.png') no-repeat left 0.3rem;
+  background-size: 6%;
+}
+.wrapPage .targetList .list4 {
+  background: url('../img/u2193.png') no-repeat left 0.3rem;
+  background-size: 6%;
+}
+.wrapPage .targetList .list5 {
+  background: url('../img/u2197.png') no-repeat left 0.3rem;
+  background-size: 6%;
+}
+.wrapPage .targetList .listImg {
+  display: block;
+  width: 15%;
+  margin: 0.4rem auto;
+}
+.wrapPage .planJoin {
+  width: 85%;
+  padding: 0.2rem 0;
+  margin: 0rem auto 0.4rem;
+  text-align: center;
+  -webkit-border-radius: 1.33333333rem;
+  -moz-border-radius: 1.33333333rem;
+  -ms-border-radius: 1.33333333rem;
+  border-radius: 1.33333333rem;
+  background-color: #FFCC33;
+}
+.wrapPage .planJoin .planLeft {
+  float: left;
+  width: 8%;
+  margin-left: 0.66666667rem;
+}
+.wrapPage .planJoin a {
+  color: #fff;
+  font-size: 0.4rem;
+}
+.wrapPage .planJoin .planRight {
+  float: right;
+  width: 8%;
+  margin-right: 0.66666667rem;
+}

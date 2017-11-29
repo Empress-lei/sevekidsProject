@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SpriteFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CssFileName="../images" ImageName="icon@2x" IsPhone="true" SpriteImgFileType="Png" xmlns="CssSprite">
+  <SpriteList>
+    <Sprite Path="7767CFA1-6FFE-485D-80FE-C3DB2392FB34@1x.png" LocationX="0" LocationY="0" />
+    <Sprite Path="FFB49EF0-AD23-4B8B-88FF-361F49DAD84C@1x.png" LocationX="0" LocationY="31" />
+    <Sprite Path="236A25E9-82A4-4928-ABA5-9D1E85C72145@1x.png" LocationX="0" LocationY="62" />
+    <Sprite Path="11DE8677-8125-4E40-A712-44387B872589@1x.png" LocationX="0" LocationY="93" />
+    <Sprite Path="AAB03359-C6E1-468A-8ABB-0ACF159208F7@1x.png" LocationX="0" LocationY="124" />
+    <Sprite Path="C564CA15-A5CA-471A-99B5-7B66F76133B1@1x.png" LocationX="0" LocationY="156" />
+    <Sprite Path="slidebtn@2x.png" LocationX="0" LocationY="189" />
+    <Sprite Path="6A6CA927-9612-42E4-9A70-22A06435DBA2@1x.png" LocationX="0" LocationY="216" />
+    <Sprite Path="76DFA38A-C0BE-480F-8125-D15BB7C3EAD0@1x.png" LocationX="0" LocationY="243" />
+    <Sprite Path="838A36FD-AE2E-4C30-8A2B-BA6D924A2DD1@1x.png" LocationX="0" LocationY="284" />
+    <Sprite Path="57494F40-2566-47CD-8BE8-FAA7782D4C8A@1x.png" LocationX="0" LocationY="325" />
+    <Sprite Path="BA61DB41-FA8A-46A3-854D-D9568D00561D@1x.png" LocationX="0" LocationY="366" />
+    <Sprite Path="988A8562-DC1C-4923-B13C-08C3DF49E039@1x.png" LocationX="0" LocationY="395" />
+    <Sprite Path="77760F4B-E81B-4870-B413-94DD79E8B7EF@1x.png" LocationX="0" LocationY="424" />
+    <Sprite Path="65CE5876-C51E-4DED-A2E0-3364A2CE5D07@1x.png" LocationX="0" LocationY="442" />
+    <Sprite Path="AD138860-8EDB-4384-BB68-585FE9CD60D4@1x.png" LocationX="0" LocationY="465" />
+    <Sprite Path="F86E611C-8A51-4704-88BE-E051656F37C5@1x.png" LocationX="0" LocationY="488" />
+    <Sprite Path="43AFD1D0-E184-4C34-87A0-E8B8B20E7941@1x.png" LocationX="0" LocationY="511" />
+    <Sprite Path="E04B8BCF-2E10-4F32-A9E4-6C3A72C57B65@1x.png" LocationX="0" LocationY="553" />
+    <Sprite Path="FFC61A6B-D5D5-4379-B50D-55CB4FD63119@1x.png" LocationX="0" LocationY="580" />
+    <Sprite Path="DC59251D-920E-4431-B583-33EA12D5BE94@1x.png" LocationX="0" LocationY="626" />
+    <Sprite Path="02AD3451-014A-4384-8509-0AEE690B306E@1x.png" LocationX="0" LocationY="657" />
+    <Sprite Path="0F67CECC-BDA0-47C0-B18C-B879EA29A337@1x.png" LocationX="0" LocationY="688" />
+    <Sprite Path="9ED7D9C9-CA3C-4B72-A87E-6BF558108839@1x.png" LocationX="0" LocationY="729" />
+    <Sprite Path="89D5F15C-1C24-488D-A1BB-97CC24EFE4D6@1x.png" LocationX="0" LocationY="755" />
+    <Sprite Path="B44E5E6C-BE38-473C-8F6B-4503845746D0@1x.png" LocationX="0" LocationY="782" />
+    <Sprite Path="C00F03EA-39A0-4BA7-AC40-3F71C99AA7E6@1x.png" LocationX="0" LocationY="809" />
+  </SpriteList>
+</SpriteFile>

@@ -1,0 +1,92 @@
+.wrapPage {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  overflow: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+.wrapPage h3 {
+  font-size: 0.5rem;
+  font-weight: 600;
+  color: #ff9933;
+  padding: 1.53rem 0 0.3rem 1.53rem;
+}
+.wrapPage .tear {
+  color: #BCBCBC;
+  font-size: 0.3rem;
+  padding-left: 1.53rem;
+}
+.wrapPage .progress {
+  width: 100%;
+  padding: 1.53rem 0 0.3rem 1.53rem;
+}
+.wrapPage .progress .currProgress1 {
+  width: 40%;
+  height: 0.26666667rem;
+  background-color: #d7d7d7;
+  margin: 0.3rem 0;
+  -webkit-border-radius: 1.33333333rem 1.33333333rem;
+  -moz-border-radius: 1.33333333rem 1.33333333rem;
+  -o-border-radius: 1.33333333rem 1.33333333rem;
+  border-radius: 1.33333333rem 1.33333333rem;
+}
+.wrapPage .progress .currProgress2 {
+  width: 50%;
+  height: 0.26666667rem;
+  background-color: #d7d7d7;
+  margin: 0.3rem 0;
+  -webkit-border-radius: 1.33333333rem 1.33333333rem;
+  -moz-border-radius: 1.33333333rem 1.33333333rem;
+  -o-border-radius: 1.33333333rem 1.33333333rem;
+  border-radius: 1.33333333rem 1.33333333rem;
+}
+.wrapPage .progress .currProgress3 {
+  width: 60%;
+  height: 0.26666667rem;
+  background-color: #d7d7d7;
+  margin: 0.3rem 0;
+  -webkit-border-radius: 1.33333333rem 1.33333333rem;
+  -moz-border-radius: 1.33333333rem 1.33333333rem;
+  -o-border-radius: 1.33333333rem 1.33333333rem;
+  border-radius: 1.33333333rem 1.33333333rem;
+}
+.wrapPage .progress .currColor {
+  background-color: #ff9933;
+}
+.wrapPage .newTaskImg {
+  width: 25%;
+  margin: 2rem auto 0;
+}
+.wrapPage .newTaskImg img {
+  width: 100%;
+}
+.wrapPage .time {
+  padding-top: 1rem;
+  text-align: center;
+  color: #BCBCBC;
+  font-size: 0.3rem;
+}
+.wrapPage .time span {
+  color: #0099FF;
+}
+.wrapPage .btnNav {
+  width: 100%;
+  height: 1rem;
+  max-width: 540px;
+  line-height: 1rem;
+  background-color: #fff;
+  border-top: 1px solid #d7d7d7;
+  position: fixed;
+  bottom: 0;
+}
+.wrapPage .btnNav li {
+  width: 25%;
+  float: left;
+  text-align: center;
+  font-size: 0.3rem;
+  color: #333;
+}

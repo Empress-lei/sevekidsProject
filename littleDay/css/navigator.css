@@ -1,0 +1,351 @@
+.navigator{
+	overflow:hidden;
+}
+.navigatorBox{
+	width:100%;
+	height:100%;
+	max-width:540px;
+	overflow:hidden;
+	position: fixed;
+	top:0;
+	z-index:101;
+	background-color:rgba(0,0,0,0.6);
+	background-size:100% 100%;
+}
+.stepOne{
+	background-image:url(../img/navigator/1.png);
+}
+.navSearch{
+	width:100%;
+	padding:0 0.2rem;
+	margin-top:0.2rem;
+}
+.navSearch .sl{
+	display:block;
+	overflow:auto;
+	height: 0.66666667rem;
+	line-height:0.66666667rem;
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius:50px;
+	text-align:center;
+	color:#fff;
+	font-size:12px;
+}
+.navSearch .sr{
+	float:right;
+    width: 1.18em;
+    height: 0.66666667rem;
+}
+.navigator .hotask{
+	position:relative;
+}
+.navigator .hotask:before{
+	content:'';
+	width:42px;
+	height:32px;
+	position:absolute;
+	left:24%;
+	top:32px;
+	z-index:999;
+	background:url(../img/hander.png);
+	background-size:42px 32px;
+	background-repeat:no-repeat;
+}
+.navigator .hotask:after{
+	content:'宝宝“胆小”戳这儿';
+	position:absolute;
+	left:40%;
+	top:40px;
+	z-index:999;
+	font-size:14px;
+	color:#fff;
+}
+.navigator .hotask a:first-child{
+	position:relative;
+	z-index:999;
+}
+.navigator .hotask a:first-child:before{
+	content:'';
+	width:100%;
+	height:95%;
+	position:absolute;
+	left:0;
+	top:5%;
+	z-index:-1;
+	background-color:#fff;
+	border-radius:4px;
+}
+.navFoot{
+	width:100%;
+	height:1.30666667rem;
+	max-width:540px;
+	position:fixed;
+	bottom:0;
+	z-index:9999;
+}
+.navFoot .cir,.navFoot .cir2{
+	display:block;
+	width:25%;
+	height:1.30666667rem;
+	position:relative;
+}
+.navFoot .cir2{
+	margin-left:25%;
+}
+.navFoot .cir p{
+	display:block;
+	width:1.30666667rem;
+	height:1.30666667rem;
+	line-height:0.80666667rem;
+	margin:0 auto;
+	position:relative;
+	left:4px;
+	text-align:center;
+	font-size:12px;
+	background-color:#fff;
+	border-radius:100%;
+	color:#e51812;
+}
+.navFoot .cir:before{
+	content:'';
+	width:32px;
+	height:32px;
+	position:absolute;
+	right:15px;
+	top:-40px;
+	-webkit-transform:rotate(-60deg);
+	background-image:url(../img/direct.png);
+	background-repeat:no-repeat;
+	background-size:32px 32px;
+}
+.navFoot .cir:after{
+	content:'育儿常识小百科';
+	width:100px;
+	font-size:14px;
+	color:#fff;
+	position:absolute;
+	top:-66px;
+	right:-35px;
+}
+.navFoot .cir2:before{
+	content:'';
+	width:32px;
+	height:32px;
+	position:absolute;
+	right:-38px;
+	top:10px;
+	-webkit-transform:rotate(0deg);
+	background-image:url(../img/direct.png);
+	background-repeat:no-repeat;
+	background-size:32px 32px;
+}
+.navFoot .cir2:after{
+	content:'育儿微课';
+	width:100px;
+	font-size:14px;
+	color:#fff;
+	position:absolute;
+	top:16px;
+	right:-155px;
+}
+.navFoot .cir p:before{
+    content: '';
+	display: block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin:0 auto;
+ 	top:5px;
+    background-image: url(../img/common/footon@2x.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-size: 77px 20px;
+    background-position: 0 0;
+}
+.nextStepBtn,
+.knowItBtn{
+	width:100%;
+	max-width:540px;
+	position:fixed;
+	z-index:9999;
+	bottom:1.60666667rem;
+}
+.nextStep{
+	float:right;
+	margin-right:15px;
+	padding:8px 20px;
+	background-color:#ff6699;
+	border:1px dashed #fff;
+	border-radius:8px;
+	text-align:center;
+	font-size:12px;
+	color:#fff;
+}
+.navSearchWord{
+	width:100%;
+	margin-top:40px;
+	text-align:center;
+	font-size:14px;
+	color:#fff;
+}
+.navSearchWord:before{
+	content:'';
+	display:block;
+	width:42px;
+	height:32px;
+	margin:0 auto;
+	margin-bottom:10px;
+    background: url(../img/hander.png);
+    background-size: 42px 32px;
+    background-repeat: no-repeat;
+    -webkit-transform:rotate(90deg);
+}
+.navFoot .cir2 p{
+	display:block;
+	width:1.30666667rem;
+	height:1.30666667rem;
+	line-height:0.80666667rem;
+	margin:0 auto;
+	position:relative;
+	left:12px;
+	text-align:center;
+	font-size:12px;
+	background-color:#fff;
+	border-radius:100%;
+	color:#e51812;
+}
+.navFoot .cir2 p:before{
+    content: '';
+	display: block;
+    width: 16px;
+    height: 20px;
+    position: relative;
+    margin:0 auto;
+ 	top:5px;
+    background-image: url(../img/common/footon@2x.png);
+    background-repeat: no-repeat;
+    background-size: 77px 20px;
+    background-position: -20px 0;
+}
+.navigator2:after{
+	content:'每周四 20:00都有新课开播哦';
+	width:100%;
+	position:absolute;
+	left:0;
+	top:100px;
+	z-index:99999;
+	text-align:center;
+	font-size:14px;
+	color:#fff;
+}
+.navigator .miaoBanner:before{
+	content:'';
+	width:96%;
+    height:2.33333333rem; 
+	position:absolute;
+	left:2%;
+	bottom:5px;
+	z-index:9999;
+	border:1px dashed #fff;
+	text-align:center;
+	font-size:14px;
+	color:#fff;
+}
+.navigator .tabTit .active:after{
+	display:none;
+}
+.navigator .tabTit{
+	position:relative;
+	padding:0 7px;
+	background:none;
+	z-index:9999;
+}
+.navigator .tabTit a{
+	background-color:#fff;
+}
+.navigator .tabTit:before{
+	content:"";
+	width:100%;
+	height:32px;
+	position:absolute;
+	left:0;
+	top:56px;
+    background: url(../img/hander.png);
+    background-size: 42px 32px;
+    background-repeat: no-repeat;
+    background-position:center center;
+    -webkit-transform: rotate(90deg);
+}
+.navigator .tabTit:after{
+	content:"您可以根据分类筛选感兴趣的课程进行学习";
+	width:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:9999;
+	padding-top:100px;
+	background-color:rgba(0,0,0,0);
+	text-align:center;
+	font-size:14px;
+	color:#fff;
+}
+.knowItBtn{
+	bottom:110px;
+}
+.knowIt{
+	float:right;
+	margin-right:15px;
+	padding:8px 20px;
+	background-color:#ff9966;
+	border:1px dashed #fff;
+	border-radius:8px;
+	text-align:center;
+	font-size:12px;
+	color:#fff;
+}
+.navDown{
+	width:100%;
+	padding-bottom:20px;
+	position:fixed;
+	left:0;
+	bottom:60px;
+	z-index:999;
+	background-image:url(../img/common/arrow2@2x.png);
+	background-repeat:no-repeat;
+	background-position:center bottom;
+	background-size:16px 10px;
+	text-align:center;
+	font-size:14px;
+	color:#fff;
+}
+.navigator .section:nth-child(4) .sectionTit{
+	position:relative;
+	z-index:9999;
+	color:#333;
+}
+.navigator .section:nth-child(4) .sectionTit:before{
+	content:'';
+	width:70px;
+	height:30px;
+	position:absolute;
+	left:-10px;
+	top:-8px;
+	z-index:-1;
+	background-color:#fff;
+}
+.navigator .section:nth-child(4) .sectionTit:after{
+    content: '大家每日关心最多的问题都在这儿哦';
+    height:32px;
+    line-height:32px;
+    position: absolute;
+    left: 20%;
+    top: -10px;
+    padding-left:50px;
+    background: url(../img/hander.png);
+    background-size: 42px 32px;
+    background-repeat: no-repeat;
+    background-position:left center;
+    z-index: 999;
+    font-size: 14px;
+    color: #fff;
+}

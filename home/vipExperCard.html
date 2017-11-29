@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="keywords" content="喵姐,喵姐早教说,0到6岁早期教育,家庭教育,家长教育,父母课堂,育儿知识,儿童教育,母婴育儿,">
+    <meta name="description" content="喵姐早教说是喵姐高寿岩创办的为家庭教育提供专业靠谱的0到6岁早期教育、育儿知识的平台。">
+    <title>喵姐早教说</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+    	$(function() {
+	        var newStyle = $("<style> @font-face {font-family: 'myFont';  src: url('./font/HYQiHei-50S.ttf');} </style>");
+			var newStyle1 = $("<style> @font-face {font-family: 'cartoonFont';  src: url('./font/cartoon.TTF');} </style>");
+	        $('body').append(newStyle);
+			$('.promptShare').append(newStyle1);
+	        var font = "src: url('./font/HYQiHei-50S.ttf')";
+			var font1 = "src: url('./font/cartoon.TTF')";
+	        if(font === true) {
+	            $('body').css = newStyle;
+	        }else {
+	            $('body').css = "微软雅黑", "PingFangSC-Light";
+	        }
+			if(font1 === true) {
+				$('.promptShare').css = newStyle1;
+			} else {
+				$('.promptShare').css = "微软雅黑", "PingFangSC-Light";
+			}
+			//判断小惊喜的显示出现
+			var a = document.getElementById("proptShow").offsetTop;
+			if (a >= $(window).scrollTop() && a < ($(window).scrollTop()+$(window).height())) {
+				$(".promptFixed").hide();
+			}else{
+				$(".promptFixed").show();
+			}
+			$(window).scroll(function () {
+				a = document.getElementById("proptShow").offsetTop;
+				if (a >= $(window).scrollTop() && a < ($(window).scrollTop()+$(window).height())) {
+					$(".promptFixed").hide();
+				}else{
+					$(".promptFixed").show();
+				}
+			});
+//			var pageHeight = $('body').height();
+//			var btnHeight = $(".vipButton").offset().top;
+//			console.log(pageHeight);
+//			console.log(btnHeight);
+//			if(btnHeight>pageHeight) {
+//				$('.promptFixed').show();
+//				$('.promptDiv').hide();
+//			}else {
+//				$('.promptFixed').hide();
+//				$('.promptDiv').show();
+//			}
+//			$(window).scroll(function(event) {
+//				if ($(window).scrollTop()>100) {
+//					$(".promptFixed").hide();
+//					$('.promptDiv').show();
+//				}else {
+//					$(".promptFixed").show();
+//					$('.promptDiv').hide();
+//				}
+//			});
+//			$('.promptClick').click(function() {
+//				$('.promptShare').fadeIn();
+//			});
+//			$('.promptShare').click(function() {
+//				$('.promptShare').fadeOut();
+//			});
+	    });
+    </script>
+</head>
+<body style="font-family: 'myFont';">
+	<div class="promptShare">
+	<img src="./img/vip/arrowWhite.png" alt="指示箭头"  class="arrowWhiteImg">
+	<p class="promptP">点击这里，邀(fen)请(xiang)好友免费听<br /><br />还有现金红包等你拿，等什么？开始吧！</p>
+	</div>
+    <div class="wrapPage">
+    	<!--1元体验卡-->
+    	<div class="vipExperCard">
+    		<img src="./img/vip/bannerVip.jpg" alt=""  class="bannerVipImg">
+    		<div class="receiveMess clearfix">
+    			<div class="messLeft clearfix">
+    				<img src="./img/service.png" alt=""  class="messPic fl">
+    				<p class="messName fl">O(∩_∩)O~~ 星星 ☆</p>
+    			</div>
+    			<p class="messDa">2017.10.03到期</p>
+    		</div>
+    		<div class="receiveMess clearfix" style="display: none">
+    			<div class="messLeft clearfix">
+    				<img src="./img/service.png" alt=""  class="messPic fl">
+    				<p class="messName fl">O(∩_∩)O~~ 星星 ☆</p>
+    			</div>
+    			<p class="messDa">已到期</p>
+    		</div>
+    		<div class="vipCardCon">
+    			<p class="vipCardTitle">体验大礼包</p>
+    			<p class="vipCardTitle" style="display: none">福利专享</p>
+    			<!--100元体验卡-->
+    			<ul class="cashVoucher">
+    				<li>
+    					<div class="voucherTop">
+    						<p class="moneyNum fl">¥<span>100</span></p>
+    						<div class="coupon clearfix">
+				    			<p class="couponTop"><span class="fl">现金券</span>喵姐早教说平台专享</p>
+				    			<p class="couponBot">2017.10.01 - 2017.10.03</p>
+				    		</div>
+    					</div>
+    					<p class="clickReceive">点击领取</p>
+						<div class="circularLeft"></div>
+						<div class="circularRight"></div>
+    				</li>
+					<li>
+						<div class="voucherTop">
+							<p class="moneyNum1 fl">辣妈成长<br>手册</p>
+							<div class="coupon clearfix">
+								<p class="couponTop"><span class="fl">礼品券</span>辣妈成长手册</p>
+								<p class="couponBot">2017.10.01 - 2017.10.03</p>
+							</div>
+						</div>
+						<p class="clickReceive">点击领取</p>
+						<div class="circularLeft"></div>
+						<div class="circularRight"></div>
+					</li>
+    			</ul>
+    			<ul class="recordText">
+    				<li><img src="./img/vip/u881.png" alt=""  class="leftImg"></li>
+					<li class="centerText">优惠券使用记录</li>
+					<li><img src="./img/vip/u881.png" alt=""  class="rightImg"></li>
+				</ul>
+    			<ul class="cardList">
+    				<!--未领取状态-->
+    				<li class="clearfix">
+    					<p class="moneyNum fl">¥<span>26.9</span></p>
+			    		<div class="circularTop"></div>
+			    		<div class="circularBottom"></div>
+			    		<div class="coupon clearfix">
+			    			<p class="couponTop"><span class="fl">兑换券</span>听课专享</p>
+			    			<p class="couponBot">有效期 3 天（自购买成功日起）</p>
+			    		</div>
+			    		<img src="./img/vip/Unclaimed.png" alt="" class="unclaimed">
+    				</li>
+    				<!--已领取，未使用-->
+    				<li>
+    					<p class="moneyNum fl">¥<span>29</span></p>
+			    		<div class="circularTop"></div>
+			    		<div class="circularBottom"></div>
+			    		<div class="coupon clearfix">
+			    			<p class="couponTop"><span class="fl">兑换券</span>咨询专享</p>
+			    			<p class="couponBot">2017.10.01 - 2017.10.03</p>
+			    		</div>
+			    		<div class="couponReceive">立即<br />使用</div>
+    				</li>
+    				<!--已使用-->
+    				<li>
+    					<p class="moneyNum fl">¥<span>99</span></p>
+			    		<div class="circularTop"></div>
+			    		<div class="circularBottom"></div>
+			    		<div class="coupon clearfix">
+			    			<p class="couponTop"><span class="fl">兑换券</span>主题课包专享</p>
+			    			<p class="couponBot">2017.10.01 - 2017.10.03</p>
+			    		</div>
+			    		<div class="couponUse">已使用</div>
+    				</li>
+    				<!--已过期-->
+    				<li style="display: none">
+    					<p class="moneyNum fl">¥<span>26.9</span></p>
+			    		<div class="circularTop"></div>
+			    		<div class="circularBottom"></div>
+			    		<div class="coupon clearfix">
+			    			<p class="couponTop"><span class="fl">兑换券</span>听课专享</p>
+			    			<p class="couponBot">2017.10.01 - 2017.10.03</p>
+			    		</div>
+			    		<div class="couponUse">已过期</div>
+    				</li>
+    			</ul>
+    			<div class="prompt" style="display: none">
+					<p class="nowBuy">现在购买，VIP会员特权可免费畅享3天</p>
+					<p class="promptText">（传播好消息给好友，体验时长可再加4天）</p>
+				</div>
+    			<div class="clearfix promptDiv">
+					<img src="./img/vip/smallbell.png" alt="" class="redBox fl">
+					<p class="promptClick fl" id="proptShow">点我免费增加 4 天体验期</p>
+				</div>
+				<div class="promptFixed" style="display: none">
+					<img src="./img/vip/smallbell.png" alt="" class="redBox">
+					<p class="promptClick">小惊喜</p>
+				</div>
+    			<a href="javascript:void(0)" class="receiveButton" style="display: none">领取体验大礼包  -¥1</a>
+    			<a href="javascript:void(0)" class="vipButton">购买VIP会员卡 - ¥499</a>
+    		</div>
+    	</div>
+    </div>
+</body>
+</html>
+
+
+      

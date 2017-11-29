@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="keywords" content="喵姐,喵姐早教说,0到6岁早期教育,家庭教育,家长教育,父母课堂,育儿知识,儿童教育,母婴育儿,">
+    <meta name="description" content="喵姐早教说是喵姐高寿岩创办的为家庭教育提供专业靠谱的0到6岁早期教育、育儿知识的平台。">
+    <title>喵姐早教说</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="./js/audio2.js"></script>
+    <script>
+    	$(function() {
+	        var newStyle = $("<style> @font-face {font-family: 'myFont';  src: url('./font/HYQiHei-45S.ttf');} </style>");
+	        $('body').append(newStyle);
+	        var font = "src: url('./font/HYQiHei-45S.ttf')";
+	        if(font === true) {
+	            $('body').css = newStyle;
+	        }else {
+	            $('body').css = "微软雅黑", "PingFangSC-Light";
+	        }
+	    });
+    </script>
+</head>
+<body  style="font-family: 'myFont';">
+    <div class="wrapPage">
+    	<!--首页小白用户（普通会员）-->
+    	<div class="homePage">
+    		<!--顶部的banner-->
+    		<div class="banner">
+    			<img src="./img/banner.jpg" alt="" / class="bannerImg">
+    			<div class="userInfo"> 
+    				<h2>丫丫，下午好</h2>
+    				<span>今天1岁6个月5天了哦~</span>
+    			</div>
+    			<div class="search">
+    				<img src="./img/search.png" alt="" />
+    				<p class="searchText">搜索</p>
+    			</div>
+    		</div>
+    		<!--每日一喵-->
+    		<div class="section">
+    			<h3 class="sectionTitle">每日一喵</h3>
+    			<div class="sectionText clearfix">
+    				<div class="textLeft fl">
+    					<p class="leftTop">宝宝被好朋友打怎么办？</p>
+    					<p class="leftBot">适合3 - 6岁 |  播放 13662 次  | 时长0分3秒</p>
+    				</div>
+    				<!--<div class="audioCont topaudio" style="display: none">
+						<audio preload="auto" id="audio" src=""></audio>
+				        <span class="playBtn play"></span>
+				        <div class="topaudioBox">
+				            <span class="txt">00:00</span>
+				            <div class="audioLine">
+				            	<span class="lineaft"></span>
+				                <div class="active"></div>
+				                <a href="javascript:void(0)" class="circle" id="drag"></a>
+				            </div>
+				            <span class="txt2" data-sec="">00分03秒</span>
+			            </div>
+			        </div>-->
+    				<div class="textRight fr">
+    					<img src="./img/dayImg.png" alt="" / class="rightImg">
+						<div class="audioDiv clearfix">
+							<div class="playBtn ui-play play" id="playBtn1"></div>
+							<div class="section" style="display: none;">
+								<div class="audioCont topaudio" id="audioCont1">
+									<!--音频标签-->
+									<audio preload="auto" class="audio" id="audio1" src="./js/audio.mp3"></audio>
+									<!--上面的进度条，时间-->
+									<div class="topaudioBox">
+										<div class="audioLine" id="audioLine1">
+											<!--进度条上的小圆点-->
+											<span class="lineaft"></span>
+											<div class="active"></div>
+											<!--进度条上的小圆点-->
+											<a href="javascript:void(0);" class="circle" id="drag1"></a>
+										</div>
+									</div>
+								</div>
+								<div class="timeNum" id="timeNum1">
+									<!--开始时间-->
+									<span class="txt fl">00:00</span>
+									<!--结束时间-->
+									<span class="txt2 fr" data-sec="0">08:19</span>
+								</div>
+							</div>
+						</div>
+    				</div>
+    			</div>
+    		</div>
+    		<!--广告位-->
+    		<div class="adPosition" style="display: none;">
+    			<img src="./img/ad.png" alt="" / class="positionImg">
+    			<p class="positionText">内容互推广告位</p>
+    		</div>
+    		<!--最新咨询-->
+    		<div class="section">
+    			<h3 class="sectionTitle sectionTitle1">最新咨询</h3>
+    			<div class="consultation">
+    				<p class="askname">李 ***</p>
+    				<p class="askDate">咨询于2017-08-31 |  男宝宝  2岁8个月12天</p>
+    				<p class="askContent">
+    					我宝宝平时对他没有很严厉，
+    					但是他就是不喜欢我，有时候在路上说他几句，
+    					她就抱着陌生人的大腿，或者赖在人家店里不走了，就是我走了很远了，
+    					她就抱着陌生人的大腿，或者赖在人家店里不走了，就是我走了很远了
+    				</p>
+    				<ul class="starRegion clearfix">
+    					<li>★</li>
+    					<li>★</li>
+    					<li>★</li>
+    					<li>★</li>
+    					<li>★</li>
+    				</ul>
+    				<ul class="lookMore">
+    					<li class="moreLeft">查看更多最新咨询</li>
+    					<li class="moreRight">></li>
+    				</ul>
+    			</div>
+    		</div>
+    		<!--福利专区-->
+    		<div class="welfareArea">
+    			<div class="areaTitle clearfix">
+    				<h3 class="areaLeft fl">福利专区</h3>
+    			</div>
+    			<div class="vipCard">
+    				<img src="./img/vip.jpg" alt="" / class="vipImg">
+    				<ul class="vipText clearfix">
+    					<li class="vipLeft fl">喵姐早教说VIP体验卡</li>
+    					<li class="vipRight fr">立即购买 ￥1</li>
+    				</ul>
+    			</div>
+    		</div>
+    		<!--限时免费-->
+    		<div class="welfareArea">
+    			<div class="areaTitle areaTitle1">
+    				<h3 class="areaLeft">限时免费</h3>
+    			</div>
+    			<div class="freeText clearfix">
+    				<img src="./img/play.png" alt="" / class="freeImg fl">
+    				<div class="freeRight fr">
+    					<h3>这些给力绘本，让宝宝远离零食这些让宝宝远离零食这些</h3>
+    					<p>摘自：8分钟经典育儿  |  绘本鼎力推荐  | 时长9分12秒</p>
+    				</div>
+    			</div>
+    			<div class="freeText clearfix">
+    				<img src="./img/play.png" alt="" / class="freeImg fl">
+    				<div class="freeRight fr">
+    					<h3>爸妈用对方法，让孩子95%的胆小害怕</h3>
+    					<p>摘自：喵姐微课  |  时长31分36秒</p>
+    				</div>
+    			</div>
+    		</div>
+    		<!--私家育儿服务-->
+    		<div class="service">
+    			<h3 class="serviceTitle">私家育儿服务</h3>
+    			<div class="serviceCon">
+    				<h4>8分钟经典育儿</h4>
+    				<ul class="serviceText clearfix">
+    					<li class="serviceLeft fl">
+    						<h3>父母不知和孩子聊什么，是因为不会享受和孩子对话的快乐</h3>
+    						<p class="serviceBot">周一至周五每天8分钟，帮你解决一个育儿难题</p>
+    					</li>
+    					<img src="./img/service.png" alt="" / class="serviceImg fr">
+    				</ul>
+    				<a href="javascript:void(0);" class="lookWhole">戳此查看全部</a>
+    			</div>
+    			<div class="serviceCon serviceCon1">
+    				<h4>喵姐讲堂</h4>
+    				<ul class="serviceText clearfix">
+    					<img src="./img/speak2.png" alt="" / class="speakImg fl">
+    					<li class="speakLeft fr">
+    						<h3>搞定熊孩子 - 全面带你解读哭泣的孩子</h3>
+    						<p class="serviceBot">讲师：喵姐 - 高寿岩</p>
+    						<p class="serviceBot">时间：4月13日（周四  20：00）</p>
+    					</li>
+    					
+    				</ul>
+    				<ul class="serviceText clearfix">
+    					<img src="./img/speak1.png" alt="" / class="speakImg fl">
+    					<li class="speakLeft fr">
+    						<h3>听完这节课，宝宝吃饭不愁人</h3>
+    						<p class="serviceBot">讲师：喵姐 - 高寿岩</p>
+    						<p class="serviceBot">时间：4月13日（周四  20：00）</p>
+    					</li>
+    				</ul>
+    				<a href="javascript:void(0);" class="lookWhole">戳此查看全部</a>
+    			</div>
+    		</div>
+    		<!--宝贝成长基金-->
+    		<div class="activity">
+    			<div class="activityTitle">
+    				<h3 class="babyTitle">宝贝成长基金</h3>
+    				<p class="project">共12项（您暂无参与记录）</p>
+    			</div>
+    			<img src="./img/cry.jpeg" alt="" / class="activityImg">
+    			<div class="activityAdd clearfix">
+    				<h3 class="babyTitle fl">添加新课程</h3>
+    				<img src="./img/add.png" alt="" / class="addImg fr">
+    			</div>
+    			<div class="activityList">
+    				<h3 class="listTitle">好习惯养成 · 好好睡觉</h3>
+    				<p class="listContent">4天规矩训练，帮宝宝把守规矩变成过一种自觉</p>
+    			</div>
+    			<div class="activityList">
+    				<h3 class="listTitle">好习惯养成 · 守规矩</h3>
+    				<p class="listContent">14天规矩训练，帮宝宝把守规矩变成过一种自觉。</p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <script>
+    	$(function(){
+    		for(var i = 1; i < 2; i++) {
+				audioPlayer(i);
+			}
+    	})	
+    </script>
+</body>
+</html>
+
+
+      

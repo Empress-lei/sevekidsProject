@@ -1,0 +1,302 @@
+//编辑页选择信息区域
+.editLayer {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    .identity {
+        width: 100%;
+        //标题
+        .identityTitle {
+            padding: 30/37.5rem 20/37.5rem 20/37.5rem;
+            font-size: 0.4rem;
+            color: #333;
+        }
+        //家长选择身份
+        .identityEdit {
+            width: 90%;
+            height: 1.3rem;
+            margin: 0 auto;
+            margin-bottom: 15/37.5rem;
+            background-color: #F2F2F2;
+            .babyMum {
+                width: 70%;
+                font-size: 0.36rem;
+                line-height: 1.3rem;
+                margin-left: 10/37.5rem;    
+                background: url(../img/edit/bm.png) no-repeat left center;
+                background-size: 0.8rem;
+                padding-left: 0.9rem;
+            }
+            .preMum {
+                width: 70%;
+                font-size: 0.36babyGril rem;
+                line-height: 1.3rem;
+                margin-left: 10/37.5rem;    
+                background: url(../img/edit/yun.png) no-repeat left center;
+                background-size: 0.8rem;
+                padding-left: 0.9rem;
+            }
+             //带有透明度橘黄色的对勾按钮
+            .editRightTrans {
+                width: 25%;
+                height: 100%;
+                position: relative;
+                background-color: rgba(255, 153, 51, 0.3);
+                img {
+                    display: block;
+                    width: 0.8rem;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%,-50%);
+                    -moz-transform: translate(-50%,-50%);
+                    -ms-transform: translate(-50%,-50%);
+                    -o-transform: translate(-50%,-50%);
+                    transform: translate(-50%,-50%);
+                }
+            }
+            //纯橘黄色的对勾按钮
+            .editRightOrange {
+                width: 25%;
+                height: 100%;
+                position: relative;
+                background-color: rgba(255, 153, 51, 1);
+                img {
+                    display: block;
+                    width: 0.8rem;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%,-50%);
+                    -moz-transform: translate(-50%,-50%);
+                    -ms-transform: translate(-50%,-50%);
+                    -o-transform: translate(-50%,-50%);
+                    transform: translate(-50%,-50%);
+                }
+            }
+        }
+        //底部提示话语
+        .needMess {
+            color: #949494;
+            font-size: 0.36rem;
+            padding-top: 2rem;
+            text-align: center;
+        }
+    }
+    //选择宝宝信息的弹层页面
+    .messEdit {
+        display: none;
+        width: 100%;
+//      height: 14rem;
+        overflow: auto;
+        max-width: 540px;
+//      position: fixed;
+//      bottom: 0;
+        background-color: #fff;
+        //宝宝出生年月日
+        .messDate {
+            width: 100%;
+            border-top: 0.1rem solid #efeff4;
+            .babyDate {
+                padding: 20/37.5rem 20/37.5rem 0;
+                font-size: 0.4rem;
+            }
+            //选择时间的区域
+            .scrollDate {
+                width: 100%;
+                height: 100%;
+                .scrollList{
+                    width: 100%;
+                    height: 3.6rem;
+                    margin: 0.4rem auto;
+                    background-color: #fff;
+                    //日期布局
+                    .scrollTime {
+                        width: 80%;
+                        margin: 0 auto;
+                        height: 3.45rem;
+                        line-height: 4rem;
+                        text-align: center;
+                        overflow: hidden;
+                        z-index: 99;
+                        font-size: 0.44rem;
+                        color: #949494;
+                        position: relative;
+                        .current {
+                            color: #ff9963;
+                        }
+                        .swiper-slide-next {
+                            color: #ff9933;
+                            font-size: 0.48rem !important;
+                            font-weight: bold;
+                        }
+                        .scrollYear {
+                            float: left;
+                            width: 30%;
+                            margin-right: 5%;
+                            .swiper-slide {
+                                line-height: 43px;
+                                font-size: 0.38rem;
+                            } 
+                        }
+                        .scrollMonth {
+                            float: left;
+                            width: 30%;  
+                            margin-right: 5%;
+                            .swiper-slide {
+                                line-height: 43px;
+                                font-size: 0.38rem;
+                            }  
+                        }
+                        .scrollDay {
+                            float: left;
+                            width: 30%;
+                            .swiper-slide {
+                                line-height: 43px;
+                                font-size: 0.38rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //宝宝性别
+        .messSex {
+            width: 100%;
+            border: 0.1rem solid #efeff4;
+            border-left: none;
+            border-right: none;
+            .babySex {
+                padding: 20/37.5rem 20/37.5rem;
+                font-size: 0.4rem;
+            }
+            //宝宝性别
+            .sexEdit {
+                width: 90%;
+                height: 1.3rem;
+                margin: 0 auto;
+                margin-bottom: 0.4rem;
+                background-color: #F2F2F2;
+                //女孩的样式
+                .babyGril {
+                    width: 70%;
+                    font-size: 0.36rem;
+                    line-height: 1.3rem;
+                    margin-left: 0.26666667rem;
+                    background: url(../img/edit/girl.png) no-repeat left center;
+                    background-size: 0.7rem;
+                    padding-left: 0.8rem;
+                }
+                //男孩的样式
+                .babyBoy {
+                    width: 70%;
+                    font-size: 0.36rem;
+                    line-height: 1.3rem;
+                    margin-left: 0.26666667rem;
+                    background: url(../img/edit/boy.png) no-repeat left center;
+                    background-size: 0.6rem;
+                    padding-left: 0.7rem;
+                }
+                //带有透明度橘黄色的对勾按钮
+                .editRightTrans {
+                    width: 25%;
+                    height: 100%;
+                    position: relative;
+                    background-color: rgba(255, 153, 51, 0.3);
+                    img {
+                        display: block;
+                        width: 0.8rem;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        -webkit-transform: translate(-50%, -50%);
+                        -moz-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        -o-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                //纯橘黄色的对勾按钮
+                .editRightOrange {
+                    width: 25%;
+                    height: 100%;
+                    position: relative;
+                    background-color: rgba(255, 153, 51, 1);
+                    img {
+                        display: block;
+                        width: 0.8rem;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        -webkit-transform: translate(-50%, -50%);
+                        -moz-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        -o-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }  
+        }
+        //宝宝名称
+        .messName {
+            width: 90%;
+            margin: 0 auto 0.3rem;
+            line-height: 1rem;
+            padding-top: 0.3rem;
+            border-bottom: 1px solid #efeff4;
+            position: relative;
+            color: #333;
+            .nickname {
+                width: 20%;
+                font-size: 0.36rem;
+            }
+            .babyName {
+                width: 80%;
+                line-height: 1rem;
+                font-size: 0.36rem;
+            }
+        }
+        //按钮
+        .babyBtn {
+            width: 100%;
+            padding: 10/37.5rem 20/37.5rem 20/37.5rem;
+            .leftGrayBtn {
+                width: 48%;
+                text-align: center;
+                color: #BCBCBC;
+                font-size: 0.36rem;
+                padding: 0.2rem 0;
+                border: 1px solid rgba(201, 201, 201, 1);
+                -webkit-border-radius: 50/37.5rem;
+                -moz-border-radius: 50/37.5rem;
+                -ms-border-radius: 50/37.5rem;
+                -o-border-radius: 50/37.5rem;
+                border-radius: 50/37.5rem;
+            }
+            .rightOrangeBtn {
+                width: 48%;
+                text-align: center;
+                color: #fff;
+                font-size: 0.36rem;
+                padding: 0.2rem 0;
+                background-color: rgba(255, 153, 51, 1);
+                -webkit-border-radius: 50/37.5rem;
+                -moz-border-radius: 50/37.5rem;
+                -ms-border-radius: 50/37.5rem;
+                -o-border-radius: 50/37.5rem;
+                border-radius: 50/37.5rem;
+            }
+        }
+        //底部的温馨提示
+        .btnPrompt {
+            text-align: center;
+            font-size: 0.32rem;
+            color: #AEAEAE;
+            padding: 20/37.5rem 0;
+        }
+    }
+}

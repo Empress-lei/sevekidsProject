@@ -1,0 +1,128 @@
+body {
+  background-color: #F2F2F2;
+}
+.wrapPage {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 0.66666667rem;
+  -webkit-overflow-scrolling: touch;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wrapPage .entityCardTit {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #FF9900;
+}
+.wrapPage .entityCardAtt {
+  text-align: center;
+  color: #A1A1A1;
+  font-size: 0.36rem;
+  padding: 0.53333333rem 0 0.8rem;
+}
+.wrapPage .cardContent {
+  width: 100%;
+  margin: 0 auto 0.4rem;
+  background-color: #FFFFFF;
+  -webkit-border-radius: 0.13333333rem;
+  -moz-border-radius: 0.13333333rem;
+  -o-border-radius: 0.13333333rem;
+  border-radius: 0.13333333rem;
+}
+.wrapPage .cardContent .conTitle {
+  font-size: 0.36rem;
+  color: #333;
+  padding: 0.26666667rem 0.4rem;
+  border-bottom: 0.02666667rem dashed #f2f2f2;
+}
+.wrapPage .cardContent .circular {
+  width: 100%;
+  position: relative;
+}
+.wrapPage .cardContent .circular .circularLeft {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  position: absolute;
+  top: -0.25rem;
+  left: -0.25rem;
+}
+.wrapPage .cardContent .circular .circularRight {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  position: absolute;
+  top: -0.25rem;
+  right: -0.25rem;
+}
+.wrapPage .cardContent .costMon {
+  position: relative;
+  padding: 0.5rem 0.4rem 0.18666667rem;
+}
+.wrapPage .cardContent .costMon .costCur {
+  color: #333333;
+  font-size: 0.4rem;
+  position: absolute;
+  bottom: 0.4rem;
+}
+.wrapPage .cardContent .costMon .costNum {
+  color: #333;
+  font-size: 1rem;
+  padding-left: 0.4rem;
+}
+.wrapPage .cardContent .costMon .costOrig {
+  font-size: 0.38rem;
+  color: #333;
+}
+.wrapPage .cardContent .costMon .costOrig .costVip {
+  color: #0099ff;
+}
+.wrapPage .cardContent .effective {
+  font-size: 0.3rem;
+  color: #BCBCBC;
+  padding: 0 0.4rem 0.4rem;
+}
+.wrapPage .cardContent .lineOrange {
+  width: 100%;
+  height: 0.22rem;
+  background-color: #ff9900;
+  -webkit-border-radius: 0 0 0.13333333rem 0.13333333rem;
+  -moz-border-radius: 0 0 0.13333333rem 0.13333333rem;
+  -o-border-radius: 0 0 0.13333333rem 0.13333333rem;
+  border-radius: 0 0 0.13333333rem 0.13333333rem;
+  -webkit-box-shadow: 0.13333333rem 0.13333333rem 0.13333333rem rgba(0, 0, 0, 0.34901961);
+  -moz-box-shadow: 0.13333333rem 0.13333333rem 0.13333333rem rgba(0, 0, 0, 0.34901961);
+  -o-box-shadow: 0.13333333rem 0.13333333rem 0.13333333rem rgba(0, 0, 0, 0.34901961);
+  box-shadow: 0.13333333rem 0.13333333rem 0.13333333rem rgba(0, 0, 0, 0.34901961);
+}
+.wrapPage .cardRule {
+  font-size: 0.38rem;
+  color: #333;
+  font-weight: bold;
+  padding-bottom: 0.4rem;
+}
+.wrapPage .ruleText {
+  font-size: 0.32rem;
+  line-height: 0.7rem;
+}
+.wrapPage .shadoweBtn {
+  width: 60%;
+  display: block;
+  padding: 0.21333333rem 0;
+  margin: 1.5rem auto 0.4rem;
+  text-align: center;
+  -webkit-border-radius: 1.33333333rem;
+  -moz-border-radius: 1.33333333rem;
+  -ms-border-radius: 1.33333333rem;
+  border-radius: 1.33333333rem;
+  background-color: #ff9900;
+  border: 0.02666667rem solid #ff9900;
+  color: #fff;
+  font-size: 0.4rem;
+}

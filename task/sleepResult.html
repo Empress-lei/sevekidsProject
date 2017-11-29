@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="keywords" content="喵姐,喵姐早教说,0到6岁早期教育,家庭教育,家长教育,父母课堂,育儿知识,儿童教育,母婴育儿,">
+    <meta name="description" content="喵姐早教说是喵姐高寿岩创办的为家庭教育提供专业靠谱的0到6岁早期教育、育儿知识的平台。">
+    <title>喵姐早教说</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/sleepTrain.css">
+    <style type="text/css">
+		a {
+		    color: rgb(255, 142, 45);
+		}
+		
+		
+		.circle {
+		    position: relative;
+		    margin-top: 1rem;
+		}
+		
+		.circle canvas {
+		    vertical-align: center;
+		    margin-left: auto;
+		    margin-right: auto;
+		    display: block;
+		}
+		
+		.circle span {
+		   position: absolute;
+		    line-height: 180px;
+		    top: 0px;
+		    width: 100%;
+		    margin: 0px;
+		    padding: 0px;
+		    color: rgb(255, 142, 45);
+		    text-align: center;
+		    font-size: 1.2rem;
+		    font-weight: normal;
+		    font-family: sans-serif;
+		}
+		
+		.circle span font {
+		    font-style: normal;
+		    font-size: 0.65rem;
+		    font-weight: normal;
+		}
+    </style>
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <!--<script type="text/javascript" src="./js/circleChart.js"></script>-->
+    <script type="text/javascript" src="./js/circle-progress.js"></script>
+</head>
+<body>
+    <div class="fundPopup">
+		<div class="popupBox">
+            <div class="popupContent">
+                <img src="./img/u9743.png" alt="" class="contentImg">
+                <h2 class="contentTitH">专属海报已生成</h2>
+                <p class="contentLook">前往公众号查看，成功邀请好友加入即可领取200枚基金币哦</p>
+                <a href="javascript:void(0);" class="shadoweBtn">去看看</a>
+            </div>
+            <img src="./img/u1451.png" alt="" class="popupBotImg">
+        </div>
+	</div>
+    <div class="wrapPage">
+		<div class="testEnd">
+			<p class="babyTit">小波米</p>
+			<p class="report">安睡能力测评分析报告</p>
+			<!--<div class="achievePro jq22-container">
+                <div class="circleChart" id="circleChart" data-value="77" style="position: relative;"><canvas class="circleChart_canvas" width="180" height="180" style="margin-left: auto; margin-right: auto; display: block;"></canvas><p class="circleChart_text" style="position: absolute; line-height: 180px; top: 0px; width: 100%; margin: 0px; padding: 0px; color: rgb(255, 142, 45); text-align: center; font-size: 1rem; font-weight: normal; font-family: sans-serif;">80<span style="font-size:0.55rem; font-weight:300;">分</span></p></div>
+            </div>-->
+            <div class="forth circle">
+			    <span></span>
+			</div>
+            <p class="reportText">从测试结果来看，您的孩子在睡眠问题和穿脱衣服上还存在一些问题，尤其是在养成固定规律上还需继续加强。</p>
+			<p class="reportText reportText1">建议：睡眠习惯需要长期坚持形成习惯，穿脱衣服也需要不断的锻炼才能达到熟练，只有这样才能让孩子面对环境变化时不焦虑，快速适应，利用入园前的这段时间，巩固和加强孩子的睡眠习惯和穿脱衣服的能力。</p>
+            <div class="line"></div>
+            <div class="contentReco clearfix" id="joinFixed">
+                <h3 class="listJoin"><span>免费参与</span>（名额有限）</h3>
+                <!--默认显示-->
+				<p class="listTextP" style="display: none;">点击“我要免费参与”生成你的专属海报，分享海报邀请 <span>10 位</span>好友完成测试，即可。</p>
+				<p class="fundvNothing" style="display: none;">· 暂无推行记录 ·</p>
+				<!--邀请好友成功之后显示下面的"p"和"ul"-->
+				<p class="listTextP">恭喜已成功邀请 6 位好友完成测评，再邀请 4 位好友即可免费参与，加油 ~</p>
+				<ul class="fundvimplement clearfix">
+					<li><img src="./img/u975.jpg" alt=""></li>
+					<li><img src="./img/1496493853022Xu4e.jpg" alt=""></li>
+					<li><img src="./img/20170606164623.jpg" alt=""></li>
+					<li><img src="./img/u989.jpg" alt=""></li>
+					<li><img src="./img/u1003.jpg" alt=""></li>
+					<li><img src="./img/u2306.jpg" alt=""></li>
+					<li><img src="./img/u2329.jpg" alt=""></li>
+					<li><img src="./img/u8820.jpg" alt=""></li>
+					<li><img src="./img/u2329.jpg" alt=""></li>
+					<li><img src="./img/u8820.jpg" alt=""></li>
+				</ul>
+				<a class="join" id="join">我要免费参与</a>
+				<p class="listBot">今日已有  80 位家长领取免费参与名额</p>
+            </div>
+            <div class="line"></div>
+            <div class="programme">
+            	<h3>根据测评结果，已为您匹配智能化训练方案</h3>
+            	<p class="taskNum">总计 <span>34项</span> 训练任务</p>
+            	<p class="promote">自主睡眠能力预计可提升 75%</p>
+            	<a href="#" class="planJoin">马上报名 | ￥39.9</a>
+            	<p class="timeTxt">你还剩  <span>29:32</span>  分钟支付，逾时恢复原价￥199</p>
+            </div>
+            
+		</div>
+	</div>
+    <script type="text/javascript">
+		$(function() {
+			$('#join').click(function(){
+				$('.fundPopup').fadeIn();
+			});
+			//点击弹层上面的X号隐藏弹层
+			$('.popupBotImg').click(function(){
+				$('.fundPopup').fadeOut();
+			});
+		})
+		$('.forth.circle').circleProgress({
+		    startAngle: -Math.PI / 4 * 2,
+		    value: 1.0,
+		    size: 180,
+		    thickness: 15,
+		    lineCap: 'round',
+		    fill: { color: 'rgb(255, 142, 45)' }
+		}).on('circle-animation-progress', function(event, progress, stepValue) {
+		    $(this).find('span').html(String(stepValue.toFixed(2)).substr(1).replace(/./, '') + "<font>分</font>");
+		    if($(this).find('span').html()=="00<font>分</font>") {
+		    	$(this).find('span').html("100<font>分</font>");
+		    }
+		});
+//  	$("#circleChart").circleChart({
+//          size: 180,
+//          value: 100,
+//			color: "#FF8E2D",
+//			backgroundColor: "#e6e6e6",
+//          text: 0,
+//          startAngle: 75,
+//          onDraw: function(el, circle) {
+//              circle.text(Math.round(circle.value) + "<span style='font-size:0.55rem; font-weight:300;'>" + "分" +"</span>");
+//          }
+//     });
+	</script>
+</body>
+</html>

@@ -1,0 +1,1228 @@
+//海报生成弹层
+.fundPopup {
+    display: none;
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    .popupBox {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .popupContent {  
+            width: 8rem;
+            height: 10rem;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding: 0.4rem;
+            margin-left: -4rem;
+            margin-top: -6rem;
+            -webkit-border-radius: 0.21333333rem;
+            -moz-border-radius: 0.21333333rem;
+            -o-border-radius: 0.21333333rem;
+            border-radius: 0.21333333rem;
+            .contentImg {
+                width: 3rem;
+                display: block;
+                margin: 25/37.5rem auto 15/37.5rem;
+            }
+            .contentTitH {
+                text-align: center;
+                font-size: 0.6rem;
+                font-weight: bold;
+            }
+            .contentLook {
+                padding: 15/37.5rem;
+                color: #868686;
+                line-height: 0.6rem;
+                font-size: 0.38rem;
+            }
+            .shadoweBtn {
+                width: 70%;
+                display: block;
+                padding: 0.25rem 0;
+                margin: 0.5rem auto;
+                text-align: center;
+                -webkit-border-radius: 1.33333333rem;
+                -moz-border-radius: 1.33333333rem;
+                -ms-border-radius: 1.33333333rem;
+                border-radius: 1.33333333rem;
+                background-color: #FF9900;
+                color: #fff;
+                font-size: 0.4rem;
+            }
+        }
+    }
+    .popupBotImg {
+        width: 0.8rem;
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        margin-left: -0.4rem;
+    }
+}
+//现金兑换弹层
+.cashPopup {
+    display: none;
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    .exchangeBox {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .popupContent {  
+            width: 8rem;
+            height: 10rem;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -4rem;
+            margin-top: -6rem;
+            -webkit-border-radius: 0.21333333rem;
+            -moz-border-radius: 0.21333333rem;
+            -o-border-radius: 0.21333333rem;
+            border-radius: 0.21333333rem;
+            .exchangeImg {
+                width: 1.2rem;
+                display: block;
+                margin: 0.6rem auto 0.3rem;
+            }
+            .exchangeTitH3 {
+                text-align: center;
+                font-size: 0.6rem;
+                font-weight: bold;
+            }
+            .exchangeFund {
+                font-size: 0.3rem;
+                text-align: center;
+                padding: 10/37.5rem;
+                color: #0099FF;
+                border-bottom: 1/37.5rem solid #F2F2F2;
+                span {
+                    font-size: 0.44rem;
+                }
+            }
+            //加减基金币
+            .fundNum {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -o-flex;
+                display: flex;
+                padding: 30/37.5rem 20/37.5rem 15/37.5rem;
+                li {
+                    text-align: center;
+                    
+                }
+                .numReduce {
+                    width: 25%;
+                    height: 1rem;
+                    font-size: 0.66rem;
+                    line-height: 0.9rem;
+                    color: #BCBCBC;
+                    border: 1/37.5rem solid rgba(174, 174, 174, 1);
+                    -webkit-border-radius: 8/37.5rem;
+                    -moz-border-radius: 8/37.5rem;
+                    -o-border-radius: 8/37.5rem;
+                    border-radius: 8/37.5rem;
+                }
+                .current {
+                    color: #ff9900;
+                }
+                .sizeCurrent {
+                    color: #BCBCBC;
+                }
+                .numPic {
+                    width: 50%;
+                    height: 1rem;
+                    font-size: 0.8rem;
+                    color: #ff9900;
+                }
+            }
+            //可用基金币
+            .available {
+                text-align: center;
+                color: #797979;
+                font-size: 0.32rem;
+            }
+            //按钮
+            .shadoweBtn {
+                width: 70%;
+                display: block;
+                padding: 0.15rem 0;
+                margin: 0.5rem auto;
+                text-align: center;
+                -webkit-border-radius: 1.33333333rem;
+                -moz-border-radius: 1.33333333rem;
+                -ms-border-radius: 1.33333333rem;
+                border-radius: 1.33333333rem;
+                background-color: #FF9900;
+                color: #fff;
+                font-size: 0.36rem;
+            }
+            .exchangeTextBtn {
+                font-size: 0.32rem;
+                color: #AEAEAE;
+                padding: 0 15/37.5rem;
+            }
+        }
+    }
+    .popupBotImg {
+        width: 0.8rem;
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        margin-left: -0.4rem;
+    }
+}
+//实物兑换
+.goodsPopup {
+    display: none;
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    .goodsBox {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .goodsPopupContent {
+            width: 8.5rem;
+            height: 11rem;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -4.25rem;
+            margin-top: -6.5rem;
+            -webkit-border-radius: 0.21333333rem;
+            -moz-border-radius: 0.21333333rem;
+            -o-border-radius: 0.21333333rem;
+            border-radius: 0.21333333rem;
+            .goodsHeader {
+                width: 100%;
+                padding: 0.4rem;
+                border-bottom: 1/37.5rem solid #F2F2F2;
+                .headerLeftImg {
+                    float: left;
+                    width: 2.5rem;
+                    height: 2.8rem;
+                    margin-right: 10/37.5rem;
+                }
+                .headerRightCon {
+                    padding-top: 0.4rem;
+                    .goodsName {
+                        font-size: 0.46rem;
+                    }
+                    .goodsFund {
+                        font-size: 0.4rem;
+                        color: #949494;
+                        padding: 0.15rem 0 0.1rem;
+                        span {
+                            font-size: 0.8rem;
+                            color: #FF9900;
+                        }
+                    }
+                    .goodsAvailable {
+                        font-size: 0.32rem;
+                        color: #0099FF;
+                    }
+                }
+            }
+            .exchangeMode {
+                color: #333;
+                margin: 0.4rem 0.4rem 0.2rem;
+                font-size: 0.38rem;
+            }
+            .foodsText {
+                padding: 0 0.4rem 0;
+                line-height: 0.6rem;
+                color: #949494;
+                font-size: 0.34rem;
+            }
+            .nonRefundable {
+                min-height: 0.5rem;
+                color: #949494;
+                font-size: 0.34rem;
+                margin: 0.4rem;
+                background: url(../img/u10692.png) no-repeat left center;
+                background-size: 0.4rem;
+                padding-left: 0.6rem;
+            }
+            //按钮
+            .shadoweBtn {
+                width: 70%;
+                padding: 0.15rem 0;
+                margin: 0.6rem auto;
+                text-align: center;
+                -webkit-border-radius: 1.33333333rem;
+                -moz-border-radius: 1.33333333rem;
+                -ms-border-radius: 1.33333333rem;
+                border-radius: 1.33333333rem;
+                background-color: #FF9900;
+                a {
+                    color: #fff;
+                    font-size: 0.36rem;
+                }
+            }
+            .shadoweBtn1 {
+                width: 70%;
+                padding: 0.15rem 0;
+                margin: 0.5rem auto 0.3rem;
+                text-align: center;
+                -webkit-border-radius: 1.33333333rem;
+                -moz-border-radius: 1.33333333rem;
+                -ms-border-radius: 1.33333333rem;
+                border-radius: 1.33333333rem;
+                background-color: rgba(201, 201, 201, 1);
+                a {
+                    color: #fff;
+                    font-size: 0.36rem;
+                }
+            }
+            .goodsBtn {
+                text-align: center;
+                color: #FF9933;
+                font-size: 0.3rem;
+            }
+        }
+        .popupBotImg {
+            width: 0.8rem;
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            margin-left: -0.4rem; 
+        }
+    }
+}
+//现金兑换成功
+.succExchangecash {
+    display: none;
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    .succBox {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .succPopupContent {
+            width: 8rem;
+            height: 10rem;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -4rem;
+            margin-top: -6rem;
+            -webkit-border-radius: 0.21333333rem;
+            -moz-border-radius: 0.21333333rem;
+            -o-border-radius: 0.21333333rem;
+            border-radius: 0.21333333rem;
+            .exchangeImg {
+                width: 1.2rem;
+                display: block;
+                margin: 2rem auto 0.7rem;
+            }
+            .succExchangeTit {
+                text-align: center;
+                font-size: 0.6rem;
+                font-weight: bold;
+            }
+            .succExchangeText {
+                padding: 0.8rem 0.3rem;
+                font-size: 0.3rem;
+                text-align: center;
+                color: #AEAEAE;
+            }
+            //按钮
+            .shadoweBtn {
+                width: 70%;
+                display: block;
+                padding: 0.15rem 0;
+                margin: 0.5rem auto;
+                text-align: center;
+                -webkit-border-radius: 1.33333333rem;
+                -moz-border-radius: 1.33333333rem;
+                -ms-border-radius: 1.33333333rem;
+                border-radius: 1.33333333rem;
+                background-color: #FF9900;
+                color: #fff;
+                font-size: 0.36rem;
+            }
+        }
+        .popupBotImg {
+            width: 0.8rem;
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            margin-left: -0.4rem;
+        }
+    }
+}
+//实物兑换成功
+.succExchangeGoods {
+    display: none;
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    .succGoodsBox {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .succExchangeContent {
+            width: 8.5rem;
+            height: 11.2rem;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -4.25rem;
+            margin-top: -6.5rem;
+            -webkit-border-radius: 0.21333333rem;
+            -moz-border-radius: 0.21333333rem;
+            -o-border-radius: 0.21333333rem;
+            border-radius: 0.21333333rem;
+            .succGoodsImg {
+                width: 3rem;
+                display: block;
+                margin: 0.5rem auto 0.4rem;
+            }
+            .succGoodsTit {
+                text-align: center;
+                font-size: 0.46rem;
+                font-weight: bold;
+                padding-bottom: 15/37.5rem;
+            }
+            //兑换券卡片
+            .succGoodsCard {
+                width: 100%;
+                min-height: 3rem;
+                background-color: #F2F2F2;
+                padding: 15/37.5rem;
+                .cardContent {
+                    width: 100%;
+                    margin: 0 auto;
+                    background-color: #FFFFFF;
+                    -webkit-border-radius: 0.13333333rem;
+                    -moz-border-radius: 0.13333333rem;
+                    -o-border-radius: 0.13333333rem;
+                    border-radius: 0.13333333rem;
+                    .conTitle {
+                        font-size: 0.36rem;
+                        color: #333;
+                        padding: 0.26666667rem 0.4rem;
+                        border-bottom: 0.02666667rem dashed #f2f2f2;
+                    }
+                    //左右的半圆
+                    .circular {
+                        width: 100%;
+                        position: relative;
+                        .circularLeft {
+                            width: 0.5rem;
+                            height: 0.5rem;
+                            background-color: #F2F2F2;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: -0.25rem;
+                            left: -0.25rem;
+                        }
+                        .circularRight {
+                            width: 0.5rem;
+                            height: 0.5rem;
+                            background-color: #F2F2F2;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: -0.25rem;
+                            right: -0.25rem;
+                        }
+                    }
+                    .costMon {
+                        padding: 0.26666667rem 0.4rem 0.15rem;
+                        font-size: 0.6rem;
+                        font-weight: bold;
+                    }
+                    .effective {
+                        padding: 0 0.4rem 0.3rem;
+                        font-size: 0.32rem;
+                        color: #AEAEAE;
+                    }
+                }
+            }
+            //按钮
+            .shadoweBtn {
+                width: 70%;
+                display: block;
+                padding: 0.15rem 0;
+                margin: 0.5rem auto 0.2rem;
+                text-align: center;
+                -webkit-border-radius: 1.33333333rem;
+                -moz-border-radius: 1.33333333rem;
+                -ms-border-radius: 1.33333333rem;
+                border-radius: 1.33333333rem;
+                background-color: rgba(0, 153, 255, 1);
+                color: #fff;
+                font-size: 0.36rem;
+            }
+            .btnLook {
+                text-align: center;
+                font-size: 0.32rem;
+                color: #AEAEAE;
+            }
+        }
+        .popupBotImg {
+            width: 0.8rem;
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            margin-left: -0.4rem;
+        }
+    }
+}
+//智能小贴士
+.intelligence {
+    display: none;
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    .inteBox {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .inteContent {
+            width: 8.5rem;
+            height: 13rem;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -4.25rem;
+            margin-top: -7.2rem;
+            padding: 20/37.5rem;
+            -webkit-border-radius: 0.21333333rem;
+            -moz-border-radius: 0.21333333rem;
+            -o-border-radius: 0.21333333rem;
+            border-radius: 0.21333333rem;
+            .inteTitle {
+                text-align: center;
+                color: #FF9900;
+                font-size: 0.68rem;
+            }
+            .inteText {
+                color: #333;
+                font-size: 0.36rem;
+                padding: 15/37.5rem 0 0.8rem;
+            }
+            .inteImg {
+                width: 4rem;
+                display: block;
+                margin: 0 auto;
+            }
+            .inteMethod {
+                color: #333;
+                font-size: 0.36rem;
+                padding: 0.8rem 0 0.3rem;
+            }
+            .inteStep {
+                font-size: 0.3rem;
+                color: #333;
+                line-height: 0.6rem;
+                margin-left: -0.15rem;
+            }
+        }
+    }
+    //按钮
+    .popupBotImg {
+        width: 0.8rem;
+        position: absolute;
+        bottom: 0.8rem;
+        left: 50%;
+        margin-left: -0.4rem;
+    }
+}
+.wrapPage {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    //入园基金__-_1期页面
+    .fund {
+        width: 100%;
+        height: auto;
+        //标题
+       .fundTitle {
+            padding: 20/37.5rem 0;
+            font-size: 0.6rem;
+            font-weight: bold;
+            color: #ff9900;
+            text-align: center;
+            background-color: #fff;
+        } 
+        //基金数
+        .numBack {
+            width: 100%;
+            background-color: #fff;
+            padding-bottom: 30/37.5rem;
+            .fundNum {
+                width: 4.5rem;
+                border-radius: 50%;
+                margin: 0 auto;
+                border: 7/37.5rem solid #FF8E2D;
+                text-align: center;
+                -webkit-box-shadow: 5/37.5rem 5/37.5rem 5/37.5rem rgba(255, 140, 44, 0.35);
+                -moz-box-shadow: 5/37.5rem 5/37.5rem 5/37.5rem rgba(255, 140, 44, 0.35);
+                -o-box-shadow: 5/37.5rem 5/37.5rem 5/37.5rem rgba(255, 140, 44, 0.35);
+                box-shadow: 5/37.5rem 5/37.5rem 5/37.5rem rgba(255, 140, 44, 0.35);
+                .numText {
+                    padding: 0.6rem 0 0.2rem; 
+                    font-size: 0.3rem;
+                    color: #949494;
+                }
+                .numPic {
+                    color: #FF9933;
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                    background: url(../img/u9539.png) no-repeat 0.4rem 0.95rem;
+                    background-size: 0.4rem;
+                }
+                .numGold {
+                    color: #949494;
+                    font-size: 0.3rem;
+                    padding-left: 0.3rem;
+                    padding-top: 0.2rem;
+                    padding-bottom: 0.5rem;
+                }
+            }
+        }
+        //f2线
+        .fundGray {
+            width: 100%;
+            height: 5/37.5rem;
+            background-color: #F2F2F2;   
+        }
+        //基金明细
+        .fundDetailTitle {
+            width: 100%;         
+            background-color: #fff;
+            .detailLine {
+                width: 92%;
+                margin: 0 auto;
+                padding: 10/37.5rem 0;
+                border-bottom: 1/37.5rem solid #F2F2F2;
+                .titleLeft {
+                    font-size: 0.4rem;
+                    color: #333;
+                    font-weight: bold;
+                }
+                .titleRight {
+                    font-size: 0.32rem;
+                    color: #BCBCBC;
+                    padding-top: 0.05rem;
+                }
+                .titleTask {
+                    font-size: 0.36rem;
+                    padding-bottom:  10/37.5rem;
+                }
+                .detaildate {
+                    color: #AEAEAE;
+                    font-size: 0.3rem;
+                }
+                .detailNum {
+                    font-size: 0.52rem;
+                    color: #FF8E2D;
+                    margin-top: -0.5rem;
+                    span {
+                        font-size: 0.4rem;
+                    }
+                }
+                .detailColor{
+                    color: #868686;
+                }
+            }
+            .detailTitle {
+                border-bottom: none;
+            }   
+        }
+        //基金币超值兑图片
+         //实物兑换
+        .exchangeGift {
+            width: 100%;
+            padding: 10/37.5rem 20/37.5rem;
+            //现金兑换样式
+            .exchangeLi {
+                width: 100%;
+                min-height: 4rem;
+                margin-bottom: 15/37.5rem;
+                border: 1px solid rgba(228, 228, 228, 1);
+                -webkit-border-radius: 5/37.5rem;
+                -moz-border-radius: 5/37.5rem;
+                -ms-border-radius: 5/37.5rem;
+                -o-border-radius: 5/37.5rem;
+                border-radius: 5/37.5rem;
+                .exchangeLeft {
+                    width: 45%;
+                    min-height: 4rem;
+                    padding: 15/37.5rem;
+                    border-right: 1px solid rgba(228, 228, 228, 1);
+                    img {
+                        display: block;
+                        width: 1.5rem;
+                        margin: 0 auto 12/37.5rem;
+                    }
+                    .goodsImg {
+                        width: 2.2rem;
+                        margin: 0 auto 15/37.5rem;
+                    }
+                    .leftMoney {
+                        text-align: center;
+                        font-size: 0.6rem;
+                        color: #333;
+                        padding: 25/37.5rem 0 12/37.5rem;
+                    }
+                    .leftText {
+                            text-align: center;
+                            font-size: 1rem;
+                            color: #FF8E2D;
+                            font-weight: bold;
+                    }
+                    .leftText1 {
+                        font-size: 0.8rem;
+                    }
+                    .goods {
+                        text-align: center;
+                        font-size: 0.42rem;
+                        color: #333;
+                    }
+                }
+                .exchangeRight {
+                    width: 54%;
+                    min-height: 4rem;
+                    text-align: center;
+                    padding: 0.4rem;
+                    .rightTop {
+                        text-align: right;
+                        font-size: 0.32rem;
+                        color: #0099FF;
+                    }
+                    .topEnd {
+                        text-align: right;
+                        font-size: 0.32rem;
+                        color: #BCBCBC;
+                    }
+                    .rightText {
+                        font-size: 0.4rem;
+                        padding: 0.5rem 0 15/37.5rem;
+                        span {
+                            font-size: 0.64rem;
+                            color: #ff9933;
+                        }
+                    }
+                    //右边点击之后为橙色按钮
+                    .rightBtnOrange {
+                        display: block;
+                        width: 100%;
+                        height: 1rem;
+                        margin: 0 auto;
+                        line-height: 1rem;
+                        color: #FFAF2F;
+                        font-size: 0.38rem;
+                        border: 1px solid rgba(255, 175, 47, 1);
+                        -webkit-border-radius: 5/37.5rem;
+                        -moz-border-radius: 5/37.5rem;
+                        -ms-border-radius: 5/37.5rem;
+                        -o-border-radius: 5/37.5rem;
+                        border-radius: 5/37.5rem;
+                    }
+                    //右边默认状态是灰色按钮
+                    .rightBtnGray {
+                        display: block;
+                        width: 100%;
+                        height: 1rem;
+                        margin: 0 auto;
+                        line-height: 1rem;
+                        color: #A1A1A1;
+                        font-size: 0.38rem;
+                        border: 1px solid rgba(228, 228, 228, 1);
+                        -webkit-border-radius: 5/37.5rem;
+                        -moz-border-radius: 5/37.5rem;
+                        -ms-border-radius: 5/37.5rem;
+                        -o-border-radius: 5/37.5rem;
+                        border-radius: 5/37.5rem;
+                    }
+                }
+                //年卡
+                .yearVip {
+                    font-size: 0.6rem;
+                    color: #ff9933;
+                    padding: 15/37.5rem 15/37.5rem 5/37.5rem;
+                }
+                //年卡金额
+                .yearMoney {
+                    font-size: 0.4rem;
+                    padding: 0 15/37.5rem 30/37.5rem;
+                }
+                //年卡兑换按钮
+                .exchangeYear {
+                    width: 100%;
+                    padding: 0 15/37.5rem;
+                    .rightText {
+                        font-size: 0.36rem;
+                        span {
+                            font-size: 0.64rem;
+                            color: #ff9933;
+                        }
+                    }
+                    //右边点击之后为橙色按钮
+                    .rightBtnOrange {
+                        display: block;
+                        width: 4rem;
+                        height: 1rem;
+                        text-align: center;
+                        margin: 0 auto;
+                        line-height: 1rem;
+                        color: #FFAF2F;
+                        font-size: 0.38rem;
+                        border: 1px solid rgba(255, 175, 47, 1);
+                        -webkit-border-radius: 5/37.5rem;
+                        -moz-border-radius: 5/37.5rem;
+                        -ms-border-radius: 5/37.5rem;
+                        -o-border-radius: 5/37.5rem;
+                        border-radius: 5/37.5rem;
+                    }
+                    //右边默认状态是灰色按钮
+                    .rightBtnGray {
+                        display: block;
+                        width: 4rem;
+                        height: 1rem;
+                        margin: 0 auto;
+                        text-align: center;
+                        line-height: 1rem;
+                        color: #A1A1A1;
+                        font-size: 0.38rem;
+                        border: 1px solid rgba(228, 228, 228, 1);
+                        -webkit-border-radius: 5/37.5rem;
+                        -moz-border-radius: 5/37.5rem;
+                        -ms-border-radius: 5/37.5rem;
+                        -o-border-radius: 5/37.5rem;
+                        border-radius: 5/37.5rem;
+                    }
+                }
+            }
+        }
+//      .fundExchange {
+//          width: 100%;
+//          margin: 0 auto;
+//          .fundDiv {
+//              float: left;
+//              width: 50%;
+//              border-bottom: 5/37.5rem solid #fff;
+//              padding: 10/37.5rem;
+//              .changePic {
+//                  width: 100%;
+//                  height: 5.1rem;
+//                  background-color: #fff;
+//                  img {
+//                      width: 1.5rem;
+//                      display: block;
+//                      margin: 0 auto;
+//                      padding: 1rem 0 20/37.5rem;
+//                  }
+//                  .cash {
+//                      text-align: center;
+//                      font-size: 1rem;
+//                      color: #FF8E2D;
+//                      font-weight: bold;
+//                  }
+//              }
+//              .changePicBor {
+//                  border: 1/37.5rem solid rgba(242, 242, 242, 1);
+//              }
+//              .changePicBor {
+//                  border: 1/37.5rem solid rgba(242, 242, 242, 1);
+//              }
+//              .changeImg {
+//                  width: 100%;
+//                  height: 5.1rem;
+//                  img {
+//                      width: 100%;
+//                      height: 5.1rem;
+//                      border: 1/37.5rem solid #ff9900;
+//                  }
+//              }
+//              .changeText {
+//                  width: 100%;
+//                  padding: 0.27rem 0;
+//                  .textLeft {
+//                      float: left;
+//                      color: #5E5E5E;
+//                      font-size: 0.3rem;
+//                          span {
+//                          font-size: 0.4rem;
+//                          color: #FF8E2D;
+//                      }
+//                  }
+//                  .textRight {
+//                      font-size: 0.3rem;
+//                      float: right;
+//                      color: #AEAEAE;
+//                      padding-top: 0.08rem;
+//                  }
+//              }
+//          } 
+//          .fundDiv1 {
+//              border-bottom: none;
+//          } 
+//      }
+        //基金兑换规则
+        .fundRule {
+            width: 92%;
+            margin: 0 auto;
+            padding: 10/37.5rem 0; 
+            .ruleTitle {
+                font-size: 0.4rem;
+                color: #333;
+                font-weight: bold;
+            }
+            .ruleText {
+                font-size: 0.36rem;
+                color: #949494;
+                line-height: 0.6rem;
+                padding: 10/37.5rem 0 0 5/37.5rem;
+            }
+            .ruleText1 {
+                padding-top: 0;
+            }
+            .seeText {
+                color: #0066FF;
+                text-align: right;
+                font-size: 0.36rem;
+                padding-top: 10/37.5rem;
+            }
+        }
+    }
+    //基金币明细页面
+    .fundDetail {
+        width: 100%;
+        height: auto;
+        .detailTit {
+            width: 92%;
+            color: #AEAEAE;
+            font-size: 0.3rem;
+            margin: 0 auto;
+            padding: 15/37.5rem 0;
+            border-bottom: 1/37.5rem solid #F2F2F2;
+        }
+        .detailMon {
+            width: 92%;
+            margin: 0 auto;
+            font-size: 0.38rem;
+            padding: 15/37.5rem 0;
+            background: url(../img/u9539.png) no-repeat 3.5rem center;
+            background-size: 0.8rem;
+            span {
+                font-size: 1rem;
+            }
+        }
+        //f2线
+        .fundGray {
+            width: 100%;
+            height: 5/37.5rem;
+            background-color: #F2F2F2;   
+        }
+        //基金明细
+        .fundDetailTitle {
+            width: 100%;         
+            background-color: #fff;
+            .detailLine {
+                width: 92%;
+                margin: 0 auto;
+                padding: 10/37.5rem 0;
+                border-bottom: 1/37.5rem solid #F2F2F2;
+                .titleLeft {
+                    font-size: 0.4rem;
+                    color: #333;
+                    font-weight: bold;
+                }
+                .titleRight {
+                    font-size: 0.32rem;
+                    color: #BCBCBC;
+                    padding-top: 0.05rem;
+                }
+                .titleTask {
+                    font-size: 0.36rem;
+                    padding-bottom:  10/37.5rem;
+                }
+                .detaildate {
+                    color: #AEAEAE;
+                    font-size: 0.3rem;
+                }
+                .detailNum {
+                    font-size: 0.52rem;
+                    color: #FF8E2D;
+                    margin-top: -0.5rem;
+                    span {
+                        font-size: 0.4rem;
+                    }
+                }
+                .detailColor{
+                  color: #868686;
+                }
+            }
+            
+            .detailTitle {
+                border-bottom: none;
+            }    
+        }
+        .shadoweBtn {
+            width: 60%;
+            display: block;
+            padding: 0.21333333rem 0;
+            margin: 1.5rem auto 0.4rem;
+            text-align: center;
+            -webkit-border-radius: 1.33333333rem;
+            -moz-border-radius: 1.33333333rem;
+            -ms-border-radius: 1.33333333rem;
+            border-radius: 1.33333333rem;
+            background-color: rgba(242, 242, 242, 1);
+            color: #333;
+            font-size: 0.4rem;
+        }
+        .fundBlank {
+            width: 100%;
+            height: 1rem;    
+        }
+    }
+    //入园基金2期
+    .fund_v2 {
+        width: 100%;
+        height: auto;
+        //2期标题
+        .fundvTitle {
+            width: 100%;
+            color: #fff;
+            min-height: 3rem;
+            padding: 20/37.5rem 20/37.5rem 15/37.5rem;
+            background-color: #FF9900;
+            .titH3 { 
+                font-size: 0.8rem;
+                font-weight: bold;
+                padding: 10/37.5rem 0;
+            }
+            .titBaby {
+                font-size: 0.32rem;
+                padding-bottom: 5/37.5rem;
+            }
+        }
+        .detailMon {
+            width: 100%;
+            font-size: 0.38rem;
+            padding: 0.2rem 20/37.5rem;  
+            span {
+                float: left;
+                color: #FF9900;
+                font-size: 1.3rem;
+                background: url(../img/u9539.png) no-repeat right 0.9rem;
+                background-size: 0.5rem;
+                padding-right: 1rem;
+                margin-right: 0.2rem;
+            }
+            p {
+                color: #A1A1A1;
+                font-size: 0.3rem;
+                padding-top: 1rem;
+            }
+        }
+        .fundvDetailTitle {
+            width: 100%;         
+            .detailLine {
+                width: 95%;
+                margin: 0 auto;
+                padding: 10/37.5rem;
+                border-bottom: 1/37.5rem solid #F2F2F2;
+                .titleLeft {
+                    font-size: 0.38rem;
+                    color: #333;
+                    background: url(../img/u9845.png) no-repeat left center; 
+                    background-size: 0.6rem;
+                    padding-left: 0.9rem;
+                }
+                .titleRecord {
+                    background: url(../img/u9743.png) no-repeat left center; 
+                    background-size: 0.6rem;
+                    padding-left: 0.9rem;
+                }
+                .titleChannel {  
+                    background: url(../img/u9719.png) no-repeat left center; 
+                    background-size: 0.75rem;
+                    padding-left: 0.95rem;
+                }
+                .titleExchange {
+                    background: url(../img/u9783.png) no-repeat left center; 
+                    background-size: 0.6rem;
+                    padding-left: 0.9rem;
+                }
+                .titleRight {
+                    font-size: 0.32rem;
+                    color: #BCBCBC;
+                    padding-top: 0.05rem;
+                }
+                .titleTask {
+                    font-size: 0.36rem;
+                    padding-bottom:  10/37.5rem;
+                    padding-left: 0.9rem;
+                }
+                .detaildate {
+                    color: #AEAEAE;
+                    font-size: 0.3rem;
+                    padding-left: 0.9rem;
+                }
+                .detailNum {
+                    font-size: 0.5rem;
+                    color: #FF8E2D;
+                    margin-top: -0.5rem;
+                    span {
+                        font-size: 0.36rem;
+                    }
+                }
+                //基金币兑换字体颜色为黑色
+                .detailColor {
+                    color: #868686;
+                }
+            }
+            .detailTitle {
+                border-bottom: none;
+            }
+        }
+        //生成专属海报
+        .fundPoster {
+            width: 85%;
+            display: flex;
+            border: 1/37.5rem solid #FF9900;
+            border-bottom: none;
+            margin: 15/37.5rem auto;
+            -webkit-border-radius: 8/37.5rem 8/37.5rem 0 0;
+            -moz-border-radius: 8/37.5rem 8/37.5rem 0 0;
+            -o-border-radius: 8/37.5rem 8/37.5rem 0 0;
+            border-radius: 8/37.5rem 8/37.5rem 0 0;
+            -webkit-box-shadow: 3/37.5rem 0px 3/37.5rem rgba(255, 153, 51, 0.349019607843137);
+            -moz-box-shadow: 3/37.5rem 0px 3/37.5rem rgba(255, 153, 51, 0.349019607843137);
+            -o-box-shadow: 3/37.5rem 0px 3/37.5rem rgba(255, 153, 51, 0.349019607843137);
+            box-shadow: 3/37.5rem 0px 3/37.5rem rgba(255, 153, 51, 0.349019607843137);
+            li {
+                flex: 1;
+                width: 33.33%;
+                font-size: 0.3rem;
+                padding: 0.5rem;
+            }
+            .posterArrow {
+                background: url(../img/u9753.png) no-repeat right center;
+                background-size: 0.5rem;
+                padding-right: 0.8rem;   
+            }
+            .posterColor {
+                color: #ff9900;
+            }
+        }
+        .shadoweBtn {
+            width: 60%;
+            display: block;
+            padding: 0.25rem 0;
+            margin: 0.8rem auto 0.3rem;
+            text-align: center;
+            -webkit-border-radius: 1.33333333rem;
+            -moz-border-radius: 1.33333333rem;
+            -ms-border-radius: 1.33333333rem;
+            order-radius: 1.33333333rem;
+            background-color: #FF9900;
+            color: #fff;
+            font-size: 0.4rem;
+        }
+        .fundvNothing {
+            text-align: center;
+            font-size: 0.3rem;
+            color: #BCBCBC;
+            padding: 10/37.5rem 0 8/37.5rem;
+        }
+        //推行人数记录
+        .fundvimplement {
+            padding: 0 25/37.5rem;
+            margin-bottom: 15/37.5rem;
+            min-height: 1rem;
+            text-align:center;
+            li {
+                display: inline-block;             
+                width: 0.7rem;
+                height: 0.7rem;
+                margin: 10/37.5rem 3/37.5rem 0;
+                border-radius: 50%;
+                img {
+                    width: 0.7rem;
+                    height: 0.7rem;
+                    border-radius: 50%;
+                }
+            }
+        }
+        //基金币的来源
+        .fundvSource {
+            padding: 0.4rem 0.65rem 0.4rem;
+            h4 {
+                font-size: 0.36rem;
+                color: #333;
+                background: url(../img/u9725.png) no-repeat 0.1rem center;
+                background-size: 0.2rem;
+                padding-left: 0.8rem;
+            }
+            .sourceText {
+                padding: 5/37.5rem 0 0 0.8rem;
+                font-size: 0.32rem;
+                color: #AEAEAE;
+            }
+        }
+        .fundvSourcePad {
+            padding-top: 0;
+        }
+        //兑换规则
+        .exchangeRules {
+            width: 92%;
+            margin: 0 auto;
+            font-size: 0.36rem;
+            padding: 15/37.5rem 10/37.5rem 0;
+        }
+    }
+}
+
+

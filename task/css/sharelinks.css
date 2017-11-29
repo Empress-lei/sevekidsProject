@@ -1,0 +1,245 @@
+.wrapPage {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: auto;
+  padding: 0.4rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #ea8c27;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+.wrapPage .centreRegion {
+  width: 100%;
+  min-height: 5rem;
+  margin: 0 auto;
+  padding: 1.06666667rem 0.4rem 0.4rem;
+  background-color: #fff;
+  -webkit-border-radius: 0.13333333rem;
+  -moz-border-radius: 0.13333333rem;
+  -o-border-radius: 0.13333333rem;
+  border-radius: 0.13333333rem;
+}
+.wrapPage .centreRegion .headerRegion {
+  min-height: 2rem;
+  margin: 0 auto;
+  border: 0.08rem solid #ea8c27;
+  -webkit-border-radius: 0.13333333rem;
+  -moz-border-radius: 0.13333333rem;
+  -o-border-radius: 0.13333333rem;
+  border-radius: 0.13333333rem;
+  position: relative;
+}
+.wrapPage .centreRegion .headerRegion .portrait {
+  min-width: 4.5rem;
+  min-height: 1.8rem;
+  background-color: #fff;
+  position: absolute;
+  top: -0.9rem;
+  left: 0.4rem;
+}
+.wrapPage .centreRegion .headerRegion .portrait .porImg {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  margin: 0.26666667rem;
+}
+.wrapPage .centreRegion .headerRegion .portrait .porImg img {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+}
+.wrapPage .centreRegion .headerRegion .portrait .porName {
+  padding-top: 0.4rem;
+}
+.wrapPage .centreRegion .headerRegion .portrait .porName .nameTop {
+  font-size: 0.34rem;
+  color: #FF9933;
+}
+.wrapPage .centreRegion .headerRegion .portrait .porName .nameBaby {
+  font-size: 0.3rem;
+  color: #949494;
+}
+.wrapPage .centreRegion .headerRegion .regionTitle {
+  font-size: 0.5rem;
+  color: #333;
+  text-align: center;
+  padding: 1.2rem 0 0.8rem;
+}
+.wrapPage .centreRegion .headerRegion .regionBtn {
+  width: 50%;
+  height: 0.8rem;
+  background-color: #fff;
+  position: absolute;
+  bottom: -0.4rem;
+  right: 0.4rem;
+}
+.wrapPage .centreRegion .headerRegion .regionBtn p {
+  font-size: 0.34rem;
+  color: #FF9933;
+  text-align: center;
+  line-height: 0.8rem;
+}
+.wrapPage .centreRegion .ratio {
+  width: 100%;
+  padding: 0.8rem 0 0.53333333rem;
+}
+.wrapPage .centreRegion .ratio .ratioPublic {
+  width: 21%;
+  float: left;
+  margin: 0.16rem;
+}
+.wrapPage .centreRegion .ratio .ratioPublic .languageDiv {
+  margin: 0 auto;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  border: 0.05333333rem solid #ef1518;
+}
+.wrapPage .centreRegion .ratio .ratioPublic .languageDiv p {
+  color: #EF1518;
+  text-align: center;
+  margin-top: 0.55rem;
+  font-size: 0.55rem;
+  margin-left: 0.2rem;
+  background: url('../img/sharelinks/u5402.png') no-repeat left center;
+  background-size: 0.3rem;
+  padding-left: 0.26666667rem;
+}
+.wrapPage .centreRegion .ratio .ratioPublic .languageDiv p span {
+  font-size: 0.36rem;
+  font-weight: 200;
+}
+.wrapPage .centreRegion .ratio .ratioPublic .lifeDiv {
+  border: 0.05333333rem solid #2988cb;
+}
+.wrapPage .centreRegion .ratio .ratioPublic .lifeDiv .lifeP {
+  color: #2988CB;
+  background: url('../img/sharelinks/u5406.png') no-repeat left center;
+  background-size: 0.3rem;
+}
+.wrapPage .centreRegion .ratio .ratioPublic .sociologyDiv {
+  border: 0.05333333rem solid #1f9165;
+}
+.wrapPage .centreRegion .ratio .ratioPublic .sociologyDiv .sociologyP {
+  color: #1F9165;
+  text-align: left;
+  background: url('../img/sharelinks/u5410.png') no-repeat left center;
+  background-size: 0.3rem;
+  padding-left: 0.35rem;
+}
+.wrapPage .centreRegion .ratio .ratioPublic .familyDiv {
+  border: 0.05333333rem solid #ff9933;
+}
+.wrapPage .centreRegion .ratio .ratioPublic .familyDiv .familyP {
+  color: #FF9933;
+  text-align: left;
+  background: url('../img/sharelinks/u5414.png') no-repeat left center;
+  background-size: 0.3rem;
+  padding-left: 0.35rem;
+}
+.wrapPage .centreRegion .ratio .ratioPublic .langText {
+  text-align: center;
+  font-size: 0.3rem;
+  color: #EF1518;
+  padding: 0.26666667rem 0 0.4rem;
+}
+.wrapPage .centreRegion .ratio .ratioPublic .lifeText {
+  color: #2988CB;
+}
+.wrapPage .centreRegion .ratio .ratioPublic .sociologyText {
+  color: #1F9165;
+}
+.wrapPage .centreRegion .ratio .ratioPublic .familyText {
+  color: #FF9933;
+}
+.wrapPage .centreRegion .line {
+  width: 98%;
+  margin: 0 auto;
+}
+.wrapPage .centreRegion .line ul {
+  width: 100%;
+  height: 0.5rem;
+  padding-left: 0.1rem;
+  position: relative;
+}
+.wrapPage .centreRegion .line ul li {
+  float: left;
+  width: 5%;
+  height: 0.03rem;
+  background: #ccc;
+  margin: 0.08rem;
+}
+.wrapPage .centreRegion .line ul .liImg {
+  width: 1.5rem;
+  height: 0.8rem;
+  position: absolute;
+  top: -0.2rem;
+  left: 50%;
+  margin-left: -0.8rem;
+  z-index: 1;
+  background-color: #fff;
+}
+.wrapPage .centreRegion .line ul .liImg .lineImg {
+  width: 0.5rem;
+  display: block;
+  margin: 0 auto;
+}
+.wrapPage .centreRegion .regionTxt {
+  width: 100%;
+  padding-top: 0.1rem;
+}
+.wrapPage .centreRegion .regionTxt .txtTitle {
+  color: #FF9933;
+  padding-left: 0.4rem;
+}
+.wrapPage .centreRegion .regionTxt .txtTitle h2 {
+  font-size: 1rem;
+}
+.wrapPage .centreRegion .regionTxt .txtTitle span {
+  font-size: 0.44rem;
+  padding-left: 0.26666667rem;
+  line-height: 1.4rem;
+}
+.wrapPage .centreRegion .regionTxt p {
+  padding-left: 0.4rem;
+  font-size: 0.38rem;
+  line-height: 0.6rem;
+  color: #333;
+}
+.wrapPage .centreRegion .regionTxt .txtP {
+  font-size: 0.4rem;
+  color: #FF9933;
+  margin: 0.26666667rem 0.4rem 0.53333333rem;
+  background: url('../img/sharelinks/u5432.png') no-repeat left center;
+  background-size: 0.2rem;
+}
+.wrapPage .centreRegion .botCode {
+  width: 100%;
+}
+.wrapPage .centreRegion .botCode .code {
+  width: 30%;
+}
+.wrapPage .centreRegion .botCode .botRight {
+  padding-left: 0.26666667rem;
+}
+.wrapPage .centreRegion .botCode .botRight .rightPress {
+  font-size: 0.3rem;
+  color: #949494;
+  min-height: 1rem;
+  margin-top: 0.4rem;
+}
+.wrapPage .centreRegion .botCode .botRight .rightPress img {
+  width: 1rem;
+}
+.wrapPage .centreRegion .botCode .botRight .rightPress p {
+  line-height: 1rem;
+  padding-left: 0.26666667rem;
+}
+.wrapPage .centreRegion .botCode .botRight .rightFollow {
+  font-size: 0.4rem;
+  color: #333;
+  padding-top: 0.53333333rem;
+}

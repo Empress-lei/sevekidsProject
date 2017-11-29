@@ -1,0 +1,89 @@
+.wrap audio{
+	display:none;
+}
+.audioplayer{
+	width:100%;
+	height:40px;
+	background-color:#ff9615;
+	border-radius:6px;
+	display:box;
+	display:-webkit-box;
+	display:-moz-box;
+	box-orient:horizontal;
+	-webkit-box-orient:horizontal;
+	-moz-box-orient:horizontal;
+}
+.audioplayer-playpause{
+	width:40px;
+	height:40px;
+	text-indent:-9999px;
+	position:relative;
+	background:url(../img/Shape@1x.png) no-repeat center center;
+	background-size:16px 18px;
+}
+.audioplayer-playing .audioplayer-playpause{
+	background:none;
+}
+.audioplayer-playing .audioplayer-playpause a:before{
+	content: '';
+	display:block;
+    width:8px;
+    height:20px;
+    border-left:4px solid #fff;
+    border-right:4px solid #fff;
+    position: absolute;
+    left:10px;
+    top: 10px;
+    z-index:99;
+}
+.audioplayer-bar{
+	box-flex:1;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	position:relative;
+}
+.audioplayer-bar:after{
+	content:'';
+	display:block;
+	width:100%;
+	height:32px;
+	position:absolute;
+	left:0;
+	top:4px;
+	z-index:1;
+	background-color:#ccc;
+}
+.audioplayer-bar-loaded{
+	width:100%;
+	height:32px;
+	position:absolute;
+	left:0;
+	top:4px;
+	z-index:3;
+	background-size:100% 100%;
+}
+.audioplayer-bar-played{
+	width:0;
+	height:32px;
+	position:absolute;
+	left:0;
+	top:4px;
+	z-index:2;
+	background-size:100% 100%;
+	background-color:#fff;
+
+}
+.audioplayer-time{
+	height:40px;
+	line-height:40px;
+	margin-right:10px;
+	font-size:12px;
+	color:#fff;
+}
+.audioplayer-time-duration{
+	margin-left:10px;
+	margin-right:10px;
+}
+.audioplayer-volume{
+	display:none;
+}

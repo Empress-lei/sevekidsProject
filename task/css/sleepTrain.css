@@ -1,0 +1,513 @@
+.fundPopup {
+  display: none;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.fundPopup .popupBox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.fundPopup .popupBox .popupContent {
+  width: 8rem;
+  height: 10rem;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0.4rem;
+  margin-left: -4rem;
+  margin-top: -6rem;
+  -webkit-border-radius: 0.21333333rem;
+  -moz-border-radius: 0.21333333rem;
+  -o-border-radius: 0.21333333rem;
+  border-radius: 0.21333333rem;
+}
+.fundPopup .popupBox .popupContent .contentImg {
+  width: 3rem;
+  display: block;
+  margin: 0.66666667rem auto 0.4rem;
+}
+.fundPopup .popupBox .popupContent .contentTitH {
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+.fundPopup .popupBox .popupContent .contentLook {
+  padding: 0.4rem;
+  color: #868686;
+  line-height: 0.6rem;
+  font-size: 0.38rem;
+}
+.fundPopup .popupBox .popupContent .shadoweBtn {
+  width: 70%;
+  display: block;
+  padding: 0.25rem 0;
+  margin: 0.5rem auto;
+  text-align: center;
+  -webkit-border-radius: 1.33333333rem;
+  -moz-border-radius: 1.33333333rem;
+  -ms-border-radius: 1.33333333rem;
+  border-radius: 1.33333333rem;
+  background-color: #FF9900;
+  color: #fff;
+  font-size: 0.4rem;
+}
+.fundPopup .popupBotImg {
+  width: 0.8rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  margin-left: -0.4rem;
+}
+.wrapPage {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wrapPage .testStart {
+  width: 100%;
+  padding: 1rem 0.8rem;
+}
+.wrapPage .testStart .evaluationTit {
+  font-size: 0.6rem;
+  color: #333;
+}
+.wrapPage .testStart .regionTxt {
+  width: 100%;
+  padding-top: 0.1rem;
+}
+.wrapPage .testStart .regionTxt .txtTitle {
+  color: #ffaf2f;
+}
+.wrapPage .testStart .regionTxt .txtTitle h2 {
+  font-size: 0.9rem;
+  padding-top: 0.3rem;
+}
+.wrapPage .testStart .regionTxt .txtTitle span {
+  font-size: 0.42rem;
+}
+.wrapPage .testStart .messNickname {
+  width: 4.53333333rem;
+  height: 4.53333333rem;
+  margin: 1rem auto 1rem;
+  border: 0.05333333rem solid #d7d7d7;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.wrapPage .testStart .messNickname input {
+  display: block;
+  width: 85%;
+  font-size: 0.4rem;
+  color: #ffaf2f;
+  letter-spacing: 0.03rem;
+  padding: 1.73333333rem 0 0.26666667rem;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid #F2F2F2;
+}
+.wrapPage .testStart .evaluationText {
+  text-align: center;
+  font-size: 0.33rem;
+  color: #A1A1A1;
+  padding-bottom: 1rem;
+}
+.wrapPage .testStart .evaluationStart {
+  width: 100%;
+  padding-top: 0.53333333rem;
+}
+.wrapPage .testStart .evaluationStart .btnJoin {
+  display: block;
+  width: 80%;
+  color: #FF9933;
+  padding: 0.26666667rem;
+  margin: 0 auto;
+  font-size: 0.36rem;
+  text-align: center;
+  border-radius: 1.33333333rem 1.33333333rem;
+  border: 0.05333333rem solid #ff9933;
+}
+.wrapPage .testStart .evaluationStart .startBottm {
+  text-align: center;
+  font-size: 0.32rem;
+  color: #0066ff;
+  padding-top: 0.5rem;
+}
+.wrapPage .testEnd {
+  width: 100%;
+}
+.wrapPage .testEnd .babyTit {
+  text-align: center;
+  font-size: 0.6rem;
+  color: #FF9933;
+  font-weight: bold;
+  padding: 0.8rem 0 0.4rem;
+}
+.wrapPage .testEnd .report {
+  text-align: center;
+  font-size: 0.4rem;
+  color: #333;
+}
+.wrapPage .testEnd .achievePro {
+  margin-top: 1rem;
+}
+.wrapPage .testEnd .reportText {
+  line-height: 0.6rem;
+  font-size: 0.36rem;
+  letter-spacing: 0.03rem;
+  padding: 0.8rem 0.53333333rem 0.53333333rem;
+}
+.wrapPage .testEnd .reportText1 {
+  padding-top: 0;
+}
+.wrapPage .testEnd .line {
+  width: 100%;
+  height: 1px;
+  border-top: 3px solid #f2f2f2;
+}
+.wrapPage .testEnd .programme {
+  padding: 0.53333333rem;
+}
+.wrapPage .testEnd .programme h3 {
+  font-size: 0.4rem;
+  font-weight: bold;
+  background: url(../img/u313.png) no-repeat left center;
+  background-size: 0.5rem;
+  padding-left: 0.6rem;
+}
+.wrapPage .testEnd .programme .taskNum {
+  font-size: 0.5rem;
+  color: #333;
+  padding: 0.4rem 0;
+}
+.wrapPage .testEnd .programme .taskNum span {
+  font-size: 0.8rem;
+  color: #FF9933;
+}
+.wrapPage .testEnd .programme .promote {
+  font-size: 0.42rem;
+}
+.wrapPage .testEnd .programme .planJoin {
+  display: block;
+  width: 60%;
+  padding: 0.21333333rem 0;
+  margin: 0.7rem auto 0.4rem;
+  text-align: center;
+  -webkit-border-radius: 1.33333333rem;
+  -moz-border-radius: 1.33333333rem;
+  -ms-border-radius: 1.33333333rem;
+  border-radius: 1.33333333rem;
+  border: 0.02666667rem solid #ff9900;
+  font-size: 0.4rem;
+  color: #ff9900;
+}
+.wrapPage .testEnd .programme .timeTxt {
+  text-align: center;
+  color: #868686;
+  font-size: 0.32rem;
+}
+.wrapPage .testEnd .programme .timeTxt span {
+  color: #0099FF;
+  font-size: 0.34rem;
+}
+.wrapPage .testEnd .contentReco {
+  width: 100%;
+  padding: 0.53333333rem;
+  -webkit-border-radius: 0.08rem;
+  -moz-border-radius: 0.08rem;
+  -o-border-radius: 0.08rem;
+  border-radius: 0.08rem;
+  background-color: #fff;
+  position: relative;
+}
+.wrapPage .testEnd .contentReco .listJoin {
+  font-size: 0.38rem;
+  color: #333;
+  padding-bottom: 0.2rem;
+}
+.wrapPage .testEnd .contentReco .listJoin span {
+  font-size: 0.48rem;
+  font-weight: bold;
+}
+.wrapPage .testEnd .contentReco .listTextP {
+  font-size: 0.32rem;
+  color: #868686;
+}
+.wrapPage .testEnd .contentReco .listTextP span {
+  color: #ff9900;
+}
+.wrapPage .testEnd .contentReco .fundvNothing {
+  text-align: center;
+  font-size: 0.3rem;
+  color: #BCBCBC;
+  padding-top: 0.5rem;
+}
+.wrapPage .testEnd .contentReco .fundvimplement {
+  padding: 0 0.66666667rem;
+  margin: 0.3rem 0 0.5rem;
+  min-height: 1rem;
+  text-align: center;
+}
+.wrapPage .testEnd .contentReco .fundvimplement li {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin: 0.26666667rem 0.08rem 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.wrapPage .testEnd .contentReco .fundvimplement li img {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+}
+.wrapPage .testEnd .contentReco .join {
+  width: 6.2rem;
+  display: block;
+  padding: 0.21333333rem 0;
+  margin: 0.4rem auto;
+  text-align: center;
+  -webkit-border-radius: 1.33333333rem;
+  -moz-border-radius: 1.33333333rem;
+  -ms-border-radius: 1.33333333rem;
+  border-radius: 1.33333333rem;
+  background-color: #FF9900;
+  color: #fff;
+}
+.wrapPage .testEnd .contentReco .listBot {
+  text-align: center;
+  color: #A1A1A1;
+  font-size: 0.3rem;
+}
+.wrapPage .sleepActivity {
+  width: 100%;
+}
+.wrapPage .sleepActivity .activityImg {
+  width: 100%;
+}
+.wrapPage .sleepActivity .askSubtitle {
+  color: #FF9900;
+  font-size: 0.4rem;
+  padding: 0.4rem 0.53333333rem 0;
+}
+.wrapPage .sleepActivity .askTitle {
+  font-size: 0.68rem;
+  color: #FF9900;
+  padding: 0.4rem 0.53333333rem 0.4rem;
+  font-weight: bold;
+}
+.wrapPage .sleepActivity .askList {
+  font-size: 0.34rem;
+  color: #515151;
+  padding: 0 0.53333333rem;
+}
+.wrapPage .sleepActivity .line {
+  width: 95%;
+  margin: 0 auto;
+  height: 0.02666667rem;
+  margin-top: 0.26666667rem;
+  border-top: 0.02666667rem solid #f2f2f2;
+}
+.wrapPage .sleepActivity .activitContentTil {
+  padding: 0.5rem 0.53333333rem;
+  vertical-align: bottom;
+}
+.wrapPage .sleepActivity .activitContentTil .contentTitle {
+  color: #FF9933;
+  font-size: 0.46rem;
+  font-weight: bold;
+  float: left;
+  padding: 0 0.4rem 0 0;
+}
+.wrapPage .sleepActivity .activitContentTil .activityBtnText {
+  color: #949494;
+  font-size: 0.3rem;
+  padding-top: 0.18rem;
+}
+.wrapPage .sleepActivity .activitTextP {
+  font-size: 0.38rem;
+  color: #333;
+  line-height: 0.6rem;
+  padding: 0.5rem 0.53333333rem 0.26666667rem;
+}
+.wrapPage .sleepActivity .starContent {
+  padding: 0 0.53333333rem;
+}
+.wrapPage .sleepActivity .starContent .starInterest {
+  font-size: 0.34rem;
+  color: #868686;
+  letter-spacing: 0.03rem;
+  line-height: 0.7rem;
+  background: url(../img/xf.png) no-repeat left center;
+  background-size: 0.4rem;
+  padding-left: 0.6rem;
+}
+.wrapPage .sleepActivity .starContent ul {
+  float: left;
+  padding-right: 0.4rem;
+}
+.wrapPage .sleepActivity .starContent ul li {
+  float: left;
+  font-size: 0.38rem;
+  line-height: 0.7rem;
+  color: #FF9900;
+  padding: 0 0.13333333rem;
+}
+.wrapPage .sleepActivity .activitContent {
+  padding: 0 0.53333333rem 0.53333333rem;
+  width: 100%;
+}
+.wrapPage .sleepActivity .activitContent .contentLeft {
+  width: 20%;
+}
+.wrapPage .sleepActivity .activitContent .contentLeft .leftLi {
+  width: 2rem;
+  height: 2rem;
+  background-color: #ffcc33;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  padding: 0.5rem 0;
+  margin-right: 0.4rem;
+}
+.wrapPage .sleepActivity .activitContent .contentLeft .leftLi img {
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  margin: 0 auto;
+}
+.wrapPage .sleepActivity .activitContent .contentLeft .verticalLine {
+  height: 2.2rem;
+  padding: 0.5rem 1rem;
+}
+.wrapPage .sleepActivity .activitContent .contentRight {
+  width: 75%;
+}
+.wrapPage .sleepActivity .activitContent .contentRight .rightLi {
+  min-height: 2rem;
+}
+.wrapPage .sleepActivity .activitContent .contentRight .rightLi :nth-child(1) {
+  font-size: 0.38rem;
+  color: #333;
+  font-weight: bold;
+}
+.wrapPage .sleepActivity .activitContent .contentRight .rightLi :nth-child(2) {
+  font-size: 0.32rem;
+  color: #434343;
+  line-height: 0.5rem;
+}
+.wrapPage .sleepActivity .activitContent .contentRight .rightLi1 {
+  padding-top: 0.2rem;
+}
+.wrapPage .sleepActivity .activitContent .contentRight .blankLine {
+  height: 2.2rem;
+}
+.wrapPage .sleepActivity .btnContent {
+  padding: 0 0.53333333rem 0.5rem;
+}
+.wrapPage .sleepActivity .btnContent p {
+  line-height: 0.6rem;
+  font-size: 0.34rem;
+  color: #333;
+}
+.wrapPage .sleepActivity .completeText {
+  text-align: center;
+  font-size: 0.38rem;
+  color: #FF9933;
+  padding-bottom: 0.5rem;
+}
+.wrapPage .sleepActivity .activityBtn {
+  display: block;
+  width: 100%;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.44rem;
+  background-color: #ffcc33;
+}
+.wrapPage .sleepList {
+  width: 100%;
+  height: auto;
+}
+.wrapPage .sleepList .listTit {
+  width: 65%;
+  color: #fff;
+  font-size: 0.4rem;
+  margin: 0.53333333rem 0 0.66666667rem;
+  padding: 0.13333333rem 0.66666667rem;
+  background-color: #ff9900;
+}
+.wrapPage .sleepList .listSubtitle {
+  color: #FF9900;
+  font-weight: bold;
+  padding-left: 0.66666667rem;
+  font-size: 0.88rem;
+}
+.wrapPage .sleepList .listStage {
+  font-size: 0.38rem;
+  background: url(../img/微信图片_20170811111327.png) no-repeat 3rem -0.05rem;
+  background-size: 0.5rem;
+  margin: 0.3rem 0.66666667rem 0.26666667rem;
+}
+.wrapPage .sleepList .line {
+  width: 3.5rem;
+  margin-left: 0.66666667rem;
+  height: 0.13333333rem;
+  border-radius: 1.33333333rem 1.33333333rem;
+  background-color: #f2f2f2;
+}
+.wrapPage .sleepList .list1 {
+  font-size: 0.36rem;
+  line-height: 0.6rem;
+  color: #333;
+  padding: 0.5rem 0 0 0.66666667rem;
+  background: url(../img/u2181.png) no-repeat left 0.5rem;
+  background-size: 6%;
+  margin: 0 0.66666667rem;
+}
+.wrapPage .sleepList .list2 {
+  background: url(../img/u2185.png) no-repeat left 0.5rem;
+  background-size: 6%;
+}
+.wrapPage .sleepList .list3 {
+  background: url(../img/u2189.png) no-repeat left 0.5rem;
+  background-size: 6%;
+}
+.wrapPage .sleepList .list4 {
+  background: url(../img/u2193.png) no-repeat left 0.5rem;
+  background-size: 6%;
+}
+.wrapPage .sleepList .joinBtn {
+  display: block;
+  width: 60%;
+  padding: 0.2rem 0;
+  margin: 2rem auto 0.4rem;
+  text-align: center;
+  color: #FF9900;
+  font-size: 0.4rem;
+  -webkit-border-radius: 1.33333333rem;
+  -moz-border-radius: 1.33333333rem;
+  -ms-border-radius: 1.33333333rem;
+  border-radius: 1.33333333rem;
+  border: 0.02666667rem solid #ff9900;
+}
+.wrapPage .sleepList .blankLine {
+  width: 100%;
+  height: 1rem;
+}

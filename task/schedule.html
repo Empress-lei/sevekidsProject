@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="keywords" content="喵姐,喵姐早教说,0到6岁早期教育,家庭教育,家长教育,父母课堂,育儿知识,儿童教育,母婴育儿,">
+    <meta name="description" content="喵姐早教说是喵姐高寿岩创办的为家庭教育提供专业靠谱的0到6岁早期教育、育儿知识的平台。">
+    <title>喵姐早教说-作息表</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/schedule.css">
+    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/selectionTime2.js"></script>
+	<script src="./js/swiper-3.4.2.min.js"></script>
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+         .swiper-container {
+            width: 50%;
+        }
+	
+        .current{
+            color:#ff9963 !important;
+        }
+        .swiper-slide-next{color: #ff9963;}
+    </style>
+</head>
+<body>
+    <!--时间-->
+    <div class="choiceDate" style="display:none;">
+        <div class="layer"> 
+            <p>点击阴影区域关闭时间选择器</p>
+        </div>
+        <div class="dateBox">
+            <!--顶部的确定和时间-->
+            <div class="dateHeader clearfix">
+                <div class="headerLeft">
+                    <img src="./img/lifetable/u2019.png" alt="" data-id='1' class="leftImg">
+                    <span class='title' data-id='0'>起床</span>
+                    <span class="startTimeCurrent"><span class="show-time">06</span> ：<span class="show-time">30</span></span>  -  
+                    <span class="endTimeCurrent"><span class="show-time">07</span> ：<span class="show-time">00</span></span>
+                </div>
+                <div class="headerRight" id="headerRight">
+                   下一项&nbsp;&nbsp;>
+                </div>
+            </div>
+            <!--时间-->
+            <div class="dateTime">
+                <div class="timeText clearfix">
+                    <p class="startTime">开始时间</p>
+                    <p class="endTime">结束时间</p>
+                </div>
+                 <!--开始时间前面的小时-->
+                <div class="timeNum">
+                    <ul class="startNum">
+                       <!--小时-->
+                        <li class="startHour">
+                            <div class="swiper-container"  id="dateHourLeft">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">00</div>
+                                    <div class="swiper-slide">01</div>
+                                    <div class="swiper-slide">02</div>
+                                    <div class="swiper-slide">03</div>
+                                    <div class="swiper-slide">04</div>
+                                    <div class="swiper-slide">05</div>
+                                    <div class="swiper-slide">06</div>
+                                    <div class="swiper-slide">07</div>
+                                    <div class="swiper-slide">08</div>
+                                    <div class="swiper-slide">09</div>
+                                    <div class="swiper-slide">10</div>
+                                    <div class="swiper-slide">11</div>
+                                    <div class="swiper-slide">12</div>
+                                    <div class="swiper-slide">13</div>
+                                    <div class="swiper-slide">14</div>
+                                    <div class="swiper-slide">15</div>
+                                    <div class="swiper-slide">16</div>
+                                    <div class="swiper-slide">17</div>
+                                    <div class="swiper-slide">18</div>
+                                    <div class="swiper-slide">19</div>
+                                    <div class="swiper-slide">20</div>
+                                    <div class="swiper-slide">21</div>
+                                    <div class="swiper-slide">22</div>
+                                    <div class="swiper-slide">23</div>
+                                </div>
+                            </div>
+                        
+                        </li>
+                        <!--中间的冒号-->
+                        <li class="colon">
+                            <span>:</span>
+                            <span>:</span>
+                            <span>:</span>
+                            <!--<span>:</span>-->
+                            <!--<span>:</span>-->
+                        </li>
+                        <!--分钟-->
+                        <li class="startMinute">
+                            <div class="swiper-container"  id="dateMinuteLeft">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">00</div>
+                                    <div class="swiper-slide">05</div>    
+                                    <div class="swiper-slide">10</div>
+                                    <div class="swiper-slide">15</div>
+                                    
+                                    <div class="swiper-slide">20</div>
+                                    
+                                    <div class="swiper-slide">25</div>
+                                    
+                                    <div class="swiper-slide">30</div>
+                                    
+                                    <div class="swiper-slide">35</div>
+                                    
+                                    <div class="swiper-slide">40</div>
+                                    
+                                    <div class="swiper-slide">45</div>
+                                    
+                                    <div class="swiper-slide">50</div>
+                                    
+                                    <div class="swiper-slide">55</div>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                     <ul class="endNum">
+                       <li class="endHour">
+                            <div class="swiper-container" id="dateHourRight">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">00</div>
+                                    <div class="swiper-slide">01</div>
+                                    <div class="swiper-slide">02</div>
+                                    <div class="swiper-slide">03</div>
+                                    <div class="swiper-slide">04</div>
+                                    <div class="swiper-slide">05</div>
+                                    <div class="swiper-slide">06</div>
+                                    <div class="swiper-slide">07</div>
+                                    <div class="swiper-slide">08</div>
+                                    <div class="swiper-slide">09</div>
+                                    <div class="swiper-slide">10</div>
+                                    <div class="swiper-slide">11</div>
+                                    <div class="swiper-slide">12</div>
+                                    <div class="swiper-slide">13</div>
+                                    <div class="swiper-slide">14</div>
+                                    <div class="swiper-slide">15</div>
+                                    <div class="swiper-slide">16</div>
+                                    <div class="swiper-slide">17</div>
+                                    <div class="swiper-slide">18</div>
+                                    <div class="swiper-slide">19</div>
+                                    <div class="swiper-slide">20</div>
+                                    <div class="swiper-slide">21</div>
+                                    <div class="swiper-slide">22</div>
+                                    <div class="swiper-slide">23</div>  
+                                </div>
+                            </div>
+                        </li>
+                        <li class="colon">
+                            <span>:</span>
+                            <span>:</span>
+                            <span>:</span>
+                            <span>:</span>
+                            <!--<span>:</span>-->
+                        <li class="endMinute">
+                            <div class="swiper-container"  id="dateMinuteRight">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">00</div>
+                                    
+                                    <div class="swiper-slide">05</div>
+                                   
+                                    <div class="swiper-slide">10</div>
+                                   
+                                    <div class="swiper-slide">15</div>
+                                   
+                                    <div class="swiper-slide">20</div>
+                                   
+                                    <div class="swiper-slide">25</div>
+                                    
+                                    <div class="swiper-slide">30</div>
+                                    
+                                    <div class="swiper-slide">35</div>
+                                    
+                                    <div class="swiper-slide">40</div>
+                                   
+                                    <div class="swiper-slide">45</div>
+                                    
+                                    <div class="swiper-slide">50</div>
+                                    
+                                    <div class="swiper-slide">55</div>
+                                            
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapPage"> 
+        <!--作息表-->
+        <div class="surface edit">
+            <div class="workSurface clearfix">
+                <div class="workSurfaceLeft">
+                    <h4 class="workSche"><span>小卟咪</span> の 作息表</h4>
+                    <p class="workScheText">不积跬步无以至千里，坚持总不会有错。</p>
+                </div>
+                <p class="workSurfaceRight">编辑</p>
+            </div>
+            <!--起床-->
+            <div class="surTime clearfix" data-id='0'>  
+                <div class="pos"></div>      
+                <img src="./img/lifetable/u2019.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP ">起床</p>
+                    <div class="timeD clearfix ">
+                        <p  class="fl timeLeft">07:20</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">07:30</p>
+                    </div>
+                </div>
+            </div>
+            <!--穿衣/洗漱-->
+            <div class="surTime clearfix" data-id='1'>
+                <img src="./img/lifetable/u2033.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">穿衣/洗漱</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">07:30</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">08:00</p>
+                    </div>
+                </div>
+            </div>
+            <!--早饭-->
+            <div class="surTime clearfix" data-id='2'>
+                <img src="./img/lifetable/u2053.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">早饭</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">08:00</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">08:30</p>
+                    </div>
+                </div>
+            </div>
+            <!--户外活动-->
+            <div class="surTime clearfix" data-id='3'>
+                <img src="./img/lifetable/u2069.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">户外活动</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">08:00</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">10:00</p>
+                    </div>
+                </div>
+            </div>
+            <!--加餐（喝水/酸奶/水果等）-->
+            <div class="surTime clearfix" data-id='4'>
+                <img src="./img/lifetable/u2081.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">加餐（喝水/酸奶/水果等）</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">10:00</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">10:15</p>
+                    </div>
+                </div>
+            </div>
+            <!--室内游戏-->
+            <div class="surTime clearfix" data-id='5'>
+                <img src="./img/lifetable/u2101.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">加餐（喝水/酸奶/水果等）</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">10:15</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">11:30</p>
+                    </div>
+                </div>
+            </div>
+            <!--午餐（收拾餐桌/洗手/漱口）-->
+            <div class="surTime clearfix" data-id='6'>
+                <img src="./img/lifetable/u2117.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">午餐（收拾餐桌/洗手/漱口）</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">11:30</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">12:00</p>
+                    </div>
+                </div>
+            </div>
+            <!--午睡准备（室内散步/看书等）-->
+            <div class="surTime clearfix" data-id='7'>
+                <img src="./img/lifetable/u2129.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">午餐（收拾餐桌/洗手/漱口）</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">12:00</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">12:15</p>
+                    </div>
+                </div>
+            </div>
+            <!--午睡-->
+            <div class="surTime clearfix" data-id='8'>
+                <img src="./img/lifetable/u2149.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">午睡</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">12:15</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">14:30</p>
+                    </div>
+                </div>
+            </div>
+            <!--加餐（喝水/酸奶/水果等）-->
+            <div class="surTime clearfix" data-id='9'>
+                <img src="./img/lifetable/u2165.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">加餐（喝水/酸奶/水果等）</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">14:30</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">14:45</p>
+                    </div>
+                </div>
+            </div>
+            <!--室内游戏-->
+            <div class="surTime clearfix" data-id='10'>
+                <img src="./img/lifetable/u2181.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">室内游戏</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">14:45</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">16:00</p>
+                    </div>
+                </div>
+            </div>
+            <!--户外活动-->
+            <div class="surTime clearfix" data-id='11'>
+                <img src="./img/lifetable/u2197.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">户外活动</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">16:00</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        
+                        <p  class="fr timeRight">17:30</p>
+                    </div>
+                </div>
+            </div>
+            <!--餐前准备（孩子帮择菜/洗菜/准备餐桌）-->
+            <div class="surTime clearfix" data-id='12'>
+                <img src="./img/lifetable/u2213.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">餐前准备（孩子帮择菜/洗菜/准备餐桌）</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">17:30</p>                       
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">18:00</p>
+                    </div>
+                </div>
+            </div>
+            <!--晚餐（收拾餐桌/洗手/漱口）-->
+            <div class="surTime clearfix" data-id='13'>
+                <img src="./img/lifetable/u2225.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">晚餐（收拾餐桌/洗手/漱口）</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">18:00</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">18:30</p>
+                    </div>
+                </div>
+            </div>
+            <!--餐后活动（避免让孩子过度兴奋）-->
+            <div class="surTime clearfix" data-id='14'>
+                <img src="./img/lifetable/u2245.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">餐后活动（避免让孩子过度兴奋）</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">18:30</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">20:30</p>
+                    </div>
+                </div>
+            </div>
+            <!--洗漱-->
+            <div class="surTime clearfix" data-id='15'>
+                <img src="./img/lifetable/u2261.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">洗漱</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">20:30</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">21:00</p>
+                    </div>
+                </div>
+            </div>
+            <!--上床入睡准备（讲故事/聊天/摇篮曲等）-->
+            <div class="surTime clearfix" data-id='16'>
+                <img src="./img/lifetable/u2277.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">上床入睡准备（讲故事/聊天/摇篮曲等）</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">21:00</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">21:30</p>
+                    </div>
+                </div>
+            </div>
+            <!--入睡-->
+            <div class="clearfix surTime timeNit" data-id='17'>
+                <img src="./img/lifetable/u2293.png" alt="">
+                <div class="timeArrange">
+                    <p class="arran" class="timeP">入睡</p>
+                    <div class="timeD arranDiv ">
+                        <p  class="fl timeLeft arranImg">21:30</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+    </div>  
+</body>
+</html>

@@ -1,0 +1,103 @@
+.wrap .public {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 0.3rem;
+  overflow: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wrap .public .slideHeader {
+  width: 100%;
+  height: 1.33333333rem;
+  font-size: 0.42666667rem;
+  line-height: 1.33333333rem;
+}
+.wrap .public .slideHeader .headerLfet {
+  font-weight: 600;
+}
+.wrap .public .slideHeader .headerLfet e {
+  font-weight: 100;
+  color: #f59268;
+  font-style: oblique;
+}
+.wrap .public .slideHeader .headerRight span {
+  color: #f59268;
+}
+.wrap .public .slide {
+  width: 75%;
+  margin-left: 0.26666667rem;
+}
+.wrap .public .slide .slideContent {
+  width: 100%;
+}
+.wrap .public .slide .slideContent .ContentList {
+  width: 100%;
+  height: auto;
+  min-height: 10rem;
+  margin: 0.8rem auto;
+  background-color: #fffcfd;
+  -webkit-border-radius: 0.21333333rem;
+  -moz-border-radius: 0.21333333rem;
+  -ms-border-radius: 0.21333333rem;
+  border-radius: 0.21333333rem;
+}
+.wrap .public .slide .slideContent .ContentList img {
+  width: 100%;
+  padding-top: 0.21333333rem;
+}
+.wrap .public .slide .slideContent .ContentList h2 {
+  font-size: 0.48rem;
+  font-weight: 600;
+  color: #000;
+  padding: 0.26666667rem 0 0.53333333rem 0.4rem;
+}
+.wrap .public .slide .slideContent .ContentList .contentTask .contentTaskTitle {
+  padding-left: 0.4rem;
+}
+.wrap .public .slide .slideContent .ContentList .contentTask .contentTaskTitle li {
+  width: 100%;
+  height: 0.53333333rem;
+  position: relative;
+}
+.wrap .public .slide .slideContent .ContentList .contentTask .contentTaskTitle li div {
+  width: 0.21333333rem;
+  height: 0.21333333rem;
+  background-color: #000000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -0.08rem;
+}
+.wrap .public .slide .slideContent .ContentList .contentTask .contentTaskTitle li h3 {
+  margin-left: 0.4rem;
+  font-weight: 600;
+  font-size: 0.43rem;
+}
+.wrap .public .slide .slideContent .ContentList .contentTask .contentTaskDetail {
+  padding: 0.26666667rem 0.4rem 0.4rem 0.8rem;
+  color: #000;
+}
+.wrap .public .slide .slideContent .ContentList .contentBot {
+  width: 100%;
+  height: 1.06666667rem;
+  background-color: #f0f0f0;
+  font-size: 0.42666667rem;
+  color: #000;
+  text-align: center;
+  line-height: 1.06666667rem;
+  -webkit-border-radius: 0 0 0.21333333rem 0.21333333rem;
+  -moz-border-radius: 0 0 0.21333333rem 0.21333333rem;
+  -ms-border-radius: 0 0 0.21333333rem 0.21333333rem;
+  border-radius: 0 0 0.21333333rem 0.21333333rem;
+}
+.wrap .public .slide .slideContent .ContentList .contentBot span {
+  color: #f59268;
+}
+.wrap .public .slideFooter {
+  margin-top: 0.8rem;
+  text-align: center;
+}

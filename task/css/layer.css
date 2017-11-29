@@ -1,0 +1,681 @@
+/*连续3天学习奖励 学习认真奖*/
+.share1 {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.share1 .shareBox {
+  width: 100%;
+  height: 100%;
+  padding-left: 0.26666667rem;
+  position: relative;
+  padding-top: 0.26666667rem;
+}
+.share1 .shareBox .interrupt {
+  width: 80%;
+  height: 40%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0.4rem;
+  transform: translate(-50%, -50%);
+  border-radius: 0.21333333rem;
+}
+.share1 .shareBox .interrupt .interruptImg {
+  width: 35%;
+  position: absolute;
+  top: -1.1rem;
+  transform: rotate(-15deg);
+  left: -0.5rem;
+}
+.share1 .shareBox .interrupt .interruptTit {
+  position: absolute;
+  top: 1rem;
+  left: 3.5rem;
+  font-size: 0.34rem;
+  color: #333;
+}
+.share1 .shareBox .interrupt .interruptTit span {
+  color: #ff9900;
+}
+.share1 .shareBox .interrupt .interruptTxt {
+  font-size: 0.34rem;
+  color: #333;
+  padding-top: 1.3rem;
+  line-height: 0.5rem;
+  text-indent: 2.6rem;
+}
+.share1 .shareBox .interrupt .interruptBtn {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 0.3rem;
+  color: #0099FF;
+}
+.share1 .shareBox .conThree {
+  width: 75%;
+  height: 55%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding-top: 0.4rem;
+  transform: translate(-50%, -50%);
+  border-radius: 0.21333333rem;
+}
+.share1 .shareBox .conThree .conThreeImg {
+  width: 2.5rem;
+  position: absolute;
+  top: -1.1rem;
+  left: 50%;
+  margin-left: -1.25rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+.share1 .shareBox .conThree .conThreeTit {
+  text-align: center;
+  padding: 1.9rem 0 0;
+  color: #434343;
+  font-size: 0.42rem;
+}
+.share1 .shareBox .conThree .conThreeTit span {
+  color: #ff9900;
+}
+.share1 .shareBox .conThree .conThreeTxt {
+  font-size: 0.3rem;
+  padding: 0.2rem 0.13333333rem 0;
+  text-align: center;
+  color: #868686;
+}
+.share1 .shareBox .conThree .conThreeTxt span {
+  color: #FF9933;
+}
+.share1 .shareBox .conThree .notice {
+  padding: 0.8rem 0 0;
+}
+.share1 .shareBox .conThree .line {
+  width: 95%;
+  height: 0.02666667rem;
+  background-color: #f2f2f2;
+  margin: 0.4rem auto 0;
+}
+.share1 .shareBox .conThree .seriousPrize {
+  width: 80%;
+  min-height: 1rem;
+  border: 0.05333333rem solid #ff9933;
+  margin: 0.4rem auto 0.3rem;
+}
+.share1 .shareBox .conThree .seriousPrize .reward {
+  display: block;
+  width: 60%;
+  text-align: center;
+  padding: 0.26666667rem;
+  background-color: #fff;
+  margin: -0.5rem auto;
+  color: #FF9933;
+  font-size: 0.36rem;
+}
+.share1 .shareBox .conThree .seriousPrize .rewardTxt {
+  padding: 0.66666667rem 0 0.26666667rem;
+  text-align: center;
+  font-size: 0.4rem;
+  color: #333;
+}
+.share1 .shareBox .conThree .promptTxt {
+  width: 70%;
+  text-align: center;
+  color: #bcbcbc;
+  margin: 0 auto;
+  font-size: 0.3rem;
+}
+.share1 .shareBox .conThree .planJoin {
+  width: 60%;
+  padding: 0.16rem 0;
+  margin: 0.3rem auto 0.8rem;
+  text-align: center;
+  -webkit-border-radius: 1.33333333rem;
+  -moz-border-radius: 1.33333333rem;
+  -ms-border-radius: 1.33333333rem;
+  border-radius: 1.33333333rem;
+  background-color: #ff9900;
+}
+.share1 .shareBox .conThree .planJoin a {
+  color: #fff;
+}
+.share1 .shareBox .conThree .planJoinKnow {
+  background-color: #fff;
+  border: 0.02666667rem solid #ff9900;
+}
+.share1 .shareBox .conThree .planJoinKnow a {
+  color: #333;
+}
+.share1 .shareBox .conThreeBotImg {
+  width: 0.8rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/*连续3天学习奖励 优秀学员奖*/
+.share2 {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.share2 .shareBox {
+  width: 100%;
+  height: 100%;
+  padding-left: 0.26666667rem;
+  position: relative;
+  padding-top: 0.26666667rem;
+}
+.share2 .shareBox .interrupt {
+  width: 80%;
+  height: 40%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0.4rem;
+  transform: translate(-50%, -50%);
+  border-radius: 0.21333333rem;
+}
+.share2 .shareBox .interrupt .interruptImg {
+  width: 35%;
+  position: absolute;
+  top: -1.1rem;
+  transform: rotate(-15deg);
+  left: -0.5rem;
+}
+.share2 .shareBox .interrupt .interruptTit {
+  position: absolute;
+  top: 1rem;
+  left: 3.5rem;
+  font-size: 0.34rem;
+  color: #333;
+}
+.share2 .shareBox .interrupt .interruptTit span {
+  color: #ff9900;
+}
+.share2 .shareBox .interrupt .interruptTxt {
+  font-size: 0.34rem;
+  color: #333;
+  padding-top: 1.3rem;
+  line-height: 0.5rem;
+  text-indent: 2.6rem;
+}
+.share2 .shareBox .interrupt .interruptBtn {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 0.3rem;
+  color: #0099FF;
+}
+.share2 .shareBox .conThree {
+  width: 75%;
+  height: 55%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding-top: 0.4rem;
+  transform: translate(-50%, -50%);
+  border-radius: 0.21333333rem;
+}
+.share2 .shareBox .conThree .conThreeImg {
+  width: 2.5rem;
+  position: absolute;
+  top: -1.1rem;
+  left: 50%;
+  margin-left: -1.25rem;
+  border-radius: 50%;
+}
+.share2 .shareBox .conThree .conThreeTit {
+  text-align: center;
+  padding: 1.1rem 0 0;
+  color: #434343;
+  font-size: 0.42rem;
+}
+.share2 .shareBox .conThree .conThreeTit span {
+  color: #ff9900;
+}
+.share2 .shareBox .conThree .conThreeTxt {
+  font-size: 0.3rem;
+  padding: 0.2rem 0.13333333rem 0;
+  text-align: center;
+  color: #868686;
+}
+.share2 .shareBox .conThree .conThreeTxt span {
+  color: #FF9933;
+}
+.share2 .shareBox .conThree .notice {
+  padding: 0.8rem 0 0;
+}
+.share2 .shareBox .conThree .line {
+  width: 95%;
+  height: 0.02666667rem;
+  background-color: #f2f2f2;
+  margin: 0.4rem auto 0;
+}
+.share2 .shareBox .conThree .seriousPrize {
+  width: 80%;
+  min-height: 1rem;
+  border: 0.05333333rem solid #ff9933;
+  margin: 0.4rem auto 0.3rem;
+}
+.share2 .shareBox .conThree .seriousPrize .reward {
+  display: block;
+  width: 60%;
+  text-align: center;
+  padding: 0.26666667rem;
+  background-color: #fff;
+  margin: -0.5rem auto;
+  color: #FF9933;
+  font-size: 0.36rem;
+}
+.share2 .shareBox .conThree .seriousPrize .rewardTxt {
+  padding: 0.66666667rem 0 0.26666667rem;
+  text-align: center;
+  font-size: 0.4rem;
+  color: #333;
+}
+.share2 .shareBox .conThree .promptTxt {
+  width: 70%;
+  text-align: center;
+  color: #bcbcbc;
+  margin: 0 auto;
+  font-size: 0.3rem;
+}
+.share2 .shareBox .conThree .planJoin {
+  width: 60%;
+  padding: 0.16rem 0;
+  margin: 0.3rem auto;
+  text-align: center;
+  -webkit-border-radius: 1.33333333rem;
+  -moz-border-radius: 1.33333333rem;
+  -ms-border-radius: 1.33333333rem;
+  border-radius: 1.33333333rem;
+  background-color: #ff9900;
+}
+.share2 .shareBox .conThree .planJoin a {
+  color: #fff;
+}
+.share2 .shareBox .conThree .planJoinKnow {
+  background-color: #fff;
+  border: 0.02666667rem solid #ff9900;
+}
+.share2 .shareBox .conThree .planJoinKnow a {
+  color: #333;
+}
+.share2 .shareBox .conThreeBotImg {
+  width: 0.8rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+
+/*连续3天学习奖励 奖品领取通知*/
+.share3 {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.share3 .shareBox {
+  width: 100%;
+  height: 100%;
+  padding-left: 0.26666667rem;
+  position: relative;
+  padding-top: 0.26666667rem;
+}
+.share3 .shareBox .interrupt {
+  width: 80%;
+  height: 40%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0.4rem;
+  transform: translate(-50%, -50%);
+  border-radius: 0.21333333rem;
+}
+.share3 .shareBox .interrupt .interruptImg {
+  width: 35%;
+  position: absolute;
+  top: -1.1rem;
+  transform: rotate(-15deg);
+  left: -0.5rem;
+}
+.share3 .shareBox .interrupt .interruptTit {
+  position: absolute;
+  top: 1rem;
+  left: 3.5rem;
+  font-size: 0.34rem;
+  color: #333;
+}
+.share3 .shareBox .interrupt .interruptTit span {
+  color: #ff9900;
+}
+.share3 .shareBox .interrupt .interruptTxt {
+  font-size: 0.34rem;
+  color: #333;
+  padding-top: 1.3rem;
+  line-height: 0.5rem;
+  text-indent: 2.6rem;
+}
+.share3 .shareBox .interrupt .interruptBtn {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 0.3rem;
+  color: #0099FF;
+}
+.share3 .shareBox .conThree {
+  width: 75%;
+  height: 55%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding-top: 0.4rem;
+  transform: translate(-50%, -50%);
+  border-radius: 0.21333333rem;
+}
+.share3 .shareBox .conThree .conThreeImg {
+  width: 35%;
+  position: absolute;
+  top: -1.1rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.share3 .shareBox .conThree .conThreeTit {
+  text-align: center;
+  padding: 1.5rem 0 0;
+  color: #434343;
+  font-size: 0.42rem;
+}
+.share3 .shareBox .conThree .conThreeTit span {
+  color: #ff9900;
+}
+.share3 .shareBox .conThree .conThreeTxt {
+  font-size: 0.3rem;
+  padding: 0.6rem 0.13333333rem 0.1rem;
+  text-align: center;
+  color: #868686;
+}
+.share3 .shareBox .conThree .conThreeTxt span {
+  color: #FF9933;
+}
+.share3 .shareBox .conThree .notice {
+  padding: 0.8rem 0 0;
+}
+.share3 .shareBox .conThree .line {
+  width: 95%;
+  height: 0.02666667rem;
+  background-color: #f2f2f2;
+  margin: 0.4rem auto 0;
+}
+.share3 .shareBox .conThree .seriousPrize {
+  width: 80%;
+  min-height: 1rem;
+  border: 0.05333333rem solid #ff9933;
+  margin: 0.8rem auto;
+}
+.share3 .shareBox .conThree .seriousPrize .reward {
+  display: block;
+  width: 60%;
+  text-align: center;
+  padding: 0.26666667rem;
+  background-color: #fff;
+  margin: -0.5rem auto;
+  color: #FF9933;
+  font-size: 0.36rem;
+}
+.share3 .shareBox .conThree .seriousPrize .rewardTxt {
+  padding: 0.66666667rem 0 0.26666667rem;
+  text-align: center;
+  font-size: 0.4rem;
+  color: #333;
+}
+.share3 .shareBox .conThree .promptTxt {
+  width: 70%;
+  text-align: center;
+  color: #bcbcbc;
+  margin: 0 auto;
+  font-size: 0.3rem;
+}
+.share3 .shareBox .conThree .planJoin {
+  width: 60%;
+  padding: 0.16rem 0;
+  margin: 0.3rem auto;
+  text-align: center;
+  -webkit-border-radius: 1.33333333rem;
+  -moz-border-radius: 1.33333333rem;
+  -ms-border-radius: 1.33333333rem;
+  border-radius: 1.33333333rem;
+  background-color: #ff9900;
+}
+.share3 .shareBox .conThree .planJoin a {
+  color: #fff;
+}
+.share3 .shareBox .conThree .planJoinKnow {
+  background-color: #fff;
+  border: 0.02666667rem solid #ff9900;
+}
+.share3 .shareBox .conThree .planJoinKnow a {
+  color: #333;
+}
+.share3 .shareBox .conThreeBotImg {
+  width: 10%;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+
+/*任务有中断，再次进入时提示*/
+.share4 {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 600;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.share4 .shareBox {
+  width: 100%;
+  height: 100%;
+  padding-left: 0.26666667rem;
+  position: relative;
+  padding-top: 0.26666667rem;
+}
+.share4 .shareBox .interrupt {
+  width: 80%;
+  height: 40%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0.4rem;
+  transform: translate(-50%, -50%);
+  border-radius: 0.21333333rem;
+}
+.share4 .shareBox .interrupt .interruptImg {
+  width: 35%;
+  position: absolute;
+  top: -1.1rem;
+  transform: rotate(-15deg);
+  left: -0.5rem;
+}
+.share4 .shareBox .interrupt .interruptTit {
+  position: absolute;
+  top: 1rem;
+  left: 3.5rem;
+  font-size: 0.34rem;
+  color: #333;
+}
+.share4 .shareBox .interrupt .interruptTit span {
+  color: #ff9900;
+}
+.share4 .shareBox .interrupt .interruptTxt {
+  font-size: 0.34rem;
+  color: #333;
+  padding-top: 1.3rem;
+  line-height: 0.5rem;
+  text-indent: 2.6rem;
+}
+.share4 .shareBox .interrupt .interruptBtn {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 0.3rem;
+  color: #0099FF;
+}
+
+/*朦层*/
+.share5 {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.share5 .sharearrow {
+  display: block;
+    width: 75px;
+    height: 84px;
+    position: absolute;
+    right: 0.48rem;
+    top: 0.21333333rem;
+    background-image: url('../img/share.png');
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 78px 72px;
+}
+.share5 p {
+  margin: 2rem auto;
+   color: #f8e71c;
+   width: 50%;
+   text-align: center;
+   line-height: 0.8rem;
+}
+/*连续3天学习奖励 奖品领取通知*/
+.share6 {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/*获得现金券朦层*/
+.share6 .shareBox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.share6 .shareBox .conThree {
+  width: 75%;
+  height: 55%;
+  background-color: #fff;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  padding-top: 0.4rem;
+  transform: translate(-50%, 0);
+  border-radius: 0.21333333rem;
+}
+
+.share6 .shareBox .conThree .seriousPrize {
+  width: 80%;
+  min-height: 1rem;
+  border: 0.05333333rem solid #ff9933;
+  margin: 1rem auto 1.5rem;
+}
+.share6 .shareBox .conThree .seriousPrize .reward {
+  display: block;
+  width: 60%;
+  text-align: center;
+  padding: 0.26666667rem;
+  background-color: #fff;
+  margin: -0.6rem auto;
+  color: #FF9933;
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+.share6 .shareBox .conThree .seriousPrize .rewardTxt {
+  padding: 0.9rem 0 0.5rem;
+  text-align: center;
+  font-size: 0.38rem;
+  color: #333;
+}
+.share6 .shareBox .conThree .promptTxt {
+  width: 70%;
+  text-align: center;
+  color: #bcbcbc;
+  margin: 0 auto;
+  font-size: 0.3rem;
+  line-height: 0.8rem;
+}
+.share6 .shareBox .conThree .promptFont {
+  font-size: 0.38rem;
+}
+.share6 .shareBox .conThree a {
+  width: 70%;
+  display: block;
+  padding: 0.2rem 0;
+  margin: 0.8rem auto;
+  text-align: center;
+  -webkit-border-radius: 1.33333333rem;
+  -moz-border-radius: 1.33333333rem;
+  -ms-border-radius: 1.33333333rem;
+  border-radius: 1.33333333rem;
+  background-color: #ff9900;
+  color: #fff;
+}
+.share6 .shareBox .conThreeBotImg {
+  width: 7%;
+  position: absolute;
+  bottom: 2.3rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.share6 .shareBox .conThreeP {
+  width: 90%;
+  position: absolute;
+  bottom: 3.3rem;
+  left: 50%;
+  text-align: center;
+  font-size: 0.3rem;
+  color: #fff;
+  transform: translate(-50%, 0);
+}

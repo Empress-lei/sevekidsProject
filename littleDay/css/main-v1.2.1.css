@@ -1,0 +1,546 @@
+@charset "utf-8";
+/* CSS Document */
+	.wrap{ background-color:#fff;}
+		
+
+
+			h1 em
+			{
+				font-family: Baskerville, serif;
+			}
+
+		#copyright
+		{
+			font-size: 0.875em; /* 14 */
+			text-align: center;
+			margin-top: 1.429em; /* 20 */
+		}
+			#copyright a
+			{
+				font-weight: 700;
+			}
+
+
+		/*
+			PLAYER
+		*/
+
+		.audioplayer
+		{
+			height:1.2rem; /* 40 */
+			color: #fff;
+			position: relative;
+			z-index: 1;
+			background: #ff9615;
+			/* Gecko browsers */
+				-moz-border-radius: 5px; 
+				/* Webkit browsers */
+				-webkit-border-radius: 5px; 
+				/* W3C syntax - likely to be standard so use for future proofing */
+				border-radius:12px;
+		}
+
+
+			/* mini mode (fallback) */
+
+			.audioplayer-mini
+			{
+				width: 2.5em; /* 40 */
+				margin: 0 auto;
+			}
+
+
+			/* player elements: play/pause and volume buttons, played/duration timers, progress bar of loaded/played */
+
+			.audioplayer > div
+			{
+				position: absolute;
+			}
+
+
+			/* play/pause button */
+
+			.audioplayer-playpause
+			{
+				width:1.2em; /* 40 */
+				height: 100%;
+				text-align: left;
+				text-indent: -9999px;
+				cursor: pointer;
+				z-index: 2;
+				top: 0;
+				left: 0;
+			}
+				.audioplayer-mini .audioplayer-playpause
+				{
+					width: 100%;
+				}
+				.audioplayer-playpause a
+				{
+					display: block;
+				}
+
+				.audioplayer-playing .audioplayer-playpause a
+				{
+					width: 0.75em; /* 12 */
+					height: 0.75em; /* 12 */
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					margin: -0.375em 0 0 -0.375em; /* 6 */
+				}
+					.audioplayer-playing .audioplayer-playpause a:before,
+					.audioplayer-playing .audioplayer-playpause a:after
+					{
+						width: 40%;
+						height: 100%;
+						background-color: #fff;
+						content: '';
+						position: absolute;
+						top: 0;
+					}
+					.audioplayer-playing .audioplayer-playpause a:before
+					{
+						left: 0;
+					}
+					.audioplayer-playing .audioplayer-playpause a:after
+					{
+						right: 0;
+					}
+
+
+			/* timers */
+
+			.audioplayer-time
+			{
+				height: 100%;
+				line-height:1.2rem; /* 38 */
+				text-align: center;
+				z-index: 2;
+				top: 0;
+				/* Gecko browsers */
+				-moz-border-radius: 5px; 
+				/* Webkit browsers */
+				-webkit-border-radius: 5px; 
+				/* W3C syntax - likely to be standard so use for future proofing */
+				border-radius:12px;
+			}
+				.audioplayer-time-duration
+				{
+				
+					right: 2.5em; /* 40 */
+				}
+					.audioplayer-novolume .audioplayer-time-duration
+					{
+						border-right: 0;
+						right: 0;
+					}
+
+
+			/* progress bar of loaded/played */
+
+			.audioplayer-bar
+			{
+				height: 0.8rem; /* 14 */
+				cursor: pointer;
+				z-index: 1;
+				top: 50%; left:2.2rem;
+				margin-top: -0.4rem; /* 7 */
+			}
+				.audioplayer-novolume .audioplayer-bar
+				{
+					right: 4.375em; /* 70 */
+				}
+				.audioplayer-bar div
+				{
+					width: 0;
+					height: 100%;
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+				.audioplayer-bar-loaded
+				{
+					z-index: 1;
+				}
+				.audioplayer-bar-played
+				{
+					background: #007fd1;
+					z-index: 2;
+				}
+
+
+			/* volume button */
+
+			.audioplayer-volume
+			{ 
+			}
+				.audioplayer-volume:hover,
+				.audioplayer-volume:focus
+				{
+					background-color: #222;
+				}
+				.audioplayer-volume-button
+				{
+					width: 100%;
+					height: 100%;
+				}
+					.audioplayer-volume-button a
+					{
+						width: 0.313em; /* 5 */
+						height: 0.375em; /* 6 */
+						background-color: #fff;
+						display: block;
+						position: relative;
+						z-index: 1;
+						top: 40%;
+						left: 35%;
+					}
+						.audioplayer-volume-button a:before,
+						.audioplayer-volume-button a:after
+						{
+							content: '';
+							position: absolute;
+						}
+						.audioplayer-volume-button a:before
+						{
+							width: 0;
+							height: 0;
+							border: 0.5em solid transparent; /* 8 */
+							border-left: none;
+							border-right-color: #fff;
+							z-index: 2;
+							top: 50%;
+							right: -0.25em;
+							margin-top: -0.5em; /* 8 */
+						}
+						.audioplayer:not(.audioplayer-muted) .audioplayer-volume-button a:after
+						{
+							/* "volume" icon by Nicolas Gallagher, http://nicolasgallagher.com/pure-css-gui-icons */
+							width: 0.313em; /* 5 */
+							height: 0.313em; /* 5 */
+							border: 0.25em double #fff; /* 4 */
+							border-width: 0.25em 0.25em 0 0; /* 4 */
+							left: 0.563em; /* 9 */
+							top: -0.063em; /* 1 */
+							-webkit-border-radius: 0 0.938em 0 0; /* 15 */
+							-moz-border-radius: 0 0.938em 0 0; /* 15 */
+							border-radius: 0 0.938em 0 0; /* 15 */
+							-webkit-transform: rotate( 45deg );
+							-moz-transform: rotate( 45deg );
+							-ms-transform: rotate( 45deg );
+							-o-transform: rotate( 45deg );
+							transform: rotate( 45deg );
+						}
+
+
+				/* volume dropdown */
+
+				.audioplayer-volume-adjust
+				{
+					height: 6.25em; /* 100 */
+					cursor: default;
+					position: absolute;
+					left: 0;
+					right: -1px;
+					top: -9999px;
+					background: #333;
+				}
+					.audioplayer-volume:not(:hover) .audioplayer-volume-adjust
+					{
+						opacity: 0;
+					}
+					.audioplayer-volume:hover .audioplayer-volume-adjust
+					{
+						top: auto;
+						bottom: 100%;
+					}
+					.audioplayer-volume-adjust > div
+					{
+						width: 40%;
+						height: 80%;
+						background-color: #222;
+						cursor: pointer;
+						position: relative;
+						z-index: 1;
+						margin: 30% auto 0;
+					}
+						.audioplayer-volume-adjust div div
+						{
+							width: 100%;
+							height: 100%;
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							background: #007fd1;
+						}
+				.audioplayer-novolume .audioplayer-volume
+				{
+					display: none;
+				}
+
+
+			
+			.audioplayer-volume-adjust
+			{
+				-webkit-box-shadow: -2px -2px 2px rgba( 0, 0, 0, .15 ), 2px -2px 2px rgba( 0, 0, 0, .15 );
+				-moz-box-shadow: -2px -2px 2px rgba( 0, 0, 0, .15 ), 2px -2px 2px rgba( 0, 0, 0, .15 );
+				box-shadow: -2px -2px 2px rgba( 0, 0, 0, .15 ), 2px -2px 2px rgba( 0, 0, 0, .15 );
+			}
+
+			
+			
+			.audioplayer-volume-adjust div div
+			{
+				background: -webkit-gradient( linear, left bottom, left top, from( #007fd1 ), to( #c600ff ) );
+				background: -webkit-linear-gradient( bottom, #007fd1, #c600ff );
+				background: -moz-linear-gradient( bottom, #007fd1, #c600ff );
+				background: -ms-radial-gradient( bottom, #007fd1, #c600ff );
+				background: -o-linear-gradient( bottom, #007fd1, #c600ff );
+				background: linear-gradient( to top, #007fd1, #c600ff );
+			}
+			.audioplayer-bar,
+			.audioplayer-bar div,
+			.audioplayer-volume-adjust div
+			{
+				-webkit-border-radius: 4px;
+				-moz-border-radius: 4px;
+				border-radius: 4px;
+			}
+			.audioplayer
+			{
+				-webkit-border-radius: 2px;
+				-moz-border-radius: 2px;
+				border-radius: 12px;
+			}
+			.audioplayer-volume-adjust
+			{
+				-webkit-border-top-left-radius: 2px;
+				-webkit-border-top-right-radius: 2px;
+				-moz-border-radius-topleft: 2px;
+				-moz-border-radius-topright: 2px;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+			}
+		
+
+				.audioplayer:not(.audioplayer-mini) .audioplayer-playpause
+				{ width:1.2rem;
+				}
+				.audioplayer-mini .audioplayer-playpause
+				{
+					width: 100%;
+				}
+				.audioplayer-playpause a
+				{
+					display: block;
+				}
+				.audioplayer-stopped .audioplayer-playpause a
+				{ background:url(../img/Shape@1x.png) no-repeat center center; height:1.2rem; width:1.2rem; line-height:1.2rem; background-size:0.5rem; text-shadow:none;
+				}
+				.audioplayer-playing .audioplayer-playpause a
+				{
+					width: 0.6rem; /* 12 */
+					height: 0.6rem; /* 12 */
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					margin: -0.3rem 0 0 -0.3rem; /* 6 */
+				}
+					.audioplayer-playing .audioplayer-playpause a:before,
+					.audioplayer-playing .audioplayer-playpause a:after
+					{
+						width: 30%;
+						height: 120%;
+						background-color: #fff;
+						content: '';
+						position: absolute;
+						top: 0;
+					}
+					.audioplayer-playing .audioplayer-playpause a:before
+					{
+						left:0.02rem;
+					}
+					.audioplayer-playing .audioplayer-playpause a:after
+					{
+						right:0.02rem;
+					}
+
+
+			/* timers */
+
+			.audioplayer-time
+			{
+				height: 100%;
+				line-height:1.2rem; /* 38 */
+				text-align: center;
+				z-index: 2;
+				top: 0;
+			}
+				.audioplayer-time-current
+				{
+					left: 1.2rem; font-size:12px; line-height:1.2rem; /* 40 */
+				}
+				.audioplayer-time-duration
+				{padding-right:0.2rem; font-size:12px; background:#ff9615;  padding-left:0.2rem;
+				}
+					.audioplayer-novolume .audioplayer-time-duration
+					{
+						border-right: 0;
+						right: 0;
+					}
+
+
+			/* progress bar of loaded/played */
+
+
+				.audioplayer-novolume .audioplayer-bar
+				{
+					right: 4.375em; /* 70 */
+				}
+				.audioplayer-bar div
+				{
+					width: 0;
+					height: 100%;
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+				.audioplayer-bar-loaded
+				{
+					z-index: 1;
+				}
+				.audioplayer-bar-played
+				{
+					background: #007fd1;
+					z-index: 2;
+				}
+
+
+			/* volume button */
+.audioplayer-bar{ width:5.2rem; background:#ccc;}
+			.audioplayer-volume
+			{
+				width: 5.2rem; /* 40 */
+				height: 100%; background:red;
+				filter:alpha(opacity=0); opacity:0;
+				text-align: left;
+				text-indent: -9999px;
+				cursor: pointer;
+				z-index: 2;
+				top: 0;
+				right:1.5rem;
+			}
+			.audioplayer-volume div{ display:none;}
+				.audioplayer-volume:hover,
+				.audioplayer-volume:focus
+				{
+					background-color: #222;
+				}
+				.audioplayer-volume-button
+				{
+					width: 100%;
+					height: 100%;
+				}
+					.audioplayer-volume-button a
+					{
+						width: 0.313em; /* 5 */
+						height: 0.375em; /* 6 */
+						background-color: #fff;
+						display: block;
+						position: relative;
+						z-index: 1;
+						top: 40%;
+						left: 35%;
+					}
+						.audioplayer-volume-button a:before,
+						.audioplayer-volume-button a:after
+						{
+							content: '';
+							position: absolute;
+						}
+						.audioplayer-volume-button a:before
+						{
+							width: 0;
+							height: 0;
+							border: 0.5em solid transparent; /* 8 */
+							border-left: none;
+							border-right-color: #fff;
+							z-index: 2;
+							top: 50%;
+							right: -0.25em;
+							margin-top: -0.5em; /* 8 */
+						}
+						.audioplayer:not(.audioplayer-muted) .audioplayer-volume-button a:after
+						{
+							/* "volume" icon by Nicolas Gallagher, http://nicolasgallagher.com/pure-css-gui-icons */
+							width: 0.313em; /* 5 */
+							height: 0.313em; /* 5 */
+							border: 0.25em double #fff; /* 4 */
+							border-width: 0.25em 0.25em 0 0; /* 4 */
+							left: 0.563em; /* 9 */
+							top: -0.063em; /* 1 */
+							-webkit-border-radius: 0 0.938em 0 0; /* 15 */
+							-moz-border-radius: 0 0.938em 0 0; /* 15 */
+							border-radius: 0 0.938em 0 0; /* 15 */
+							-webkit-transform: rotate( 45deg );
+							-moz-transform: rotate( 45deg );
+							-ms-transform: rotate( 45deg );
+							-o-transform: rotate( 45deg );
+							transform: rotate( 45deg );
+						}
+
+
+				/* volume dropdown */
+
+				.audioplayer-volume-adjust
+				{
+					height: 6.25em; /* 100 */
+					cursor: default;
+					position: absolute;
+					left: 0;
+					right: -1px;
+					top: -9999px;
+					background: #333;
+				}
+					.audioplayer-volume:not(:hover) .audioplayer-volume-adjust
+					{
+						opacity: 0;
+					}
+					.audioplayer-volume:hover .audioplayer-volume-adjust
+					{
+						top: auto;
+						bottom: 100%;
+					}
+					.audioplayer-volume-adjust > div
+					{
+						width: 40%;
+						height: 80%;
+						background-color: #222;
+						cursor: pointer;
+						position: relative;
+						z-index: 1;
+						margin: 30% auto 0;
+					}
+						.audioplayer-volume-adjust div div
+						{
+							width: 100%;
+							height: 100%;
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							background: #007fd1;
+						}
+				.audioplayer-novolume .audioplayer-volume
+				{
+					display: none;
+				}
+
+		
+	 .audioplayer-bar-loaded{ background:no-repeat center center; z-index:999; background-size:100%;width:105% !important;}
+
+		.audioplayer-bar-played{ background:#fff; z-index:1; border-radius:2rem;}
+		.audioplayer-bar{ width:5.2rem;}
+		.audioplayer-bar{ display:none;}
+		.audioplayer-bar-loaded{ width:104%!important; height:108%!important; left:-0.1rem!important;top:-0.02rem!important;}
+		.audioplayer-bar .audioplayer-bar-played{ max-width:5.2rem!important;}

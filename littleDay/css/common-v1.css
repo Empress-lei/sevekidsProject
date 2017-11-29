@@ -1,0 +1,354 @@
+/*格式化*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: 微软雅黑;
+}
+html,
+body {
+  max-width: 540px;
+  height: 100%;
+  margin: 0 auto;
+  /*overflow-x: hidden;*/
+  background-color: #f6f6f6;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #333;
+}
+img {
+  display: inline;
+  border: none;
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+}
+input,
+textarea,
+button {
+  border: none;
+  background: none;
+  border-radius: 0;
+  outline: none;
+}
+button,
+input[type="submit"],
+input[type="button"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+ul {
+  list-style: none;
+}
+.max-width {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+}
+#bgwhite {
+  background: #fff;
+}
+/*盒子布局*/
+.box {
+  display: box;
+  display: -webkit-box;
+  display: -moz-box;
+}
+.boxhor {
+  display: box;
+  display: -webkit-box;
+  display: -moz-box;
+  box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+}
+.boxver {
+  display: box;
+  display: -webkit-box;
+  display: -moz-box;
+  box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+}
+.boxflex {
+  box-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+}
+.packcenter {
+  box-pack: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+}
+/*文字大小*/
+.font12 {
+  font-size: 12px;
+  line-height: 12px;
+}
+.font14 {
+  font-size: 14px;
+  line-height: 14px;
+}
+.font15 {
+  font-size: 15px;
+  line-height: 15px;
+}
+.font16 {
+  font-size: 16px;
+  line-height: 16px;
+}
+.font18 {
+  font-size: 18px;
+  line-height: 18px;
+}
+.font20 {
+  font-size: 20px;
+  line-height: 20px;
+}
+/*图标样式*/
+.icon-common {
+  display: block;
+  background-image: url(../img/common@2x.png);
+  background-repeat: no-repeat;
+  background-size: 0.46666667rem 2.29333333rem;
+}
+.i-arrow {
+  width: 0.26666667rem;
+  height: 0.53333333rem;
+  position: relative;
+  top: 50%;
+  margin-top: -0.26666667rem;
+  display: block;
+  background-image: url(../img/common@2x.png);
+  background-repeat: no-repeat;
+  background-size: 0.46666667rem 2.29333333rem;
+  background-position: 0rem 0rem;
+}
+.i-radio {
+  width: 0.46666667rem;
+  height: 0.46666667rem;
+  position: relative;
+  top: 50%;
+  margin-top: -0.23333333rem;
+  display: block;
+  background-image: url(../img/common@2x.png);
+  background-repeat: no-repeat;
+  background-size: 0.46666667rem 2.29333333rem;
+  background-position: 0rem -0.54666667rem;
+}
+.i-radioactive {
+  width: 0.46666667rem;
+  height: 0.46666667rem;
+  position: relative;
+  top: 50%;
+  margin-top: -0.23333333rem;
+  display: block;
+  background-image: url(../img/common@2x.png);
+  background-repeat: no-repeat;
+  background-size: 0.46666667rem 2.29333333rem;
+  background-position: 0rem -1.02666667rem;
+}
+.i-boy {
+  width: 0.37333333rem;
+  height: 0.37333333rem;
+  position: relative;
+  top: 50%;
+  margin-top: -0.18666667rem;
+  display: block;
+  background-image: url(../img/common@2x.png);
+  background-repeat: no-repeat;
+  background-size: 0.46666667rem 2.29333333rem;
+  background-position: 0rem -1.50666667rem;
+}
+.i-girl {
+  width: 0.26666667rem;
+  height: 0.4rem;
+  position: relative;
+  top: 50%;
+  margin-top: -0.2rem;
+  display: block;
+  background-image: url(../img/common@2x.png);
+  background-repeat: no-repeat;
+  background-size: 0.46666667rem 2.29333333rem;
+  background-position: 0rem -1.89333333rem;
+}
+/*首尾布局*/
+.fixed {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 99;
+  background-color: #fff;
+}
+.fixed .fixed-box {
+  display: box;
+  display: -webkit-box;
+  display: -moz-box;
+  box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  height: 100%;
+}
+.item {
+  width: 100%;
+  padding: 0.42666667rem 0.37333333rem;
+  position: relative;
+  display: box;
+  display: -webkit-box;
+  display: -moz-box;
+  box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+}
+.item .item-tit {
+  display: box;
+  display: -webkit-box;
+  display: -moz-box;
+  box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-pack: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  color: #333;
+}
+.item .item-cont {
+  box-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+}
+.item .txtgray {
+  color: #929090;
+}
+/*单选按钮*/
+.radio {
+  float: left;
+  position: relative;
+  height: 0.46666667rem;
+  line-height: 0.46666667rem;
+  margin-right: 0.4rem;
+  text-indent: 0.61333333rem;
+}
+.radio input[type='radio'] {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.radio .i-radio {
+  position: absolute;
+  left: 0;
+  top: -0.02666667rem;
+  margin-top: 0;
+}
+.radio i {
+  font-style: normal;
+}
+.txtright {
+  text-align: right;
+}
+/*日历控件*/
+.scroll {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.2);
+}
+.scroll .scrollList {
+  width: 90%;
+  height: 278px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  margin-top: -139px;
+  background-color: #fff;
+  border-radius: 0.57333333rem;
+}
+.scroll .scrollTit {
+  width: 100%;
+  height: 18px;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 34px;
+}
+.scroll .scrollTit span {
+  top: 0;
+  margin: 0;
+  text-align: center;
+}
+.scroll .line {
+  width: 100%;
+  height: 38px;
+  background-color: #efefef;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -20px;
+}
+.scroll .per25,
+.scroll .per33 {
+  float: left;
+  width: 25%;
+  height: 120px;
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  z-index: 99;
+  margin-top: -60px;
+}
+.scroll .per33 {
+  width: 33.33%;
+}
+.scroll .perCont {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.scroll .perCont span {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  color: #9b9b9b;
+}
+.scroll .perCont .active {
+  color: #333;
+}
+.scroll .handleBtn {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 27px;
+  text-align: center;
+}
+.scroll .handleBtn a {
+  display: inline-block;
+  width: 2.93333333rem;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+}
+.scroll .handleBtn .btn_cancle {
+  background-color: #9b9b9b;
+}
+.scroll .handleBtn .btn_sure {
+  background-color: #e51812;
+}
