@@ -14,7 +14,6 @@ function removeMyImg(){
 }
 
 function initMyImgShow(){
-	
 	$('.hiddenTxt .txtContent img').unbind("click").bind('click', function(event) {
 		var isbig = $(this).data("big")+"";
 		if("false" == isbig){

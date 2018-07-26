@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <!--忽略页面中的手机号、地址、邮箱-->
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="keywords" content="喵姐,喵姐早教说,0到6岁早期教育,家庭教育,家长教育,父母课堂,育儿知识,儿童教育,母婴育儿,">
+    <meta name="description" content="喵姐早教说是喵姐高寿岩创办的为家庭教育提供专业靠谱的0到6岁早期教育、育儿知识的平台。">
+    <title>喵姐早教说</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/test.css">
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/eventAudio.js"></script>
+    <script src="./js/styleEvent.js"></script>
+</head>
+<body style="font-family: 'myFont';">
+<div class="wrapPage">
+    <!--课程详情页-->
+    <div class="classDetails" id="classDetails">
+        <!--播放音频点击下面的上箭头展示的区域-->
+        <div class="hideBox clearfix">
+            <img src="./img/classDetails/lowerArr.png" alt="" class="lowerArr fr">
+            <img src="./img/classDetails/classbanner1.png" alt="" class="hideBanner">
+            <h2 class="askTitle">一位华裔妈妈在法国学到的育儿经</h2>
+            <p class="teacher">| 喵姐 - 高寿岩 |</p>
+            <!--<audio preload="auto" id="audio" src=""></audio>-->
+            <div class="audioDiv clearfix" id="audioDiv">
+                <!--音频-->
+                <div class="section">
+                    <div class="audioCont topaudio">
+                        <!--音频标签-->
+                        <!--<audio preload="auto" id="audio" src="./js/dong.mp3"></audio>-->
+                        <div class="topaudioBox">
+                            <!--开始时间-->
+                            <span class="txt">00:00</span>
+                            <div class="audioLine" id="audioLine">
+                                <!--进度条上的小圆点-->
+                                <span class="lineaft"></span>
+                                <!--进度条上的小圆点-->
+                                <a href="javascript:void(0);" class="circle" id="drag"></a>
+                            </div>
+                            <!--结束时间-->
+                            <span class="txt2" data-sec="0">08:19</span>
+                        </div>
+                        <!--上面的进度条，时间-->
+                    </div>
+                </div>
+                <!--播放按钮-->
+                <ul class="audiohandle">
+                    <li class="unuseable">
+                        <p class="lecture">< 讲课</p>
+                    </li>
+                    <li class="playDiv">
+                        <div class="playBtn" id="playBtn" data-url="./js/dong.mp3"></div>
+                    </li>
+                    <li class="useable">
+                        <p class="Tanswer">答疑 ></p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="audioDiv clearfix" id="audioDiv1">
+                <!--音频-->
+                <div class="section">
+                    <div class="audioCont topaudio">
+                        <!--音频标签-->
+
+                        <div class="topaudioBox">
+                            <!--开始时间-->
+                            <span class="txt">00:00</span>
+                            <div class="audioLine" id="audioLine1">
+                                <!--进度条上的小圆点-->
+                                <span class="lineaft"></span>
+                                <!--进度条上的小圆点-->
+                                <a href="javascript:void(0);" class="circle" id="drag1"></a>
+                            </div>
+                            <!--结束时间-->
+                            <span class="txt2" data-sec="0">04:41</span>
+                        </div>
+                        <!--上面的进度条，时间-->
+                    </div>
+                </div>
+                <!--播放按钮-->
+                <ul class="audiohandle">
+                    <li class="unuseable">
+                        <p class="lecture">< 讲课</p>
+                    </li>
+                    <li class="playDiv">
+                        <div class="playBtn" id="playBtn1" data-url="./js/JJ.mp3"></div>
+                    </li>
+                    <li class="useable">
+                        <p class="Tanswer">答疑 ></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="audioDiv clearfix">
+                <!--音频-->
+                <div class="section">
+                    <div class="audioCont topaudio">
+                        <!--音频标签-->
+
+                        <div class="topaudioBox">
+                            <!--开始时间-->
+                            <span class="txt">00:00</span>
+                            <div class="audioLine" >
+                                <!--进度条上的小圆点-->
+                                <span class="lineaft"></span>
+                                <!--进度条上的小圆点-->
+                                <a href="javascript:void(0);" class="circle"></a>
+                            </div>
+                            <!--结束时间-->
+                            <span class="txt2" data-sec="0">04:41</span>
+                        </div>
+                        <!--上面的进度条，时间-->
+                    </div>
+                </div>
+                <!--播放按钮-->
+                <ul class="audiohandle">
+                    <li class="unuseable">
+                        <p class="lecture">< 讲课</p>
+                    </li>
+                    <li class="playDiv">
+                        <div class="playBtn" data-url="./js/audio.mp3"></div>
+                    </li>
+                    <li class="useable">
+                        <p class="Tanswer">答疑 ></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+

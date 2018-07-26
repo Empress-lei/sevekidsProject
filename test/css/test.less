@@ -1,0 +1,938 @@
+.wrapPage {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: auto;
+  //课程详情页
+  .classDetails {
+    width: 100%;
+    height: auto;
+    //课程详情页默认展示的区域
+    .exhibitionBox {
+      //课程详情页上面的banner
+      .classBanner {
+        width:100%;
+      }
+      .classTitle {
+        text-align: left;
+        font-size:0.5rem;
+        padding: 20/37.5rem 15/37.5rem;
+      }
+      .classTear {
+        width:92%;
+        margin:0 auto;
+        border-bottom: 1px solid #F2F2F2;
+        padding: 0 0 15/37.5rem;
+        p {
+          font-size: 0.3rem;
+          color: #A1A1A1;
+          line-height: 0.8rem;
+
+        }
+        .tearImg {
+          float: left;
+          img {
+            width: 0.8rem;
+            height: 0.8rem;
+          }
+          .tearch {
+            padding-left: 10/37.5rem;
+          }
+        }
+      }
+      //音频
+      .classAudio {
+        width:100%;
+        padding: 15/37.5rem 0.4rem;
+        .audioDiv {
+          width: 100%;
+          padding: 0.3rem 0.4rem 0.2rem 0.2rem;
+          border: 1px solid #e4e4e4;
+          -webkit-border-radius: 0.05333333rem;
+          -moz-border-radius: 0.05333333rem;
+          -ms-border-radius: 0.05333333rem;
+          -o-border-radius: 0.05333333rem;
+          border-radius: 0.05333333rem;
+          background-color: #f2f2f2;
+          .playBtn {
+            float: left;
+            width: 1.3rem;
+            height: 1.3rem;
+            background: url(../img/play.png) no-repeat center center;
+            background-size: 1.3rem;
+          }
+          .play {
+            float: left;
+            width: 1.3rem;
+            height: 1.3rem;
+            background: url(../img/play.png) no-repeat center center;
+            background-size: 1.3rem;
+          }
+          .pause {
+            width: 1.2rem !important;
+            height: 1.2rem !important;
+            background: url(../img/askList/pause.png) no-repeat center center !important;
+            background-size: 1.2rem !important;
+            display: block !important;
+            margin: 0 auto !important;
+          }
+          .section {
+            float: right;
+            width: 82%;
+            font-size: 0.32rem;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 0.5rem;
+            text-align: left;
+            overflow: visible!important;
+            .sectionTxt {
+              font-size: 0.34rem;
+              color: #515151;
+              padding-top: 0.12rem;
+            }
+            .audioContTime {
+              padding-top: 0.15rem;
+              color: #BCBCBC;
+            }
+          }
+        }
+      }
+      //文本内容
+      .classContent {
+        padding: 5/37.5rem 15/37.5rem 15/37.5rem;
+        p {
+          color: #434343;
+          font-size:0.36rem;
+          line-height:0.6rem;
+        }
+        h4 {
+          font-size:0.38rem;
+          color: #333;
+          font-weight:bold;
+          padding: 15/37.5rem 0;
+        }
+        .tearIntroduce {
+          font-size:0.3rem;
+          color: #A1A1A1;
+          display: block;
+          padding-bottom: 15/37.5rem;
+        }
+      }
+      //分割线
+      .division {
+        margin: 0 0.4rem  0.3rem 15/37.5rem;
+      }
+      //一元体验卡入口
+      .bannerVipImg {
+        display: block;
+        width: 92%;
+        margin: 0 auto 0.5rem;
+      }
+    }
+    //播放音频点击下面的上箭头展示的区域
+    .hideBox {
+      width:100%;
+      padding: 15/37.5rem;
+      .lowerArr {
+        width:0.8rem;
+
+      }
+      .hideBanner {
+        width:100%;
+        margin-top: 0.3rem;
+      }
+      .askTitle {
+        padding: 0.4rem 0.4rem 0.13333333rem;
+        text-align: center;
+        font-size:0.45rem;
+      }
+      .teacher {
+        text-align: center;
+        font-size: 0.3rem;
+        color: #AEAEAE;
+        padding: 0.4rem 0;
+      }
+      .audioDiv {
+        width:100%;
+        padding: 15/37.5rem;
+        //进度条和时间的样式
+        .section {
+          font-size: 0.32rem;
+          font-weight: 400;
+          font-style: normal;
+          line-height: 0.5rem;
+          text-align: left;
+          overflow: visible!important;
+          .sectionTxt {
+            font-size: 0.32rem;
+            color: #515151;
+            padding-top: 0.2rem;
+          }
+          .audioContTime {
+            padding-top: 0.2rem;
+            color: #BCBCBC;
+          }
+          .topaudio {
+            .topaudioBox {
+              position: relative;
+              height: 20px;
+              padding: 0 1.3rem;
+              overflow: hidden;
+              .txt {
+                position: absolute;
+                left: 0.13333333rem;
+                top: 0;
+                font-size: 0.3rem;
+                color: #AEAEAE;
+                padding-top: 0.08rem;
+              }
+              .txt2 {
+                position: absolute;
+                right: 0;
+                top: 0;
+                font-size: 0.3rem;
+                color: #AEAEAE;
+                padding-top: 0.08rem;
+              }
+              .audioLine {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                .lineaft {
+                  display: block;
+                  width: 0.15454px;
+                  height: 0.10666667rem;
+                  position: absolute;
+                  left: 0;
+                  top: 0.24rem;
+                  z-index: 1;
+                  background: #ff9933;
+                }
+              }
+              .audioLine:before {
+                content: '';
+                width: 100%;
+                height: 0.10666667rem;
+                position: absolute;
+                left: 0;
+                top: 0.24rem;
+                z-index: 1;
+                background: rgba(242, 242, 242, 1);
+              }
+              .circle {
+                background: #ff9933;
+                box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
+                width: 0.28rem;
+                height: 0.28rem;
+                display: block;
+                position: absolute;
+                left: 0.15454px;
+                top: 0.14rem;
+                z-index: 55;
+                border-radius: 100%;
+              }
+            }
+          }
+        }
+        .recordNum {
+          text-align: center;
+          font-size:0.3rem;
+          color: #BCBCBC;
+          padding: 20/37.5rem 0;
+        }
+        //播放，点赞样式
+        .audiohandle {
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: flex;
+          padding: 0.3rem 0 0;
+          li {
+            flex:1;
+            text-align: center;
+          }
+          .unuseable {
+            padding: 0.2rem 0;
+            position: relative;
+            .lecture {
+              line-height: 1.6rem;
+              font-size:0.34rem;
+              color: #AEAEAE;
+            }
+          }
+          .playDiv {
+            margin-top: 0.2rem;
+            .playBtn {
+              width: 1.6rem;
+              height: 1.6rem;
+              background: url(../img/askList/paly.png) no-repeat center center;
+              background-size: 1.6rem;
+              display: block;
+              margin: 0 auto;
+            }
+            .play {
+              width: 1.6rem;
+              height: 1.6rem;
+              background: url(../img/askList/paly.png) no-repeat center center;
+              background-size: 1.6rem;
+              display: block;
+              margin: 0 auto;
+            }
+            .pause {
+              width: 1.5rem !important;
+              height: 1.5rem !important;
+              background: url(../img/askList/pause.png) no-repeat center center !important;
+              background-size: 1.5rem !important;
+              display: block !important;
+              margin: 0 auto !important;
+            }
+          }
+          .useable {
+            padding: 0.2rem 0;
+            position: relative;
+            .Tanswer {
+              line-height: 1.6rem;
+              font-size:0.34rem;
+              color: #AEAEAE;
+            }
+          }
+        }
+      }
+    }
+    //相关推荐
+    .askRecommend {
+      width: 100%;
+      padding: 0.3rem 0.4rem 1rem;
+      background-color: #F2F2F2;
+      .recommendTit {
+        font-size: 0.38rem;
+        color: rgba(255, 153, 51, 0.6);
+        margin: 0.3rem 0 0.5rem;
+        background: url(../img/askList/recomend.png) no-repeat left center;
+        background-size: 0.6rem;
+        padding-left: 0.7rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+      .leavingMessage {
+        font-size: 0.38rem;
+        color: rgba(255, 153, 51, 0.6);
+        margin: 0.3rem 0 0.5rem;
+        background: url(../img/classDetails/mess.png) no-repeat left center;
+        background-size: 0.6rem;
+        padding-left: 0.7rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+      .rewardList {
+        font-size: 0.38rem;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        color: rgba(255, 153, 51, 0.6);
+        margin: 0 0 0.3rem;
+        background: url(../img/classDetails/reward.png) no-repeat left center;
+        background-size: 0.6rem;
+        padding-left: 0.7rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+      :-moz-placeholder {
+        color: #fff;
+        opacity: 1;
+        font-size: 0.3rem;
+      }
+      ::-moz-placeholder {
+        color: #fff;
+        opacity: 1;
+        font-size: 0.3rem;
+      }
+      input:-ms-input-placeholder {
+        color: #fff;
+        opacity: 1;
+        font-size: 0.3rem;
+      }
+      input::-webkit-input-placeholder {
+        color: #fff;
+        opacity: 1;
+        font-size: 0.3rem;
+      }
+      .messBtn {
+        display: block;
+        width:2rem;
+        text-align: center;
+        padding: 0.18rem 0;
+        color: #fff;
+        font-size: 0.3rem;
+        margin-top:0.15rem;
+        -webkit-border-radius: 1.33333333rem;
+        -moz-border-radius: 1.33333333rem;
+        -ms-border-radius: 1.33333333rem;
+        -o-border-radius: 1.33333333rem;
+        border-radius: 1.33333333rem;
+        background-color: #ff9933;
+      }
+      .noMessage {
+        .bulbImage {
+          width: 4rem;
+          display: block;
+          margin: 1rem auto;
+        }
+        .bulbText {
+          text-align: center;
+          font-size: 0.34rem;
+          color: #949494;
+          padding-bottom: 0.53333333rem;
+        }
+      }
+      //相关推荐
+      .classReco {
+        .recommendCon {
+          width: 100%;
+          min-height: 2rem;
+          border: 1px solid #F2F2F2;
+          border-bottom: none;
+          background-color: #fff;
+          -webkit-border-radius: 0.08rem;
+          -moz-border-radius: 0.08rem;
+          -ms-border-radius: 0.08rem;
+          -o-border-radius: 0.08rem;
+          border-radius: 0.08rem;
+          -webkit-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+          -moz-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+          -ms-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+          -o-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+          box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+          padding: 0.4rem 0.3rem;
+          margin-bottom: 0.4rem;
+          .recommendImg {
+            width: 14%;
+          }
+          .recommendRight {
+            width: 86%;
+            padding-left: 0.13333333rem;
+            h3 {
+              font-size: 0.36rem;
+              color: #333;
+              padding-top: 0.2rem;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+            }
+            p {
+              font-size: 0.3rem;
+              color: #BCBCBC;
+              padding-top: 0.2rem;
+            }
+          }
+        }
+      }
+      //精选留言
+      .leavingMessUl {
+        position: relative;
+        .messList {
+          width: 100%;
+          min-height: 2rem;
+          border: 1px solid #F2F2F2;
+          border-bottom: none;
+          background-color: #fff;
+          -webkit-border-radius: 0.08rem;
+          -moz-border-radius: 0.08rem;
+          -ms-border-radius: 0.08rem;
+          -o-border-radius: 0.08rem;
+          border-radius: 0.08rem;
+          margin-bottom: 0.4rem;
+          -webkit-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+          -moz-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+          -ms-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+          -o-box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+          box-shadow: 1px 2px 3px rgba(161, 161, 161, 0.2);
+
+          //精选留言的内容
+          .messContentDiv {
+            width:92%;
+            margin:0 auto;
+            .classbanner {
+              width: 1rem;
+              height: 1rem;
+              float: left;
+              margin-top:0.4rem;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -ms-border-radius: 50%;
+              -o-border-radius: 50%;
+              border-radius: 50%;
+            }
+            .messCont {
+              width: 81.5%;
+              float: right;
+              padding: 0.6rem 0 0.4rem;
+              .messName {
+                color: #6B6B6B;
+                font-size:0.34rem;
+              }
+              .messBaby {
+                color: #BCBCBC;
+                font-size:0.3rem;
+                padding-top: 0.2rem;
+              }
+              .messText {
+                font-size:0.36rem;
+                color: #282828;
+                line-height:0.6rem;
+                padding: 10/37.5rem 0;
+              }
+              .messLine {
+                font-size:0.36rem;
+                color: #282828;
+                line-height:0.6rem;
+                padding: 10/37.5rem 0;
+                overflow : hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+              }
+              //打赏
+              .reward {
+                margin: 10/37.5rem 0;
+                color: #FF9933;
+                height: 0.5rem;
+                font-size:0.36rem;
+                line-height: 0.5rem;
+                background: url("../img/classDetails/rew.png") no-repeat left center;
+                background-size: 0.5rem;
+                padding-left: 0.8rem;
+              }
+              //留言音频
+              .voice {
+                width: 100%;
+                margin-top: 0.26666667rem;
+                .voicephoto {
+                  float: right;
+                  width: 1rem;
+                  height: 1rem;
+                  overflow: hidden;
+                  border-radius: 100%;
+                  margin-top:-0.13rem;
+                  img {
+                    display: block;
+                    width: 100% !important;
+                    height: 100% !important;
+                  }
+                }
+                .voicemsg {
+                  float: right;
+                  width: 80%;
+                  height: 1.01333333rem;
+                  position: relative;
+                  margin-top: -0.16rem;
+                  margin-right: 0.29333333rem;
+                  background-color: #ff9615;
+                  border-radius: 0.10666667rem;
+                  .voicebar {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    overflow: hidden;
+                    margin-left: 0.26666667rem;
+                  }
+                  .voicebar:after {
+                    content: '';
+                    display: block;
+                    width: 15px;
+                    height: 100%;
+                    background: url(../img/classDetails/voice@2x.png) center center no-repeat;
+                    background-size: 0.5rem;
+                  }
+                  .time {
+                    position: absolute;
+                    right: 0.3rem;
+                    top: 50%;
+                    margin-top: -0.21333333rem;
+                    font-size: 0.34666667rem;
+                    color: #fff;
+                  }
+                }
+                @keyframes voicew {
+                  0% {
+                    width: 0px;
+                  }
+                  100% {
+                    width: 14px;
+                  }
+                }
+                @-webkit-keyframes voicew {
+                  0% {
+                    width: 0px;
+                  }
+                  100% {
+                    width: 14px;
+                  }
+                }
+                @-moz-keyframes voicew {
+                  0% {
+                    width: 0px;
+                  }
+                  100% {
+                    width: 14px;
+                  }
+                }
+                @-o-keyframes voicew {
+                  0% {
+                    width: 0px;
+                  }
+                  100% {
+                    width: 14px;
+                  }
+                }
+                .active {
+                  .voicebar {
+                    animation: voicew 0.8s infinite;
+                    -webkit-animation: voicew 0.8s infinite;
+                    -moz-animation: voicew 0.8s infinite;
+                    -o-animation: voicew 0.8s infinite;
+                  }
+                }
+                .voicemsg:after {
+                  content: '';
+                  display: block;
+                  width: 0.24rem;
+                  height: 0.24rem;
+                  position: absolute;
+                  right: -0.13333333rem;
+                  top: 0.37333333rem;
+                  background-color: #ff9615;
+                  transform: rotate(-45deg);
+                  -webkit-transform: rotate(-45deg);
+                }
+              }
+            }
+          }
+          //上面的线
+          .contentTopBor {
+            border-top:1px solid #F2F2F2;
+            .messCont {
+              padding-top: 0.4rem !important;
+            }
+          }
+          //我的留言按钮
+          .messageBtn {
+            display: block;
+            width:100%;
+            text-align: center;
+            color: #AEAEAE;
+            font-size:0.34rem;
+            line-height: 1rem;
+            background-color: #F2F2F2;
+          }
+          //收起按钮
+          .stop {
+            width:100%;
+            background-color: #F2F2F2;
+            .messageStop {
+              display: block;
+              width:18%;
+              margin: 0 auto;
+              text-align: center;
+              color: #AEAEAE;
+              font-size:0.34rem;
+              line-height: 1rem;
+              background: url("../img/classDetails/topArr.png") no-repeat right 0.25rem;
+              background-size: 0.4rem;
+              padding-right: 0.2rem;
+            }
+          }
+
+        }
+        .lookMoreContent {
+          width: 100%;
+          font-size: 0.34rem;
+          color: #333;
+          height: 1.9rem;
+          text-align: center;
+          color: #AEAEAE;
+          position: absolute;
+          bottom: -0.5rem;
+          z-index: 222;
+          padding-top: 1rem;
+          -webkit-border-radius: 0 0 0.21333333rem 0.21333333rem;
+          -moz-border-radius: 0 0 0.21333333rem 0.21333333rem;
+          -ms-border-radius: 0 0 0.21333333rem 0.21333333rem;
+          border-radius: 0 0 0.21333333rem 0.21333333rem;
+          background: -ms-linear-gradient(top, #fff,  #F2F2F2);        /* IE 10 */
+          background:-moz-linear-gradient(top,#fff,#F2F2F2);/*火狐*/
+          background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#fff), to(#F2F2F2));/*谷歌*/
+          background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#F2F2F2));      /* Safari 4-5, Chrome 1-9*/
+          background: -webkit-linear-gradient(top, #fff, #F2F2F2);   /*Safari5.1 Chrome 10+*/
+          background: -o-linear-gradient(top, #fff, #F2F2F2);  /*Opera 11.10+*/
+          .lowerArrImg {
+            width:0.5rem;
+          }
+        }
+        .hideContent {
+          width: 100%;
+          font-size: 0.34rem;
+          color: #333;
+          text-align: center;
+          color: #AEAEAE;
+          .lowerArrImg {
+            width:0.4rem;
+          }
+        }
+        .lookMoreContent1 {
+          width: 100%;
+          font-size: 0.34rem;
+          color: #333;
+          height: 1.9rem;
+          text-align: center;
+          color: #AEAEAE;
+          position: absolute;
+          bottom: -0.2rem;
+          z-index: 222;
+          padding-top: 1rem;
+          -webkit-border-radius: 0 0 0.21333333rem 0.21333333rem;
+          -moz-border-radius: 0 0 0.21333333rem 0.21333333rem;
+          -ms-border-radius: 0 0 0.21333333rem 0.21333333rem;
+          border-radius: 0 0 0.21333333rem 0.21333333rem;
+          background: -ms-linear-gradient(top, #fff,  #F2F2F2);        /* IE 10 */
+          background:-moz-linear-gradient(top,#fff,#F2F2F2);/*火狐*/
+          background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#fff), to(#F2F2F2));/*谷歌*/
+          background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#F2F2F2));      /* Safari 4-5, Chrome 1-9*/
+          background: -webkit-linear-gradient(top, #fff, #F2F2F2);   /*Safari5.1 Chrome 10+*/
+          background: -o-linear-gradient(top, #fff, #F2F2F2);  /*Opera 11.10+*/
+          .lowerArrImg {
+            width:0.5rem;
+          }
+        }
+        .hideContent1 {
+          width: 100%;
+          font-size: 0.34rem;
+          color: #333;
+          text-align: center;
+          color: #AEAEAE;
+          .lowerArrImg {
+            width:0.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+//留言页
+.messPage {
+  width: 100%;
+  height: 100%;
+  padding: 15/37.5rem;
+  position: absolute;
+  z-index: 999999;
+  top:0;
+  background-color:yellow;
+  :-moz-placeholder {
+    color: #A1A1A1;
+    opacity: 1;
+    font-size: 0.3rem;
+  }
+  ::-moz-placeholder {
+    color: #A1A1A1;
+    opacity: 1;
+    font-size: 0.3rem;
+  }
+  textarea:-ms-input-placeholder {
+    color: #A1A1A1;
+    opacity: 1;
+    font-size: 0.3rem;
+  }
+  textarea::-webkit-input-placeholder {
+    color: #A1A1A1;
+    opacity: 1;
+    font-size: 0.3rem;
+  }
+  .messTitle {
+    text-align: left;
+    font-size: 0.5rem;
+    line-height: 0.65rem;
+    padding: 0.53333333rem 0;
+  }
+  .font13 {
+    width: 100%;
+    height: 3rem;
+    padding: 0.26666667rem;
+    position: relative;
+    font-size: 0.34rem;
+    border: 1px solid #F2F2F2;
+    -webkit-border-radius: 0.17333333rem;
+    -moz-border-radius: 0.17333333rem;
+    -ms-border-radius: 0.17333333rem;
+    -o-border-radius: 0.17333333rem;
+    border-radius: 0.17333333rem;
+    .txtarebox {
+      width: 100%;
+      height: 100%;
+      font-size: 0.32rem;
+      line-height: 0.6rem;
+      color: #333;
+
+    }
+    p {
+      display: none;
+      padding-right: 0.2rem;
+      position: absolute;
+      right: 0.26666667rem;
+      bottom: 0.26666667rem;
+      color: #BCBCBC;
+      font-size: 0.3rem;
+      span {
+        color: #ff9933;
+      }
+    }
+  }
+  .contentBtn {
+    width:100%;
+    padding: 20/37.5rem 15/37.5rem;
+    li {
+      float: right;
+      font-size: 0.38rem;
+    }
+    .submitCont {
+      color: #0099FF;
+      padding-left: 15/37.5rem;
+    }
+    .cancelCont {
+      color: #949494;
+      border-right: 1px solid #F2F2F2;
+      padding: 0 15/37.5rem;
+    }
+  }
+}
+//带有金额的导航
+.classNav {
+  width: 100%;
+  max-width: 540px;
+  height: 1.5rem;
+  background-color: #F2F2F2;
+  position: fixed;
+  bottom: -0.1rem;
+  z-index: 888;
+  //display: -webkit-flex;
+  //display: -ms-flex;
+  //display: -moz-flex;
+  //display: -o-flex;
+  //display: flex;
+  border-top: 1px solid rgba(228, 228, 228, 1);
+  li {
+    //flex: 1;
+    width:20%;
+    float: left;
+    height: 1.5rem;
+    text-align: center;
+    padding: 0.13333333rem 0;
+    img {
+      display: block;
+      width: 0.4rem;
+      margin: 0 auto;
+    }
+    .navText {
+      text-align: center;
+      font-size: 0.3rem;
+      color: #C9C9C9;
+      padding: 0.15rem 0;
+    }
+  }
+  .navListBtn {
+    //flex: 1.8;
+    width:40%;
+    background-color: #FF9933;
+    p {
+      color: #fff;
+    }
+    :nth-child(1) {
+      font-size:0.34rem;
+      padding: 0.15rem 0 0;
+    }
+    :nth-child(2) {
+      font-size:0.3rem;
+      -webkit-transform: scale(0.8);
+      -moz-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+      -o-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+    .pic {
+      font-size:0.38rem;
+      line-height: 1.2rem;
+      padding: 0;
+    }
+  }
+  .navList {
+    width:20%;
+    padding-top: 0.2rem;
+    :-moz-placeholder {
+      opacity: 1;
+      font-size: 0.3rem;
+      color: #C9C9C9;
+    }
+    ::-moz-placeholder {
+      opacity: 1;
+      font-size: 0.3rem;
+      color: #C9C9C9;
+    }
+    input:-ms-input-placeholder {
+      opacity: 1;
+      font-size: 0.3rem;
+      color: #C9C9C9;
+    }
+    input::-webkit-input-placeholder {
+      opacity: 1;
+      font-size: 0.3rem;
+      color: #C9C9C9;
+    }
+    input {
+      width:100%;
+    }
+  }
+  .collection {
+    padding-top: 0.2rem;
+    img {
+      display: block;
+      width: 0.4rem;
+      margin: 0 auto;
+    }
+    .navText {
+      text-align: center;
+      font-size: 0.3rem;
+      color: #C9C9C9;
+      padding: 0.16rem 0;
+    }
+  }
+  .collectionOran {
+    padding-top: 0.2rem;
+    img {
+      display: block;
+      width: 0.45rem;
+      margin: 0 auto;
+    }
+    .navText {
+      text-align: center;
+      font-size: 0.3rem;
+      color: #FF9933;
+      padding: 0.15rem 0;
+    }
+  }
+}

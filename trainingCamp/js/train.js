@@ -223,6 +223,7 @@ $(function() {
 		control: [swiper1, swiper3],//控制前面两个Swiper
 		slideToClickedSlide: true,
 		onSlideChangeEnd: function(swiper) {
+			
 			$(".cst").eq(swiper.activeIndex).find(".spanCir").addClass("bigCir").removeClass("grayCir").parents().siblings().find($('.cst .spanCir')).removeClass('bigCir').addClass('grayCir');
 		},
 	});
