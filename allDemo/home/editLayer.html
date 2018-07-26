@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="keywords" content="喵姐,喵姐早教说,0到6岁早期教育,家庭教育,家长教育,父母课堂,育儿知识,儿童教育,母婴育儿,">
+    <meta name="description" content="喵姐早教说是喵姐高寿岩创办的为家庭教育提供专业靠谱的0到6岁早期教育、育儿知识的平台。">
+    <title>喵姐早教说</title>
+    <link rel="stylesheet" href="./css/base.css"> 
+    <!--朦层相关的样式-->
+    <link rel="stylesheet" href="./css/coverLayer.css">
+    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+    <!--选择时间样式-->
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/swiper-3.4.2.min.js"></script>
+    <!--修改信息js-->
+    <script src="./js/choiceMess.js"></script>
+     <!--添加吐丝文本之类的相关js-->
+    <script src="./js/toast-v1.js"></script>
+    <script>
+    	//加载“汉仪旗黑”字体
+    	$(function() {
+	        var newStyle = $("<style> @font-face {font-family: 'myFont';  src: url('./font/HYQiHei-50S.ttf');} </style>");
+	        $('body').append(newStyle);
+	        var font = "src: url('./font/HYQiHei-50S.ttf')";
+	        if(font === true) {
+	            $('body').css = newStyle;
+	        }else {
+	            $('body').css = "微软雅黑", "PingFangSC-Light";
+	        }
+	        
+	    });
+    </script>
+</head>
+<body style="font-family:'myFont';">
+	<!--编辑页选择信息区域-->
+	<div class="editLayer">
+		<div class="identity">
+			<p class="identityTitle">您的身份是？</p>
+			<div class="identityEdit clearfix babyMumEdit">
+				<p class="babyMum fl">宝妈/爸</p>	
+				<div class="editRightTrans fr">
+					<img src="./img/edit/yes.png"/>
+				</div>
+			</div>
+			<div class="identityEdit clearfix preMumEdit">
+				<p class="preMum fl">孕妈/爸</p>	
+				<div class="editRightTrans fr">
+					<img src="./img/edit/yes.png"/>
+				</div>
+			</div>
+			<p class="needMess">我们需要您的一些基本信息，<br />以保证导师的解答对您有更大的帮助</p>
+		</div>
+		<div class="messEdit">
+			<div class="messDate">
+				<h3 class="babyDate">宝宝出生年月日</h3>	
+			</div>
+			<div class="messSex">
+				<h3 class="babySex">宝宝性别</h3>	
+				<div class="sexEdit clearfix grilEdit">
+					<p class="babyGril fl">女宝宝（小公主）</p>	
+					<div class="editRightTrans fr">
+						<img src="./img/edit/yes.png">
+					</div>
+				</div>
+				<div class="sexEdit clearfix boyEdit">
+					<p class="babyBoy fl">男宝宝（小王子）</p>	
+					<div class="editRightTrans fr">
+						<img src="./img/edit/yes.png">
+					</div>
+				</div>
+			</div>
+			<div class="messName clearfix">
+				<span class="nickname fl">
+                    	宝宝昵称 :
+                </span>
+				<input type="text" class="babyName fl">
+			</div>
+			<ul class="babyBtn clearfix">
+				<li class="leftGrayBtn fl"><&nbsp;返回</li>
+				<li class="rightOrangeBtn fr">提交&nbsp;></li>
+			</ul>
+			<p class="btnPrompt">编辑完成后点击“提交”开始向导师发问吧，<br />如果有修改，可以点击“返回”</p>
+		</div>
+	</div>
+	<script>
+		function getStr() {
+			//拼接年月日标签
+			var str = "";
+			str += "<div class=\"scrollDate\">";
+			str += "	<div class=\"scrollList\">	";
+			str += "		<ul class=\"scrollTime\">";
+			str += "			<li class=\"scrollYear\">";
+			str += "				<div class=\"swiper-container\" id=\"swiperYear\">";
+			str += "					<div class=\"swiper-wrapper\">";
+											for(var i = 1; i <= 50; i++) {
+												str += "<div class=\"swiper-slide\">" + (1980 + i) + "</div>";
+											}
+			str += "					</div>";
+			str += "				</div>";
+			str += "			</li>";
+			str += "			<li class=\"scrollMonth\">";
+			str += "				<div class=\"swiper-container\" id=\"swiperMonth\">";
+			str += "					<div class=\"swiper-wrapper\">";
+											for(var i = 1; i <= 12; i++) {
+												if(i >= 10) {
+													str += "<div class=\"swiper-slide\">" + i + "</div>";
+												} else {
+													str += "<div class=\"swiper-slide\">" + "0" + i + "</div>";
+												}
+											}
+			str += "					</div>";
+			str += "				</div>";
+			str += "			</li>";
+			str += "			<li class=\"scrollDay\"> ";
+			str += "				<div class=\"swiper-container\" id=\"swiperDay\">";
+			str += "					<div class=\"swiper-wrapper\">";
+											for(var i = 1; i <= 31; i++) {
+												if(i >= 10) {
+													str += "<div class=\"swiper-slide\">" + i + "</div>";
+												} else {
+													str += "<div class=\"swiper-slide\">" + "0" + i + "</div>";
+												}
+											}
+			str += "					</div>";
+			str += "				</div>";
+			str += "			</li>";
+			str += "		</ul>";
+			str += "	</div>";
+			str += "</div>";
+			return str;
+		}
+		$('.babyDate').after(getStr());
+	</script>
+</body>
+</html>
+
+
+      

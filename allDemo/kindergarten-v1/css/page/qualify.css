@@ -1,0 +1,245 @@
+.wrap .public {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 0.4rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wrap .public .schoolCard {
+  width: 100%;
+}
+.wrap .public .schoolCard .cardMess {
+  width: 100%;
+  border: 0.08rem solid #ff9933;
+  -webkit-border-radius: 0.13333333rem;
+  -moz-border-radius: 0.13333333rem;
+  -ms-border-radius: 0.13333333rem;
+  border-radius: 0.13333333rem;
+  padding-bottom: 0.26666667rem;
+  margin-bottom: 0.13333333rem;
+}
+.wrap .public .schoolCard .cardMess .messContent {
+  width: 96%;
+  border: 1em double;
+  border-image: url('../../img/page/qualify/u850.png') 15 repeat;
+  margin: 0.21333333rem auto 0;
+  padding-left: 0.1rem;
+}
+.wrap .public .schoolCard .cardMess .messContent .contentHeader {
+  width: 95%;
+  min-height: 3rem;
+  border-bottom: 1px solid #f2f2f2;
+}
+.wrap .public .schoolCard .cardMess .messContent .contentHeader h2 {
+  text-align: center;
+  font-size: 0.68rem;
+  color: #333333;
+  padding-top: 0.13333333rem;
+  font-weight: 600;
+}
+.wrap .public .schoolCard .cardMess .messContent .contentHeader p {
+  padding-top: 0.4rem;
+  font-size: 0.4rem;
+  color: #333333;
+}
+.wrap .public .schoolCard .cardMess .messContent .contentHeader p span {
+  color: #FF9933;
+}
+.wrap .public .schoolCard .cardMess .messContent .contentHeader .headerParent {
+  padding-top: 0.21333333rem;
+  padding-bottom: 0.4rem;
+  font-size: 0.4rem;
+}
+.wrap .public .schoolCard .cardMess .messContent .contentTarget {
+  width: 100%;
+  color: #333333;
+}
+.wrap .public .schoolCard .cardMess .messContent .contentTarget h4 {
+  margin: 0.26666667rem 0 0;
+  font-size: 0.4rem;
+  font-weight: 600;
+}
+.wrap .public .schoolCard .cardMess .messContent .contentTarget ul li {
+  font-size: 0.38rem;
+  padding-top: 0.21333333rem;
+}
+.wrap .public .schoolCard .cardMess .messContent .contentTarget p {
+  font-size: 0.4rem;
+  font-weight: 600;
+  padding-top: 0.21333333rem;
+}
+.wrap .public .schoolCard .cardMess .messContent .payContent {
+  width: 100%;
+}
+.wrap .public .schoolCard .cardMess .messContent .payContent h4 {
+  font-size: 0.44rem;
+  color: #333333;
+  font-weight: 600;
+}
+.wrap .public .schoolCard .cardMess .messContent .payContent .choiceCycle {
+  width: 100%;
+  margin: 0.4rem 0 0;
+}
+.wrap .public .schoolCard .cardMess .messContent .payContent .choiceCycle .costMon {
+  text-align: center;
+  position: relative;
+  padding-top: 0.26666667rem;
+}
+.wrap .public .schoolCard .cardMess .messContent .payContent .choiceCycle .costMon .costCur {
+  color: #333333;
+  font-size: 0.4rem;
+  position: absolute;
+  top: 0.4rem;
+}
+.wrap .public .schoolCard .cardMess .messContent .payContent .choiceCycle .costMon .costNum {
+  color: #ff9933;
+  font-size: 1.33333333rem;
+  margin-left: 0.4rem;
+}
+.wrap .public .schoolCard .cardMess .messContent .payContent .choiceCycle .costMon .costOrig {
+  font-size: 0.4rem;
+  color: #aeaeae;
+}
+.wrap .public .schoolCard .cardMess .messContent .payContent p {
+  text-align: center;
+  padding: 0.53333333rem;
+  font-size: 0.26rem;
+  color: #868686;
+}
+.wrap .public .schoolCard .cardMess .messContent .payContent p span {
+  color: #0099ff;
+  font-size: 0.4rem;
+}
+.wrap .public .schoolCard .cardMess .messContent .payContent .volunteerBtn {
+  width: 60%;
+  padding: 0.16rem 0;
+  margin: 0.13333333rem auto 0.4rem;
+  text-align: center;
+  -webkit-border-radius: 1.33333333rem;
+  -moz-border-radius: 1.33333333rem;
+  -ms-border-radius: 1.33333333rem;
+  border-radius: 1.33333333rem;
+  background-color: #ff9900;
+}
+.wrap .public .schoolCard .cardMess .messContent .payContent .volunteerBtn a {
+  color: #fff;
+  font-size: 0.4rem;
+}
+.wrap .public .connect {
+  width: 100%;
+  position: relative;
+}
+.wrap .public .connect .connectLeft {
+  position: absolute;
+  left: 15%;
+  top: -0.4rem;
+}
+.wrap .public .connect .connectRight {
+  position: absolute;
+  right: 15%;
+  top: -0.4rem;
+}
+.wrap .public .obtainMess {
+  width: 100%;
+  min-height: 5rem;
+  border: 0.08rem solid #ff9933;
+  -webkit-border-radius: 0.13333333rem;
+  -moz-border-radius: 0.13333333rem;
+  -ms-border-radius: 0.13333333rem;
+  border-radius: 0.13333333rem;
+  margin-bottom: 0.26666667rem;
+}
+.wrap .public .obtainMess .cardContent {
+  border: none;
+  padding: 1em;
+}
+.wrap .public .obtainMess .cardContent h3 {
+  font-size: 0.44rem;
+  color: #FF9933;
+}
+.wrap .public .obtainMess .cardContent .cardPay {
+  width: 100%;
+  margin-left: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+.wrap .public .obtainMess .cardContent .cardPay .payText {
+  float: left;
+  width: 80%;
+  padding-top: 0.32rem;
+}
+.wrap .public .obtainMess .cardContent .cardPay .payText h4 {
+  font-size: 0.4rem;
+  font-weight: 600;
+}
+.wrap .public .obtainMess .cardContent .cardPay .payText p {
+  font-size: 0.36rem;
+  color: #868686;
+  padding-top: 0.21333333rem;
+}
+.wrap .public .obtainMess .cardContent .cardPay img {
+  float: right;
+  width: 20%;
+  padding: 0.26666667rem;
+  margin-top: 0.1rem;
+}
+.wrap .public .obtainMess .cardContent .volunteerHeader h3 {
+  padding: 0.26666667rem 0;
+  font-size: 0.5rem;
+}
+.wrap .public .obtainMess .cardContent .volunteerHeader .volunteerText {
+  font-size: 0.34rem;
+}
+.wrap .public .obtainMess .cardContent .volunteerHeader .volunteerText p {
+  color: #515151;
+}
+.wrap .public .obtainMess .cardContent .volunteerHeader ul {
+  width: 5rem;
+  margin: 0.4rem auto;
+}
+.wrap .public .obtainMess .cardContent .volunteerHeader ul li {
+  float: left;
+  margin: 0 0.13333333rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  border: 0.02666667rem solid #dbdbdb;
+  overflow: hidden;
+  position: relative;
+  margin-left: 0.2rem;
+}
+.wrap .public .obtainMess .cardContent .volunteerHeader ul li img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0.8rem;
+  height: 0.8rem;
+  transform: translate(-50%, 0);
+}
+.wrap .public .obtainMess .cardContent .volunteerHeader ul li .volunteerImg {
+  width: 1.31rem;
+  height: 1.31rem;
+}
+.wrap .public .obtainMess .cardContent .volunteerHeader .volunteerBtn {
+  width: 60%;
+  padding: 0.16rem 0;
+  margin: 0.13333333rem auto 0.4rem;
+  text-align: center;
+  -webkit-border-radius: 1.33333333rem;
+  -moz-border-radius: 1.33333333rem;
+  -ms-border-radius: 1.33333333rem;
+  border-radius: 1.33333333rem;
+  background-color: #ff9900;
+}
+.wrap .public .obtainMess .cardContent .volunteerHeader .volunteerBtn a {
+  color: #fff;
+  font-size: 0.4rem;
+}
+.wrap .public .obtainMess .cardContent .volunteerHeader .volunteerTime span {
+  display: block;
+  text-align: center;
+  font-size: 0.26666667rem;
+  color: #0066FF;
+}

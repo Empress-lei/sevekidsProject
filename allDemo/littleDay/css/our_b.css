@@ -1,0 +1,88 @@
+@charset "utf-8";
+/**页面数据为空提示*/
+body{
+	width:100%;
+	max-width:540px;
+	margin:0 auto;
+}
+.noneData {
+	width: 80%;
+	text-align: center;
+
+	height: 56px;
+
+	padding-top: 16px;
+	font-size: 16px;
+	color: #a0a0a0;
+	margin: 20px auto;
+	border-radius:8px;
+	border: 2px solid #a0a0a0;
+}
+.noneData span {
+	background: url('/res/img/dotted_bg3.png') no-repeat;
+	padding-left:18px;
+}
+
+/* 阻止长按出现的复制框 */
+body{
+	-webkit-user-select:none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	-webkit-touch-callout:none;
+	-ms-touch-callout:none;
+	-mozt-touch-callout:none;
+	touch-callout:none;
+}
+/*课程收藏*/
+.mycollection{
+  z-index: 2;
+  margin-left: 10px;
+  background-image: url(../img/course-collection.png);
+  background-repeat: no-repeat;
+  background-size: 0.4rem 0.4rem;
+  background-position: 0.2rem center;
+  border-radius: 1rem;
+  float: right;
+  width: 1.62666667rem;
+  height: 0.58666667rem;
+  line-height: 0.58666667rem;
+  margin-top: -0.04rem;
+  text-indent: 0.72rem;
+  color: #fff;
+ }
+ 
+.mycollection-no{
+  background-color: #F5A623;
+  border: 1px solid #F5A623;
+}
+.mycollection-yes {
+  border: 1px solid #666666;
+  background-color: #666666;
+}
+
+.myremind{
+  z-index: 2;
+  margin-left: 10px;
+  background-image: url(../img/course-remind.png);
+  background-repeat: no-repeat;
+  background-size: 0.36rem 0.4rem;
+  background-position: 0.2rem center;
+  border-radius: 1rem;
+  float: right;
+  width: 1.62666667rem;
+  height: 0.58666667rem;
+  line-height: 0.58666667rem;
+  margin-top: -0.04rem;
+  text-indent: 0.72rem;
+  color: #fff;
+}
+.myremind-yes{
+  border: 1px solid #666666;
+  background-color: #666666;
+}
+
+.myremind-no{
+ background-color: #F5A623;
+  border: 1px solid #F5A623;
+}

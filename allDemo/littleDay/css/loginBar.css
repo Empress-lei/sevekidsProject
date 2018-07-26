@@ -1,0 +1,21 @@
+.loginBar {
+  position:relative;
+  z-index:999;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 0.66rem;
+  padding: 0.15rem 0.72rem;
+  background-color: #ccc;
+}
+.loginBar p {
+	overflow:hidden;
+    line-height: 0.36rem;
+    font-size: 0.32rem;
+    color: #333;
+    text-align: center;
+}
+.loginBar p a{
+	color: #333;
+    text-decoration:underline;
+}

@@ -1,0 +1,54 @@
+@import "../base.css";
+.w_page_one {
+  width: 10rem;
+  height: 17.78125rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+.w_page_one .page_bg {
+  width: 10rem;
+  height: 17.78125rem;
+  background: url("../../img/homepage/z_bg.png");
+  background-size: 10rem 17.78125rem;
+  background-size: cover;
+  position: relative;
+}
+.w_page_one .page_bg .page_top {
+  width: 8.40625rem;
+  height: 6.96875rem;
+  border: 2px solid #000;
+  border-radius: 5px 5px;
+  background-color: #e3bbbc;
+  position: absolute;
+  top: 2.15625rem;
+  left: 50%;
+  margin-left: -4.203125rem;
+}
+.w_page_one .page_bg .page_top video {
+  width: 8.40625rem;
+  height: 6.96875rem;
+}
+.w_page_one .page_bg .page_content {
+  width: 100%;
+  height: 7.8125rem;
+}
+.w_page_one .page_bg .page_content img {
+  width: 7.8125rem;
+  height: 5.859375rem;
+  position: absolute;
+  top: 10.1875rem;
+  left: 50%;
+  margin-left: -3.90625rem;
+  z-index: 2;
+}
+.w_page_one .page_bg .footer_img {
+  width: 5.375rem;
+  height: 1.03125rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -2.6875rem;
+}

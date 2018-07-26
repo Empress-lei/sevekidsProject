@@ -1,0 +1,793 @@
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--忽略页面中的邮箱格式为邮箱-->
+		<meta name="format-detection" content="email=no">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no,address=no,email=no">
+		<meta name="keywords" content="喵姐,喵姐早教说,0到6岁早期教育,家庭教育,家长教育,父母课堂,育儿知识,儿童教育,母婴育儿,">
+		<meta name="description" content="喵姐早教说是喵姐高寿岩创办的为家庭教育提供专业靠谱的0到6岁早期教育、育儿知识的平台。">
+		<link rel="shortcut icon" type="image/x-icon" href="http://c.static.sevenkids.cn/res/img/favicon.ico?v=2.3.59" media="screen">
+		<link rel="apple-touch-icon" href="http://c.static.sevenkids.cn/res/img/favicon.ico?v=2.3.59">
+		<script src="http://c.static.sevenkids.cn/res/js/custom/constant/constant.js?v=2.3.59"></script>
+		<link rel="stylesheet" href="http://c.static.sevenkids.cn/res/css/style-v2.0.css?v=2.3.59">
+		<script src="http://c.static.sevenkids.cn/res/js/jquery-2.1.1.min.js?v=2.3.59"></script>
+		<script src="http://c.static.sevenkids.cn/res/js/custom/authorise/authorise.js?v=2.3.59"></script>
+		<link rel="stylesheet" href="http://c.static.sevenkids.cn/res/css/custom/userAuthorise/userAuthorise.css?v=2.3.59">
+		<script src="http://c.static.sevenkids.cn/res/js/hh.js?v=2.3.59"></script>
+		<script src="http://c.static.sevenkids.cn/res/js/toast-v1.js?v=2.3.59"></script>
+		<style type="text/css">
+			.cuowu {
+				width: 100%;
+				max-width: 540px;
+				height: 100%;
+				position: fixed;
+				z-index: 99999999;
+				top: 0;
+			}
+			
+			.cuowu>div {
+				position: absolute;
+				width: 62%;
+				left: 50%;
+				margin-left: -31%;
+				background: rgba(0, 0, 0, 0.5);
+				margin-top: -1.78666667rem;
+				padding: 0.61333333rem 0;
+				top: 50%;
+				border-radius: 6px;
+			}
+			
+			.cuowu>div span {
+				display: block;
+				text-align: center;
+				color: #fff;
+				line-height: 0.48rem;
+				margin-top: 0.21333333rem;
+				font-size: 15px;
+			}
+			
+			.cuowu>div img {
+				display: block;
+				width: 1.06666667rem;
+				height: 1.09333333rem;
+				margin: 0 auto;
+			}
+			
+			.cuowu .cw2 {
+				padding: 0.42666667rem 0.26666667rem;
+				line-height: 10px;
+			}
+			
+			.load {
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				left: 0;
+				top: 0;
+				z-index: 99999999;
+			}
+			
+			.load .loading {
+				width: 1.16rem;
+				height: 1.16rem;
+				position: relative;
+				top: 50%;
+				margin: -0.58rem auto 0 auto;
+				background: url(/res/img/load-miao.png) no-repeat center center;
+				background-size: 0.66666667rem;
+			}
+			
+			.load .loadbg {
+				width: 1.16rem;
+				height: 1.16rem;
+				background: url(/res/img/loadbg.png) no-repeat center center;
+				background-size: 1.16rem 1.13333333rem;
+				animation: rotate 1s linear infinite;
+				-webkit-animation: rotate 1s linear infinite;
+				-moz-animation: rotate 1s linear infinite;
+				-o-animation: rotate 1s linear infinite;
+			}
+			
+			@keyframes rotate {
+				0% {
+					transform: rotate(0deg);
+					-webkit-transform: rotate(0deg);
+					-moz-transform: rotate(0deg);
+					-o-transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+					-webkit-transform: rotate(360deg);
+					-moz-transform: rotate(360deg);
+					-o-transform: rotate(360deg);
+				}
+			}
+			
+			@-webkit-keyframes rotate {
+				0% {
+					transform: rotate(0deg);
+					-webkit-transform: rotate(0deg);
+					-moz-transform: rotate(0deg);
+					-o-transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+					-webkit-transform: rotate(360deg);
+					-moz-transform: rotate(360deg);
+					-o-transform: rotate(360deg);
+				}
+			}
+			
+			@-moz-keyframes rotate {
+				0% {
+					transform: rotate(0deg);
+					-webkit-transform: rotate(0deg);
+					-moz-transform: rotate(0deg);
+					-o-transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+					-webkit-transform: rotate(360deg);
+					-moz-transform: rotate(360deg);
+					-o-transform: rotate(360deg);
+				}
+			}
+			
+			@-o-keyframes rotate {
+				0% {
+					transform: rotate(0deg);
+					-webkit-transform: rotate(0deg);
+					-moz-transform: rotate(0deg);
+					-o-transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+					-webkit-transform: rotate(360deg);
+					-moz-transform: rotate(360deg);
+					-o-transform: rotate(360deg);
+				}
+			}
+		</style>
+		<script src="http://c.static.sevenkids.cn/res/js/common.js?v=2.3.59"></script>
+		<script src="http://c.static.sevenkids.cn/res/js/myValidity.js?v=2.3.59"></script>
+
+		<script type="text/javascript">
+			var la = '18235580527';
+			$(function() {
+				if(la) {
+					var currentUrl = location.href;
+					if(currentUrl.indexOf("?la=") == -1 && currentUrl.indexOf("&la=") == -1) {
+						var newUrl = currentUrl;
+						if(currentUrl.indexOf("?") == -1) {
+							newUrl += "?la=" + la;
+						} else {
+							newUrl += "&la=" + la;
+						}
+						history.replaceState(null, null, newUrl);
+					}
+				}
+			})
+		</script>
+		<link rel="stylesheet" href="http://c.static.sevenkids.cn/res/css/loginBar.css?v=2.3.59">
+		<script src="http://c.static.sevenkids.cn/res/js/loginBar.js?v=2.3.59"></script>
+
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript">
+			//jsapi 是否可用
+			var canwxaudio = "" == "true";
+			if(canwxaudio) {
+				wx.config({
+					debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+					appId: '', // 必填，公众号的唯一标识
+					timestamp: '', // 必填，生成签名的时间戳
+					nonceStr: '', // 必填，生成签名的随机串
+					signature: '', // 必填，签名，见附录1
+					jsApiList: ['startRecord', 'stopRecord', 'onVoiceRecordEnd', 'playVoice', 'pauseVoice', 'stopVoice', 'onVoicePlayEnd', 'uploadVoice', 'downloadVoice', 'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone', 'closeWindow'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+				});
+				wx.error(function(res) {
+					// config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新签名。
+					canwxaudio = false;
+				});
+			}
+		</script>
+		<script src="http://c.static.sevenkids.cn/res/js/share/wxfxyy.js?v=2.3.59"></script>
+		<title>喵姐早教说</title>
+		<style type="text/css">
+			body {
+				color: #000000;
+				font-size: 0.32rem;
+			}
+			
+			.section {
+				position: relative;
+				font-size: 0.32rem;
+				font-weight: 400;
+				font-style: normal;
+				line-height: 0.5rem;
+			}
+			
+			table {
+				width: 100%;
+				border: 0px;
+				border-color: transparent;
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+			
+			table td {
+				position: relative;
+				padding-top: 0.1rem;
+			}
+			
+			.td1 {
+				width: 1.7rem;
+			}
+			
+			.td2 {}
+			
+			.toBtn {
+				position: fixed;
+				bottom: 0.6rem;
+				right: 0.6rem;
+			}
+			
+			.toBtn2 {
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+				height: 1.4rem;
+				border: 1px solid #999;
+				background: #fff;
+				font-size: 0.40rem;
+				line-height: 1.3rem;
+			}
+			
+			.toBtn2 .right {
+				float: right;
+				width: 60%;
+				background-color: rgba(255, 153, 0, 1);
+				margin: 0 auto;
+				text-align: center;
+				color: #fff;
+			}
+			
+			.toBtn div {
+				border-radius: 1rem;
+				background-color: #FF8319;
+				line-height: 1rem;
+				font-weight: bold;
+				color: white;
+				font-size: 0.4rem;
+				padding: 0 0.6rem;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mainWrap wrap">
+			<div class="section" style="min-height: 3rem;padding:0;">
+				<img width="100%" src="http://onlinefile.sevenkids.cn/uploadm/201706/08/14968939312317C4e.jpg">
+				<div style="position: absolute;bottom: 0rem;color: white;padding: 0.32rem 0.32rem;  background: rgba(3,3,3,0.2); width: 100%;">
+					<p style="font-size: 0.64rem;font-weight: bold;line-height: 0.8rem;">孩子的自控能力越好，人生段位越高</p>
+					<p style="font-size: 0.32rem;font-weight: bold;padding-top: 0.3rem;">一个有规律，懂规则，守规矩的孩子是这样炼成的。</p>
+				</div>
+			</div>
+
+			<div class="section" style="line-height: 0.6rem;font-size: 0.34rem;color: #333333;">
+				<p style="font-size: 0.45rem;font-weight: bold;margin-bottom: 0.32rem;">课程介绍</p>
+				<p style="color: #949494;position: absolute;right: 0.1rem;top:0.42rem;">1333人订阅</p>
+				<p>哪个妈妈不希望孩子能够人见人爱？<br>可是不知为啥他却总是人见人嫌……<br>生活规律混乱，你为他今后入园担忧；<br>公共场所大吼，你为别人的鄙视发愁。<br>乱动他人东西，这样怎么会交到朋友？<br>在马路上乱跑，你吓得浑身都在发抖……<br>在家不怕啥。<br>出门啥不怕……<br>难道我就不能把我的娃整得人见人爱？<br>能整！<br>咋整？<br>培养孩子的自控力。<br>显然，孩子之所以总是做让人闹心的事，跟缺乏自控力有很大关系。<br>自控力差的孩子很难管好自己的行为，所以才会生出种种让人头大的是是非非。<br>想要孩子未来能够更好地控制自己的情绪，注意力和其他行为，从小培养自控力是关键。<br>一个人只有具有了自控力，才能更好地应对生活中的压力、处理冲突和人际关系，在学习和事业中才会更加成功。<br><br>如果说能够自己吃饭，睡觉，上厕所，是最基础的自控力。<br>那培养孩子的生活规律，帮助孩子建立规则，则是更高级的自控力。<br>事实证明，自控力强的孩子，今后的人生更安全、更合群、更受欢迎，也更容易获得成就。<br>作为妈妈，是不是打心眼儿里想养出一个有规律，懂规则，守规矩的孩子？<br>别急，我们的课程助你一臂之力！<br>在自控力的进阶篇中，我们手把手教你如何培养孩子的生活规律，如何帮宝宝建立规则，执行规则，以及在执行的过程中怎样对孩子进行正面激励。<br>让你的孩子今后能够变得人见人爱。</p>
+			</div>
+
+			<div class="section" style="line-height: 0.6rem;font-size: 0.34rem;color: #333333;">
+				<p style="font-size: 0.45rem;font-weight: bold;margin-bottom: 0.32rem;">课程大纲</p>
+
+				<p style="font-weight: bold;">第1课 每个孩子都需要一张生活常规表</p>
+				<p>想让孩子生活规律，一个非常有效的方法是，帮助孩子建立一张比吃药更有效的生活常规表。</p>
+
+				<br>
+
+				<p style="font-weight: bold;">第2课 如何利用生活常规表，培养孩子的自控力？</p>
+				<p>生活常规表的使用指南，教你最便捷好用的方法，一键搞定孩子生活不规律的问题。</p>
+
+				<br>
+
+				<p style="font-weight: bold;">第3课 0-6岁的规矩清单及确立规矩的前提条件</p>
+				<p>孩子虽小，也需要遵守规则。想要给孩子设立家规，需要做到这几大前提条件！</p>
+
+				<br>
+
+				<p style="font-weight: bold;">第4课 怎样跟孩子把规矩说清楚讲明白</p>
+				<p>有时不是孩子不守规则，而是你的规则没说明白。怎样说明白规则这里的学问你懂吗？</p>
+
+				<br>
+
+				<p style="font-weight: bold;">第5课 让孩子学会遵守规矩的三个方法</p>
+				<p>规则不是定着玩的。如果孩子没有按照你的要求去做，你要知道可以采取哪些合理的行动。</p>
+
+				<br>
+
+				<p style="font-weight: bold;">第6课 确立规矩过程中绝对少不了的三大计划</p>
+				<p>爹妈给自己制定计划，和孩子一起讨论，给予孩子适当激励都是让孩子能遵守规则的好方法。</p>
+
+			</div>
+
+			<div class="section" style="line-height: 0.6rem;font-size: 0.34rem;color: #333333;">
+				<p style="font-size: 0.45rem;font-weight: bold;margin-bottom: 0.32rem;">导师介绍</p>
+				<p style="font-weight: bold;">喵姐-高寿岩</p>
+				<p>●&nbsp;北京师范大学学前教育硕士，资深学霸；</p>
+				<p>●&nbsp;早教圈的活久见，在儿童教育领域折腾和创新了27年；</p>
+				<p>●&nbsp;原全国最大的儿童教育机构红黄蓝高级副总裁；</p>
+				<p>●&nbsp;央视、腾讯教育专家及各母婴杂志嘉宾、顾问、专栏作家；</p>
+				<p>●&nbsp;学期教育领域研发产品最多的产品大牛：</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;✔&nbsp;早教课程体系服务1500+机构，100万0-6岁宝宝；</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;✔&nbsp;竹兜早教套装是巧虎在中国区最大的竞争对手；</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;✔&nbsp;大嘴呱呱说唱语言课程服务10000+幼儿园，让300万+幼儿园宝宝用语言闯世界；</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;✔&nbsp;在全国做过讲座500+场，著有图书、文章若干。</p>
+				<p>●&nbsp;创办喵姐早教说，在移动互联网时代用专业帮助全国2000万中产0-6岁新手妈妈“搞定熊孩子，继续做女神”。</p>
+			</div>
+
+			<div class="section" style="line-height: 0.6rem;font-size: 0.34rem;color: #333333;">
+				<p style="font-size: 0.45rem;font-weight: bold;margin-bottom: 0.32rem;">适合谁听</p>
+				<p>如果你家孩子生活规律很是乱套，急需听！<br>如果你家孩子不管在哪儿都不守规矩，急需听！<br>如果你想帮你家娃建立良好的规则意识，急需听！</p>
+			</div>
+
+			<div class="section" style="line-height: 0.6rem;font-size: 0.34rem;color: #333333;">
+				<p style="font-size: 0.45rem;font-weight: bold;margin-bottom: 0.32rem;">你将得到</p>
+				<p>帮助孩子建立生活常规表的方法。<br>不同年龄段的孩子应该遵守哪些规则。<br>帮助孩子确立规则的技巧。<br>如何将规则讲清楚的方法。<br>帮助孩子执行规则的步骤。</p>
+			</div>
+
+			<div class="section" style="line-height: 0.6rem;font-size: 0.34rem;color: #333333;">
+				<p style="font-size: 0.45rem;font-weight: bold;margin-bottom: 0.32rem;">订阅须知</p>
+				<p>本课程为虚拟内容服务，已经订阅成功概不退款，请您理解。</p>
+			</div>
+
+			<div style="height: 2rem;">
+
+			</div>
+
+			<!--<div class="toBtn2">
+		
+			
+				<div class="payBtn right">订阅 :￥29.50<span style="font-size:0.28rem;">（  原价：￥59.00）</span></div>
+			
+			
+		
+		
+		<div style="text-align: center;" class="tryBtn">免费试听</div>
+	</div>-->
+			<!--课程详情页底部导航调整样式-->
+			<style type="text/css">
+				.navBottom {
+					position: fixed;
+					bottom: 0;
+					width: 100%;
+					max-width: 540px;
+					height: 1.2rem;
+					border-top: 1px solid rgba(188, 188, 188, 1);
+					background: #fff;
+					font-size: 0.40rem;
+					line-height: 1.2rem;
+					display: -webkit-flex;
+					display: -moz-flex;
+					display: -ms-flex;
+					display: -o-flex;
+					display: flex;
+					text-align: center;
+				}
+				
+				.navBottom li {
+					flex: 1;
+					font-size: 0.38rem;
+				}
+				
+				.navBottom .line {
+					width: 1px;
+					height: 0.7rem;
+					margin: 0.25rem 0;
+					background-color: #C9C9C9;
+				}
+				
+				.navBottom :nth-child(1) {
+					color: #797979;
+				}
+				
+				.navBottom :nth-child(3) {
+					color: #0099FF;
+				}
+				
+				.navBottom .theLecture {
+					background-color: rgba(255, 153, 0, 1);
+					margin: 0 auto;
+					text-align: center;
+					color: #fff;
+				}
+			</style>
+			<!--课程详情页底部导航调整-->
+			<ul class="navBottom">
+				<li>试听课程 ></li>
+				<div class="line"></div>
+				<li>土豪付费 ></li>
+				<li class="theLecture">免费听课 ></li>
+			</ul>
+		</div>
+		<script src="http://c.static.sevenkids.cn/res/js/wxmppay.js?v=2.3.59"></script>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<title>喵姐早教说</title>
+		<style type="text/css">
+			.couponPage {
+				z-index: 9999;
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				overflow: auto;
+				display: block;
+				background-color: white;
+			}
+			
+			table {
+				width: 100%;
+				border: 0px;
+				border-color: transparent;
+				border-collapse: collapse;
+				border-spacing: 0;
+				font-size: 0.3rem;
+			}
+			
+			table td {
+				padding: 0 0.1rem;
+				position: relative;
+				font-size: 0.4rem;
+			}
+			
+			.bizDiv td {
+				padding: 0 0.3rem;
+			}
+			
+			.td1 {
+				width: 40%
+			}
+			
+			.td1 img {
+				border-radius: 0.2rem;
+			}
+			
+			.td2 {
+				width: 60%
+			}
+			
+			.moneyP {
+				color: #FF9900;
+				font-size: 0.32rem;
+				margin-top: 0.1rem;
+			}
+			
+			.countP {
+				color: #A1A1A1;
+				font-size: 0.32rem;
+				background: url(http://c.static.sevenkids.cn/res/img/common/listen2@2x.png?v=2.3.59) left center no-repeat;
+				background-size: 0.32rem 0.3rem;
+				padding-left: 0.32rem;
+				margin-top: 0.1rem;
+			}
+			
+			.td3 {
+				width: 20%
+			}
+			
+			.td4 {
+				width: 80%;
+				line-height: 0.5rem;
+			}
+			
+			.shuomingP {
+				color: #A1A1A1;
+				font-size: 0.32rem;
+				margin-top: 0.1rem;
+			}
+			
+			.totleP {
+				font-size: 0.32rem;
+				padding-left: 0.32rem;
+			}
+			
+			.mnSpen {
+				font-style: italic;
+				font-size: 0.7rem;
+			}
+			
+			.gelixian {
+				background: url(http://c.static.sevenkids.cn/res/img/u1257.png?v=2.3.59) left center repeat-y;
+			}
+			
+			.couponIdRadio {
+				width: 0.5rem;
+				height: 0.5rem;
+				display: inline-block;
+				float: left;
+				margin: 3px 7px 0 0;
+				cursor: pointer;
+				position: relative;
+				-webkit-border-radius: 100%;
+				-moz-border-radius: 100%;
+				border-radius: 100%;
+				border: 1px solid #ccc;
+				box-shadow: 0 0 1px #ccc;
+				background: rgb(255, 255, 255);
+				background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+				background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+				background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+				background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+				background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+			}
+		</style>
+
+		<div class="couponPage" style="display:none;">
+
+			<h1 id="clearDetailDiv" style="background-color: transparent" class="activityTitle" onclick="hideCoupon()"><span class="backBtn"></span></h1>
+
+			<div style="width: 100%;text-align: center;padding: 0.3rem;">
+				<p style="color: #868686;font-size:0.32rem;margin: 0.2rem auto;">支付剩余时间 </p>
+				<p id="timeP" style="color: #0099FF;font-weight:bold;font-size:0.8rem">30:00</p>
+				<div style="height:1px;width: 100%;background-color: rgba(142, 128, 128, 0.28);margin-top: 0.3rem;"></div>
+			</div>
+			<div class="bizDiv">
+
+				<table>
+					<tbody>
+						<tr>
+							<td class="td1"><img src="http://onlinefile.sevenkids.cn/uploadm/201706/08/14968939312317C4e.jpg" width="100%"></td>
+							<td class="td2">
+
+								<p class="countP" style="display: none">0人已看过</p>
+								<p class="moneyP">￥29.50</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+			<div style="height:4px;width: 100%;margin:0.6rem 0; background-color: rgba(142, 128, 128, 0.28);"></div>
+			<p class="totleP">
+				有 <span class="totleSpen">0</span> 张优惠券可用：
+				<a style="float: right;margin-right: 0.32rem;color: #0099FF;" onclick="noneCoupon()">不用优惠，直接支付 &gt; </a>
+			</p>
+			<div style="padding:0.3rem">
+				<div style="height:1px;width: 100%; background-color: rgba(142, 128, 128, 0.28);margin-bottom: 0.4rem;"></div>
+				<div class="initDiv" style="border: 1px rgba(142, 128, 128, 0.28) solid;border-radius:0.2rem;margin: 0.2rem 0;display: none">
+					<table>
+						<tbody>
+							<tr>
+								<td style="border-radius:0.2rem 0 0 0.2rem; background-color:#FF9900;">
+									<div style="min-height: 2rem;"></div>
+								</td>
+								<td style="padding: 0 0.3rem 0 0.6rem;">
+									<span style="position:absolute;top: 28%;left: 0.2rem;font-weight: bold;">￥</span>
+									<span class="mnSpen">26.9</span>
+								</td>
+								<td class="gelixian" style="width: 0.3rem;padding: 0;"></td>
+								<td style="">
+									<div class="couponName" style="padding: 0.5rem 0.01rem 0.3rem 0rem;"><span class="leixing" style="font-weight: bold;font-size: larger;"></span> | <span class="name" style="font-size:small;">喵姐说微课专场</span></div>
+									<div class="couponValidTime" style="padding: 0.1rem 0.01rem 0.3rem 0rem;color: rgb(161, 161, 161);font-size: 0.32rem;">有效期：2017.04.13 - 2.017.04.16</div>
+								</td>
+								<td style="padding:0.3rem 0.2rem;" valign="top">
+									<input type="radio" class="couponIdRadio" name="couponId" value="">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="initDivP">
+
+				</div>
+			</div>
+			<p style="font-size: 0.32rem;color: rgb(188, 188, 188);text-align: center;margin-bottom: 2rem;">
+				优惠券不可叠加使用
+			</p>
+			<div style="width: 100%;text-align: center;color: white;font-size: 0.5rem;margin: 0.3rem 0;position: fixed;bottom: 0.32rem;">
+
+				<div class="couponPaybtn" style="width: 6.8rem;background-color: #FF9900;border-radius: 0.5rem;line-height: 1rem;margin: 0 auto;font-size: 0.45rem;" "=" ">支付 <span>29.50</span> 元</div>
+		
+	
+</div> 
+</div>
+  <script type="text/javascript ">
+    var timestartInterval=" ";
+    function timestart(){
+    		var timeP  = $("#timeP ");
+		var m=29;
+		var s=59;
+		timestartInterval = window.setInterval(function(){
+	        if(s<10){
+	        		timeP.html(m+':0'+s);
+	        }else{
+	       	 	timeP.html(m+':'+s);
+	        }
+	        s--;
+			if(0==m && 0==s){
+				window.clearInterval(timestartInterval);
+	        }
+	        if(s<0){
+	        	 	s=59;
+		        m--;
+	        }
+	    },1000)
+    }
+    
+    var money =  "29.50 ";
+    var baozhengjin = " ";
+	</script>
+<script type="text/javascript ">
+function dealnum9(num){
+	var isF = false;
+	if(num<0){
+		isF=true;
+	}
+	var n = isF ? num*-100 : num*100;
+	var m = parseInt(n+" ");
+	var r = m+" ";
+	if(n-m >= 0.9){
+		r = parseInt(m)+1;
+		r = " "+r;
+	}
+	var l = r.length;
+	if(l<2){
+		r = "0.0 "+r;
+	}else if(l<3){
+		r = "0. "+r;
+	}else{
+		r = r.substr(0,l-2)+". "+r.substr(l-2)
+	}
+	if(isF){
+		r = "- "+r;
+	}
+	return r;
+}
+var callbackFn = function(){};
+var couponWrap ;
+function showCoupon(_callbackFn,wrap){
+	if(isWeixin!="true "){
+		toast("请您进入微信支付 ");
+		return false;
+	}
+	couponWrap = $(wrap);
+	callbackFn = _callbackFn;
+	var initDivP = $(".initDivP ");
+	initDivP.empty();
+  	var initDiv = $(".initDiv ");
+	$(".totleP ").find(".totleSpen ").html(0);
+	HH.ajax({
+		waiting:true,
+		data:{businessType:'COURSEPACKAGE',bizId:'4',pageSize:100},
+		url:"/yzmm/wxmppay/coupon ",
+		callback:function(data){
+			if (data.success) {
+				//是否为空
+				if (!data.totalPage) {
+					hideCoupon();
+					callbackFn(" ");
+				} else {
+					$(".totleP ").find(".totleSpen ").html(data.totalRows);
+					var len = data.list.length; 
+					for(var i=0;i<len;i++){
+						var o = data.list[i];
+					  	var n = initDiv.clone();
+					  	if("SINGLE " == o.type){
+					  		n.find(".couponIdRadio ").data("money ",money);
+					  		n.find(".mnSpen ").html(money);
+					  	}else{
+					  		var sm = dealnum9(o.typeAmount/100);
+					  		n.find(".couponIdRadio ").data("money ",sm);
+					  		n.find(".mnSpen ").html(sm);
+					  	}
+					  	n.find(".couponIdRadio ").val(o.id);
+					  	n.find(".couponName .leixing ").html(o.typeName);
+					  	//现金券 兑换券
+					  	n.find(".couponName .name ").html(o.name);
+					  	n.find(".couponValidTime ").html('有效期：'+fmtSecondyyyMMDDdot(o.validStartTime)+' - '+fmtSecondyyyMMDDdot(o.validEndTime));
+					  	initDivP.append(n);
+					  	n.show();
+					}
+					
+						
+						
+						
+						$(".couponIdRadio ").on("click ",function(){
+							var money2 = $(this).data("money ");
+							var oldmoney = money;
+							var newmoney = oldmoney - money2;
+							newmoney = newmoney > 0 ? newmoney : 0;
+							if("true " == "false "){
+								newmoney = newmoney < 6 ? "6.00 " :newmoney;
+							}
+							$(".couponPaybtn ").find("span ").html(dealnum9(newmoney));
+						});
+						
+					
+					$(".couponPage ").show();
+					couponWrap.hide();
+					timestart();
+				}
+			} 
+		}
+	});
+}
+
+function noneCoupon(){
+	hideCoupon();
+	callbackFn(" ");
+}
+
+function hideCoupon(){
+	couponWrap.show();
+	window.clearInterval(timestartInterval);
+	$(".couponPaybtn ").find("span ").html(dealnum9(money));
+	$(".couponPage ").hide();
+}
+
+$(function(){
+	$(".couponPaybtn ").click(function(){
+		 var chkRadio = $('input:radio[name="couponId "]:checked').val();
+		 if(!chkRadio){
+			 toast("请选择优惠券！ ")
+			 return;
+		 }
+		if(typeof callbackFn =='undefined' || !callbackFn){
+			return;
+		}
+		hideCoupon();
+		callbackFn(chkRadio);
+	});
+})
+
+</script>
+
+
+<script type="text/javascript ">
+var isWeixin = 'false';
+$(function(){
+	$(".payBtn ").click(function(){
+		 if(isWeixin!="true "){
+			  toast("请您进入微信支付 ");
+			  return false;
+		 }
+		showCoupon(callbackPay,".wrap ");
+	});
+	
+	$(".tryBtn ").click(function(){
+		HH.href("/yzmm/account/course/topic/toList?id=4 ");
+	})
+})
+
+function callbackPay(id){
+	var type = 'COURSEGROUPBUY';
+	 var money = '29.50';
+	 var body = "购买主题课包【￥ "+money+"】 ";
+	 var groupId = '23';
+	 if(!groupId){
+		 return;
+	 }
+	 wxmpcoursegrouppay(money,body,groupId,id,type,function(orderId,result){
+			 if(result=="ok "){
+				 var tourl = "/yzmm/account/course/topic/toTopicCourseDetailByCgId ";
+			 	window.location.href="/yzmm/wxmppay/order/checkPay?couponId="+id+" &courseGroupId="+groupId+" &orderId="+orderId+" &toPage="+tourl;
+			 }
+		 });
+	}
+</script>
+<script type=" text/javascript ">
+function toBtnClick(){
+	HH.href("/yzmm/account/course/topic/subscribeFree?id=4 ");
+}
+</script>
+
+</body></html>

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <!--忽略页面中的手机号、地址、邮箱-->
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="keywords" content="喵姐,喵姐早教说,0到6岁早期教育,家庭教育,家长教育,父母课堂,育儿知识,儿童教育,母婴育儿,">
+    <meta name="description" content="喵姐早教说是喵姐高寿岩创办的为家庭教育提供专业靠谱的0到6岁早期教育、育儿知识的平台。">
+    <title>喵姐早教说</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/audio1.js"></script>
+    <script>
+        $(function() {
+            var newStyle = $("<style> @font-face {font-family: 'myFont';  src: url('./font/HYQiHei-50S.ttf');} </style>");
+            $('body').append(newStyle);
+            var font = "src: url('./font/HYQiHei-50S.ttf')";
+            if(font === true) {
+                $('body').css = newStyle;
+            }else {
+                $('body').css = "微软雅黑", "PingFangSC-Light";
+            }
+        });
+    </script>
+</head>
+<body style="font-family: 'myFont';">
+<!--购买确认提示-->
+<div class="purchaseShare">
+    <div class="purchaseBox">
+        <p class="remind">提醒</p>
+        <p class="remindContent">
+            您有 3 张课程兑换券，使用课程兑换券可免费
+            学习任意一节课程，您确定使用课程券免费学
+            习《一位华裔妈妈在法国学到的育儿经》课程吗？
+        </p>
+        <p class="careful">注意：课程券一经使用不可退换。</p>
+        <a href="javascript:void(0)" class="freeBtn">免费学习</a>
+        <a href="javascript:void(0)" class="tycoonBtn">土豪付费</a>
+    </div>
+    <img src="./img/classDetails/wrong.png" alt="" class="wrongBtn">
+</div>
+<!--打赏的弹层-->
+<div class="rewardShare">
+    <div class="rewardBox">
+        <h3 class="rewardMoney">请选择您要打赏的金额</h3>
+        <ul class="btnEvaluate">
+            <li class="rewardGray"><p>￥1.8</p></li>
+            <li class="rewardGray"><p>￥5.8</p></li>
+            <li class="rewardGray"><p>￥8.8</p></li>
+        </ul>
+        <p class="rewardPrompt">目前仅支持微信支付</p>
+        <ul class="rewardButton">
+            <li class="think">再想想</li>
+            <li class="sure">确定</li>
+        </ul>
+    </div>
+</div>
+<!--收藏弹层-->
+<div class="collecShare">
+    <p>收藏成功</p>
+</div>
+<!--留言页-->
+<div class="messPage" style="display: none">
+    <h3 class="messTitle">一位华裔妈妈在法国学到的育儿经</h3>
+    <div class="font13">
+        <textarea class="txtarebox mySearchTitle" onkeyup="fn()" onblur="fn()" name="questionTxt" maxlength="200" placeholder="写下您的听课感受吧..."></textarea>
+        <p class="length"><span>0</span>/200</p>
+    </div>
+    <ul class="contentBtn clearfix">
+        <li>
+            <a href="#messText" class="submitCont">提  交</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" class="cancelCont">取 消</a>
+        </li>
+    </ul>
+</div>
+<div class="wrapPage">
+    <!--课程详情页-->
+    <div class="classDetails" id="classDetails">
+        <!--//课程详情页默认展示的区域-->
+        <div class="exhibitionBox" id="exhibitionBox">
+            <img src="./img/classDetails/classbanner1.png" alt="" class="classBanner">
+            <h3 class="classTitle">一位华裔妈妈在法国学到的育儿经</h3>
+            <div class="classTear clearfix">
+                <div class="tearImg clearfix">
+                    <img src="./img/classDetails/tear1.png" alt="" class="fl">
+                    <p class="fl tearch">莹莹老师</p>
+                </div>
+                <p class="fr">24975次播放</p>
+            </div>
+            <!--课程音频-->
+            <div class="classAudio">
+                <div class="audioDiv clearfix">
+                    <div class="playBtn  ui-play play" id="playBtn"></div>
+                    <div class="section">
+                        <h3 class="sectionTxt">一位华裔妈妈在法国学到的育儿经</h3>
+                        <p class="audioContTime">时长：08分19秒</p>
+                        <div style="display: none;">
+                            <div class="audioCont topaudio" id="audioCont">
+                                <!--音频标签-->
+                                <audio preload="auto" class="audio" id="audio" src="./js/JJ.mp3"></audio>
+                            </div>
+                            <div class="timeNum">
+                                <!--开始时间-->
+                                <span class="txt fl">00:00</span>
+                                <!--结束时间-->
+                                <span class="txt2 fr" data-sec="0">08:19</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="classContent">
+                <p>
+                    法国人是怎么养孩子的？<br>
+                    一个中心两个基本点是指什么？<br>
+                    为什么法国的孩子公众场合的礼仪非常好？<br>
+                    为什么法国孩子那么遵守规矩？<br>
+                    想知道这些吗？<br>
+                    千万不要错过这节课！
+                </p>
+                <h4>本节课会讲到：</h4>
+                <p>
+                    从小让孩子明白，他并不是世界的中心。<br>
+                    法国人的家庭规矩和公众场合礼仪。
+                </p>
+                <h4>适合谁听：</h4>
+                <p>
+                    希望培养出行为得体的孩子的家长。
+                </p>
+                <h4>你将获得：</h4>
+                <p>
+                    让孩子行为变好，遵守规矩的几个方法。
+                </p>
+            </div>
+            <img src="./img/classDetails/division.png" alt="" class="division">
+            <div class="classContent">
+                <span class="tearIntroduce">莹莹老师</span>
+                <p>
+                    毕业于上海音乐学院钢琴专科本科<br>
+                    法国巴黎高等师范学校钢琴专业硕士<br>
+                    美国伯德温华莱士大学儿童音乐教育专业<br>
+                    法国巴黎家庭积极养育课程注册培训师<br>
+                    多文化家庭教育/青春期家庭教育课程注册培训师<br><br>
+                    16年与法国巴黎成立“Ying家庭教育”工作室，并多次
+                    举办“国际父母IP成长营”，开设0 - 6岁儿童父母课/
+                    青春期养育父母课/琴童父母课/多元养育父母等系列
+                    课程。
+                </p>
+            </div>
+            <img src="./img/classDetails/vipbanner.jpg" alt="" class="bannerVipImg">
+        </div>
+        <!--播放音频点击下面的上箭头展示的区域-->
+        <div class="hideBox clearfix" style="display: none;">
+            <img src="./img/classDetails/lowerArr.png" alt="" class="lowerArr fr">
+            <img src="./img/classDetails/classbanner1.png" alt="" class="hideBanner">
+            <h2 class="askTitle">一位华裔妈妈在法国学到的育儿经</h2>
+            <p class="teacher">|  喵姐 - 高寿岩  |</p>
+            <div class="audioDiv clearfix">
+                <!--音频-->
+                <div class="section">
+                    <div class="audioCont topaudio">
+                        <!--音频标签-->
+                        <!--<audio preload="auto" id="audio" src="./js/dong.mp3"></audio>-->
+                        <div class="topaudioBox">
+                            <!--开始时间-->
+                            <span class="txt">00:00</span>
+                            <div class="audioLine" id="audioLine">
+                                <!--进度条上的小圆点-->
+                                <span class="lineaft"></span>
+                                <div class="active"></div>
+                                <!--进度条上的小圆点-->
+                                <a href="javascript:void(0);" class="circle" id="drag"></a>
+                            </div>
+                            <!--结束时间-->
+                            <span class="txt2" data-sec="0">08:19</span>
+                        </div>
+                        <!--上面的进度条，时间-->
+                    </div>
+                </div>
+                <!--播放按钮-->
+                <ul class="audiohandle clearfix">
+                    <li class="unuseable">
+                        <p class="lecture"><  讲课</p>
+                    </li>
+                    <li class="playDiv">
+                        <div class="playBtn ui-play play"></div>
+                    </li>
+                    <li class="useable">
+                        <p class="Tanswer">答疑  ></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="askRecommend">
+            <div class="clearfix">
+                <h3 class="recommendTit">相关推荐</h3>
+            </div>
+            <ul class="classReco" id="messText">
+                <li class="recommendCon clearfix">
+                    <img src="./img/play.png" alt="" class="recommendImg fl">
+                    <div class="recommendRight fr">
+                        <h3>爸妈用对方法，让孩子95%的胆小害怕让孩子95%的胆小害怕...</h3>
+                        <p>时长：20分51秒  |  摘自 3000问</p>
+                    </div>
+                </li>
+                <li class="recommendCon clearfix">
+                    <img src="./img/play.png" alt="" class="recommendImg fl">
+                    <div class="recommendRight fr">
+                        <h3>这些给力绘本，让宝宝远离零食</h3>
+                        <p>时长：20分51秒  |  摘自 8分钟经典育儿</p>
+                    </div>
+                </li>
+                <li class="recommendCon clearfix">
+                    <img src="./img/play.png" alt="" class="recommendImg fl">
+                    <div class="recommendRight fr">
+                        <h3>这些给力绘本，让宝宝远离零食</h3>
+                        <p>时长：20分51秒  |  摘自 微课堂</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="clearfix">
+                <h3 class="leavingMessage fl">精选留言</h3>
+                <!--<a href="javascript:void(0)" class="messBtn fr">写留言</a>-->
+                <input type="text" class="messBtn fr" placeholder="写留言"  readonly="readonly">
+            </div>
+            <div class="noMessage" style="display: none">
+                <img src="./img/search/bulb.png" alt="" class="bulbImage">
+                <p class="bulbText">还没有人写留言，快来抢沙发</p>
+            </div>
+            <!--精选留言-->
+            <ul class="leavingMessUl showLeav">
+                <!--我的留言区域-->
+                <li class="messList ">
+                    <div class="messContentDiv clearfix">
+                        <img src="./img/classDetails/classbanner1.png" alt="头像" class="classbanner">
+                        <div class="messCont">
+                            <p class="messName">安的种子</p>
+                            <p class="messBaby">小公主&nbsp;&nbsp;2岁8个月</p>
+                            <p class="messText">
+                                喵姐你好，我家二宝是男孩，三岁俩个月，我跟他没分房没分床还一个被窝，因为天冷，想明年春天分，请喵姐给些建议！
+                            </p>
+                            <div class="voice clearfix" >
+                                <div class="voicephoto">
+                                    <img src="./img/classDetails/miaojie.png">
+                                </div>
+                                <div class="voicemsg time" data-id="0" data-url="./js/dong.mp3" onclick="playqa(this)">
+                                    <span class="voicebar"></span>
+                                    <span class="time">00:12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="messContentDiv clearfix contentTopBor" style="display: none">
+                        <div class="messCont">
+                            <p class="messName">安的种子</p>
+                            <p class="messBaby">小公主&nbsp;&nbsp;2岁8个月</p>
+                            <p class="messText">
+                                喵姐你好，我家二宝是男孩，三岁俩个月，我跟他没分房没分床还一个被窝，因为天冷，想明年春天分，请喵姐给些建议！
+                            </p>
+                        </div>
+                    </div>
+                    <div class="messContentDiv clearfix contentTopBor" style="display: none">
+                        <div class="messCont">
+                            <p class="messName">安的种子</p>
+                            <p class="messBaby">小公主&nbsp;&nbsp;2岁8个月</p>
+                            <p class="messText">
+                                喵姐你好，我家二宝是男孩，三岁俩个月，我跟他没分房没分床还一个被窝，因为天冷，想明年春天分，请喵姐给些建议！
+                            </p>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="messageBtn">我的留言<span>(3)</span></a>
+                    <div class="stop">
+                        <a href="javascript:void(0);" class="messageStop" style="display: none">收起</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="leavingMessUl showLeav">
+                <!--精选留言-->
+                <li class="messList">
+                    <div class="messContentDiv clearfix">
+                        <img src="./img/classDetails/classbanner1.png" alt="头像" class="classbanner">
+                        <div class="messCont">
+                            <p class="messName">安的种子</p>
+                            <p class="messBaby">小公主&nbsp;&nbsp;2岁8个月</p>
+                            <p class="messText">
+                                喵姐你好，我家二宝是男孩，三岁俩个月，我跟他没分房没分床还一个被窝，因为天冷，想明年春天分，请喵姐给些建议！
+                            </p>
+                            <div class="voice clearfix" >
+                                <div class="voicephoto">
+                                    <img src="./img/classDetails/miaojie.png">
+                                </div>
+                                <div class="voicemsg time" data-id="0" data-url="./js/dong.mp3" onclick="playqa(this)">
+                                    <span class="voicebar"></span>
+                                    <span class="time">00:12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="messList">
+                    <div class="messContentDiv clearfix">
+                        <img src="./img/classDetails/classbanner1.png" alt="头像" class="classbanner">
+                        <div class="messCont">
+                            <p class="messName">xiaxiaoxue</p>
+                            <p class="messBaby">小公主&nbsp;&nbsp;2岁8个月</p>
+                            <p class="messText">
+                                我家宝宝11个月，从出生到现在无论白天还是黑夜睡觉都易醒，觉少，夜晚入睡难，几分钟就哼唧，怎么办？
+                            </p>
+                            <div class="voice clearfix">
+                                <div class="voicephoto">
+                                    <img src="./img/classDetails/miaojie.png">
+                                </div>
+                                <div class="voicemsg time" data-id="1" data-url="./js/dong.mp3"  onclick="playqa(this)">
+                                    <span class="voicebar"></span>
+                                    <span class="time">00:12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="messList messShare">
+                    <div class="messContentDiv clearfix">
+                        <img src="./img/classDetails/classbanner1.png" alt="头像" class="classbanner">
+                        <div class="messCont">
+                            <p class="messName">xiaxiaoxue</p>
+                            <p class="messBaby">小公主&nbsp;&nbsp;2岁8个月</p>
+                            <p class="messLine">我家宝宝11个月，从出生到现在无论白天还是黑夜睡觉都易醒，觉少，夜晚入睡难，几分钟就哼唧，怎么办？</p>
+                            <div class="voice clearfix">
+                                <div class="voicephoto">
+                                    <img src="./img/classDetails/miaojie.png">
+                                </div>
+                                <div class="voicemsg time" data-id="1" data-url="./js/dong.mp3"  onclick="playqa(this)">
+                                    <span class="voicebar"></span>
+                                    <span class="time">00:12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="messList messShow"  style="display: none">
+                    <div class="messContentDiv clearfix">
+                        <img src="./img/classDetails/classbanner1.png" alt="头像" class="classbanner">
+                        <div class="messCont">
+                            <p class="messName">xiaxiaoxue</p>
+                            <p class="messBaby">小公主&nbsp;&nbsp;2岁8个月</p>
+                            <p class="messText">我家宝宝11个月，从出生到现在无论白天还是黑夜睡觉都易醒，觉少，夜晚入睡难，几分钟就哼唧，怎么办？</p>
+                            <div class="voice clearfix">
+                                <div class="voicephoto">
+                                    <img src="./img/classDetails/miaojie.png">
+                                </div>
+                                <div class="voicemsg time" data-id="1" data-url="./js/dong.mp3"  onclick="playqa(this)">
+                                    <span class="voicebar"></span>
+                                    <span class="time">00:12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="messList messShow"  style="display: none">
+                    <div class="messContentDiv clearfix">
+                        <img src="./img/classDetails/classbanner1.png" alt="头像" class="classbanner">
+                        <div class="messCont">
+                            <p class="messName">xiaxiaoxue</p>
+                            <p class="messBaby">小公主&nbsp;&nbsp;2岁8个月</p>
+                            <p class="messText">我家宝宝11个月，从出生到现在无论白天还是黑夜睡觉都易醒，觉少，夜晚入睡难，几分钟就哼唧，怎么办？</p>
+                            <div class="voice clearfix">
+                                <div class="voicephoto">
+                                    <img src="./img/classDetails/miaojie.png">
+                                </div>
+                                <div class="voicemsg time" data-id="1" data-url="./js/dong.mp3"  onclick="playqa(this)">
+                                    <span class="voicebar"></span>
+                                    <span class="time">00:12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <div class="lookMoreContent1">
+                    查看更多精选留言
+                    <img src="./img/classDetails/lowerArr.png" alt="" class="lowerArrImg">
+                </div>
+                <div class="hideContent1" style="display: none">
+                    收起
+                    <img src="./img/classDetails/topArr.png" alt="" class="lowerArrImg">
+                </div>
+            </ul>
+            <!--打赏榜单-->
+            <div class="clearfix">
+                <h3 class="rewardList fl">打赏榜单</h3>
+            </div>
+            <ul class="leavingMessUl rewardUl">
+                <li class="messList clearfix">
+                    <div class="messContentDiv clearfix">
+                        <img src="./img/classDetails/classbanner1.png" alt="头像" class="classbanner">
+                        <div class="messCont">
+                            <p class="messName">A红黄蓝亲子园彤彤老师</p>
+                            <p class="messBaby">小公主&nbsp;&nbsp;2岁8个月</p>
+                            <p class="reward">
+                                打赏￥ 1.8元
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="messList clearfix">
+                    <div class="messContentDiv clearfix">
+                        <img src="./img/classDetails/classbanner1.png" alt="头像" class="classbanner">
+                        <div class="messCont">
+                            <p class="messName">A红黄蓝亲子园彤彤老师</p>
+                            <p class="messBaby">小公主&nbsp;&nbsp;2岁8个月</p>
+                            <p class="reward">
+                                打赏￥ 1.8元
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="messList clearfix messShare">
+                    <div class="messContentDiv clearfix">
+                        <img src="./img/classDetails/classbanner1.png" alt="头像" class="classbanner">
+                        <div class="messCont">
+                            <p class="messName">A红黄蓝亲子园彤彤老师</p>
+                            <p class="messBaby">小公主&nbsp;&nbsp;2岁8个月</p>
+                            <p class="reward">
+                                打赏￥ 1.8元
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="messList clearfix messShow" style="display: none">
+                    <div class="messContentDiv clearfix">
+                        <img src="./img/classDetails/classbanner1.png" alt="头像" class="classbanner">
+                        <div class="messCont">
+                            <p class="messName">A红黄蓝亲子园彤彤老师</p>
+                            <p class="messBaby">小公主&nbsp;&nbsp;2岁8个月</p>
+                            <p class="reward">
+                                打赏￥ 1.8元
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="messList clearfix messShow" style="display: none">
+                    <div class="messContentDiv clearfix">
+                        <img src="./img/classDetails/classbanner1.png" alt="头像" class="classbanner">
+                        <div class="messCont">
+                            <p class="messName">A红黄蓝亲子园彤彤老师</p>
+                            <p class="messBaby">小公主&nbsp;&nbsp;2岁8个月</p>
+                            <p class="reward">
+                                打赏￥ 1.8元
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <div class="lookMoreContent">
+                    查看更多留言
+                    <img src="./img/classDetails/lowerArr.png" alt="" class="lowerArrImg">
+                </div>
+                <div class="hideContent" style="display: none">
+                    收起
+                    <img src="./img/classDetails/topArr.png" alt="" class="lowerArrImg">
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="blackBack"></div>
+<!--底部音频展示的固定位置-->
+<div class="audioFixed clearfix" style="display: none" id="audioFixed">
+    <img src="./img/classDetails/wrongGray.png" alt="" class="wrongGray fl" style="display: none">
+    <!--<img src="./img/classDetails/pauseGray.png" alt="" class="playGray pauseGray fl">-->
+    <div class="divGray pauseGray fl"></div>
+    <div class="fixedCont fl">
+        <p class="sectionTxt">一位华裔妈妈在法国学到的育儿经</p>
+        <p class="playin">播放中...</p>
+    </div>
+    <a href="#"><img src="./img/classDetails/topArr.png" alt="" class="topArr fr"></a>
+</div>
+<ul class="classNav clearfix">
+    <li class="navList messText">
+        <img src="./img/classNav/write.png" alt="" class="classNavImg">
+        <!--<p class="navText">写留言</p>-->
+        <input type="button" placeholder="写留言" value="写留言" class="navText"  readonly="readonly">
+    </li>
+    <li class="navList1 collection">
+        <img src="./img/classNav/Collection.png" alt="" class="classNavImg">
+        <p class="navText">收藏</p>
+    </li>
+    <li class="navList">
+        <img src="./img/classNav/ArewardGray.png" alt="" class="classNavImg">
+        <p class="navText rewardText">打赏</p>
+    </li>
+    <li class="navListBtn">
+        <p>免费听课</p>
+        <p>（有3张课程券可用）</p>
+    </li>
+    <li class="navListBtn" style="display: none">
+        <p>￥26.9</p>
+        <p>（有2张现金券可用）</p>
+    </li>
+    <li class="navListBtn" style="display: none">
+        <p>￥14.5</p>
+        <p>（已享会员5折优惠）</p>
+    </li>
+    <li class="navListBtn" style="display: none">
+        <p class="pic">￥26.9</p>
+    </li>
+</ul>
+<!--//三个导航-->
+<ul class="classNavText" style="display: none">
+    <div class="widthBox">
+        <li class="navListLeft messText">
+            <img src="./img/classNav/write.png" alt="" class="classNavImg">
+            <!--<p class="navText messText">写留言</p>-->
+            <input type="button" placeholder="写留言" value="写留言"  class="navText"  readonly="readonly">
+        </li>
+        <li class="navList1 collection">
+            <img src="./img/classNav/Collection.png" alt="" class="classNavImg">
+            <p class="navText">收藏</p>
+        </li>
+        <li class="navListRight">
+            <img src="./img/classNav/ArewardGray.png" alt="" class="classNavImg">
+            <p class="navText rewardText">打赏</p>
+        </li>
+    </div>
+</ul>
+<!--//到文稿的导航栏-->
+<ul class="classNavPresen"  style="display: none">
+    <li class="presenLeft">
+        <img src="./img/classNav/text.png" alt="" class="classNavImg">
+        <p class="navText">文稿</p>
+    </li>
+    <li class="presenMiddle messText">
+        <img src="./img/classNav/write.png" alt="" class="classNavImg">
+        <!--<p class="navText messText">写留言</p>-->
+        <input type="text" placeholder="写留言" class="navText"  readonly="readonly">
+    </li>
+    <li class="navList1 collection">
+        <img src="./img/classNav/Collection.png" alt="" class="classNavImg">
+        <p class="navText">收藏</p>
+    </li>
+    <li class="presenRight">
+        <img src="./img/classNav/ArewardGray.png" alt="" class="classNavImg">
+        <p class="navText rewardText">打赏</p>
+    </li>
+</ul>
+</body>
+</html>
+
+
+

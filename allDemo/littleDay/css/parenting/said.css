@@ -1,0 +1,239 @@
+.parenting {
+  width: 100%;
+  max-width: 540px;
+  min-height: 4.26666667rem;
+  padding: 0.4rem 0.21333333rem;
+  border-bottom: 5px solid #f2f2f2;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.parenting .parentTitle {
+  width: 100%;
+  padding: 0 0.4rem 0.26666667rem;
+}
+.parenting .parentTitle .titleLeft {
+  width: 80%;
+}
+.parenting .parentTitle .titleLeft h3 {
+  font-size: 0.36rem;
+  color: #797979;
+  background: url(../../img/parenting/u979.png) no-repeat left 0.03rem;
+  background-size: 0.34rem;
+  padding-left: 0.55rem;
+}
+.parenting .parentTitle .titleLeft p {
+  padding-top: 0.26666667rem;
+  font-size: 0.32rem;
+  color: #BCBCBC;
+}
+.parenting .parentTitle .titleRight {
+  width: 0.6rem;
+  margin-top: 0.25rem;
+}
+.parenting .par_top {
+  display: block;
+  width: 100%;
+  height: 1.86666667rem;
+  text-overflow: ellipsis;
+  font-family: "Microsoft Yahei";
+  -webkit-border-radius: 0.16rem 0.16rem 0 0;
+  -moz-border-radius: 0.16rem 0.16rem 0 0;
+  -ms-border-radius: 0.16rem 0.16rem 0 0;
+  -o-border-radius: 0.16rem 0.16rem 0 0;
+  border-radius: 0.16rem 0.16rem 0 0;
+  background-color: #ff8319;
+}
+.parenting .par_top .par_top_l {
+  float: left;
+  font-size: 0.5rem;
+  padding-top: 0.32rem;
+  padding-left: 0.26666667rem;
+  color: #fff;
+  font-weight: bold;
+  font-family: "微软雅黑", "PingFangSC-Light";
+}
+.parenting .par_top .par_top_r {
+  float: right;
+  color: #fff;
+  font-size: 0.21333333rem;
+  padding-top: 0.42666667rem;
+  padding-right: 0.26666667rem;
+}
+.parenting .par_top .sketch {
+  display: block;
+  color: #fff;
+  font-size: 0.26666667rem;
+  padding-top: 0.26666667rem;
+  padding-left: 0.26666667rem;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.parenting .parentingTop {
+  width: 92%;
+  height: 3.4rem;
+  margin: 0 auto;
+  position: relative;
+}
+.parenting .parentingTop .headerImg {
+  width: 100%;
+  height: 3.4rem;
+}
+.parenting .parentingTop .conText {
+  width: 100%;
+  height: 3.4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  padding: 0 0.4rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.parenting .parentingTop .conText .conCenter {
+  width: 40%;
+  height: 2.3rem;
+  margin: 0.55rem auto;
+  border: 2px solid #fff;
+}
+.parenting .parentingTop .conText .conCenter span {
+  display: block;
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid #fff;
+}
+.parenting .parentingTop .conText .conCenter p {
+  padding: 0.15rem 0;
+  font-size: 0.38rem;
+}
+.parenting .parentingTop .lookWhole {
+  color: #fff;
+  padding: 0.1rem 0.3rem 0.1rem 0;
+  font-size: 0.3rem;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  background: url(../../img/parenting/u39.png) no-repeat 0.3rem center;
+  background-size: 0.35rem;
+  padding-left: 0.75rem;
+  background-color: rgba(94, 94, 94, 0.5);
+  position: absolute;
+  bottom: 0.1rem;
+  right: 0rem;
+}
+.parenting .par_content {
+  width: 92%;
+  margin: 0 auto;
+  position: relative;
+}
+.parenting .par_content .con_text {
+  float: left;
+}
+.parenting .par_content .con_text h3 {
+  font-size: 0.38rem;
+  color: #333;
+  padding: 0.4rem 0;
+}
+.parenting .par_content .con_text .text_time {
+  font-size: 0.32rem;
+  color: #797979;
+}
+.parenting .par_content .con_text .text_time p {
+  float: left;
+  padding-right: 0.25rem;
+}
+.parenting .par_content .con_text .text_time img {
+  float: left;
+  width: 0.35rem;
+}
+.parenting .par_content .textRight {
+  width: 12%;
+  height: 1.6rem;
+  margin-top: 0.6rem;
+  position: relative;
+}
+.parenting .par_content .textRight .rightPlay {
+  width: 1.3rem;
+  height: 1.3rem;
+  display: block;
+  margin: 0 auto;
+}
+.wrapPage {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wrapPage .listPageImg {
+  width: 100%;
+}
+.wrapPage .listTitle {
+  width: 100%;
+  font-size: 0.34rem;
+  padding: 0 0.53333333rem;
+  border-bottom: 5px solid #f2f2f2;
+}
+.wrapPage .listTitle .titLeft {
+  color: #333;
+  padding: 0.4rem 0;
+  background: url(../../img/parenting/u164.png) no-repeat left center;
+  background-size: 0.5rem;
+  padding-left: 0.7rem;
+}
+.wrapPage .listTitle .titRight {
+  color: #949494;
+  color: #ff9900;
+  padding: 0.4rem 0;
+}
+.wrapPage .listDetails {
+  width: 100%;
+  padding: 0.4rem 0.53333333rem 0.26666667rem;
+}
+.wrapPage .listDetails .detailsImg {
+  width: 10%;
+}
+.wrapPage .listDetails .detailsContent {
+  width: 89%;
+  padding-left: 0.4rem;
+}
+.wrapPage .listDetails .detailsContent h4 {
+  color: #333;
+  font-size: 0.4rem;
+}
+.wrapPage .listDetails .detailsContent .textTime {
+  font-size: 0.3rem;
+  color: #949494;
+  padding-top: 0.2rem;
+}
+.wrapPage .listDetails .detailsContent .textTime .hearStart {
+  float: left;
+  padding-right: 0.25rem;
+}
+.wrapPage .listDetails .detailsContent .textTime .hearEnd {
+  float: left;
+  padding-right: 0.25rem;
+  background: url(../../img/parenting/u320.png) no-repeat left center;
+  background-size: 0.4rem;
+  padding-left: 0.5rem;
+}
+.wrapPage .listDetails .detailsContent .textTime img {
+  float: left;
+  width: 0.35rem;
+  margin-top: 0.05rem;
+}
+.wrapPage .line {
+  width: 90%;
+  margin: 0 auto;
+  height: 0.02666667rem;
+  border-top: 1px solid #F2F2F2;
+}

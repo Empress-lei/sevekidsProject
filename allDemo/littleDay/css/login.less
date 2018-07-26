@@ -1,0 +1,293 @@
+/*格式化*/
+*{
+  margin: 0;
+  padding: 0; 
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  font-family:"微软雅黑",PingFangSC-Light;
+}
+html{
+	height:100%;
+}
+html,body{
+	max-width:540px;
+	min-height:100%;
+	margin:0 auto;
+	overflow-x:hidden;
+	background-color:#fff;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	color:#333;
+}
+img{
+	display:inline;
+	border:none;
+	vertical-align:middle;
+}
+a{
+	text-decoration:none;
+}
+input,textarea,button{
+	border:none;
+	background:none;
+	border-radius:0;
+	outline:none;
+}
+button,
+input[type="submit"],
+input[type="button"]{
+	-webkit-appearance:none;
+	-moz-appearance:none;
+}
+ul{
+	list-style:none;
+}
+.line{
+	
+}
+@base:1/75*1rem;
+.max-width{
+	width:100%;
+	max-width:540px;
+	margin:0 auto;
+}
+/*二维码页面*/
+.logo{
+	display:block;
+	margin-left:30*@base;
+	margin-top:40*@base;
+	width:230*@base;
+}
+.code{
+	display:block;
+	width:432*@base;
+	margin:124*@base auto 0 auto;
+}
+.codeTxt{
+	width:546*@base;
+	margin:40*@base auto 0 auto;
+	line-height:42*@base;
+	text-align:center;
+	font-size:15px;
+	color:#999;
+}
+.noteword{
+	width:546*@base;
+	margin:0 auto;
+	margin-top:110*@base;
+	padding-top:54*@base;
+	border-top:1px solid #cccccc;
+	line-height:40*@base;
+	font-size:15px;
+	color:#999;
+	p:first-child{
+		margin-bottom:20*@base;
+	}
+}
+.titlogo{
+	display:block;
+	width:238*@base;
+	margin:100*@base auto 0 auto;
+}
+.formLogin{
+	margin-top:130*@base;
+}
+.inputitem{
+	width:562*@base;
+	height:86*@base;
+	margin:0 auto;
+	position:relative;
+	padding-left:76*@base;
+	border-bottom:1px solid #ccc;
+	input{
+		display:block;
+		width:100%;
+		padding:20*@base 44*@base 28*@base 0;
+		font-size:15px;
+		color:#999;
+	}
+	.clear{
+		display:none;
+		width:44*@base;
+		height:100%;
+		position:absolute;
+		right:0;
+		top:0;
+		z-index:2;
+		background:url(../images/login/clear.png) right center no-repeat;
+		background-size:11px 11px;
+	}
+}
+.inputphone{
+	background:url(../images/login/phone.png) 10*@base center no-repeat;
+	background-size:14px 24px;
+}
+.inputcode{
+	background:url(../images/login/psw.png) 2*@base center no-repeat;
+	background-size:19px 24px;
+	input{
+		padding-right:200*@base;
+	}
+	.getCode{
+		display:block;
+		width:196*@base;
+		height:52*@base;
+		line-height:52*@base;
+		position:absolute;
+		right:0;
+		top:50%;
+		margin-top:-26*@base;
+		border-left:1px solid #ccc;
+		text-align:center;
+		font-size:14px;
+		color:#e51812;
+	}
+}
+.formTxt{
+	margin-bottom:52*@base;
+	padding:32*@base 0;
+	text-align:center;
+	font-size:12px;
+	color:#e51812;
+	visibility:hidden;
+}
+.loginBtn,
+.cancleBtn{
+	display:block;
+	width:340*@base;
+	height:90*@base;
+	line-height:90*@base;
+	margin:0 auto;
+	background:#e51812;
+	border-radius:4px;
+	font-size:18px;
+	text-align:center;
+	color:#fff;
+}
+.cancleBtn{
+	background:none;
+	font-size:15px;
+	color:#999;
+}
+.loginOther{
+	padding:0 30*@base;
+	margin-top:80*@base;
+}
+.loginOtherBox{
+	width:100%;
+	position:relative;
+	&:after{
+		content:'';
+		width:100%;
+		height:0;
+		position:absolute;
+		left:0;
+		top:15*@base;
+		border-top:1px solid #ccc;
+	}
+	span{
+		display:block;
+		width:190*@base;
+		height:30*@base;
+		line-height:30*@base;
+		margin:0 auto;
+		position:relative;
+		z-index:2;
+		background-color:#fff;
+		text-align:center;
+		font-size:12px;
+		color:#999;
+	}
+	.loginWx{
+		display:block;
+		width:188*@base;
+		height:52*@base;
+		padding:4*@base 0 2*@base 0;
+		margin:40*@base auto 0 auto;
+		position:relative;
+		border:1px solid #60b702;
+		border-radius:4*@base;
+		text-align:center;
+		font-size:14px;
+		color:#60b702;
+		&:before{
+			content:'';
+			display:inline-block;
+			width:18px;
+			height:15px;
+			margin-right:5px;
+			background:url(../images/login/wx.png) no-repeat;
+			background-size:18px 15px;
+			vertical-align:-3px;
+		}
+	}
+}
+.more{
+	float:right;
+	margin-top:42*@base;
+	margin-right:30*@base;
+	margin-bottom:20*@base;
+	font-size:12px;
+	color:#999;
+}
+.drag{
+	width:562*@base;
+	height:86*@base;
+	line-height:86*@base;
+	position:relative;
+	background:#eee;
+	border-radius:4*@base;
+	overflow:hidden;
+	margin:30*@base auto 0 auto;
+	font-size:15px;
+	text-align:center;
+	color:#666;
+	.dragTxt{
+		width:100%;
+		height:100%;
+		overflow:hidden;
+		position:absolute;
+		left:0;
+		top:0;
+		z-index:2;
+		text-align:center;
+		font-size:15px;
+		color:#666;
+		letter-spacing:3px;
+	}
+	.dragBg{
+		width:0;
+		height:100%;
+		background-color:#60b702;
+		overflow:hidden;
+		text-align:center;
+		font-size:15px;
+		color:#fff;
+	}
+	.dragBlock{
+		display:block;
+		width:86*@base;
+		height:86*@base;
+		position:absolute;
+		left:0;
+		top:0;
+		z-index:3;
+		background:#fff url(../images/login/arrow.png) center center no-repeat;
+		background-size:10px 14px;
+		border:1px solid #979797;
+		border-radius:4*@base;
+		cursor:move;
+	}
+	.right{
+		display:none;
+		position:absolute;
+		right:0;
+		top:0;
+		width:86*@base;
+		height:86*@base;
+		background:#fff url(../images/login/right.png) center center no-repeat;
+		background-size:20px 10px;
+		border:1px solid #979797;
+		border-radius:4*@base;
+	}
+}

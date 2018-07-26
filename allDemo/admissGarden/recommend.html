@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="keywords" content="喵姐,喵姐早教说,0到6岁早期教育,家庭教育,家长教育,父母课堂,育儿知识,儿童教育,母婴育儿,">
+    <meta name="description" content="喵姐早教说是喵姐高寿岩创办的为家庭教育提供专业靠谱的0到6岁早期教育、育儿知识的平台。">
+    <title>喵姐早教说-幼儿园活动首页</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/recommend.css">
+    <link rel="stylesheet" href="./css/garden_share.css">
+    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+	<script src="./js/jquery-2.1.1.min.js"></script>
+	<script src="./js/toast-v1.js"></script>
+	<script src="./js/swiper-3.4.2.min.js"></script>
+	<script src="./js/selectDate1.js"></script>
+    <style>
+        .rotateBox{
+            position: absolute;
+            animation: turn 0.5s none;
+            }
+        .donut-front {
+            z-index: 5;
+            backface-visibility: hidden;
+        }
+        .hidden{
+            display:none;}
+        .show{
+            display:block;}
+        @keyframes turn {
+            to {
+                transform: rotateY(360deg);
+            }
+        } 
+        .swiper-slide {
+            overflow: auto;
+        }
+        .current{
+	        color:#ff9963;
+	    }
+		.swiper-slide-next {
+			color: #ff9900;
+		}
+    </style>
+    
+</head>
+<body  style="background-color: #f2f2f2";>
+<div class="garden_share">
+    <div class="garden_inp">
+        <img src="./img/u1451.png" alt="" class="close_input">
+        <input type="text" placeholder="请输入邀请码" class="input_text">
+        <a href="javascript:void (0)" class="input_btn">确 定</a>
+    </div>
+</div>
+<script>
+    $(function () {
+        $(".close_input").click(function () {
+            $(".garden_share").hide();
+        })
+    })
+</script>
+	<div class="fundPopup">
+		<div class="popupBox">
+            <div class="popupContent">
+                <img src="./img/u9743.png" alt="" class="contentImg">
+                <h2 class="contentTitH">专属海报已生成</h2>
+                <p class="contentLook">前往公众号查看，成功邀请好友加入即可领取200枚基金币哦</p>
+                <a href="javascript:void(0);" class="shadoweBtn">去看看</a>
+            </div>
+            <img src="./img/u1451.png" alt="" class="popupBotImg">
+        </div>
+	</div>
+    <div class="">
+
+    </div>
+    <div class="wrap">
+        <div class="public">
+            <div class="recommendPage">
+                <!--活动推荐个性信息-->
+                <div class="recommendMess">
+                    <!--顶部的个人信息-->
+                    <div class="recommendHeader">
+                        <div class="headerMess">
+                            <img src="./img/page/recommend/u1035.jpg" alt="" class="headerImg">
+                            <div class="headerName">
+                                <span>O(∩_∩)O~~ 星星 ☆</span>
+                                <p>男宝宝&nbsp;&nbsp;3岁&nbsp;5个月</p>
+                            </div>
+                        </div>
+                        <span class="headerScore">87分</span>
+                    </div>
+                    <!--评测报告-->
+                    <div class="recommendContent">
+                        <div class="contentTit">
+                            <span class="tit">小卟咪</span><span class="tit"> 测评成绩单</span>
+                        </div>
+                        <div class="contentSurface">
+                            <p>平均水平</p>
+                            <div class="contentChart">
+                                <span> 75 </span><i></i>
+                                <span class="chartTwo"> 36 </span><i class="chartFkTwo"></i>
+                                <span class="chartTthree"> 44 </span><i class="chartFkThree"></i>
+                                <span class="chartFour"> 34 </span><i class="chartFkFour"></i>
+                                <div class="dottedLine" style="height: 1.8rem;"></div>
+                            </div>
+
+                            <div class="chartText clearfix">
+                                <font>语言表达</font>
+                                <font class="textTwo">生活自理</font>
+                                <font class="textTthree">社会交往</font>
+                                <font class="textFour">家庭准备</font>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--z总测评-->
+                <div class="recommendMess recommendData">
+                    <p class="general">总评：<span>87分</span></p>
+                    <p class="dataText">现在开始入园准备训练，至少可以宝宝与妈妈 70%的分离焦虑，有效降低入园哭闹、生病情况 </p>
+                    <p class="presenTop">查看详细测评报告</p>
+                    <div class="analysis" style="display: none">
+                        <div class="planTit clearfix">
+                            <div class="tit">
+                                <div></div><h4>语言社交能力</h4><span class="headerScore">87&nbsp;<font>分</font></span>
+                            </div>
+                            <div class="planContent">
+                                <div class="planText">
+                                    <div class="textP">
+                                        <p style="color:#363636;">通过测评分值来看，宝宝在语言交流方面有较大的沟通障碍，偏内向型宝宝。</p>
+                                        <p style="color: #6B6B6B;"><span>【建议】</span>入园后宝宝可能无法正常表达自身需求，导致老师无法及时照顾、关怀宝宝，长期可能会打击宝宝积极性。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="planTit clearfix">
+                            <div class="tit">
+                                <div></div><h4>生活自理能力</h4><span class="headerScore">18&nbsp;<font>分</font></span>
+                            </div>
+                            <div class="planContent">
+                                <div class="planText">
+                                    <div class="textP">
+                                        <p style="color:#363636;">通过测评分值来看，宝宝在语言交流方面有较大的沟通障碍，偏内向型宝宝。</p>
+                                        <p style="color: #6B6B6B;"><span>【建议】</span>入园后宝宝可能无法正常表达自身需求，导致老师无法及时照顾、关怀宝宝，长期可能会打击宝宝积极性。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="planTit clearfix">
+                            <div class="tit">
+                                <div></div><h4>社会适应能力</h4><span class="headerScore">73&nbsp;<font>分</font></span>
+                            </div>
+                            <div class="planContent">
+                                <div class="planText">
+                                    <div class="textP">
+                                        <p style="color:#363636;">通过测评分值来看，宝宝在语言交流方面有较大的沟通障碍，偏内向型宝宝。</p>
+                                        <p style="color: #6B6B6B;"><span>【建议】</span>入园后宝宝可能无法正常表达自身需求，导致老师无法及时照顾、关怀宝宝，长期可能会打击宝宝积极性。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="presenBtn">收起测评报告</p>
+                </div>
+                <!--家庭版入园准备训练-->
+                <div class="recommendPark">
+                    <h4 class="parkTit parkH4">家庭版入园准备训练</h4>
+                    <img src="./img/page/recommend/xunl.jpg" alt="" class="mode">
+                    <div class="activity_v">
+                        <h4 class="actTit">活动介绍</h4>
+                        <p class="actText">家庭版【入园准备训练】是由“喵姐早教说”推出的国内第一套AI人工智能宝宝入园准备训练方案，帮助2-3岁宝宝顺利适应幼儿园生活。能够有效减轻宝宝哭闹、分离焦虑等情况。</p>
+                    </div>
+                    <div class="activity_v">
+                        <h4 class="actTit">活动流程</h4>
+                        <p class="actText"> 72个智能任务单元，根据宝宝适应情况变化调整每日任务推送，整个过程就像家长和宝宝一起打怪升级，帮助宝宝顺利适应幼儿园生活。</p>
+                    </div>
+                    <div class="activity_v activity_r">
+                        <h4 class="actTit">推荐理由</h4>
+                        <p class="reason">
+                            由早期教育专家喵姐高寿岩带团队研发；
+                        </p>
+                        <p class="reason">
+                            72个智能任务单元凝聚国内早教行业最强大脑智慧；
+                        </p>
+                        <p class="reason">
+                            国内第一套AI人工智能宝宝入园准备训练方案；
+                        </p>
+                        <p class="reason">
+                            因材施教，根据宝宝适应情况程度推送任务；
+                        </p>
+                        <p class="reason">
+                            教练式每日指导，清晰指导解决问题具体方法；
+                        </p>
+
+                    </div>
+                </div>
+                <!--开启入园准备计划-->
+                <!--<div class="recommendPark">-->
+                    <!--<h4 class="parkTit">开启入园准备训练</h4>-->
+                    <!--<div class="targetList">-->
+                        <!--<div class="parkList">-->
+                            <!--<span class="list">定制你的专属入园准备项目</span>-->
+                        <!--</div>-->
+                        <!--<ul class="recommendRotate clearfix">-->
+                            <!--<li class='box'>-->
+                                <!--<div class="rotateTxt"  >-->
+                                    <!--<h3>1</h3>-->
+                                    <!--<p>提高宝宝语言社交</p>-->
+                                <!--</div>-->
+                            <!--</li>-->
+                            <!--<li class='box'>-->
+                                <!--<div class="rotateTxt">-->
+                                    <!--<h3>1</h3>-->
+                                    <!--<p>提高宝宝语言社交</p>-->
+                                <!--</div>-->
+                            <!--</li>-->
+                            <!--<li class='box'>-->
+                                <!--<div class="rotateTxt">-->
+                                    <!--<h3>1</h3>-->
+                                    <!--<p>提高宝宝语言社交</p>-->
+                                <!--</div>-->
+                            <!--</li>-->
+                            <!--<li class='box'>-->
+                                <!--<div class="rotateTxt">-->
+                                    <!--<h3>1</h3>-->
+                                    <!--<p>提高宝宝语言社交</p>-->
+                                <!--</div>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--开启入园准备计划结束-->
+                <!--训练周期 20170620下午修改-->
+                <div class="recommendPark" id="recommendPark">
+                    <div class="targetList">
+                        <div class="parkList choice">
+                            <span class="list">根据测评结果，已为您匹配智能化训练方案</span>
+                        </div>
+                        <!--<p class="listSubtitle">•  提示：准备周期越长，效果越佳。</p>-->
+                        <div class="choiceCycle clearfix">
+                            <ul>
+                                <!--<li>-->
+                                    <!--<a href="javascript:void (0);"><span class="choiceWeek">8周&nbsp;•&nbsp;56天 </span><span class="choicePirc">/&nbsp;限时特惠99元（会员五折）</span></a>-->
+
+                                <!--</li>-->
+                                <li>
+                                    <a href="javascript:void (0);"  class="cycleCurrent"><span class="choiceWeek">7周&nbsp;•&nbsp;49天 </span><span class="choicePirc">/&nbsp;限时特惠99元（会员五折）</span></a>
+                                </li>
+                                <!--<li>-->
+                                    <!--<a href="javascript:void (0);"><span class="choiceWeek">6周&nbsp;•&nbsp;42天 </span><span class="choicePirc">/&nbsp;限时特惠99元（会员五折）</span></a>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<a href="javascript:void (0);"><span class="choiceWeek">5周&nbsp;•&nbsp;35天 </span><span class="choicePirc">/&nbsp;限时特惠99元（会员五折）</span></a>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<a href="javascript:void (0);"><span class="choiceWeek">4周&nbsp;•&nbsp;28天 </span><span class="choicePirc">/&nbsp;限时特惠99元（会员五折）</span></a>-->
+                                <!--</li>-->
+                            </ul>
+                            <p class="surplus">
+                                你还剩 <span>29:32</span> 29:32  分钟支付，逾时恢复原价￥199
+                            </p>
+                            <div class="volunteerBtn">
+                                <a href="#">马上报名</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--免费参与通道  20170620下午修改-->
+                <div class="contentReco clearfix"  id="joinFixed">
+                    <h2 class="passageway">免费参与通道</h2>
+                    <div class=passTxt>
+                        <p>分享活动链接，邀请3位好友成功报名
+                            家庭版入园准备训练，即可免费参与本
+                            次活动</p>
+                        <p class="free">我要免费参加&nbsp;&nbsp;&nbsp;></p>
+                    </div>
+                    <img src="./img/page/recommend/u5054.png" alt="" class="passImg">
+                </div>
+                <a href="#joinFixed" class="joinFixed">马上报名</a>
+                <!--小卟咪入园准备训练计划-->
+                <!--<div class="contentReco clearfix" id="contentReco">-->
+                    <!--<h3><span>小卟咪</span>入园准备训练计划</h3>-->
+                    <!--<p class="recoTime">总训练时长：7周 · 49天</p>-->
+                    <!--<p class="recoTerm">总训练任务：38项</p>-->
+                    <!--<img src="./img/page/recommend/u1283.png" alt="" class="recoImg">-->
+
+                <!--</div>-->
+                <!--&lt;!&ndash;学籍卡志愿者记录  无头像状态&ndash;&gt;-->
+                <!--<div class="contentReco clearfix">-->
+                    <!--<div class="messContent">-->
+                        <!--<div class="contentHeader">-->
+                            <!--<h3>志愿者记录</h3>-->
+                            <!--<p>7月14日之前邀请3位好友成功报名家庭版入园准备训练，-->
+                                <!--即可获得免费学习资格。</p>-->
+                            <!--<ul class="clearfix">-->
+                                <!--<li><img src="./img/page/recommend/u1041.png" alt=""></li>-->
+                                <!--<li><img src="./img/page/recommend/u1041.png" alt=""></li>-->
+                                <!--<li><img src="./img/page/recommend/u1041.png" alt=""></li>-->
+                            <!--</ul>-->
+                            <!--<div class="volunteerBtn">-->
+                                <!--<a href="#">邀请好友加入</a>-->
+                            <!--</div>-->
+                            <!--<div class="volunteerTime">-->
+                                <!--<span>⏳ 2天 14小时 52分 11秒</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;学籍卡志愿者记录  有一个头像状态&ndash;&gt;-->
+                <!--<div class="contentReco clearfix">-->
+                    <!--<div class="messContent">-->
+                        <!--<div class="contentHeader">-->
+                            <!--<h3>志愿者记录</h3>-->
+                            <!--<p>7月14日之前邀请3位好友成功报名家庭版入园准备训练，-->
+                                <!--即可获得免费学习资格。</p>-->
+                            <!--<ul class="clearfix">-->
+                                <!--<li><img src="./img/page/recommend/u1035.jpg" alt="" class="volunteerImg"></li>-->
+                                <!--<li><img src="./img/page/recommend/u1041.png" alt=""></li>-->
+                                <!--<li><img src="./img/page/recommend/u1041.png" alt=""></li>-->
+                            <!--</ul>-->
+                            <!--<div class="volunteerBtn">-->
+                                <!--<a href="#">邀请好友加入</a>-->
+                            <!--</div>-->
+                            <!--<div class="volunteerTime">-->
+                                <!--<span>⏳ 2天 14小时 52分 11秒</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;限时特惠  99元&ndash;&gt;-->
+                <!--<div class="contentRecoLimit clearfix ">-->
+                    <!--<div class="messContentBorder">-->
+                        <!--<div class="payContent">-->
+                            <!--<h4>限时特惠</h4>-->
+                            <!--<div class="choiceCycle">-->
+                                <!--<div class="costMon">-->
+                                    <!--<span class="costCur">￥</span>-->
+                                    <!--<span class="costNum">99</span>-->
+                                    <!--<span class="costOrig">/ 原价 ￥199</span>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<p>你还剩  <span>29:32</span>  分钟支付，逾时恢复原价</p>-->
+                            <!--<div class="volunteerBtn">-->
+                                <!--<a href="#">立即支付</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;学籍卡志愿者记录  有三个头像状态&ndash;&gt;-->
+                <!--<div class="contentReco clearfix">-->
+                    <!--<div class="messContent">-->
+                        <!--<div class="contentHeader">-->
+                            <!--<h3>志愿者记录</h3>-->
+                            <!--<p>恭喜你，已获得免费入学资格，快快开始吧！</p>-->
+                            <!--<ul class="clearfix">-->
+                                <!--<li><img src="./img/page/recommend/u1035.jpg" alt="" class="volunteerImg"></li>-->
+                                <!--<li><img src="./img/page/recommend/u1035.jpg" alt="" class="volunteerImg"></li>-->
+                                <!--<li><img src="./img/page/recommend/u1035.jpg" alt="" class="volunteerImg"></li>-->
+                            <!--</ul>-->
+                            <!--<div class="volunteerBtn">-->
+                                <!--<a href="#">马上开启</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;自定义训练周期&ndash;&gt;-->
+                <div class="recommendPark customWeek">
+                    <div class="targetList clearfix">
+                        <div class="parkList choice">
+                            <span class="list">自定义训练周期</span>
+                        </div>
+                        <div class="customDiv">
+                            <img src="./img/page/recommend/u5529.png" alt="">
+                            <p class="custom">入园倒计时不到4周，不建议参加此活动入园倒计时不到4周，不建议参加此活动入园倒计时不到4周，不建议参加此活动</p>
+                        </div>
+                        <!--&lt;!&ndash;<p class="modify"></p>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<input type="text" id="dateLarge" placeholder="2017年9月01日">-->
+                        <!--<input type="text" class="modify" id="modify" placeholder="修改入园时间">-->
+                        <p class="modify" id="modify" >修改入园时间</p>
+                    </div>
+                </div>
+                <!--新增拉新业务-->
+                <div class="contentReco clearfix" id="joinFixed">
+                    <h3 class="listJoin"><span>免费参与</span>（名额有限）</h3>
+                    <p class="listTextP">点击“我要免费参与”生成你的专属海报，分享海报邀请 <span>10 位</span>好友完成测试，即可。</p>
+                    <p class="fundvNothing">· 暂无推行记录 ·</p>
+                    <!--邀请好友成功之后显示下面的"p"和"ul"-->
+                    <p class="listTextP"  style="display: none;">恭喜已成功邀请 6 位好友完成测评，再邀请 4 位好友即可免费参与，加油 ~</p>
+                    <ul class="fundvimplement clearfix"  style="display: none;">
+		    			<li><img src="./img/u5503.jpg" alt=""></li>
+		    			<li><img src="./img/u1035.jpg" alt=""></li>
+		    			<li><img src="./img/u5501.jpg" alt=""></li>
+		    			<li><img src="./img/u5503.jpg" alt=""></li>
+		    			<li><img src="./img/u1035.jpg" alt=""></li>
+		    			<li><img src="./img/u5501.jpg" alt=""></li>
+		    			<li><img src="./img/u5503.jpg" alt=""></li>
+		    			<li><img src="./img/u1035.jpg" alt=""></li>
+		    			<li><img src="./img/u5501.jpg" alt=""></li>
+		    			<li><img src="./img/u5503.jpg" alt=""></li>
+		    		</ul>
+             		<a class="join" id="join">我要免费参与</a>
+                    <p class="listBot">已有2307位家长获得免费参与资格</p>
+                </div>
+                
+                <!--&lt;!&ndash;相关微课推荐&ndash;&gt;-->
+                <!--<div class="contentReco clearfix">-->
+                    <!--<h3 class="recomTit">相关微课推荐</h3>-->
+                    <!--<div class="recoRelevant clearfix">-->
+                        <!--<img src="./img/page/recommend/u5501.jpg" alt="" class="recomImg">-->
+                        <!--<div class="recomClass">-->
+                            <!--<p class="classTop">入园前你必须搞清楚的那些事儿入园前你必须搞清楚的那些事儿</p>-->
+                            <!--<p class="classMiddle"><span>8545</span>人已看过</p>-->
+                            <!--<p class="classBottom">去听课&nbsp;&nbsp;》</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="recoRelevant clearfix recoRemo">-->
+                        <!--<img src="./img/page/recommend/u5501.jpg" alt="" class="recomImg">-->
+                        <!--<div class="recomClass">-->
+                            <!--<p class="classTop">入园前你必须搞清楚的那些事儿</p>-->
+                            <!--<p class="classMiddle"><span>8545</span>人已看过</p>-->
+                            <!--<p class="classBottom">去听课&nbsp;&nbsp;》</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+    <script>
+         $('.presenTop').click(function(){
+             $(this).hide();
+             $('.analysis').show();
+             $('.presenBtn').show();
+         });
+         $('.presenBtn').click(function(){
+             $(this).hide();
+             $('.analysis').hide();
+             $('.presenTop').show();
+         });
+         var temp = 0;
+
+         $(function() {
+             $('.joinFixed').click(function() {
+                 $(this).fadeOut();
+             });
+             $(window).scroll(function(){
+                 var reco = $('#recommendPark')[0].offsetTop;
+                 console.log(reco);
+                 var topDistance = $(window).scrollTop();
+                 if($(window).scrollTop() > 730 && $(window).scrollTop()!=0) {
+                     $('.joinFixed').fadeOut();
+                 }else {
+                     $('.joinFixed').fadeIn();
+                 }
+                 temp =  topDistance;
+             })
+             
+             $('#join').click(function(){
+					$('.fundPopup').fadeIn();
+			});
+			$('.popupBotImg').click(function(){
+				$('.fundPopup').fadeOut();
+			});
+         })
+         function getDate() {
+				//拼接年月日标签
+				var str = "";
+				str += "<div class=\"scrollDateTime\">";
+				str += "	<div class=\"scrollList\">	";
+				str += "		<div class=\"scrollTit clearfix\">";
+				str += "			<a href=\"javascript:void(0)\" class=\"btn_cancle1\"><&nbsp;取消</a>";
+				str += "			<span class=\"showTime1\">2014</span>年";
+				str += "			<span class=\"showTime1\">07</span>月";
+				str += "			<span class=\"showTime1\">11</span>日";
+				str += "				<a href=\"javascript:void(0)\" class=\"btn_sure1\">确定&nbsp;></a>";
+				str += "		</div>";
+				str += "		<ul class=\"scrollTime\">";
+				str += "			<li class=\"scrollYear\">";
+				str += "				<div class=\"swiper-container\" id=\"swiperYear1\">";
+				str += "					<div class=\"swiper-wrapper\">";
+											for(var i = 1; i <= 50; i++) {
+												str += "<div class=\"swiper-slide\">" + (2013 + i) + "</div>";
+											}
+				str += "					</div>";
+				str += "				</div>";
+				str += "			</li>";
+				str += "			<li class=\"scrollMonth\">";
+				str += "				<div class=\"swiper-container\" id=\"swiperMonth1\">";
+				str += "					<div class=\"swiper-wrapper\">";
+										for(var i = 1; i <= 12; i++) {
+											if(i>=10){
+												str += "<div class=\"swiper-slide\">" + i + "</div>";
+											}else {
+												str += "<div class=\"swiper-slide\">" + "0" + i + "</div>";
+											}
+										}
+				str += "					</div>";
+				str += "				</div>";
+				str += "			</li>";
+				str += "			<li class=\"scrollDay\"> ";
+				str += "				<div class=\"swiper-container\" id=\"swiperDay1\">";
+				str += "					<div class=\"swiper-wrapper\">";
+										for(var i = 1; i <= 31; i++) {
+											if(i>=10) {
+												str += "<div class=\"swiper-slide\">" + i + "</div>";
+											}else {
+												str += "<div class=\"swiper-slide\">" + "0" + i + "</div>";
+											}
+										}
+				str += "					</div>";
+				str += "				</div>";
+				str += "			</li>";
+				str += "		</ul>";
+				str += "	</div>";
+				str += "</div>";
+				return str;
+			}
+			document.write(getDate());
+    </script>
+</body>
+</html>
+
+      

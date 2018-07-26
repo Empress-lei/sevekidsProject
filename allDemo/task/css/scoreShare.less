@@ -1,0 +1,337 @@
+body {
+    background-color: #F2F2F2;
+}
+//成绩单页面UI调整
+.wrapPage {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    .scoreShare {
+        width: 95%;
+        margin: 10/37.5rem auto ;
+        background-color: #fff;
+        -webkit-border-radius: 5/37.5rem;
+        -moz-border-radius: 5/37.5rem;
+        -o-border-radius: 5/37.5rem;
+        border-radius: 5/37.5rem;
+        //顶部的信息
+        .tranHeader {
+            width: 90%;
+            margin: 0 auto;
+            padding: 0.5rem 0;
+            border-bottom: 0.02666667rem solid #f2f2f2;
+            .headerLeft {
+                float: left;
+                width: 80%;
+                //头像
+                .leftImg {
+                    float: left;
+                    width: 1.3rem;
+                    height: 1.3rem;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    border-radius: 50%;
+                    img {
+                        width: 1.3rem;
+                        height: 1.3rem;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -o-border-radius: 50%;
+                        border-radius: 50%;
+                        overflow: hidden;
+                    }
+                }
+                //昵称
+                .leftTxt {
+                    float: left;
+                    padding-left: 0.26666667rem;
+                    .txtName {
+                        padding: 0.21333333rem 0 0.13333333rem;
+                        font-size: 0.35rem;
+                        color: #ff9933;
+                    }
+                    .txtBaby {
+                        font-size: 0.3rem;
+                        color: #AEAEAE;
+                    }
+                }
+            }
+            
+        }
+        //百分比值的内容样式
+        .tranContent {
+            padding: 0.5rem 0.48rem 0.26666667rem;
+            text-align: center;
+            .conTitle {
+                font-size: 0.44rem;
+                color: #333;
+            }
+            .conSingle {
+                padding: 10/37.5rem 0 20/37.5rem;
+                font-size: 0.32rem;
+                color: #AEAEAE;
+                span {
+                    font-size: 0.44rem;
+                    color: #ff9900;
+                    font-weight: bold;
+                }
+            }
+            .achievement {
+                width: 100%;
+                display: flex;
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                .achievePro {
+                    flex: 2;
+                    .proText {
+                        padding-top: 8/37.5rem;
+                        text-align: center;
+                        font-size: 0.36rem;
+                        color: #ff9900;
+                    }
+                }
+                .achieveRight {
+                    flex: 1;
+                    text-align: left;
+                    .project {
+                        padding-top: 1rem;
+                        .projectNum {
+                            font-size: 0.5rem;
+                            font-weight: bold;
+                        }
+                        .projectTxt {
+                            font-size: 0.3rem;
+                            color: #AEAEAE;
+                        }
+                    }
+                    .project1 {
+                        padding-top: 15/37.5rem;
+                    }
+                }
+            }
+        }
+        //奖单
+        .award {
+            width: 90%;
+            margin: 0 auto;
+            padding: 0.5rem 0;
+            .awardImg {
+                width: 1rem;
+                margin: 0.1rem 10/37.5rem 0 0;
+            }
+            .awardText {
+                line-height: 0.6rem;
+                span {
+                    font-size: 0.46rem;
+                    color: #434343;
+                }
+                .textSpan {
+                    font-size: 0.34rem;
+                    color: #949494;
+                }
+            }
+        }
+        //获得的卡片奖励
+        .shareCard {
+            width: 90%;
+            margin: 0 auto; 
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            border: 1px solid #FF9900;
+            -webkit-border-radius: 5/37.5rem;
+            -moz-border-radius: 5/37.5rem;
+            -o-border-radius: 5/37.5rem;
+            border-radius: 5/37.5rem;
+            .cardLeft {
+                flex: 1.5;
+                padding: 0.6rem 0 0.6rem 15/37.5rem;
+                .leftPic {
+                    color: #ff9900;
+                    font-size: 0.46rem;
+                    font-weight: bold;
+                }
+                .leftCard {
+                    color: #949494;
+                    font-size: 0.3rem;
+                    padding-top: 5/37.5rem;
+                }
+            }
+            .cardRight {
+                flex: 1.5;
+                color: #fff;
+                padding: 0.6rem 15/37.5rem 0.6rem 0;
+                text-align: right;
+                background-color: #ff9900;
+                background-image: -webkit-linear-gradient(-244deg, #fff 25%,#ff9900 25.5%,#ff9900 50%,#ff9900 50%,#ff9900 75%,#ff9900 75%,#ff9900 100%);
+                background-image: -moz-linear-gradient(-244deg, #fff 25%,#ff9900 25.5%,#ff9900 50%,#ff9900 50%,#ff9900 75%,#ff9900 75%,#ff9900 100%);
+                background-image: -o-linear-gradient(-244deg, #fff 25%,#ff9900 25.5%,#ff9900 50%,#ff9900 50%,#ff9900 75%,#ff9900 75%,#ff9900 100%);
+                background-image: -ms-linear-gradient(-244deg, #fff 25%,#ff9900 25.5%,#ff9900 50%,#ff9900 50%,#ff9900 75%,#ff9900 75%,#ff9900 100%);
+                background-image: linear-gradient(-244deg, #fff 25%,#ff9900 25.5%,#ff9900 50%,#ff9900 50%,#ff9900 75%,#ff9900 75%,#ff9900 100%);
+                .rightPic {
+                    font-size: 0.33rem;
+                    padding-top: 3/37.5rem;
+                }
+                .rightCard {
+                    font-size: 0.42rem;
+                    padding-top: 5/37.5rem;
+                }
+            }
+        }
+        //分割线
+        .line {
+            width: 100%;
+            height: 10/37.5rem;   
+        }
+        //喵姐寄语
+        .message {
+            width: 90%;
+            margin: 0 auto;
+            padding: 0.26666667rem 0 0.26666667rem;
+            .messImg {
+                width: 8%;
+            }
+            .messText {
+                margin: 0 auto;
+                padding: 0.26666667rem 0.53333333rem 0.26666667rem;
+                font-size: 0.38rem;
+            }
+            .messImg1 {
+                width: 8%;
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+        }
+        .shareBtm {
+            width: 50%;
+            img {
+                width: 1.5rem;
+                padding-left: 0.7rem;
+            }
+            .teacher {
+                text-align: right;
+                font-weight: bold;
+                padding-right:0.53333333rem;
+                margin-bottom: 0.4rem;
+                background: url(../img/u9094.png) no-repeat left center;
+                padding-left: 0.8rem;
+            }
+        }     
+    }
+    //点评
+    .evaluate {
+        width: 95%;
+        margin: 0 auto;
+        -webkit-border-radius: 5/37.5rem;
+        -moz-border-radius: 5/37.5rem;
+        -o-border-radius: 5/37.5rem;
+        border-radius: 5/37.5rem;
+        margin-top: 10/37.5rem;
+        position: relative;
+        background-color: #FF8C2C; 
+        .shadowDiv {  
+            width: 3.1rem;
+            height: 1.5rem;
+            max-width: 540px;
+            position: absolute;
+            right: 0;
+            background-color: #FB7122;
+            -webkit-border-radius: 0 5/37.5rem 5/37.5rem 0;
+            -moz-border-radius: 0 5/37.5rem 5/37.5rem 0;
+            -o-border-radius: 0 5/37.5rem 5/37.5rem 0;
+            border-radius: 0 5/37.5rem 5/37.5rem 0;
+            .triangle {
+                width: 1.05rem;
+                height: 1.05rem;
+                position: absolute;
+                background-color: #FB7122;
+                -webkit-transform: rotate(-44deg);
+                -moz-transform: rotate(-44deg);
+                -o-transform: rotate(-44deg);
+                transform: rotate(-44deg);
+                z-index: 33;
+                left: -0.55rem;
+                top: 0.21rem;
+            } 
+         }
+        .evalText {  
+            float: left;
+            font-size: 0.36rem;
+            color: #fff;
+            height: 1.5rem;
+            line-height: 1.5rem;
+            position: relative;
+            z-index: 55;
+            background: url("../img/u9048.png") no-repeat left center;
+            background-size: 0.6rem;
+            padding-left: 25/37.5rem;
+            margin-left: 15/37.5rem;
+        }
+           
+        .evalImg {
+            float: right;
+            width: 0.3rem;
+            padding: 0.6rem 0;
+            position: relative;
+            z-index: 55;
+            margin-right: 0.3rem;
+        }
+    }
+    //中间的间距
+    .shareTop {
+        margin-top: 10/37.5rem;
+    }
+    //按钮
+    .planJoin {
+        display: block;
+        width: 60%;
+        padding: 0.21333333rem 0;
+        margin: 1rem auto 0;
+        text-align: center;
+        -webkit-border-radius: 1.33333333rem;
+        -moz-border-radius: 1.33333333rem;
+        -ms-border-radius: 1.33333333rem;
+        border-radius: 1.33333333rem;
+        background-color: #ff9900;
+        font-size: 0.4rem;
+        color: #fff;
+    }
+    .evaluateOccupy {
+        width: 100%;
+        height: 5/37.5rem;
+        margin: 0.5rem 0;
+    }
+    .whiteLine {
+        width: 100%;
+        height: 6/37.5rem;
+        background-color: #fff;
+        margin: 1rem 0 0.8rem;
+    }
+    .remindText {
+        padding: 0 0.8rem 0.8rem;
+        color: #333;
+        font-size: 0.32rem;
+        line-height: 0.5rem;
+    }
+    .schedule {
+        text-align: center;
+        padding: 0 0 0.5rem;
+        color: #333;
+        font-size: 0.4rem;
+    }
+
+}
+

@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="keywords" content="喵姐,喵姐早教说,0到6岁早期教育,家庭教育,家长教育,父母课堂,育儿知识,儿童教育,母婴育儿,">
+    <meta name="description" content="喵姐早教说是喵姐高寿岩创办的为家庭教育提供专业靠谱的0到6岁早期教育、育儿知识的平台。">
+    <title>喵姐早教说-三张任务卡-任务详情</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/lifetable.css">
+    <!--<link rel="stylesheet" href="./css/layerTime.css">-->
+    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/selectionTime2.js"></script>
+	<script src="./js/swiper-3.4.2.min.js"></script>
+    <script src="./js/toast-v1.js"></script>
+    <style>
+        .show{
+            display:block;
+        }
+        .hidden{
+           display:none;
+        }
+         .swiper-container {
+            width: 50%;
+        }
+        .current{
+            color:#ff9963 !important;
+        }
+        .swiper-slide-next{
+            color: #ff9963;
+         }
+        dd {
+            float:left;
+            line-height:37px;
+        }
+        dd:nth-child(3n+1) {
+            text-align:right;
+            width:164px;
+        }
+        input[type="radio"]{
+            display:none;
+        }
+        input[type="radio"]+label{
+            display: block;
+            position:relative;
+            padding-left:0.7rem;
+            line-height:20px;
+            color:#333;
+            font-weight:normal;
+            margin-left:0.1rem;
+        }
+        label {
+            display:inline-block;
+            max-width:100%;
+            margin-bottom:5px;
+            font-weight:700;
+        }
+        input[type="radio"]+label::before {
+            content:"";
+            width:0.3rem;
+            height:0.3rem;
+            border-radius:50%;
+            border:1px solid #cecece;
+            position:absolute;
+            top: 0.2rem;
+            left:0;
+        }
+        input[type="radio"]:checked+label::after {
+            top:0.3rem;
+            left:0.09rem;
+            content:"";
+            background-color:#ff9963;
+            width:0.18rem;
+            height:0.18rem;
+            border-radius:50%;
+            position:absolute;
+            vertical-align:middle;
+        }
+    </style>
+</head>
+<body>
+    <!--任务列表  点击显示隐藏-->
+    <div class="share1">
+        <div class="shareBox">
+            <div class="shareHeader">
+                <h3>小卟咪入园准备训练<span>&nbsp;· 第2阶段</span></h3>
+            </div>
+            <div class="shareHeader clearfix">
+                <p class="navLeft timeTable">作息时间表</p>
+                <p class="navRight"><span>></span></p>
+            </div>
+            <div class="shareHeader clearfix">
+                <p class="navLeft">本周目标</p>
+                <p class="navRight"><span>></span></p>
+            </div>
+            <div class="shareHeader clearfix">
+                <p class="navLeft shareSurface">日程表</p>
+                <p class="navRight"><span>></span></p>
+            </div>
+            <div class="shareHeader clearfix">
+                <p class="navImg">Day01</p>
+                <div class="navText">
+                    <p>No.01  制作生活常规表</p>
+                    <p>No.02  组织家庭会议</p>
+                    <p>No.03  讲幼儿园绘本，用正面语言...</p>
+                </div>
+            </div>
+            <div class="shareHeader clearfix">
+                <p class="navImg">Day02</p>
+                <p class="navRight card">未打卡</p>
+            </div>
+            <div class="shareHeader clearfix navCard">
+                <p class="navImg">Day03</p>
+                <div class="navText">
+                    <p>No.01  去幼儿园参观去幼儿园参观去幼儿园参观去幼儿园参观</p>
+                    <p>No.02  亲子模拟游戏“上幼儿园”</p>
+                    <p>No.03  清扫孩子不愿意去睡觉的障碍</p>
+                    <p>No.04  组织家庭会议</p>
+                    <p>No.05  讲幼儿园绘本，用正面语言...</p>
+                </div>
+            </div>
+            <div class="shareHeader clearfix navCard">
+                <p class="navImg">Day03</p>
+                <div class="navText">
+                    <p>No.01  去幼儿园参观去幼儿园参观去幼儿园参观去幼儿园参观</p>
+                    <p>No.02  亲子模拟游戏“上幼儿园”</p>
+                    <p>No.03  清扫孩子不愿意去睡觉的障碍</p>
+                    <p>No.04  组织家庭会议</p>
+                    <p>No.05  讲幼儿园绘本，用正面语言...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--时间-->
+    <div class="choiceDate" style="display:none;">
+        <div class="layer">
+            <p>点击阴影区域关闭时间选择器</p>
+        </div>
+        <div class="dateBox">
+            <!--顶部的确定和时间-->
+            <div class="dateHeader clearfix">
+                <div class="headerLeft">
+                    <img src="./img/lifetable/u2019.png" alt="" data-id='1' class="leftImg">
+                    <span class='title' data-id='0'>起床</span>
+                    <span class="startTimeCurrent"><span class="show-time">06</span> ：<span class="show-time">30</span></span>  -
+                    <span class="endTimeCurrent"><span class="show-time">07</span> ：<span class="show-time">00</span></span>
+                </div>
+                <div class="headerRight" id="headerRight">
+                   下一项&nbsp;&nbsp;>
+                </div>
+            </div>
+            <!--时间-->
+            <div class="dateTime">
+                <div class="timeText clearfix">
+                    <p class="startTime">开始时间</p>
+                    <!--<img src="./img/lifetable/u4180.png" alt="">-->
+                    <p class="endTime">结束时间</p>
+                </div>
+                 <!--开始时间前面的小时-->
+                <div class="timeNum">
+                    <ul class="startNum">
+                       <!--小时-->
+                        <li class="startHour">
+                            <div class="swiper-container"  id="dateHourLeft">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">00</div>
+                                    <div class="swiper-slide">01</div>
+                                    <div class="swiper-slide">02</div>
+                                    <div class="swiper-slide">03</div>
+                                    <div class="swiper-slide">04</div>
+                                    <div class="swiper-slide">05</div>
+                                    <div class="swiper-slide">06</div>
+                                    <div class="swiper-slide">07</div>
+                                    <div class="swiper-slide">08</div>
+                                    <div class="swiper-slide">09</div>
+                                    <div class="swiper-slide">10</div>
+                                    <div class="swiper-slide">11</div>
+                                    <div class="swiper-slide">12</div>
+                                    <div class="swiper-slide">13</div>
+                                    <div class="swiper-slide">14</div>
+                                    <div class="swiper-slide">15</div>
+                                    <div class="swiper-slide">16</div>
+                                    <div class="swiper-slide">17</div>
+                                    <div class="swiper-slide">18</div>
+                                    <div class="swiper-slide">19</div>
+                                    <div class="swiper-slide">20</div>
+                                    <div class="swiper-slide">21</div>
+                                    <div class="swiper-slide">22</div>
+                                    <div class="swiper-slide">23</div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--中间的冒号-->
+                        <li class="colon">
+                            <span>:</span>
+                            <span>:</span>
+                            <span>:</span>
+                            <!--<span>:</span>-->
+                        </li>
+                        <!--分钟-->
+                        <li class="startMinute">
+                            <div class="swiper-container"  id="dateMinuteLeft">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">00</div>
+                                    <!--<div class="swiper-slide">01</div>
+                                    <div class="swiper-slide">02</div>
+                                    <div class="swiper-slide">03</div>
+                                    <div class="swiper-slide">04</div>-->
+                                    <div class="swiper-slide">05</div>
+                                    <!--<div class="swiper-slide">06</div>
+                                    <div class="swiper-slide">07</div>
+                                    <div class="swiper-slide">08</div>
+                                    <div class="swiper-slide">09</div>-->
+                                    <div class="swiper-slide">10</div>
+                                    <!--<div class="swiper-slide">11</div>
+                                    <div class="swiper-slide">12</div>
+                                    <div class="swiper-slide">13</div>
+                                    <div class="swiper-slide">14</div>-->
+                                    <div class="swiper-slide">15</div>
+                                    <!--<div class="swiper-slide">16</div>
+                                    <div class="swiper-slide">17</div>
+                                    <div class="swiper-slide">18</div>
+                                    <div class="swiper-slide">19</div>-->
+                                    <div class="swiper-slide">20</div>
+                                    <!--<div class="swiper-slide">21</div>
+                                    <div class="swiper-slide">22</div>
+                                    <div class="swiper-slide">23</div>
+                                    <div class="swiper-slide">24</div>-->
+                                    <div class="swiper-slide">25</div>
+                                    <!--<div class="swiper-slide">26</div>
+                                    <div class="swiper-slide">27</div>
+                                    <div class="swiper-slide">28</div>
+                                    <div class="swiper-slide">29</div>-->
+                                    <div class="swiper-slide">30</div>
+                                    <!--<div class="swiper-slide">31</div>
+                                    <div class="swiper-slide">32</div>
+                                    <div class="swiper-slide">33</div>
+                                    <div class="swiper-slide">34</div>-->
+                                    <div class="swiper-slide">35</div>
+                                    <!--<div class="swiper-slide">36</div>
+                                    <div class="swiper-slide">37</div>
+                                    <div class="swiper-slide">38</div>
+                                    <div class="swiper-slide">39</div>-->
+                                    <div class="swiper-slide">40</div>
+                                    <!--<div class="swiper-slide">41</div>
+                                    <div class="swiper-slide">42</div>
+                                    <div class="swiper-slide">43</div>
+                                    <div class="swiper-slide">44</div>-->
+                                    <div class="swiper-slide">45</div>
+                                    <!--<div class="swiper-slide">46</div>
+                                    <div class="swiper-slide">47</div>
+                                    <div class="swiper-slide">48</div>
+                                    <div class="swiper-slide">49</div>-->
+                                    <div class="swiper-slide">50</div>
+                                    <!--<div class="swiper-slide">51</div>
+                                    <div class="swiper-slide">52</div>
+                                    <div class="swiper-slide">53</div>
+                                    <div class="swiper-slide">54</div>-->
+                                    <div class="swiper-slide">55</div>
+                                    <!--<div class="swiper-slide">56</div>
+                                    <div class="swiper-slide">57</div>
+                                    <div class="swiper-slide">58</div>
+                                    <div class="swiper-slide">59</div>-->
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                     <ul class="endNum">
+                       <li class="endHour">
+                            <div class="swiper-container" id="dateHourRight">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">00</div>
+                                    <div class="swiper-slide">01</div>
+                                    <div class="swiper-slide">02</div>
+                                    <div class="swiper-slide">03</div>
+                                    <div class="swiper-slide">04</div>
+                                    <div class="swiper-slide">05</div>
+                                    <div class="swiper-slide">06</div>
+                                    <div class="swiper-slide">07</div>
+                                    <div class="swiper-slide">08</div>
+                                    <div class="swiper-slide">09</div>
+                                    <div class="swiper-slide">10</div>
+                                    <div class="swiper-slide">11</div>
+                                    <div class="swiper-slide">12</div>
+                                    <div class="swiper-slide">13</div>
+                                    <div class="swiper-slide">14</div>
+                                    <div class="swiper-slide">15</div>
+                                    <div class="swiper-slide">16</div>
+                                    <div class="swiper-slide">17</div>
+                                    <div class="swiper-slide">18</div>
+                                    <div class="swiper-slide">19</div>
+                                    <div class="swiper-slide">20</div>
+                                    <div class="swiper-slide">21</div>
+                                    <div class="swiper-slide">22</div>
+                                    <div class="swiper-slide">23</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="colon">
+                            <span>:</span>
+                            <span>:</span>
+                            <span>:</span>
+                            <span>:</span>
+                            <!--<span>:</span>-->
+                        <li class="endMinute">
+                            <div class="swiper-container"  id="dateMinuteRight">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">00</div>
+                                    <!--<div class="swiper-slide">01</div>
+                                    <div class="swiper-slide">02</div>
+                                    <div class="swiper-slide">03</div>
+                                    <div class="swiper-slide">04</div>-->
+                                    <div class="swiper-slide">05</div>
+                                    <!--<div class="swiper-slide">06</div>
+                                    <div class="swiper-slide">07</div>
+                                    <div class="swiper-slide">08</div>
+                                    <div class="swiper-slide">09</div>-->
+                                    <div class="swiper-slide">10</div>
+                                    <!--<div class="swiper-slide">11</div>
+                                    <div class="swiper-slide">12</div>
+                                    <div class="swiper-slide">13</div>
+                                    <div class="swiper-slide">14</div>-->
+                                    <div class="swiper-slide">15</div>
+                                    <!--<div class="swiper-slide">16</div>
+                                    <div class="swiper-slide">17</div>
+                                    <div class="swiper-slide">18</div>
+                                    <div class="swiper-slide">19</div>-->
+                                    <div class="swiper-slide">20</div>
+                                    <!--<div class="swiper-slide">21</div>
+                                    <div class="swiper-slide">22</div>
+                                    <div class="swiper-slide">23</div>
+                                    <div class="swiper-slide">24</div>-->
+                                    <div class="swiper-slide">25</div>
+                                    <!--<div class="swiper-slide">26</div>
+                                    <div class="swiper-slide">27</div>
+                                    <div class="swiper-slide">28</div>
+                                    <div class="swiper-slide">29</div>-->
+                                    <div class="swiper-slide">30</div>
+                                    <!--<div class="swiper-slide">31</div>
+                                    <div class="swiper-slide">32</div>
+                                    <div class="swiper-slide">33</div>
+                                    <div class="swiper-slide">34</div>-->
+                                    <div class="swiper-slide">35</div>
+                                    <!--<div class="swiper-slide">36</div>
+                                    <div class="swiper-slide">37</div>
+                                    <div class="swiper-slide">38</div>
+                                    <div class="swiper-slide">39</div>-->
+                                    <div class="swiper-slide">40</div>
+                                    <!--<div class="swiper-slide">41</div>
+                                    <div class="swiper-slide">42</div>
+                                    <div class="swiper-slide">43</div>
+                                    <div class="swiper-slide">44</div>-->
+                                    <div class="swiper-slide">45</div>
+                                    <!--<div class="swiper-slide">46</div>
+                                    <div class="swiper-slide">47</div>
+                                    <div class="swiper-slide">48</div>
+                                    <div class="swiper-slide">49</div>-->
+                                    <div class="swiper-slide">50</div>
+                                    <!--<div class="swiper-slide">51</div>
+                                    <div class="swiper-slide">52</div>
+                                    <div class="swiper-slide">53</div>
+                                    <div class="swiper-slide">54</div>-->
+                                    <div class="swiper-slide">55</div>
+                                    <!--<div class="swiper-slide">56</div>
+                                    <div class="swiper-slide">57</div>
+                                    <div class="swiper-slide">58</div>
+                                    <div class="swiper-slide">59</div>        -->
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--第一张任务卡-->
+    <div class="wrapPage page1">
+        <div class="headerImg">
+            <!--顶部的导航条-->
+            <div class="lifeNav hidden" >
+                <p class="navLeft navList">任务列表</p>
+                <p class="navRight"><span>1 </span>/ 5</p>
+            </div>
+            <!--顶部的图片-->
+            <img src="./img/lifetable/u2007.jpg" alt="">
+        </div>
+        <!--No.1制作生活常规表-->
+        <div class="mark">
+            <h3>No.1 制作生活常规表</h3>
+            <div class="line"></div>
+            <p style="color: #434343;font-size: 0.36rem;line-height: 0.7rem; padding-bottom: 0.4rem;">《汤姆上幼儿园》：汤姆要上幼儿园了，第一次上幼儿园对他来说真是一个前所未有的大挑战。这本书告诉你，孩子是如何体验上幼儿园这件事的。为什么有些孩子会装病、耍赖、在幼儿园门口拉着妈妈不松手……要知道，对孩子来说，上幼儿园是一件多么不容易的事啊。让我们给这些孩子宽容、鼓励以及爱的拥抱吧，相信他们会和汤姆一样喜欢上幼儿园的。</p>
+        </div>
+        <!--作息表-->
+        <!--作息表-->
+        <div class="surface edit">
+            <div class="surfaceDiv clearfix">
+                <h4 class="surTitle fl">定制 <span>小卟咪</span> 的作息时间表</h4>
+                <p class="workSurfaceRight">编辑</p>
+            </div>
+            <!--起床-->
+            <div class="surTime clearfix" data-id='0'>
+                <div class="pos"></div>
+                <img src="./img/lifetable/u2019.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP ">起床</p>
+                    <div class="timeD clearfix ">
+                        <p  class="fl timeLeft">07:20</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">07:30</p>
+                    </div>
+                </div>
+            </div>
+            <!--穿衣/洗漱-->
+            <div class="surTime clearfix" data-id='1'>
+                <img src="./img/lifetable/u2033.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">穿衣/洗漱</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">07:30</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">08:00</p>
+                    </div>
+                </div>
+            </div>
+            <!--早饭-->
+            <div class="surTime clearfix" data-id='2'>
+                <img src="./img/lifetable/u2053.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">早饭</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">08:00</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">08:30</p>
+                    </div>
+                </div>
+            </div>
+            <!--户外活动-->
+            <div class="surTime clearfix" data-id='3'>
+                <img src="./img/lifetable/u2069.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">户外活动</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">08:00</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">10:00</p>
+                    </div>
+                </div>
+            </div>
+            <!--加餐（喝水/酸奶/水果等）-->
+            <div class="surTime clearfix" data-id='4'>
+                <img src="./img/lifetable/u2081.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">加餐（喝水/酸奶/水果等）</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">10:00</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">10:15</p>
+                    </div>
+                </div>
+            </div>
+            <!--室内游戏-->
+            <div class="surTime clearfix" data-id='5'>
+                <img src="./img/lifetable/u2101.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">室内游戏</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">10:15</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">11:30</p>
+                    </div>
+                </div>
+            </div>
+            <!--午餐（收拾餐桌/洗手/漱口）-->
+            <div class="surTime clearfix" data-id='6'>
+                <img src="./img/lifetable/u2117.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">午餐（收拾餐桌/洗手/漱口）</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">11:30</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">12:00</p>
+                    </div>
+                </div>
+            </div>
+            <!--午睡准备（室内散步/看书等）-->
+            <div class="surTime clearfix" data-id='7'>
+                <img src="./img/lifetable/u2129.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">午餐（收拾餐桌/洗手/漱口）</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">12:00</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">12:15</p>
+                    </div>
+                </div>
+            </div>
+            <!--午睡-->
+            <div class="surTime clearfix" data-id='8'>
+                <img src="./img/lifetable/u2149.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">午睡</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">12:15</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">14:30</p>
+                    </div>
+                </div>
+            </div>
+            <!--加餐（喝水/酸奶/水果等）-->
+            <div class="surTime clearfix" data-id='9'>
+                <img src="./img/lifetable/u2165.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">加餐（喝水/酸奶/水果等）</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">14:30</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">14:45</p>
+                    </div>
+                </div>
+            </div>
+            <!--室内游戏-->
+            <div class="surTime clearfix" data-id='10'>
+                <img src="./img/lifetable/u2181.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">室内游戏</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">14:45</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">16:00</p>
+                    </div>
+                </div>
+            </div>
+            <!--户外活动-->
+            <div class="surTime clearfix" data-id='11'>
+                <img src="./img/lifetable/u2197.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">户外活动</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">16:00</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+
+                        <p  class="fr timeRight">17:30</p>
+                    </div>
+                </div>
+            </div>
+            <!--餐前准备（孩子帮择菜/洗菜/准备餐桌）-->
+            <div class="surTime clearfix" data-id='12'>
+                <img src="./img/lifetable/u2213.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">餐前准备（孩子帮择菜/洗菜/准备餐桌）</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">17:30</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">18:00</p>
+                    </div>
+                </div>
+            </div>
+            <!--晚餐（收拾餐桌/洗手/漱口）-->
+            <div class="surTime clearfix" data-id='13'>
+                <img src="./img/lifetable/u2225.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">晚餐（收拾餐桌/洗手/漱口）</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">18:00</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">18:30</p>
+                    </div>
+                </div>
+            </div>
+            <!--餐后活动（避免让孩子过度兴奋）-->
+            <div class="surTime clearfix" data-id='14'>
+                <img src="./img/lifetable/u2245.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">餐后活动（避免让孩子过度兴奋）</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">18:30</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">20:30</p>
+                    </div>
+                </div>
+            </div>
+            <!--洗漱-->
+            <div class="surTime clearfix" data-id='15'>
+                <img src="./img/lifetable/u2261.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">洗漱</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">20:30</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">21:00</p>
+                    </div>
+                </div>
+            </div>
+            <!--上床入睡准备（讲故事/聊天/摇篮曲等）-->
+            <div class="surTime clearfix" data-id='16'>
+                <img src="./img/lifetable/u2277.png" alt="">
+                <div class="timeArrange">
+                    <p class="timeP">上床入睡准备（讲故事/聊天/摇篮曲等）</p>
+                    <div class="timeD clearfix">
+                        <p  class="fl timeLeft">21:00</p>
+                        <img src="./img/lifetable/u2025.png" alt="" class="timeImg">
+                        <p  class="fr timeRight">21:30</p>
+                    </div>
+                </div>
+            </div>
+            <!--入睡-->
+            <div class="clearfix surTime timeNit" data-id='17'>
+                <img src="./img/lifetable/u2293.png" alt="">
+                <div class="timeArrange">
+                    <p class="arran" class="timeP">入睡</p>
+                    <div class="timeD arranDiv">
+                        <p  class="fl timeLeft arranImg">21:30</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+        <!--下面的按钮-->
+        <div class="liftBot">
+            <p>提交后会生成宝宝作息时间表提交后会生成宝宝作息时间表</p>
+            <div class="planJoin">
+                <a href="javascript:void(0);">提 交</a>
+            </div>
+        </div>
+        <div class="homeLine">
+        </div>
+        <div class="lifeBottom clearfix">
+            <p class="navLeft">任务列表</p>
+            <p class="navRight">下一项</p>
+        </div>
+    </div>
+
+    <!--中间的任务卡-->
+    <div class="wrapPage page2 hidden">
+        <div class="headerImg">
+            <!--顶部的导航条-->
+            <div class="lifeNav " >
+                <p class="navLeft navList">任务列表</p>
+                <p class="navRight">1 / 5</p>
+            </div>
+            <!--顶部的图片-->
+            <img src="./img/lifetable/u975.jpg" alt="">
+        </div>
+        <!--No.1制作生活常规表-->
+        <div class="mark">
+            <h3>No.2 召开家庭会议</h3>
+            <div class="line"></div>
+            <p  style="color: #434343;font-size: 0.36rem;line-height: 0.7rem; padding-bottom: 0.4rem;">召开家庭会议，让家庭成员都对孩子的入园准备有足够的重视，并且清楚接下来会进入园准备训练，清楚了解本次入园准备训练的形式。</p>
+        </div>
+        <div class="meet">
+            <h4>家庭会议准备</h4>
+            <p>
+                1.确定会议时间，确认所有参加的人都可以为家庭会议预留充足的时间</br>
+
+                2.一张大白纸，列出入园准备工作清单，标出孩子的重点和难点。你可以根据下面的内容来列出你的清单：</br>
+
+                孩子对幼儿园的印象（有好印象/没有印象/有坏印象）</br>
+
+                孩子能不能自己吃饭</br>
+
+                能不能自己睡觉</br>
+
+                会不会控制大小便、会不会自己上厕所</br>
+
+                会不会自己穿衣服、脱衣服</br>
+
+                会不会自己穿鞋、脱鞋</br>
+
+                社交能力（是否合群/是否胆小/是否爱欺负人或总被欺负）</br>
+
+                分离焦虑程度</br>
+
+                语言表达能力，能否清楚地表达自己的需求</br>
+
+                语言理解能力，能否很快理解大人的要求</br>
+
+                合作程度，能不能按照大人的要求去做，能不能和小朋友一起玩</br>
+
+                对陌生环境的适应能力</br>
+
+                孩子现在的作息时间和幼儿园作息的差距</br>
+
+            </p>
+        </div>
+        <div class="meet">
+            <h4>在家庭会议上，你可以这样说</h4>
+            <p>
+                1.感谢大家出席会议：今天我把大家凑到一起，是想认真和大家说说孩子入园准备的事。首先我要感谢大家（老人、老公）都能腾出这个时间，配合我来开这个家庭会议，这样沟通起来效果最好
+            </p>
+            <p>
+                2.提出入园准备的目的：现在我们已经选好了幼儿园，孩子9月份就要入园了。这三年来，咱们大家都不容易，为孩子付出了很多。
+                尤其是老人，更是辛苦。现在孩子终于要上幼儿园了，咱们再加把劲，帮孩子做好准备，到时候他/她能更快适应幼儿园，少哭闹，少生病，咱们也省得干着急心疼了。
+            </p>
+            <p>
+                3.提出入园准备的重点：我找一些朋友们问了她们家孩子入园时的情形（简单介绍别的孩子入园时的状态，有没有哭闹，哭闹了多长时间才适应等，此时可以让其他家庭成员也讲讲他们听到的入园事例）。
+                我总结了一下，在入园前，咱家孩子重点需要改善的问题有这样几个（拿出你的清单来，简单讲一下。如果其他家庭成员有补充，要认真听，把他的意见加在你的清单里）。
+            </p>
+            <p>
+                4.告诉大家你的入园准备计划：短时间里要改善孩子的这些问题，也不是不可以。一个是需要耐心，一个是需要方法。幸好我找到了一个入园准备训练计划，讲得非常具体，可以根据咱家孩子的情况，告诉我们每天应该怎么做。
+                虽然这个计划不能保证让孩子入园后不哭，但是按照它的指导来做，孩子哭闹的时间应该会缩短，适应得更快。从明天开始，任务和指导就开始了，我和爸爸可以负责的任务，我们来完成。
+                也有一部分任务，因为我们白天上班，需要辛苦老人帮忙来完成。遇到什么问题，您就告诉我。因为这个指导还能根据咱们的反馈，给出下一步的指导。
+            </p>
+            <p>
+                5.争取大家的支持：虽然这样做有点麻烦，但这是为了孩子
+
+                入园后，我们少点麻烦。特别希望爸爸妈妈和老公都能给孩
+
+                子支持，帮他迈过这个重要的坎儿。（接下来分别问问每个
+
+                人，争取大家都能亲口说出“同意”或“支持”。你可以从最容易
+
+                接受的人开始问）。
+            </p>
+        </div>
+         <div class="meet">
+            <h4>开家庭会议的注意事项</h4>
+            <p>
+                1.会议时间不宜过长，最好能在10分钟内开完。
+            </p>
+            <p>
+                2.感谢环节不可少，这是取得大家支持的很重要的铺垫。
+            </p>
+            <p>
+                3.讲到孩子的问题时，切忌追究责任，千万不要说“都是因为谁什么地方做的不好，才导致孩子有这个问题”。追责没有用，重点是接下来如何改善。
+            </p>
+            <p>
+                4.如果其他人和你有不同意见，避免争论，你可以说：“行，这个问题咱们可以再想想，也找过来人问问他们的经验。”
+            </p>
+        </div>
+        <div class="subject">
+            <h4 class="subH">自测题目</h4>
+            <h3>挑选幼儿园绘本</h3>
+            <div class="selfTxt">
+                 <input id="adType5" name="adType" type="radio" value="1">
+                 <label for="adType5">
+                        <p class="txtOpt">A. </p><p class="txtSize">已经挑选好了绘本并放入了</p>
+                 </label>
+                 <input id="adType6" name="adType" type="radio" value="1">
+                 <label for="adType6">
+                        <p class="txtOpt">B. </p><p class="txtSize">已经挑选好了绘本并放入了</p>
+                 </label>
+                 <input id="adType7" name="adType" type="radio" value="1">
+                 <label for="adType7">
+                        <p class="txtOpt">C. </p><p class="txtSize">已经挑选好了绘本并放入了购物车已经挑选好了绘本并放入了购物车</p>
+                 </label>
+            </div>
+        </div>
+        <div class="lifeBottom clearfix">
+            <p class="navLeft">上一任务</p>
+            <p class="navRight">下一项</p>
+        </div>
+    </div>
+
+    <!--最后一张任务卡-->
+    <div class="wrapPage hidden">
+        <div class="headerImg">
+            <!--顶部的导航条-->
+            <div class="lifeNav hidden" >
+                <p class="navLeft navList">任务列表</p>
+                <p class="navRight">1 / 5</p>
+            </div>
+            <!--顶部的图片-->
+            <img src="./img/lifetable/u3207.jpg" alt="">
+        </div>
+        <!--No.1制作生活常规表-->
+        <div class="mark">
+            <h3>No.3 鼓励孩子从打招呼开始社交，妈妈要引导和示范</h3>
+            <div class="line"></div>
+            <p  style="color: #434343;font-size: 0.36rem;line-height: 0.7rem;">看到孩子认识的、曾经一起玩过的小朋友，妈妈（或孩子的主要看护人）先主动和对方打招呼，然后鼓励孩子和对方打招呼。如果孩子做到了，一定及时鼓励。如果孩子没做到，提醒他/她“和小朋友说你好，或者拉拉手吧”。不要因为孩子没做到而责骂他/她，更不能当众责骂孩子。</p>
+            <p  style="color: #434343;font-size: 0.36rem;line-height: 0.7rem;">出去玩的时候，带上一两个小玩具，可以让孩子们更容易彼此熟悉，并且一起玩耍。</p>
+            <p  style="color: #434343;font-size: 0.36rem;line-height: 0.7rem;">争取记住5个以上小朋友的名字，见面能认得出，能和对方打招呼。</p>
+
+        </div>
+        <div class="blank">
+
+        </div>
+        <div class="lifeBottom clearfix lifeBottomLast">
+            <p class="navLeft">上一任务</p>
+            <p class="navRight">任务完成，去打卡</p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+	   $(function(){
+           $('.navRight').click(function(){
+               $('.page2').show();
+              $(window).scrollTop(0);
+               $('.page1').hide();
+           });
+           if($('.wrapPage').height() >= $(window).height()) {
+                $('.lifeBottom').css('position','absolute');
+            }else {
+                 $('.lifeBottom').css('position','fixed');
+                 $('.lifeBottom').css('bottom','0');
+            }
+            if($('.share1').height() <= $(window).height()) {
+                $('.share1').css('height','100%');
+            }
+
+            // 下拉页面  显示隐藏任务列表的导航栏
+            var  share = $('div.share1');
+            var shareBox = $('.shareBox');
+            var widthP = $(window).width();
+            var temp = 0;
+            $(window).scroll(function(){
+                var topDistance = $(window).scrollTop();
+                if($(window).scrollTop() > temp && $(window).scrollTop()!=0){
+                            $("div.lifeNav").fadeIn();
+                            // 点击任务列表显示隐藏弹层
+                            $(".navList").off();
+                            $(".navList").click(function(){
+                                // share.show().animate({left: '0'}, 'slow');
+                                share.show();
+                                shareBox.animate({left: '0'}, 'slow');
+                                $('.wrapPage').css('position','fixed');
+                                $('.wrapPage').css('top',-topDistance);
+                                $('.share1').css('position','absolute');
+                                $('.share1').css('top',topDistance);
+                            $(window).scroll(function(){
+                                if($(window).scrollTop()>=topDistance){
+                                    $('.share1').css('top',topDistance);
+                                }else{
+                                    $('.share1').css('top',0);
+                                }
+                            })
+                        });
+                        share.off();
+                        share.click(function(){
+                            shareBox.animate({left: '-5rem'}, "slow");
+                            $(this).css('display', "none");
+                            $('.wrapPage').css('position','relative');
+                            $('.wrapPage').css('top',0);
+                        });
+                        }else{
+                            $("div.lifeNav").fadeOut();
+
+                    }
+                    temp =  topDistance;
+                    console.log(temp);
+            })
+	    });
+
+        function changeImg(a){
+            var obj=$(a);
+            if(obj.hasClass("selfTxtCurrent")){
+                $(obj).removeClass("selfTxtCurrent");
+            }else{
+                $(obj).addClass("selfTxtCurrent");
+            }
+            obj.siblings("div.selfTxt").each(function(){
+                if($(this).removeClass("selfTxtCurrent")){
+                }
+            })
+        }
+
+    </script>
+
+</body>
+</html>

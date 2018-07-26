@@ -1,0 +1,49 @@
+@charset "utf-8";
+/*
+gril和boy是由原age文件改成的，为todetail.jsp使用
+*/
+.userInfo .gril {
+  width: 2.4rem;
+  height: 0.56rem;
+  line-height: 0.58666667rem;
+  margin-top: 0.30666667rem;
+  background-color: #f56b23;
+  background-image: url(../img/123gril.png);
+  background-repeat: no-repeat;
+  background-position: 0.25333333rem center;
+  background-size: 0.52rem 0.37333333rem;
+  border-radius: 1.13333333rem;
+  text-indent: 0.8rem;
+  color: #fff;
+}
+.userInfo .boy {
+  width: 2.4rem;
+  height: 0.56rem;
+  line-height: 0.58666667rem;
+  margin-top: 0.30666667rem;
+  background-color: #f56b23;
+  background-image: url(../img/123boy.png);
+  background-repeat: no-repeat;
+  background-position: 0.25333333rem center;
+  background-size: 0.52rem 0.37333333rem;
+  border-radius: 1.13333333rem;
+  text-indent: 0.8rem;
+  color: #fff;
+}
+.quesList .ansinfoTxt{
+	height: 0.97333333rem;
+
+}
+
+/* 阻止长按出现的复制框 */
+body{
+	-webkit-user-select:none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	-webkit-touch-callout:none;
+	-ms-touch-callout:none;
+	-mozt-touch-callout:none;
+	touch-callout:none;
+
+}

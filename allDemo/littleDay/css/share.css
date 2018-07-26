@@ -1,0 +1,115 @@
+.careShare {
+  display: none;
+  width: 100%;
+  height: 1.37333333rem;
+  padding: 0 0.4rem;
+  background-color: #e51812;
+}
+.careShare .logo {
+  float: left;
+  width: 2.56rem;
+  margin-top: 0.29333333rem;
+}
+.careShare .tag {
+  float: left;
+  width: 1.14666667rem;
+  height: 0.45333333rem;
+  line-height: 0.45333333rem;
+  margin-left: 0.08rem;
+  margin-top: 0.42666667rem;
+  background-color: #fff;
+  border-radius: 0.04rem;
+  text-align: center;
+  color: #e51812;
+}
+.careShare .careBtn {
+  float: right;
+  width: 1.28rem;
+  height: 0.64rem;
+  line-height: 0.58666667rem;
+  margin-top: 0.36rem;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+  border-radius: 0.10666667rem;
+  font-size: 0.4rem;
+  text-align: center;
+  color: #fff;
+}
+.careShareLayer {
+  display: none;
+  width: 100%;
+  max-width: 540px;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+}
+.careShareLayer .careShareBox {
+  width: 100%;
+  padding: 0 0.77333333rem;
+  position: relative;
+  overflow: auto;
+  padding-bottom: 0.26666667rem;
+}
+.careShareLayer .mebmber {
+  display: block;
+  width: 100%;
+  margin-top: 0.82666667rem;
+}
+.careShareLayer .close {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.careShareLayer .logo {
+  display: block;
+  width: 4.02666667rem;
+  position: absolute;
+  right: 0.53333333rem;
+  top: 1rem;
+}
+.careShareLayer .code {
+  display: block;
+  width: 3.6rem;
+  position: relative;
+  z-index: 2;
+  margin: -0.85333333rem auto 0 auto;
+}
+.careShareLayer .codeword {
+  text-align: center;
+  margin-top: 0.13333333rem;
+}
+.careShareLayer .codeword p {
+  line-height: 0.48rem;
+  color: #999;
+}
+.careShareLayer .word {
+  margin-top: 0.82666667rem;
+  overflow: auto;
+  padding-top: 0.50666667rem;
+  border-top: 1px solid #ccc;
+  line-height: 0.4rem;
+}
+.careShareLayer h2 {
+  margin-bottom: 0.13333333rem;
+  font-weight: normal;
+  color: #999;
+}
+.careShareLayer p {
+  color: #999;
+}
+.careShareLayer .close {
+  display: block;
+  position: absolute;
+  right: 0.4rem;
+  top: 0.26666667rem;
+  width: 16px;
+  height: 16px;
+  background: url(../img/share/close.jpg) center center no-repeat;
+  background-size: 16px 16px;
+}

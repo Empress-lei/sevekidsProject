@@ -1,0 +1,137 @@
+/*小白页面*/
+.prompt {
+  display: none;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.5);
+}
+.promptBox {
+  width: 8rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  margin: 0 auto;
+  padding: 0.86666667rem 0;
+  background-color: #fff;
+  border-radius: 0.32rem;
+}
+.promptBox .close {
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  top: -34px;
+  background: url(../../../../res/img/close.png) no-repeat;
+  background-size: 25px 25px;
+}
+.promptBox .word {
+  margin: 0.26666667rem 0;
+  text-align: center;
+  color: #666;
+}
+.promptBox .word2 {
+  padding-bottom: 15px;
+}
+.promptBox .word3 {
+  width: 5.94666667rem;
+  margin: 0.26666667rem auto;
+  line-height: 0.58666667rem;
+  padding-bottom: 8px;
+  text-align: left;
+}
+.promptBox .tit {
+  width: 100%;
+  margin-bottom: 0.42666667rem;
+  text-align: center;
+  color: #333;
+}
+.promptBox .word4 {
+  margin-bottom: 0.66666667rem;
+  padding: 0 0.85333333rem;
+  line-height: 0.58666667rem;
+  color: #262626;
+}
+.promptBox .buyBtn {
+  display: block;
+  width: 4.53333333rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  margin: 0 auto;
+  background-color: #e51812;
+  border-radius: 1.33333333rem;
+  text-align: center;
+  color: #fff;
+}
+.promptBox .sureBtn {
+  display: block;
+  width: 4.53333333rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  margin: 0 auto;
+  background-color: #e51812;
+  border-radius: 0.16rem;
+  text-align: center;
+  color: #fff;
+}
+.promptBox .link {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  color: #f57123;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+.promptBox .promptArrow {
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  font-size: 0;
+  margin-left: 0.13333333rem; 
+  vertical-align: top;
+  background-image: url("../../../../res/img/arrow@2x.png");
+  background-size: 10px 20px;
+}
+.promptBox .payMoney {
+  padding: 0.13333333rem 0 0.4rem 0;
+  text-align: center;
+  color: #666;
+}
+.promptBox .payMoney sup {
+  vertical-align: 15px;
+}
+.font32 {
+    font-size: 32px;
+}
+.font18 {
+    font-size: 18px;
+    line-height: 18px;
+}
+.font17 {
+    font-size: 17px;
+    line-height: 17px;
+}
+.font14 {
+    font-size: 14px;
+    line-height: 14px;
+}
+.font13 {
+    font-size: 13px;
+    line-height: 13px;
+}
+.font12 {
+    font-size: 12px;
+    line-height: 12px;
+}
+a {
+    text-decoration: none;
+}
+ 

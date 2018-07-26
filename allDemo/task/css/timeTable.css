@@ -1,0 +1,397 @@
+.layerRemind {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.layerRemind .layerBox {
+  width: 8rem;
+  margin: 4rem auto 0;
+  -webkit-border-radius: 0.08rem;
+  -moz-border-radius: 0.08rem;
+  -o-border-radius: 0.08rem;
+  border-radius: 0.08rem;
+  background-color: #fff;
+}
+.layerRemind .layerBox p {
+  padding: 0.66666667rem 0.48rem 0;
+}
+.layerRemind .layerBox .layerTit {
+  font-size: 0.44rem;
+  color: #333;
+}
+.layerRemind .layerBox .layerText {
+  padding-top: 0.34666667rem;
+  color: #A1A1A1;
+  font-size: 0.34rem;
+  line-height: 0.6rem;
+}
+.layerRemind .layerBox .submBtn {
+  margin-top: 0.26666667rem;
+  border-top: 0.02666667rem solid #f2f2f2;
+}
+.layerRemind .layerBox .submBtn li {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 0.4rem 0;
+  font-size: 0.4rem;
+}
+.layerRemind .layerBox .submBtn .deterBtn {
+  color: #949494;
+  border-right: 0.02666667rem solid #f2f2f2;
+}
+.layerRemind .layerBox .submBtn .cancelBtn a {
+  color: #ff9900;
+}
+.choiceDate {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.choiceDate .layer {
+  width: 100%;
+  height: 11rem;
+  position: absolute;
+  top: 0;
+}
+.choiceDate .layer p {
+  text-align: center;
+  padding-top: 8rem;
+  color: #fff;
+  font-size: 0.3rem;
+}
+.choiceDate .dateBox {
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+}
+.choiceDate .dateBox .dateHeader {
+  width: 100%;
+  padding: 0 0.4rem;
+  color: #fff;
+  background-color: #ff9933;
+}
+.choiceDate .dateBox .dateHeader .headerLeft {
+  float: left;
+  line-height: 1.5rem;
+  font-size: 0.4rem;
+}
+.choiceDate .dateBox .dateHeader .headerLeft .leftImg {
+  width: 0.8rem;
+}
+.choiceDate .dateBox .dateHeader .headerRight {
+  float: right;
+  font-size: 0.4rem;
+  line-height: 1.5rem;
+}
+.choiceDate .dateBox .dateTime {
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+}
+.choiceDate .dateBox .dateTime .timeText {
+  width: 100%;
+  line-height: 1.5rem;
+  font-size: 0.36rem;
+}
+.choiceDate .dateBox .dateTime .timeText .startTime {
+  float: left;
+  width: 45%;
+  text-align: center;
+}
+.choiceDate .dateBox .dateTime .timeText img {
+  float: left;
+  padding: 0.5rem  0 0.5rem 1.8rem;
+}
+.choiceDate .dateBox .dateTime .timeText .endTime {
+  float: right;
+  width: 45%;
+  text-align: center;
+}
+.choiceDate .dateBox .dateTime .timeNum {
+  width: 100%;
+}
+.choiceDate .dateBox .dateTime .timeNum .startNum {
+  float: left;
+  width: 45%;
+  height: 4.5rem;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  z-index: 99;
+}
+.choiceDate .dateBox .dateTime .timeNum .startNum .startHour {
+  float: left;
+  font-size: 0.5rem;
+  width: 47.5%;
+}
+.choiceDate .dateBox .dateTime .timeNum .startNum .startMinute {
+  float: left;
+  font-size: 0.5rem;
+  width: 47.5%;
+}
+.choiceDate .dateBox .dateTime .timeNum .startNum .colon {
+  float: left;
+  width: 5%;
+}
+.choiceDate .dateBox .dateTime .timeNum .startNum .colon span {
+  padding: 0.1rem 0 1rem;
+  display: block;
+}
+.choiceDate .dateBox .dateTime .timeNum .endNum {
+  float: right;
+  width: 45%;
+  height: 4.5rem;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  z-index: 99;
+}
+.choiceDate .dateBox .dateTime .timeNum .endNum .endHour {
+  float: left;
+  font-size: 0.5rem;
+  width: 47.5%;
+}
+.choiceDate .dateBox .dateTime .timeNum .endNum .endMinute {
+  float: left;
+  font-size: 0.5rem;
+  width: 47.5%;
+}
+.choiceDate .dateBox .dateTime .timeNum .endNum .colon {
+  float: left;
+  width: 5%;
+}
+.choiceDate .dateBox .dateTime .timeNum .endNum .colon span {
+  padding: 0.1rem 0 1rem;
+  display: block;
+}
+.choiceDate .dateBox .dateTime .timeNum .slide {
+  color: #ff9963;
+}
+.wrapPage {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.4rem 0.26666667rem;
+  background-color: #f4f4f4;
+}
+.wrapPage .timeTable {
+  width: 100%;
+  min-height: 5rem;
+}
+.wrapPage .timeTable .tableHeader {
+  width: 100%;
+  min-height: 1.5rem;
+  padding: 0  0.35rem;
+  color: #fff;
+  background-color: #ff9933;
+}
+.wrapPage .timeTable .tableHeader .headerTit {
+  font-size: 0.48rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+.wrapPage .timeTable .tableHeader .headerEdit {
+  line-height: 1.5rem;
+  font-size: 0.36rem;
+  background: url('../img/lifetable/u1283.png') no-repeat left center;
+  background-size: 0.4rem;
+  padding-left: 0.53333333rem;
+}
+.wrapPage .timeTable .tableHeader .headerCancel {
+  line-height: 1.5rem;
+  font-size: 0.36rem;
+  background: url('../img/lifetable/u7995.png') no-repeat left center;
+  background-size: 0.4rem;
+  padding-left: 0.53333333rem;
+}
+.wrapPage .timeTable .tableDetails {
+  width: 100%;
+  background-color: #fff;
+}
+.wrapPage .timeTable .tableDetails .surTime {
+  width: 100%;
+  min-height: 1rem;
+  border-bottom: 0.02666667rem dashed #f2f2f2;
+}
+.wrapPage .timeTable .tableDetails .surTime .timeHeaderImg {
+  float: left;
+  padding: 0.3rem 0 0.3rem 0.5rem;
+  width: 45%;
+  border-right: 0.02666667rem dashed #f2f2f2;
+}
+.wrapPage .timeTable .tableDetails .surTime .timeHeaderImg img {
+  width: 0.8rem;
+  float: left;
+}
+.wrapPage .timeTable .tableDetails .surTime .timeHeaderImg p {
+  float: left;
+  font-size: 0.38rem;
+  padding-left: 0.26666667rem;
+  padding-top: 0.16rem;
+}
+.wrapPage .timeTable .tableDetails .surTime .timeArrange {
+  float: right;
+  width: 55%;
+  text-align: center;
+  padding-top: 0.4rem;
+}
+.wrapPage .timeTable .tableDetails .surTime .timeArrange .timeD .timeLeft {
+  width: 33.33%;
+  color: #ff9963;
+  margin-left: 0.5rem;
+  font-size: 0.48rem;
+  font-weight: bold;
+}
+.wrapPage .timeTable .tableDetails .surTime .timeArrange .timeD .timeRight {
+  width: 40%;
+  color: #ff9963;
+  font-size: 0.48rem;
+  font-weight: bold;
+  margin-right: 0.3rem;
+}
+.wrapPage .timeTable .tableDetails .surTime .timeArrange .timeD .timeCol {
+  width: 33.33%;
+  background: url('../img/lifetable/u2041.png') no-repeat right center;
+  padding-left: 0.26666667rem;
+  color: #ff9963;
+}
+.wrapPage .timeTable .tableDetails .tableImg {
+  width: 100%;
+  height: 0.08rem;
+}
+.wrapPage .timeTable .tableDetails .timeNit {
+  border-bottom: none;
+}
+.wrapPage .timeTable .tableDetails .timeNit .timeHeaderImg {
+  padding: 0.2rem 0 0.3rem 0.5rem;
+}
+.wrapPage .timeTable .tableDetails .timeNit .timeArrange {
+  padding-top: 0.25rem;
+}
+.wrapPage .timeTable .tableEdit {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+}
+.wrapPage .timeTable .tableEdit .surTime {
+  width: 100%;
+  min-height: 1rem;
+  border-bottom: 0.02666667rem dashed #f2f2f2;
+}
+.wrapPage .timeTable .tableEdit .surTime .timeHeaderImg {
+  float: left;
+  padding: 0.3rem 0 0.3rem 0.5rem;
+  width: 45%;
+  border-right: 0.02666667rem dashed #f2f2f2;
+}
+.wrapPage .timeTable .tableEdit .surTime .timeHeaderImg img {
+  width: 0.8rem;
+  float: left;
+}
+.wrapPage .timeTable .tableEdit .surTime .timeHeaderImg p {
+  float: left;
+  font-size: 0.38rem;
+  padding-left: 0.26666667rem;
+  padding-top: 0.16rem;
+}
+.wrapPage .timeTable .tableEdit .surTime .timeArrange {
+  float: right;
+  width: 55%;
+  text-align: center;
+  padding-top: 0.4rem;
+}
+.wrapPage .timeTable .tableEdit .surTime .timeArrange .timeD .timeLeft {
+  width: 33.33%;
+  color: #ff9963;
+  font-size: 0.48rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+.wrapPage .timeTable .tableEdit .surTime .timeArrange .timeD .timeRight {
+  width: 40%;
+  color: #ff9963;
+  font-size: 0.48rem;
+  font-weight: bold;
+  background: url('../img/lifetable/u7957.png') no-repeat right center;
+  background-size: 0.5rem;
+  padding-right: 0.4rem;
+  margin-right: 0.4rem;
+}
+.wrapPage .timeTable .tableEdit .surTime .timeArrange .timeD .arranImg {
+  background: url('../img/lifetable/u7957.png') no-repeat right center;
+  background-size: 0.5rem;
+  padding-right: 1.8rem;
+  margin-left: 0.7rem;
+}
+.wrapPage .timeTable .tableEdit .surTime .timeArrange .timeD .timeCol {
+  width: 33.33%;
+  background: url('../img/lifetable/u2041.png') no-repeat right center;
+  padding-left: 0.26666667rem;
+  color: #ff9963;
+}
+.wrapPage .timeTable .tableEdit .tableImg {
+  width: 100%;
+  height: 0.08rem;
+}
+.wrapPage .timeTable .tableEdit .timeNit {
+  border-bottom: none;
+}
+.wrapPage .timeTable .tableEdit .timeNit .timeHeaderImg {
+  padding: 0.2rem 0 0.3rem 0.5rem;
+}
+.wrapPage .timeTable .tableEdit .timeNit .timeArrange {
+  padding-top: 0.25rem;
+}
+.wrapPage .timeTable .joinBtn {
+  width: 70%;
+  padding: 0.21333333rem 0;
+  margin: 0.5rem auto 0.4rem;
+  text-align: center;
+  -webkit-border-radius: 1.33333333rem;
+  -moz-border-radius: 1.33333333rem;
+  -ms-border-radius: 1.33333333rem;
+  border-radius: 1.33333333rem;
+  background-color: #ff9900;
+  color: #fff;
+  font-size: 0.4rem;
+}
+.wrapPage .timeTable .submitBtn {
+  width: 70%;
+  padding: 0.21333333rem 0;
+  margin: 0.5rem auto 0.4rem;
+  text-align: center;
+  -webkit-border-radius: 1.33333333rem;
+  -moz-border-radius: 1.33333333rem;
+  -ms-border-radius: 1.33333333rem;
+  border-radius: 1.33333333rem;
+  background-color: #ff9900;
+  color: #fff;
+  font-size: 0.4rem;
+}
+.wrapPage .timeTable .btnText {
+  font-size: 0.3rem;
+  color: #AEAEAE;
+}

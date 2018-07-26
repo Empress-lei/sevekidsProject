@@ -1,0 +1,138 @@
+.choiceDate {
+    display: block;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.4);
+  .dateBox {
+        width: 100%;
+        height: 7rem;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        // <!--顶部的确定和时间-->
+        .dateHeader {
+            width: 100%;
+            height: 1.5rem;
+            padding: 0 15/37.5rem;
+            color: #fff;
+            background-color: rgba(255, 153, 51, 1);
+            .headerLeft {
+                float: left;
+                line-height: 1.5rem;
+                font-size: 0.4rem;
+            }
+            .headerRight {
+                float: right;
+                font-size: 0.4rem;
+                padding: 0.1rem 0.4rem;
+                margin-top: 0.35rem;
+                border-radius: 3/37.5rem;
+                border: 1/37.5rem solid #fff;
+                .startTimeCurrent {
+
+                }
+                .endTimeCurrent {
+
+                }
+            }
+        }
+        .dateTime {
+            width: 90%;
+            margin: 0 auto;
+            height: auto;
+            // 开始结束文字
+            .timeText {
+                width: 100%;
+                height: 1rem;
+                line-height: 1rem;
+                text-align: center;
+                font-size: 0.36rem;
+                border-bottom: 1/37.5rem solid #f2f2f2;
+                .startTime {
+                    float: left;
+                    width: 30%;
+                }
+                img {
+                    float: left;
+                    padding: 0.5rem  1rem;
+                }
+                .endTime {
+                    float: right;
+                    width: 30%;
+                }
+            }
+            // 左右时间
+            .timeNum {
+                width: 100%;
+                padding-top: 15/37.5rem;
+                min-height: 5.5rem;
+                .startNum {
+                    float: left;
+                    width: 50%;
+                    width: 3rem;
+                    height: 4rem;
+                    text-align: center;
+                    overflow: hidden;
+                    position: relative;
+                    top: 50%;
+                    z-index: 99;
+                    .startHour {
+                        float: left;
+                        font-size: 0.4rem;
+                        width: 47.5%;
+                        line-height: 1rem;
+                    }
+                    .startMinute {
+                        float: left;
+                        font-size: 0.4rem;
+                        width: 47.5%;
+                        line-height: 1rem;
+                    }
+                    .colon {
+                        float: left;
+                        width: 5%;
+                        // font-size: 0.4rem;
+                        line-height: 1rem;
+                    }
+                }
+                .endNum {
+                        float: right;
+                        width: 50%;
+                        width: 3rem;
+                        height: 4rem;
+                        text-align: center;
+                        overflow: hidden;
+                        position: relative;
+                        top: 50%;
+                        z-index: 99;
+                     .endHour {
+                        float: left;
+                        font-size: 0.4rem;
+                        width: 47.5%;
+                        line-height: 1rem;
+                    }
+                    .endMinute {
+                        float: left;
+                        font-size: 0.4rem;
+                        width: 47.5%;
+                        line-height: 1rem;
+                    }
+                    .colon {
+                        float: left;
+                        width: 5%;
+                        // font-size: 0.4rem;
+                        line-height: 1rem;
+                    }
+                }
+                .slide {
+                    color: #ff9963;
+                }
+            }
+        }
+    }
+}

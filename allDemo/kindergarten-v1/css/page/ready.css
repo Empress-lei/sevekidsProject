@@ -1,0 +1,45 @@
+.wrap .public {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wrap .public .getReady {
+  width: 100%;
+}
+.wrap .public .getReady .readyTit {
+  text-align: center;
+}
+.wrap .public .getReady .readyTit h2 {
+  color: #000;
+  font-size: 0.93333333rem;
+}
+.wrap .public .getReady .readyTit p {
+  color: #A1A1A1;
+  padding: 0.4rem;
+}
+.wrap .public .getReady .readyContent {
+  width: 100%;
+  margin-top: 0.93333333rem;
+}
+.wrap .public .getReady .readyContent .content {
+  width: 100%;
+}
+.wrap .public .getReady .readyContent .content h3 {
+  color: #000;
+  font-size: 0.58666667rem;
+  font-style: oblique;
+  font-weight: 600;
+}
+.wrap .public .getReady .readyContent .content p {
+  color: #000;
+  font-size: 0.37333333rem;
+  margin: 0.4rem 0;
+}
+.wrap .public .getReady .readyContent .conTwo {
+  margin-top: 0.66666667rem;
+}

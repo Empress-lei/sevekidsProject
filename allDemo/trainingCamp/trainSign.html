@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--忽略页面中的邮箱格式为邮箱-->
+		<meta name="format-detection" content="email=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no,address=no,email=no">
+		<meta name="keywords" content="喵姐,喵姐早教说,0到6岁早期教育,家庭教育,家长教育,父母课堂,育儿知识,儿童教育,母婴育儿,">
+		<meta name="description" content="喵姐早教说是喵姐高寿岩创办的为家庭教育提供专业靠谱的0到6岁早期教育、育儿知识的平台。">
+		<title>喵姐早教说</title>
+		<link rel="stylesheet" href="./css/base.css">
+		<link rel="stylesheet" href="./css/trainCamp.css">
+		<link rel="stylesheet" href="./css/swiper-3.4.2.min.css" />
+		<script src="./js/jquery-2.1.1.min.js"></script>
+		<!--滑动-->
+		<script src="./js/swipe.js"></script>
+		<!--音频-->
+		<script src="./js/audio2.js"></script>
+		<!--页面js-->
+		<script src="./js/train.js"></script>
+		<!--底部的导航-->
+		<script src="./js/foot_nav.js"></script>
+		<!--图片缩放-->
+		<script src="./js/lightbox.js"></script>
+	</head>
+
+	<body  style="font-family: 'myFont';">
+		<!--领取我的专属海报弹层-->
+		<div class="posterShare">
+			<div class="shareBox">
+				<div class="conThree">
+					<h3 class="conThreeTit">想听任务指导音频？</h3>
+					<h3 class="conThreeTit1">想看任务训练原文？？</h3>
+					<h3 class="conThreeTit1 conThreeTit2">想打卡领金币？？？</h3>
+					<div class="seriousPrize clearfix">
+						<span class="reward fl">【欢乐打卡方法】</span>
+						<img src="./img/u2457.png" alt="" class="fl">
+					</div>
+					<p class="promptTxt">领取你的专属海报，邀请 <span>3位</span> 小伙伴扫描海报二维码，本公众号会在成功后自动发送任务启动通道</p>
+					<ul class="fundvimplement clearfix">
+		    			<li><img src="./img/u549.jpg" alt=""></li>
+		    			<li><img src="./img/u751.png" alt=""></li>
+		    			<li><img src="./img/u747.jpg" alt=""></li>
+		    		</ul>
+					<a href="#" class="planJoin">领取我的专属海报</a>
+				</div>
+				<img src="./img/u4933.png" alt="" class="conThreeBotImg">
+			</div>
+		</div>
+		<!--记录宝宝成长变化-->
+		<div class="changeShare">
+			<div class="shareBox">
+				<div class="conThree">
+					<div class="tltle clearfix">
+						<div class="fl">
+							<h3 class="fl titleH3">记录宝贝成长变化</h3>
+							<img src="./img/u680.png" alt="" class="fl titleImg">
+						</div>
+						<img src="./img/black_close.png" alt="" class="conThreeBotImg fr">
+					</div>
+					<ul class="btnEvaluate clearfix">
+						<li class="grayBtn">有进步，为TA感到高兴！</li>
+						<li class="grayBtn">今天是一个好的开始！</li>
+						<li class="grayBtn">表现还可以，我们继续努力！</li>
+						<li class="grayBtn">虽然没有做好，但是会坚持下去。</li>
+						<li class="grayBtn">希望每天都跟今天一样开心！</li>
+					</ul>
+					<div class="font13">
+						<textarea class="txtarebox" onkeyup="fn()" onblur="fn()" rows="1" name="questionTxt" maxlength="50" placeholder="标签不合适？那就写下来..."></textarea>
+						<p class="length" style="display: none;"><span>0</span>/50</p>
+					</div>
+					<p class="textChange">完成今日打卡可领取 3 枚成长基金币，<br />分享还可以领取更多基金币换取“现金红包”哦！</p>
+					<a href="#rankingTxt" class="planJoin planJoinBtn">打卡领金币</a>
+				</div>
+				
+			</div>
+		</div>
+		<!--恭喜你，首次打卡成功-->
+		<div class="firstPunch">
+			<div class="punchShare">
+				<img src="./img/black_close.png" alt="" class="conThreeBotImg">
+				<h3 class="punchTit">恭喜你，首次打卡成功</h3>
+				<p class="punchText">获得一个价值12枚基金币的现金红包</p>
+				<img src="./img/u276.png" alt="" class="punchImg">
+				<div class="punchCord clearfix">
+					<img src="./img/cord.jpg" alt="" class="QRcord fl">
+					<div class="cordRight fl">
+						<p class="rightTit">红包已到账</p>
+						<p class="rightText">长按识别图片二维码，领取现金红包</p>
+					</div>
+				</div>
+				<p class="punchBot">现金随机，最高可领99元，天天都有</p>
+			</div>
+		</div>
+		<!--领红包-->
+		<div class="receiveRed">
+			<div class="receiveShare">
+				<div class="receiveTop">
+					<img src="./img/red.png" alt="" class="receiveImg">
+				</div>
+				<div class="receiveBottom">
+					<h3>恭喜你！</h3>
+					<p class="receiveSucc">成功领取 5 枚成长基金币</p>
+					<p class="receiveFri">分享活动给好友，可获得更多基金币并兑换现金红包</p>
+					<a href="javascript:void(0);" class="exchangeBtn">兑换</a>
+					<a href="javascript:void(0);" class="receiveBtn">继续领红包</a>
+				</div>
+			</div>
+			<img src="./img/u4933.png" alt="" class="receiveBotImg">
+		</div>
+		<!--提示用户当前有正在进行中的活动-->
+		<div class="currentShare">
+			<div class="shareBox">
+				<div class="conThree">
+					<div class="tltle clearfix">
+						<img src="./img/tx-2.png" alt=""  class="fl promptLeft">
+						<div class="fl promptText">
+							<h3 class="titleH3">提示</h3>
+							<p>亲，您有一个正在报名中的活动哦，每周只允许参与一项训练，请确认后做出选择。</p>
+						</div>
+					</div>
+					<div class="signImg">
+	                    <img src="./img/u549.jpg" alt="" class="conImgBg">
+						<div class="conText">
+							<h3 class="textTitle">7天，爱上喝白开水天，爱上喝白开水</h3>
+							<p class="textDate">再邀请 <span>2位</span> 好友就可以获得打卡资格啦</p>
+						</div>
+						<img src="./img/u1698.png" alt=""  class="promptImg">
+                	</div>
+                	<p class="promptClear">如不想参与正在报名中的训练项目，之前邀请好友记录将被清空，不可做为新项目报名所用，您确定要继续吗？</p>
+                	<ul class="promptBtn">
+                		<li><a href="javascript:void(0);" class="btnLeft">要换训练班</a></li>
+                		<li><a  href="javascript:void(0);" class="btnRight">不想换了</a></li>
+                	</ul>
+				</div>
+			</div>
+		</div>
+		<!--打卡结束的弹层-->
+		<div class="signShare">
+			<div class="shareBox">
+				<div class="conThree">
+					<img src="./img/u2651.png" alt=""  class="conImg">
+					<p class="conTxt">你还记得吗？不知不觉我们已经相处7天啦看到这么努力的你，我相信宝宝的改变也一定超赞，</p>
+					<p class="conTxt1">现在，</p>
+					<p class="conTxt2">奖励 <span>10枚</span> 基金币给你，</p>
+					<p class="conTxt">就是现在！！！</p>
+					<a href="#" class="planJoin" id="btnReceive">领 取</a>
+					<p class="btnTxt">别忘了，好内容值得分享，分享越多奖励越多哦</p>
+				</div>
+			</div>
+		</div>
+		<!--打卡规则说明-->
+		<div class="ruleShare">
+			<div class="shareBox">
+				<div class="conThree">
+					<h3 class="ruleTitle">打卡规则：</h3>
+					<p class="ruleList">1. 每天打卡可以领取到日期对应的金币;</p>
+					<p class="ruleList">2. 连续打卡7天，任务结束时会获得额外大奖（10枚基金币</p>
+					<p class="ruleList">3. 任务结束后如果训练效果不佳，可以选择“重启任务，重启任务打卡日无基金币奖励，但是连续7天一样会有额外大奖</p>
+					<a href="javascript:void(0);" class="knowBtnJoin">知道啦</a>
+				</div>
+			</div>
+		</div>
+		<!--打卡成功弹层-->
+		<div class="succShare">
+			<img src="./img/wanc-6.png" alt=""  class="fl succImg">
+			<div class="fr succRight">
+				<h3>打卡成功！</h3>
+				<p>成功为宝贝领取1枚成长基币，我们与你一起期待宝贝的成长变化，别忘了按时来领金币哦！</p>
+			</div>
+		</div>
+		<!--分享提示蒙层-->
+		<div class="promptShare">
+			<img src="./img/arrowWhite.png" alt="指示箭头"  class="arrowWhiteImg">
+			<p class="promptP">点击这里，邀(fen)请(xiang)好友免费听<br /><br />还有现金红包等你拿，等什么？开始吧！</p>
+		</div>
+		<!--蒙层引导位置介绍-->
+		<div class="guideShareClass">
+			<div class="guideBox">
+				<ul class="guideUl">
+					<li>
+						<span class="smallCir"></span>
+						<p class="classCir">课程介绍</p>
+					</li>
+					<li>
+						<span class="smallCir"></span>
+						<p>day <span>01</span></p>
+					</li>
+					<li>
+						<span class="bigCir"></span>
+						<p class="centerP">day <span>02</span></p>
+					</li>
+					<li>
+						<span class="grayCir"></span>
+						<p>day <span>03</span></p>
+					</li>
+					<li>
+						<span class="grayCir"></span>
+						<p>day <span>04</span></p>
+					</li>
+				</ul>
+				<img src="./img/u503.png" alt="" class="guideImg">
+			</div>
+			<p class="posText">课表挪位置啦~</p>
+			<p class="posText1">一天一节课，点击切换<br>左右滑动查看更多课程哦~~</p>
+			<a href="javascript:void(0)" class="continueBtn">继续&nbsp;&nbsp;&nbsp;></a>
+		</div>
+		<!--课程-->
+		<div class="classShare">
+			<div class="guideBox">
+				<div class="play"></div>
+				<div class="section">
+					<h3 class="sectionTxt">认识情绪，情绪会主动告诉你该怎么办</h3>
+					<p class="audioContTime">03:54 | 乔乔老师</p>
+				</div>
+			</div>
+			<p class="posText">点击播放器就可以听乔乔老师讲课啦 <br> 听课期间别忘了仔细看教材哦~</p>
+			<a href="javascript:void(0)" class="continueBtn">继续&nbsp;&nbsp;&nbsp;></a>
+		</div>
+		<!--打卡位置-->
+		<div class="cardShare">
+			<a href="javascript:void(0)" class="continueBtn">继续&nbsp;&nbsp;&nbsp;></a>
+			<p class="cardText">打卡搬家啦~  在这里<br>记住，每天打卡都可以领现金红包的哈！！！</p>
+			<div class="cardNav">
+				<img src="./img/navImg/card.png" alt="" class="fundImg">
+				<p class="navText">打卡</p>
+			</div>
+			<img src="./img/arrowWhite.png" alt="指示箭头"  class="arrowWhiteImg">
+		</div>
+		<!--基金位置-->
+		<div class="fundPosShare">
+			<a href="javascript:void(0)" class="continueBtn">继续&nbsp;&nbsp;&nbsp;></a>
+			<p class="cardText">这里就是你的基金库啦，<br>每一枚基金币都可以兑换现金哒~
+			</p>
+			<div class="cardNav">
+				<img src="./img/navImg/money.png" alt="" class="fundImg">
+				<p class="navText">成长基金</p>
+			</div>
+			<img src="./img/arrowWhite.png" alt="指示箭头"  class="arrowWhiteImg">
+		</div>
+		<!--红包位置-->
+		<div class="redBoxShare">
+			<a href="javascript:void(0)" class="continueBtn">学会啦</a>
+			<p class="cardText">
+				点击这里，可以免费请朋友听吼 <br>重要的事情说3遍<br>还有红包可以领！<br>还有红包可以领！！<br>还有红包可以领！！！<br>
+			</p>
+			<div class="cardNav">
+				<img src="./img/navImg/rednav.png" alt="" class="fundImg">
+				<p class="navText">请朋友听</p>
+			</div>
+			<img src="./img/arrowWhite.png" alt="指示箭头"  class="arrowWhiteImg">
+		</div>
+		<!--打卡成功弹层提示-->
+		<div class="cardSussShare">
+			<div class="ShareBox">
+				<div class="cardSuss">
+					<img src="./img/u1615.png" alt="">
+					<p>2017.10.12</p>
+					<p>完成第3天的学习</p>
+					<p class="cardTxt">搞懂背后的需求之后，是不是心中有种小明亮的感觉，这就对了，但是这个问题是明亮了，怎么做还有点懵懂，坚持完成后面的任务，你的心中会更通透。</p>
+					<div class="tearch clearfix">
+						<img src="./img/u1619.png" alt="" class="fr">
+						<p class="fr">乔乔老师</p>
+						<img src="./img/u1621.png" alt="" class=fr>
+					</div>
+					<p class="shareText">好知识值得被分享</p>
+					<a href="javascript:void(0)" class="invitationBtn">邀请好友一起学</a>
+				</div>
+			</div>
+			<img src="./img/u1627.png" alt="" class="conThreeBotImg">
+		</div>
+		<div class="wrapPage">
+			<div class="trainSign">
+				<div class="signImg" id="joinFixed">
+					<img src="./img/list/cry.jpeg" alt="" class="conImgBg">
+				</div>
+				<div class="datenum">
+					<div class="swiper-container swiper-container-horizontal">
+				        <div class="swiper-wrapper" >
+				        	<div class="swiper-slide cst" >
+								<span class="spanCir grayCir"></span>
+								<!--<p class="classCir">课程介绍 <span class="dateNum"></span></p>-->
+				            </div>
+				            <div class="swiper-slide cst" >
+								<span class="spanCir grayCir"></span>
+				            	<!--<p>day <span class="dateNum">01</span></p>-->
+				            </div>
+				            <div class="swiper-slide cst">
+								<span class="spanCir grayCir"></span>
+				            	<!--<p>day <span class="dateNum">02</span></p>-->
+				            </div>
+				            <div class="swiper-slide cst">
+								<span class="spanCir grayCir"></span>
+				            	<!--<p>day <span class="dateNum">03</span></p>-->
+				            </div>
+				            <div class="swiper-slide cst">
+								<span class="spanCir grayCir"></span>
+				            	<!--<p>day <span class="dateNum">04</span></p>-->
+				            </div>
+				            <div class="swiper-slide cst">
+								<span class="spanCir grayCir"></span>
+				            	<!--<p>day <span class="dateNum">05</span></p>-->
+				            </div>
+				            <div class="swiper-slide cst">
+								<span class="spanCir grayCir"></span>
+				            	<!--<p>day <span class="dateNum">06</span></p>-->
+				            </div>
+				            <div class="swiper-slide cst">
+								<span class="spanCir grayCir"></span>
+				            	<!--<p>day <span class="dateNum">07</span></p>-->
+				            </div>
+				            <div class="swiper-slide lastS otherSize cst">
+								<span class="spanCir grayCir"></span>
+								<!--<p>成绩单</p>-->
+							</div>
+				        </div>
+						<img src="./img/u503.png" alt="" class="guideImg">
+					</div>
+					<div class="fontDate">
+						<div class="swiper-wrapper" >
+							<div class="swiper-slide cst" >
+								<p class="classCir">课程介绍 <span class="dateNum"></span></p>
+							</div>
+							<div class="swiper-slide cst" >
+								<p>day <span class="dateNum">01</span></p>
+							</div>
+							<div class="swiper-slide cst">
+								<p>day <span class="dateNum">02</span></p>
+							</div>
+							<div class="swiper-slide cst">
+								<p>day <span class="dateNum">03</span></p>
+							</div>
+							<div class="swiper-slide cst">
+								<p>day <span class="dateNum">04</span></p>
+							</div>
+							<div class="swiper-slide cst">
+								<p>day <span class="dateNum">05</span></p>
+							</div>
+							<div class="swiper-slide cst">
+								<p>day <span class="dateNum">06</span></p>
+							</div>
+							<div class="swiper-slide cst">
+								<p>day <span class="dateNum">07</span></p>
+							</div>
+							<div class="swiper-slide lastS otherSize cst">
+								<p>成绩单</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="test">
+				    <div class="swiper-wrapper autoheight1"  id="rankingTxt">
+				    	<div class="swiper-slide csf listDetails">
+				        	<!--音频-->
+			                <div class="detailCon">
+								<div class="contentTop clearfix">
+									<img src="./img/details_img/curr.png" alt="">
+									<div class="topText">
+										<h2>课程简介</h2>
+										<p class="contentTaskDetail">学会处理孩子哭闹背后的各种需求</p>
+									</div>
+								</div>
+								<div class="contentTop clearfix">
+									<img src="./img/details_img/targetPeo.png" alt="">
+									<div class="topText">
+										<h2>目标人群</h2>
+										<p class="contentTaskDetail">全天下有娃的爹妈</p>
+									</div>
+								</div>
+								<div class="contentTop clearfix">
+									<img src="./img/details_img/problem.png" alt="">
+									<div class="topText">
+										<h2>解决问题</h2>
+										<p class="contentTaskDetail">
+											有娃的地方就会有哭闹，所有的父母几乎都会为这个问题而发愁，
+											<br />
+											因此本课程旨在通过7天的小课堂学习，让你一秒钟读懂孩子为什么哭闹，然后学会冷静应对处理，不再因为孩子哭闹而抓狂。
+											<br />
+											<br />
+											第一天：读懂孩子哭闹背后的需求
+											<br />
+											第二天：搞定过度需要关注的需求
+											<br />
+											第三天：搞定争夺权利的需求
+											<br />
+											第四天：搞定破坏性的报复需求
+											<br />
+											第五天：搞定啥都说不我行的需求
+											<br />
+											第六天：切断情绪反应链终止哭闹
+											<br />
+											第七天：吐血绝招让孩子不哭不闹
+										</p>
+									</div>
+								</div>
+								<!--学习奖励-->
+								<div class="contentTop clearfix">
+									<img src="./img/details_img/reward.png" alt="">
+									<div class="topText">
+										<h2>学习奖励</h2>
+										<div class="studyContent clearfix">
+											<span class="diamond fl">◆</span>
+											<span class="contentText fl">
+												完成“听课 & 打卡”，即可领取当天对应基金币奖励，打卡越多，奖励越大
+											</span>
+										</div>
+										<div class="studyContent clearfix">
+											<span class="diamond fl">◆</span>
+											<span class="contentText fl">
+												分享海报邀请好友打卡，好友打卡成功，领取10枚基金币
+											</span>
+										</div>
+										<div class="studyContent clearfix">
+											<span class="diamond fl">◆</span>
+											<span class="contentText fl">
+												连续打卡一周，领取10没基金币奖励
+											</span>
+										</div>
+										<div class="studyContent clearfix">
+											<span class="diamond fl">◆</span>
+											<span class="contentText fl">
+												基金币可以兑换现金！！！
+											</span>
+										</div>
+									</div>
+								</div>
+								<img src="./img/bannerVip.jpg" alt="" class="bannerVipImg">
+								<p class="receiveText">领取海报，邀请好友一起学习，棒棒哒~</p>
+								<a href="javascript:void(0);" class="receiveImage">领取海报</a>
+							</div>
+				        </div>
+				        <div class="swiper-slide csf">
+				        	<!--音频-->
+			                <div class="audioText">
+			                	<div class="audioDiv clearfix">
+			                		<div class="playBtn ui-play play" id="playBtn1"></div>
+			                		<div class="section">
+			                			<h3 class="sectionTxt">1.认识情绪，情绪会主动告诉你该怎么办</h3>
+			                			<p class="audioContTime">03:54 | 乔乔老师</p>
+										<div style="display: none;">
+											<div class="audioCont topaudio" id="audioCont1">
+												<!--音频标签-->
+												<audio preload="auto" class="audio" id="audio1" src="./js/audio.mp3"></audio>
+												<!--上面的进度条，时间-->
+												<div class="topaudioBox">
+													<div class="audioLine" id="audioLine1">
+														<!--进度条上的小圆点-->
+														<span class="lineaft"></span>
+														<div class="active"></div>
+														<!--进度条上的小圆点-->
+														<a href="javascript:void(0);" class="circle" id="drag1"></a>
+													</div>
+												</div>
+											</div>
+											<div class="timeNum" id="timeNum1"> 
+												<!--开始时间-->
+												<span class="txt fl">00:00</span>
+												<!--结束时间-->
+												<span class="txt2 fr" data-sec="0">00:03</span>
+											</div>
+										</div>
+									</div>
+			                	</div>
+			                	<ul class="textUl">
+			                		<li class="botLeft1">任务目标：认识孩子哭闹过程中的各种情绪</li>
+			                		<li class="botLeft1">听课准备：一支笔，一个小本，一个小马扎，一杯水</li>
+			                		<li class="botLeft1">环境要求：希望你静下心来听这节课，效果会更好。</li>
+			                		<li class="hiddenTxt">
+			                			<p class="txtContent">
+			                				1、搞定的步骤
+			                				<br />
+				                			<img src="./img/u553.png"  alt="点击查看大图">
+				                			2、课后作业：
+				                			<br />
+				                			请你深思熟虑一下，
+				                			<br />
+			                				你对孩子的关注够么？
+				                			<br />
+				                			有哪些地方做的还不够好？
+				                			<br />
+				                			哪些地方还可以改进一下？
+			                			</p>
+			                		</li>
+			                	</ul>
+			                	<img src="./img/hline.png" alt="" class="hlineImg">
+			                	<img src="./img/bannerVip.jpg" alt="" class="bannerVipImg">
+			                </div>
+				        </div>
+						<div class="swiper-slide csf">
+				        	<!--音频-->
+			                <div class="audioText">
+			                	<div class="audioDiv clearfix">
+			                		<div class="playBtn  ui-play play" id="playBtn2"></div>
+			                		<div class="section">
+			                			<h3 class="sectionTxt">2.学会穿鞋子</h3>
+			                			<p class="audioContTime">08:19 | 乔乔老师</p>
+										<div style="display: none;">
+											<div class="audioCont topaudio" id="audioCont2">
+												<!--音频标签-->
+												<audio preload="auto" class="audio" id="audio2" src="./js/dong.mp3"></audio>
+												<!--上面的进度条，时间-->
+												<div class="topaudioBox">
+													<div class="audioLine" id="audioLine2">
+														<!--进度条上的小圆点-->
+														<span class="lineaft"></span>
+														<div class="active"></div>
+														<!--进度条上的小圆点-->
+														<a href="javascript:void(0);" class="circle" id="drag2"></a>
+													</div>
+												</div>
+											</div>
+											<div class="timeNum" id="timeNum2"> 
+												<!--开始时间-->
+												<span class="txt fl">00:00</span>
+												<!--结束时间-->
+												<span class="txt2 fr" data-sec="0">08:19</span>
+											</div>
+										</div>
+									</div>
+			                	</div>
+			                	<ul class="textUl">
+			                		<li class="botLeft1">任务目标：认识孩子哭闹过程中的各种情绪</li>
+			                		<li class="botLeft1">听课准备：一支笔，一个小本，一个小马扎，一杯水</li>
+			                		<li class="botLeft1">环境要求：希望你静下心来听这节课，效果会更好。</li>
+			                		<li class="hiddenTxt">
+			                			<p class="txtContent">
+			                				1、搞定的步骤
+			                				<br />
+				                			<img src="./img/u553.png"  alt="点击查看大图">
+				                			2、课后作业：
+				                			<br />
+				                			请你深思熟虑一下，
+				                			<br />
+			                				你对孩子的关注够么？
+				                			<br />
+				                			有哪些地方做的还不够好？
+				                			<br />
+				                			哪些地方还可以改进一下？
+			                			</p>
+			                		</li>
+			                	</ul>
+			                	<img src="./img/hline.png" alt="" class="hlineImg">
+			                	<img src="./img/bannerVip.jpg" alt="" class="bannerVipImg">
+			                </div>
+				        </div>
+						<div class="swiper-slide csf">
+				        	<!--音频-->
+			                <div class="audioText">
+			                	<div class="audioDiv clearfix">
+			                		<div class="lock" style="display: none;"></div>
+			                		<div class="playBtn ui-play play" id="playBtn3" ></div>
+			                		<div class="section">
+			                			<h3 class="sectionTxt">3.学会穿鞋子</h3>
+			                			<p class="audioContTime">03:54 | 乔乔老师</p>
+										<div style="display: none;">
+											<div class="audioCont topaudio" id="audioCont3">
+												<!--音频标签-->
+												<audio preload="auto" class="audio" id="audio3" src="./js/dong.mp3"></audio>
+												<!--上面的进度条，时间-->
+												<div class="topaudioBox">
+													<div class="audioLine"  id="audioLine3">
+														<!--进度条上的小圆点-->
+														<span class="lineaft"></span>
+														<div class="active"></div>
+														<!--进度条上的小圆点-->
+														<a href="javascript:void(0);" class="circle" id="drag3"></a>
+													</div>
+												</div>
+											</div>
+											<div class="timeNum" id="timeNum3"> 
+												<!--开始时间-->
+												<span class="txt fl">00:00</span>
+												<!--结束时间-->
+												<span class="txt2 fr" data-sec="0">08:19</span>
+											</div>
+										</div>
+									</div>
+			                	</div>
+			                	<ul class="textUl">
+			                		<li class="botLeft1">任务目标：认识孩子哭闹过程中的各种情绪</li>
+			                		<li class="botLeft1">听课准备：一支笔，一个小本，一个小马扎，一杯水</li>
+			                		<li class="botLeft1">环境要求：希望你静下心来听这节课，效果会更好。</li>
+			                		<li class="hiddenTxt">
+			                			<p class="txtContent">
+			                				1、搞定的步骤
+			                				<br />
+				                			<img src="./img/u553.png"  alt="点击查看大图">
+				                			2、课后作业：
+				                			<br />
+				                			请你深思熟虑一下，
+				                			<br />
+			                				你对孩子的关注够么？
+				                			<br />
+				                			有哪些地方做的还不够好？
+				                			<br />
+				                			哪些地方还可以改进一下？
+			                			</p>
+			                		</li>
+			                	</ul>
+			                	<img src="./img/hline.png" alt="" class="hlineImg">
+			                	<img src="./img/bannerVip.jpg" alt="" class="bannerVipImg">
+			                </div>
+				        </div>
+						<div class="swiper-slide csf">
+				        	<!--音频-->
+			                <div class="audioText">
+			                	<div class="audioDiv clearfix">
+			                		<div class="lock"></div>
+			                		<div class="playBtn ui-play play" id="playBtn4" style="display: none;"></div>
+			                		<div class="section">
+			                			<h3 class="sectionTxt">4.学会穿鞋子</h3>
+			                			<p class="audioContTime">03:54 | 乔乔老师</p>
+										<div style="display: none;">
+											<div class="audioCont topaudio" id="audioCont4">
+												<!--音频标签-->
+												<audio preload="auto" class="audio" id="audio4" src="./js/dong.mp3"></audio>
+												<!--上面的进度条，时间-->
+												<div class="topaudioBox">
+													<div class="audioLine"  id="audioLine4">
+														<!--进度条上的小圆点-->
+														<span class="lineaft"></span>
+														<div class="active"></div>
+														<!--进度条上的小圆点-->
+														<a href="javascript:void(0);" class="circle" id="drag4"></a>
+													</div>
+												</div>
+											</div>
+											<div class="timeNum" id="timeNum4"> 
+												<!--开始时间-->
+												<span class="txt fl">00:00</span>
+												<!--结束时间-->
+												<span class="txt2 fr" data-sec="0">08:19</span>
+											</div>
+										</div>
+									</div>
+			                	</div>
+			                	<ul class="textUl">
+			                		<li class="botLeft1">任务目标：认识孩子哭闹过程中的各种情绪</li>
+			                		<li class="botLeft1">听课准备：一支笔，一个小本，一个小马扎，一杯水</li>
+			                		<li class="botLeft1">环境要求：希望你静下心来听这节课，效果会更好。</li>
+			                		<li class="hiddenTxt">
+			                			<p class="txtContent">
+			                				1、搞定的步骤
+			                				<br />
+				                			<img src="./img/u553.png"  alt="点击查看大图">
+				                			2、课后作业：
+				                			<br />
+				                			请你深思熟虑一下，
+				                			<br />
+			                				你对孩子的关注够么？
+				                			<br />
+				                			有哪些地方做的还不够好？
+				                			<br />
+				                			哪些地方还可以改进一下？
+			                			</p>
+			                		</li>
+			                	</ul>
+			                	<img src="./img/hline.png" alt=""  class="hlineImg">
+			                	<img src="./img/bannerVip.jpg" alt=""  class="bannerVipImg">
+			                </div>
+				        </div>
+				        <div class="swiper-slide csf">
+				        	<!--音频-->
+			                <div class="audioText">
+			                	<div class="audioDiv clearfix">
+			                		<div class="lock"></div>
+			                		<div class="playBtn ui-play play" id="playBtn5" style="display: none;"></div>
+			                		<div class="section">
+			                			<h3 class="sectionTxt">5.学会穿鞋子</h3>
+			                			<p class="audioContTime">03:54 | 乔乔老师</p>
+										<div style="display: none;"> 
+											<div class="audioCont topaudio" id="audioCont5">
+												<!--音频标签-->
+												<audio preload="auto" class="audio" id="audio5" src="./js/dong.mp3"></audio>
+												<!--上面的进度条，时间-->
+												<div class="topaudioBox">
+													<div class="audioLine" id="audioLine5">
+														<!--进度条上的小圆点-->
+														<span class="lineaft"></span>
+														<div class="active"></div>
+														<!--进度条上的小圆点-->
+														<a href="javascript:void(0);" class="circle" id="drag5"></a>
+													</div>
+												</div>
+											</div>
+											<div class="timeNum" id="timeNum5"> 
+												<!--开始时间-->
+												<span class="txt fl">00:00</span>
+												<!--结束时间-->
+												<span class="txt2 fr" data-sec="0">08:19</span>
+											</div>
+										</div>
+									</div>
+			                	</div>
+			                	<ul class="textUl">
+			                		<li class="botLeft1">任务目标：认识孩子哭闹过程中的各种情绪</li>
+			                		<li class="botLeft1">听课准备：一支笔，一个小本，一个小马扎，一杯水</li>
+			                		<li class="botLeft1">环境要求：希望你静下心来听这节课，效果会更好。</li>
+			                		<li class="hiddenTxt">
+			                			<p class="txtContent">
+			                				1、搞定的步骤
+			                				<br />
+				                			<img src="./img/u553.png"  alt="点击查看大图">
+				                			2、课后作业：
+				                			<br />
+				                			请你深思熟虑一下，
+				                			<br />
+			                				你对孩子的关注够么？
+				                			<br />
+				                			有哪些地方做的还不够好？
+				                			<br />
+				                			哪些地方还可以改进一下？
+			                			</p>
+			                		</li>
+			                	</ul>
+			                	<img src="./img/hline.png" alt=""  class="hlineImg">
+			                	<img src="./img/bannerVip.jpg" alt=""  class="bannerVipImg">
+			                </div>
+				        </div>
+				        <div class="swiper-slide csf">
+				        	<!--音频-->
+			                <div class="audioText">
+			                	<div class="audioDiv clearfix">
+			                		<div class="lock"></div>
+			                		<div class="playBtn ui-play play" id="playBtn6" style="display: none;"></div>
+			                		<div class="section">
+			                			<h3 class="sectionTxt">6.学会穿鞋子</h3>
+			                			<p class="audioContTime">03:54 | 乔乔老师</p>
+										<div style="display: none;">
+											<div class="audioCont topaudio" id="audioCont6">
+												<!--音频标签-->
+												<audio preload="auto" class="audio" id="audio6" src="./js/dong.mp3"></audio>
+												<!--上面的进度条，时间-->
+												<div class="topaudioBox">
+													<div class="audioLine" id="audioLine6">
+														<!--进度条上的小圆点-->
+														<span class="lineaft"></span>
+														<div class="active"></div>
+														<!--进度条上的小圆点-->
+														<a href="javascript:void(0);" class="circle" id="drag6"></a>
+													</div>
+												</div>
+											</div>
+											<div class="timeNum" id="timeNum6"> 
+												<!--开始时间-->
+												<span class="txt fl">00:00</span>
+												<!--结束时间-->
+												<span class="txt2 fr" data-sec="0">08:19</span>
+											</div>
+										</div>
+									</div>
+			                	</div>
+			                	<ul class="textUl">
+			                		<li class="botLeft1">任务目标：认识孩子哭闹过程中的各种情绪</li>
+			                		<li class="botLeft1">听课准备：一支笔，一个小本，一个小马扎，一杯水</li>
+			                		<li class="botLeft1">环境要求：希望你静下心来听这节课，效果会更好。</li>
+			                		<li class="hiddenTxt">
+			                			<p class="txtContent">
+			                				1、搞定的步骤
+			                				<br />
+				                			<img src="./img/u553.png"  alt="点击查看大图">
+				                			2、课后作业：
+				                			<br />
+				                			请你深思熟虑一下，
+				                			<br />
+			                				你对孩子的关注够么？
+				                			<br />
+				                			有哪些地方做的还不够好？
+				                			<br />
+				                			哪些地方还可以改进一下？
+			                			</p>
+			                		</li>
+			                	</ul>
+			                	<img src="./img/hline.png" alt=""  class="hlineImg">
+			                	<img src="./img/bannerVip.jpg" alt=""  class="bannerVipImg">
+			                </div>
+				        </div>
+				        <div class="swiper-slide csf">
+				        	<!--音频-->
+			                <div class="audioText">
+			                	<div class="audioDiv clearfix">
+			                		<div class="lock"></div>
+			                		<div class="playBtn ui-play play" id="playBtn7" style="display: none;"></div>
+			                		<div class="section">
+			                			<h3 class="sectionTxt">7.学会穿鞋子</h3>
+			                			<p class="audioContTime">03:54 | 乔乔老师</p>
+										<div style="display: none;">
+											<div class="audioCont topaudio" id="audioCont7">
+												<!--音频标签-->
+												<audio preload="auto" class="audio" id="audio7" src="./js/dong.mp3"></audio>
+												<!--上面的进度条，时间-->
+												<div class="topaudioBox">
+													<div class="audioLine" id="audioLine7">
+														<!--进度条上的小圆点-->
+														<span class="lineaft"></span>
+														<div class="active"></div>
+														<!--进度条上的小圆点-->
+														<a href="javascript:void(0);" class="circle" id="drag7"></a>
+													</div>
+												</div>
+											</div>
+											<div class="timeNum" id="timeNum7"> 
+												<!--开始时间-->
+												<span class="txt fl">00:00</span>
+												<!--结束时间-->
+												<span class="txt2 fr" data-sec="0">08:19</span>
+											</div>
+										</div>
+									</div>
+			                	</div>
+			                	<ul class="textUl">
+			                		<li class="botLeft1">任务目标：认识孩子哭闹过程中的各种情绪</li>
+			                		<li class="botLeft1">听课准备：一支笔，一个小本，一个小马扎，一杯水</li>
+			                		<li class="botLeft1">环境要求：希望你静下心来听这节课，效果会更好。</li>
+			                		<li class="hiddenTxt">
+			                			<p class="txtContent">
+			                				1、搞定的步骤
+			                				<br />
+				                			<img src="./img/u553.png"  alt="点击查看大图">
+				                			2、课后作业：
+				                			<br />
+				                			请你深思熟虑一下，
+				                			<br />
+			                				你对孩子的关注够么？
+				                			<br />
+				                			有哪些地方做的还不够好？
+				                			<br />
+				                			哪些地方还可以改进一下？
+			                			</p>
+			                		</li>
+			                	</ul>
+			                	<img src="./img/hline.png" alt="" class="hlineImg">
+			                	<img src="./img/bannerVip.jpg" alt="" class="bannerVipImg">
+			                </div>
+				        </div>
+				        <!--成绩单页-->
+				        <div class="swiper-slide csf">
+				        	<div class="weekSign">
+			                	<h3 class="weekTask">恭喜，完成一周打卡任务</h3>
+			                	<p class="accumulate">累计打卡 4天</p>
+			                	<ul class="weekStars clearfix">
+			                		<li>
+			                			<div class="starsGray"></div>
+			                		</li>
+			                		<li>
+			                			<div class="starsGray"></div>
+			                		</li>
+			                		<li>
+			                			<div class="starsGray"></div>
+			                		</li>
+			                		<li>
+			                			<div class="starsGray"></div>
+			                		</li>
+			                		<li>
+			                			<div class="starsGray"></div>
+			                		</li>
+			                		<li>
+			                			<div class="starsGray"></div>
+			                		</li>
+			                		<li>
+			                			<div class="starsGray"></div>
+			                		</li>
+			                	</ul>
+			                	<p class="accumulate">成功邀请好友 7人</p>
+			                	<ul class="invitation clearfix">
+			                		<li><img src="./img/u551.jpg" alt="" /></li>
+			                		<li><img src="./img/u549.jpg" alt="" /></li>
+			                		<li><img src="./img/u561.jpg" alt="" /></li>
+			                		<li><img src="./img/u747.jpg" alt="" /></li>
+			                		<li><img src="./img/u751.png" alt="" /></li>
+			                		<li><img src="./img/u753.png" alt="" /></li>
+			                		<li><img src="./img/u757.png" alt="" /></li>
+			                	</ul>
+			                	<p class="accumulate">本周累计获得基金币  <span class="numF">43</span> 枚</p>
+			                	<p class="accumulate" style="padding-top: 0;">今日好友榜排行第  <span class="numF numS">315</span> 位</p>
+			                	<a href="javascript:void(0);" class="shadoweBtn">任务重启</a>
+			                	<p class="prompt">提示：如果宝贝训练效果不佳，可以点击“任务重启”重新开始训练更换新任务，点击右上角“全部项目”。</p>
+			               </div>
+				        </div>
+						
+				    </div>
+				</div>
+				<div class="line"></div>
+				<div class="recommend" style="display: none;">
+					<h3>鼎力推荐：</h3>
+					<div class="listImg">
+						<img src="./img/u549.jpg" alt="" class="conImgBg">
+						<div class="conText">
+							<h3 class="textTitle">7天，学会自己穿鞋子，分清左右脚</h3>
+							<p class="textFit">适合 0 - 2岁宝宝家长</p>
+						</div>
+						<div class="listBot clearfix">
+							<p class="fl botLeft">1596位家长正在提升</p>
+							<a href="javascript:void(0);" class="textFree fr">限时免费</a>
+						</div>
+					</div>
+					<div class="listImg">
+						<img src="./img/u549.jpg" alt="" class="conImgBg">
+						<div class="conText">
+							<h3 class="textTitle">7天，学会自己穿鞋子，分清左右脚</h3>
+							<p class="textFit">适合 0 - 2岁宝宝家长</p>
+						</div>
+						<div class="listBot clearfix">
+							<p class="fl botLeft">1596位家长正在提升</p>
+							<a href="javascript:void(0);" class="textFree fr">限时免费</a>
+						</div>
+					</div>
+					<p class="presenTop">查看全部内容</p>
+			        <p class="presenBtn">收 起</p>
+				</div>
+				<div class="signBto">
+					<div class="feedback">
+						<h3 class="backTitle">打卡反馈：</h3>
+						<div class="headerLeft clearfix">
+							<img src="./img/u551.jpg" alt="" class="leftImg fl">
+							<div class="leftTxt clearfix">
+								<div class="txtTop clearfix">
+									<p class="txtName fl">哈哈</p>
+									<p class="txtTarget fr">15分钟前</p>
+								</div>
+								<p class="backTxt">每天都在进步，效果很好！</p>
+							</div>
+						</div>
+						<div class="headerLeft clearfix">
+							<img src="./img/u561.jpg" alt="" class="leftImg fl">
+							<div class="leftTxt clearfix">
+								<div class="txtTop clearfix">
+									<p class="txtName fl">呵呵</p>
+									<p class="txtTarget fr">15分钟前</p>
+								</div>
+								<p class="backTxt">azazazazazabzazahbzhabzhabzhabzjbzajbzajbxsajxbsajxbsahjbxjabxsjabxajxbjxba</p>
+							</div>
+						</div>
+						<div class="headerLeft clearfix">
+							<img src="./img/u1454.jpg" alt="" class="leftImg fl">
+							<div class="leftTxt clearfix">
+								<div class="txtTop clearfix">
+									<p class="txtName fl">吼吼</p>
+									<p class="txtTarget fr">15分钟前</p>
+								</div>
+								<p class="backTxt">122351564564654515645616165646416516515641651561644416146546456</p>
+							</div>
+						</div>
+						<div class="headerLeft clearfix">
+							<img src="./img/u1454.jpg" alt="" class="leftImg fl">
+							<div class="leftTxt clearfix">
+								<div class="txtTop clearfix">
+									<p class="txtName fl">吼吼</p>
+									<p class="txtTarget fr">15分钟前</p>
+								</div>
+								<p class="backTxt">吴贝磊吴贝磊吴贝磊，吴贝磊吴贝磊吴贝磊吴贝磊吴贝磊吴贝磊吴贝磊吴贝磊吴贝磊吴贝磊吴，贝磊吴贝磊吴贝磊吴贝磊吴贝磊</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="blackBack"></div>
+		<ul class="btnNav clearfix">
+			<li class="nav">
+				<img src="./img/navImg/card.png" alt="" class="fundImg">
+				<p class="navText">打卡</p>
+			</li>
+			<li class="nav">
+				<img src="./img/navImg/class.png" alt="" class="fundImg">
+				<p class="navText">课程</p>
+			</li>
+			<li class="nav">
+				<img src="./img/navImg/money.png" alt="" class="fundImg">
+				<p class="navText">成长基金</p>
+			</li>
+			<li class="nav">
+				<img src="./img/navImg/ranking.png" alt="" class="fundImg">
+				<p class="navText">排行榜</p>
+			</li>
+			<li class="nav">
+				<!--<img src="./img/navImg/rednav.png" alt="" class="fundImg shake shake-slow" id="shakeslow">-->
+				<!--//图片左右滑动-->
+				<img src="./img/navImg/rednav.png" alt="" class="fundImg redBox" id="shakeslow">
+				<!--<img src="./img/navImg/rednav.png" alt="" class="fundImg redBox" id="wo">-->
+				<p class="navText">请朋友听</p>
+			</li>
+		</ul>
+	</body>
+	<script>
+		$(function() {
+			var newStyle = $("<style> @font-face {font-family: 'myFont';  src: url('./fonts/HYQiHei-50S.ttf');} </style>");
+			var newStyle1 = $("<style> @font-face {font-family: 'cartoonFont';  src: url('./fonts/cartoon.TTF');} </style>");
+			$('body').append(newStyle);
+			$('.guideShareClass').append(newStyle1);
+			$('.classShare').append(newStyle1);
+			$('.cardShare').append(newStyle1);
+			$('.fundPosShare').append(newStyle1);
+			$('.redBoxShare').append(newStyle1);
+			$('.promptShare').append(newStyle1);
+			var font = "src: url('./fonts/HYQiHei-50S.ttf')";
+			var font1 = "src: url('./fonts/cartoon.TTF')";
+			if(font === true) {
+				$('body').css = newStyle;
+			} else {
+				$('body').css = "微软雅黑", "PingFangSC-Light";
+			}
+			if(font1 === true) {
+				$('.guideShareClass').css = newStyle1;
+				$('.classShare').css = newStyle1;
+				$('.cardShare').css = newStyle1;
+				$('.fundPosShare').css = newStyle1;
+				$('.redBoxShare').css = newStyle1;
+				$('.promptShare').css = newStyle1;
+			} else {
+				$('.guideShareClass').css = "微软雅黑", "PingFangSC-Light";
+				$('.classShare').css = "微软雅黑", "PingFangSC-Light";
+				$('.cardShare').css = "微软雅黑", "PingFangSC-Light";
+				$('.fundPosShare').css = "微软雅黑", "PingFangSC-Light";
+				$('.redBoxShare').css = "微软雅黑", "PingFangSC-Light";
+				$('.promptShare').css = "微软雅黑", "PingFangSC-Light";
+			}
+		});
+		
+	</script>
+</html>

@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* 阻止长按出现的复制框 */
+body{
+	-webkit-user-select:none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	-webkit-touch-callout:none;
+	-ms-touch-callout:none;
+	-mozt-touch-callout:none;
+	touch-callout:none;
+}
+
+/*三千问收藏*/
+.audio-info p:first-child {
+  margin-bottom: 0.14666667rem;
+  color: #666;
+  line-height: 0.4rem;
+}
+.audio-info .mymessage {
+  background-image: url(../img/sqw-pinglun.png);
+  background-repeat: no-repeat;
+  background-size:22%;
+  background-position: center;
+}
+.audio-info .mycollection-yes {
+  background-image: url(../img/mycollection-yes.png);
+  background-repeat: no-repeat;
+  background-size:23%;
+  background-position: center;
+}
+.audio-info .mycollection-no {
+  background-image: url(../img/mycollection-no.png);
+  background-repeat: no-repeat;
+  background-size:23%;
+  background-position: center;
+}
+.audio-info .mycollection-txt-no {
+	color: #F5A623;
+}

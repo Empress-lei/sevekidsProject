@@ -1,0 +1,131 @@
+/* 我(个人中心)的尾部(导航栏)*/
+.before {
+  margin: 0 auto;
+  top: 0;
+}
+.footer {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  height: 0.83626667rem;
+}
+.footer .fixed {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 99;
+  background-color: #fff;
+}
+.footer .fixed .fixed-box {
+  display: box;
+  display: -webkit-box;
+  display: -moz-box;
+  box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  height: 100%;
+}
+.footer .fixed {
+  height: 0.83626667rem;
+  bottom: 0;
+  border-top: 1px solid #ccc;
+}
+.footer .fixed .fixed-box {
+  width: 100%;
+}
+.footer a {
+  box-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  display: box;
+  display: -webkit-box;
+  display: -moz-box;
+  box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-pack: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  height: 100%;
+  text-align: center;
+  color: #999;
+}
+.footer a:before {
+  content: '';
+  height: 0.34133333rem;
+}
+.footer p {
+  margin-top: 0.0512rem;
+}
+.footer .ft1:before {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 50%;
+  margin-top: -10px;
+  background-image: url("");
+  background-size: 20px 20px;
+  background-image: url(../img/foot@2x.png);
+  background-repeat: no-repeat;
+  background-size: 77px 20px;
+  background-position: 0 0;
+  margin: 0 auto;
+  top: 0;
+}
+.footer .ft2:before {
+  display: block;
+  width: 16px;
+  height: 20px;
+  position: relative;
+  top: 50%;
+  margin-top: -10px;
+  background-image: url("");
+  background-size: 16px 20px;
+  background-image: url(../img/foot@2x.png);
+  background-repeat: no-repeat;
+  background-size: 77px 20px;
+  background-position: -20px 0;
+  margin: 0 auto;
+  top: 0;
+}
+.footer .ft3:before {
+  display: block;
+  width: 19px;
+  height: 20px;
+  position: relative;
+  top: 50%;
+  margin-top: -10px;
+  background-image: url("");
+  background-size: 19px 20px;
+  background-image: url(../img/foot@2x.png);
+  background-repeat: no-repeat;
+  background-size: 77px 20px;
+  background-position: -58px 0;
+  margin: 0 auto;
+  top: 0;
+}
+.footer .ft4:before {
+  display: block;
+  width: 20px;
+  height: 21px;
+  position: relative;
+  top: 50%;
+  margin-top: -10.5px;
+  background-image: url("");
+  background-size: 20px 21px;
+  background-image: url(../img/foot@2x.png);
+  background-repeat: no-repeat;
+  background-size: 77px 20px;
+  background-position: -37px 0;
+  margin: 0 auto;
+  top: 0;
+  margin-top: -0.01706667rem;
+}
+.footer a.active {
+  color: #e51812;
+}
+.footer a.active:before {
+  background-image: url(../img/footon@2x.png);
+}

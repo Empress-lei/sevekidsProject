@@ -1,0 +1,212 @@
+/*标签样式初始化*/
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+    margin: 0;
+    padding: 0;
+}
+/*设置页面统一样式*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue","PingFangSC-Light",Helvetica, Arial, sans-serif;
+}
+html, body {
+    width: 100%;
+    min-height: 100%;
+}
+body {
+    font-family: "Helvetica Neue","PingFangSC-Light",Helvetica, Arial, sans-serif;
+    font-size:14px;
+    color:#333;
+}
+html {
+    font-size: 40px;
+}
+html,
+body {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    min-height: 100%;
+    height: 100%;
+  /*下面这个属性只iPhone和iPad，当你点击一个链接或者通过Javascript定义的可点击元素的时候，它就会出现一个半透明的灰色背景*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #333;
+}
+/*去除h系列的默认样式*/
+h1, h2, h3, h4, h5, h6{
+    font-weight:normal;
+}
+/*去除列表标签默认的格式*/
+ul,li,ol,dl,dt,dd {
+    list-style: none;
+}
+/*去除图片的默认样式*/
+img {
+  display: inline;
+  border: none;
+  vertical-align: middle;
+}
+/*去除a链接的下划线*/
+a {
+    text-decoration: none;
+    color: #232323;
+}
+
+/*清楚表格样式*/
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+/*清楚多行文本框样式*/
+textarea {
+    resize: none;
+    overflow: auto;
+}
+input,
+textarea,
+button {
+    border: none;
+    background: none;
+    border-radius: 0;
+    outline: none;
+}
+
+/*清楚按钮的的默认样式*/
+button,
+input[type="submit"],
+input[type="button"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+/*清楚浮动*/
+.clearfix:after {
+    content: ".";
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    overflow:hidden;
+}
+.clearfix {
+    zoom: 1;
+}
+
+/*左右浮动*/
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+/*文本超出盒子。显示省略号*/
+.ellipse {
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.inline{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/*盒子布局*/
+.box {
+    display: -webkit-box;
+    display: -moz-box;
+  
+}
+.boxhor {
+    display: -webkit-box;
+    display: -moz-box;
+    box-orient: horizontal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+}
+.boxver {
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -o-box-orient: vertical;
+    box-orient: vertical;
+  
+}
+.boxflex {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+  
+}
+.packcenter {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-box-pack: center;
+    -o-box-pack: center;
+    box-pack: center;
+  
+}
+/*适配iphone4*/
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    html {
+        font-size: 32px;
+    }
+}
+/*适配iphone6,以此为基准去计算屏幕的适配*/
+@media screen and (min-width: 375px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    html {
+        font-size: 37.5px;
+    }
+}
+/*适配iphone6plus*/
+@media screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    html {
+        font-size: 41.4px;
+    }
+}
+/*适配480*/
+@media only screen and (min-device-width: 480px) and (max-device-width: 719px) {
+    html {
+        font-size: 24px;
+    }
+}
+@media only screen and (min-device-width: 720px) and (max-device-width: 1079px) {
+    html {
+        font-size: 36px;
+    }
+}
+@media only screen and (min-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) {
+    html {
+        font-size: 54px;
+    }
+}
+/*魅族*/
+@media only screen and (min-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2.5) {
+    html {
+        font-size: 43.2px;
+    }
+}
+/*mate7*/
+@media only screen and (min-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 3) {
+    html {
+        font-size: 36px;
+    }
+}
+
+

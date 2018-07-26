@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="keywords" content="喵姐,喵姐早教说,0到6岁早期教育,家庭教育,家长教育,父母课堂,育儿知识,儿童教育,母婴育儿,">
+    <meta name="description" content="喵姐早教说是喵姐高寿岩创办的为家庭教育提供专业靠谱的0到6岁早期教育、育儿知识的平台。">
+    <title>喵姐早教说</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/audio1.js"></script>
+    <script>
+        $(function() {
+            var newStyle = $("<style> @font-face {font-family: 'myFont';  src: url('./font/HYQiHei-50S.ttf');} </style>");
+            $('body').append(newStyle);
+            var font = "src: url('./font/HYQiHei-50S.ttf')";
+            if(font === true) {
+                $('body').css = newStyle;
+            }else {
+                $('body').css = "微软雅黑", "PingFangSC-Light";
+            }
+        });
+    </script>
+</head>
+<body style="font-family: 'myFont';">
+<!--购买确认提示-->
+<div class="purchaseShare">
+    <div class="purchaseBox">
+        <p class="remind">提醒</p>
+        <p class="remindContent">
+            您有 3 张课程兑换券，使用课程兑换券可免费
+            学习任意一节课程，您确定使用课程券免费学
+            习《一位华裔妈妈在法国学到的育儿经》课程吗？
+        </p>
+        <p class="careful">注意：课程券一经使用不可退换。</p>
+        <a href="javascript:void(0)" class="freeBtn">免费学习</a>
+        <a href="javascript:void(0)" class="tycoonBtn">土豪付费</a>
+    </div>
+    <img src="./img/classDetails/wrong.png" alt="" class="wrongBtn">
+</div>
+<!--打赏的弹层-->
+<div class="rewardShare">
+    <div class="rewardBox">
+        <h3 class="rewardMoney">请选择您要打赏的金额</h3>
+        <ul class="btnEvaluate">
+            <li class="rewardGray"><p>￥1.8</p></li>
+            <li class="rewardGray"><p>￥5.8</p></li>
+            <li class="rewardGray"><p>￥8.8</p></li>
+        </ul>
+        <p class="rewardPrompt">目前仅支持微信支付</p>
+        <ul class="rewardButton">
+            <li class="think">再想想</li>
+            <li class="sure">确定</li>
+        </ul>
+    </div>
+</div>
+<!--收藏弹层-->
+<div class="collecShare">
+    <p>收藏成功</p>
+</div>
+<div class="wrapPage">
+    <!--留言页-->
+    <div class="messPage">
+        <h3 class="messTitle">一位华裔妈妈在法国学到的育儿经</h3>
+        <div class="font13">
+            <textarea class="txtarebox mySearchTitle" onkeyup="fn()" onblur="fn()" name="questionTxt" maxlength="200" placeholder="写下您的听课感受吧..."></textarea>
+            <p class="length"><span>0</span>/200</p>
+        </div>
+        <ul class="contentBtn clearfix">
+            <li>
+                <a href="#messText" class="submitCont">提  交</a>
+            </li>
+            <li>
+                <a href="#messText" class="cancelCont">取  消</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
+

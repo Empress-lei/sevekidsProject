@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="keywords" content="喵姐,喵姐早教说,0到6岁早期教育,家庭教育,家长教育,父母课堂,育儿知识,儿童教育,母婴育儿,">
+    <meta name="description" content="喵姐早教说是喵姐高寿岩创办的为家庭教育提供专业靠谱的0到6岁早期教育、育儿知识的平台。">
+    <title>喵姐早教说</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+    <script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/swiper-3.4.2.min.js"></script>
+    <script type="text/javascript" src="./js/audioHome.js"></script>
+    <script>
+    	$(function() {
+	        var newStyle = $("<style> @font-face {font-family: 'myFont';  src: url('./font/HYQiHei-50S.ttf');} </style>");
+	        $('body').append(newStyle);
+	        var font = "src: url('./font/HYQiHei-50S.ttf')";
+	        if(font === true) {
+	            $('body').css = myFont;
+	        }else {
+	            $('body').css = "微软雅黑", "PingFangSC-Light";
+	        }
+	    });
+    </script>
+</head>
+<body style="font-family: 'myFont';">
+    <div class="wrapPage">
+    	<!--首页小白用户（普通会员）-->
+    	<div class="homePage">
+    		<!--顶部的搜索框-->
+    		<div class="search">
+    			<p class="searchText">搜索</p>
+    		</div>
+    		<ul class="modular clearfix">
+    			<li class="modularClass">
+    				<div class="hearImg"></div>
+    				听课
+    			</li>
+    			<li class="modularClass">
+    				<div class="askImg"></div>
+    				提问
+    			</li>
+    			<li class="modularClass">
+    				<div class="intellImg"></div>
+    				智能教练
+    			</li>
+    			<li class="modularClass">
+    				<div class="VIPImg"></div>
+    				VIP会员
+    			</li>
+    		</ul>
+    		<div class="thread"></div>
+    		<!--顶部的banner-->
+    		<div class="banner">
+				<h3 class="userInfoTitle">喵姐早教说，您的私家育儿顾问</h3>
+				<p class="userInfoText">已为<span>11284</span> 位家长提供私家育儿服务</p>
+				<div class="swiper-container hdBanner swiper-container-horizontal">
+					<div class="swiper-wrapper">
+						<!-- banner内容 -->
+						<div class="swiper-slide swiper-slide-prev">
+							<a href="#" class="img"><img src="./img/banner_1.jpg"></a>
+						</div>
+						<div class="swiper-slide swiper-slide-active">
+							<a href="#" class="img"><img src="./img/banner_2.jpg"></a>
+						</div>
+					</div>
+					<div class="swiper-pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
+				</div>
+			</div>
+    		<!--私家育儿服务-->
+    		<div class="service">
+    			<h3 class="serviceTitle">私家育儿服务</h3>
+    			<div class="serviceCon">
+    				<h4>9月18日更新</h4>
+    				<ul class="serviceText clearfix">
+    					<li class="serviceLeft fl">
+    						<h3>父母不知和孩子聊什么，是因为不会享受和孩子对话的快乐</h3>
+    						<p class="serviceBot">周一至周五每天8分钟，帮你解决一个育儿难题</p>
+    					</li>
+    					<img src="./img/service.png" alt="" class="serviceImg fl">
+    				</ul>
+    				<a href="javascript:void(0);" class="lookWhole">戳此订阅全部</a>
+    			</div>
+    		</div>
+    		<!--每日一喵-->
+    		<div class="section">
+    			<div class="sectionContent">
+    				<h3 class="sectionTitle">每日一喵</h3>
+	    			<div class="sectionText clearfix">
+	    				<div class="textLeft fl">
+	    					<p class="leftTop">宝宝被好朋友打怎么办？</p>
+	    					<p class="leftBot">适合3 - 6岁 |  播放 13662 次  | 时长0分3秒</p>
+	    				</div>
+	    				<div class="audioCont topaudio" style="display: none">
+							<audio preload="auto" id="audio" src=""></audio>
+					        <span class="playBtn play"></span>
+					        <div class="topaudioBox">
+					            <span class="txt">00:00</span>
+					            <div class="audioLine">
+					            	<span class="lineaft"></span>
+					                <div class="active"></div>
+					                <a href="javascript:void(0)" class="circle" id="drag"></a>
+					            </div>
+					            <span class="txt2" data-sec="">00分03秒</span>
+				            </div>
+				        </div>
+	    				<div class="textRight fr">
+	    					<!--<img src="./img/dayImg.png" alt="" / class="rightImg">-->
+	    					<div class="toDayMiao">
+								<img src="./img/play.png" class="rightPlay">
+							</div>
+	    				</div>
+	    			</div>
+    			</div>
+    		</div>
+    		<!--广告位-->
+    		<div class="adPosition" style="display: none;">
+    			<img src="./img/ad.png" alt=""  class="positionImg">
+    			<p class="positionText">内容互推广告位</p>
+    		</div>
+    		<!--最新咨询-->
+    		<div class="section">
+    			<div class="sectionContent">
+    				<h3 class="sectionTitle sectionTitle1">最新咨询</h3>
+	    			<div class="consultation">
+	    				<p class="askname">李 ***</p>
+	    				<p class="askDate">咨询于2017-08-31 |  男宝宝  2岁8个月12天</p>
+	    				<p class="askContent">
+	    					我宝宝平时对他没有很严厉，
+	    					但是他就是不喜欢我，有时候在路上说他几句，
+	    					她就抱着陌生人的大腿，或者赖在人家店里不走了，就是我走了很远了，
+	    					她就抱着陌生人的大腿，或者赖在人家店里不走了，就是我走了很远了
+	    				</p>
+	    				<ul class="starRegion clearfix">
+	    					<li>★</li>
+	    					<li>★</li>
+	    					<li>★</li>
+	    					<li>★</li>
+	    					<li>★</li>
+	    				</ul>
+	    				<ul class="lookMore">
+	    					<li class="moreLeft">查看更多最新咨询</li>
+	    					<li class="moreRight">></li>
+	    				</ul>
+	    			</div>
+    			</div>    			
+    		</div>
+    		<!--福利专区-->
+    		<div class="welfareArea">
+    			<div class="areaTitle clearfix">
+    				<h3 class="areaLeft fl">福利专区</h3>
+    			</div>
+    			<div class="vipCard">
+    				<img src="./img/vip.jpg" alt="" class="vipImg">
+    				<ul class="vipText clearfix">
+    					<li class="vipLeft fl">喵姐早教说VIP体验卡</li>
+    					<li class="vipRight fr">立即购买 ￥1</li>
+    				</ul>
+    			</div>
+    		</div>
+    		<!--限时免费-->
+    		<div class="welfareArea">
+    			<div class="areaTitle areaTitle1">
+    				<h3 class="areaLeft">限时免费</h3>
+    			</div>
+    			<div class="freeText clearfix">
+    				<img src="./img/play.png" alt="" class="freeImg fl">
+    				<div class="freeRight fr">
+    					<h3>这些给力绘本，让宝宝远离零食这些让宝宝远离零食这些</h3>
+    					<p>摘自：8分钟经典育儿  |  绘本鼎力推荐  | 时长9分12秒</p>
+    				</div>
+    			</div>
+    			<div class="freeText clearfix">
+    				<img src="./img/play.png" alt="" class="freeImg fl">
+    				<div class="freeRight fr">
+    					<h3>爸妈用对方法，让孩子95%的胆小害怕...</h3>
+    					<p>摘自：喵姐微课  |  时长31分36秒</p>
+    				</div>
+    			</div>
+    		</div>
+    		<!--宝贝成长基金海报入口-->
+    		<div class="fundPoster">
+				<img src="./img/cry.jpeg" alt="" class="posterImg">
+				<span class="lookWhole">戳此了解详情</span>
+			</div>
+    		<!--宝贝成长基金-->
+    		<div class="activity" style="display: none;">
+    			<div class="activityTitle">
+    				<h3 class="babyTitle">宝贝成长基金</h3>
+    				<p class="project">共12项（您暂无参与记录）</p>
+    			</div>
+    			<img src="./img/cry.jpeg" alt="" class="activityImg">
+    			<div class="activityAdd clearfix">
+    				<h3 class="babyTitle fl">添加新课程</h3>
+    				<img src="./img/add.png" alt="" class="addImg fr">
+    			</div>
+    			<div class="activityList">
+    				<h3 class="listTitle">好习惯养成 · 好好睡觉</h3>
+    				<p class="listContent">4天规矩训练，帮宝宝把守规矩变成过一种自觉</p>
+    			</div>
+    			<div class="activityList">
+    				<h3 class="listTitle">好习惯养成 · 守规矩</h3>
+    				<p class="listContent">14天规矩训练，帮宝宝把守规矩变成过一种自觉。</p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <script>
+    	$(function(){
+		  var mySwiper = new Swiper ('.swiper-container', {
+		    direction: 'horizontal',
+		    loop: true,
+		    speed:300,
+		    autoplay : 3000,
+		    // 如果需要分页器
+		    pagination: '.swiper-pagination',
+		    // 如果需要前进后退按钮
+		    nextButton: '.swiper-button-next',
+		    prevButton: '.swiper-button-prev',
+		    
+		  })        
+
+    		var playUrl='./js/audio.mp3';
+			var playImg='./img/play.png';
+			var pauseImg='./img/pause.png';
+			$(".toDayMiao").click(function(){
+			    var img=$(this).find('img');
+			    var src=img.attr('src');
+			    $("#audio").attr('src',playUrl);
+			    $('.playBtn').click();
+			    if(src==playImg){
+			        img.attr('src',pauseImg);
+			    }else{
+			        img.attr('src',playImg);
+			    }
+			});
+			function dayPause(){
+			    var img=$(".toDayMiao").find('img');
+			    var src=img.attr('src');
+			    $('.playBtn').click();
+			    if(src==playImg){
+			        img.attr('src',pauseImg);
+			    }else{
+			        img.attr('src',playImg);
+			    }
+			}
+    	})
+    </script>
+</body>
+</html>
+
+
+      

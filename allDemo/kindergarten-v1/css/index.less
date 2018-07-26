@@ -1,0 +1,661 @@
+//入园基金弹层
+.pupopFund {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    .pupopBox {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .fundLook {
+            color: #fff;
+            text-align: right;
+            font-size: 0.38rem;
+            padding: 3.9rem 1rem 0.5rem  0;
+        }
+        .fundArrow {
+            width: 3.7rem;
+            position: absolute;
+            top: 4.5rem;
+            right: 0.5rem;
+        }
+        .parkFund {
+            width: 45%;
+            height: 1.2rem;
+            background-color: #fff;
+            position: absolute;
+            top: 8.5rem;
+            right: 0.3rem;
+            text-align: center;
+            line-height: 1.2rem;
+            p {
+                color: #515151;
+                font-size: 0.38rem;
+                background: url(../img/u9512.png) no-repeat 1rem center;
+                background-size: 17%;
+                padding-left: 0.8rem;
+            }
+        }
+        .shadoweBtn {
+            width: 6rem;
+            display: block;
+            padding: 0.25rem 0;
+            position: absolute;
+            top: 13rem;
+            left: 50%;
+            margin-left: -3rem;
+            text-align: center;
+            -webkit-border-radius: 1.33333333rem;
+            -moz-border-radius: 1.33333333rem;
+            -ms-border-radius: 1.33333333rem;
+            border-radius: 1.33333333rem;
+            background-color: #fff;
+            border: 1/37.5rem solid #FF9900;
+            color: #FF9900;
+            font-size: 0.4rem;
+        }
+    }
+}
+//
+.pupopFund1 {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    .pupopBox {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .botTwo {
+            text-align: center;
+            width: 2rem;
+            height: 2rem;
+            background-color: #fff;
+            float: right;
+            margin: 1.3rem 0.5rem;
+            padding-top: 0.5rem;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+        }
+        .fundArrow {
+            width: 3.7rem;
+            position: absolute;
+            top: 3.5rem;
+            right: 1rem;
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+        .parkFund {
+            width: 8rem;
+            height: 6rem;
+            background-color: #fff;
+            position: absolute;
+            top: 6rem;
+            left: 50%;
+            margin-left: -4rem;
+            border-radius: 5/37.5rem;
+            .parkTitle {
+                color: #FF9900;
+                font-size: 0.45rem;
+                padding: 1rem 0.5rem 0.5rem;
+                font-weight: bold;
+                text-align: center;
+            }
+            .parkText {
+                color: #333;
+                font-size: 0.36rem;
+                text-align: center;
+            }
+            .shadoweBtn {
+                width: 6rem;
+                display: block;
+                padding: 0.25rem 0;
+                text-align: center;
+                position: absolute;
+                bottom: 1rem;
+                left: 50%;
+                margin-left: -3rem;
+                -webkit-border-radius: 1.33333333rem;
+                -moz-border-radius: 1.33333333rem;
+                -ms-border-radius: 1.33333333rem;
+                border-radius: 1.33333333rem;
+                background-color: #FF9900;
+                border: 1/37.5rem solid #FF9900;
+                color: #fff;
+                font-size: 0.4rem;
+            }
+        }
+    }
+}
+.wrap {
+    .public {
+        width: 100%;
+        max-width: 540px;
+        margin: 0 auto;
+        overflow: auto;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        .homePage {
+            width: 100%;
+            height: 100%;
+            // min-height: 30rem;
+            max-width: 540px;
+            // 幼儿园首页的头部开始
+            .homeHeader {
+                width: 100%;
+                background-color: #fff;
+                padding: 20/37.5rem 0 10/37.5rem;
+                .headerImg {
+                    float: left;
+                    width: 1.3rem;
+                    height: 1.3rem;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin-left: 0.2rem;
+                    img {
+                        width: 1.3rem;
+                        height: 1.3rem;
+                    }
+                }
+                .headerRight {
+                    float: right;
+                    width: 80%;
+                    .rightTop {
+                        width: 100%;
+                        height: 40/37.5rem;
+                        border-bottom: 1/37.5rem solid #eee;
+                        .topName {
+                            // width: 50%;
+                            height: 40/37.5rem;
+                            float: left;
+                            line-height: 40/37.5rem;
+                            color: #FF9900;
+
+                        }    
+                    }
+                    .rightBottom {
+                        margin-top: 13/37.5rem;
+                        ul {
+                            width: 100%;
+                            li {
+                                float: left;
+                                text-align: left;
+                                span {
+                                    display: block;
+//                                  padding-left: 0.6rem;
+                                    padding-left: 0.7rem;
+                                    font-size: 15/37.5rem;
+                                    color: #333;
+                                    
+                                }
+                                p {
+                                    margin-top: 5/37.5rem;
+                                    font-size: 10/37.5rem;
+                                    color: #868686;
+                                }
+                                .participateNum {
+                                    color: #FF9933;
+                                }
+                                .participate {
+                                    margin-top: 0.1rem;
+                                    font-size: 0.26666667rem;
+                                    color: #FF9933;
+                                    padding-bottom: 10/37.5rem;
+                                    border-bottom: 0.05333333rem solid #FF9933;
+                                }
+                            }
+                            .botOne {
+                                width: 27%;
+                            }
+                            .botTwo {
+                                text-align: center;
+                                width: 38%;
+                                .botOneSpan {
+                                    padding-left: 0;
+                                }
+                            }
+                            .botThree {
+                                width: 35%;
+                                text-align: center;
+                                padding-right: 15/37.5rem; 
+                            }
+                            .botJoinOne {
+                                width: 33.33%;
+                                text-align: center;
+                                .botJoinSpan {
+                                    text-align: center;
+                                    padding-left: 0;
+                                }
+                            }
+                            .botJoinTwo {
+                                width: 33.33%;
+                                text-align: center;
+                                .botJoinSpan {
+                                    text-align: center;
+                                    padding-left: 0;
+                                }
+                            }
+                            .botJoinThree {
+                                width: 33.33%;
+                                text-align: center;
+                                .botJoinSpan {
+                                    text-align: center;
+                                    padding-left: 0;
+                                }
+                            }
+                        }
+                    }    
+                }
+            } 
+            .participateHeader {
+                width: 100%;
+                background-color: #fff;
+                padding: 20/37.5rem 0 0;               
+            }
+            // 幼儿园首页的头部结束
+            // 行动计划开始-
+            .homePlan {
+                width: 95%;
+                min-height: 5rem;
+                background-color: #fff;
+                margin: 0 auto;
+                margin-top: 5/37.5rem;
+                .planTit {
+                    width: 100%;
+                    .tit {
+                        width: 100%;
+                        height: 30/37.5rem;
+                        div {
+                            width: 3/37.5rem;
+                            height: 30/37.5rem;
+                            background-color: rgba(255, 153, 0, 1); 
+                            -webkit-border-radius: 0 5/37.5rem 5/37.5rem 0;
+                            -ms-border-radius: 0 5/37.5rem 5/37.5rem 0;
+                            -moz-border-radius: 0 5/37.5rem 5/37.5rem 0;
+                            border-radius: 0 5/37.5rem 5/37.5rem 0;
+                            float: left;
+                            margin-top: 0.3rem;
+                        }
+                        h4 {
+                            float: left;
+                            padding-left: 7/37.5rem;
+                            line-height: 30/37.5rem;
+                            font-size: 15/37.5rem;
+                            color: #333;
+                            font-weight: 600;
+                            margin-top: 0.3rem;
+                            span {
+                                font-size: 12/37.5rem;
+                                color: #333;
+                                font-weight: 300;
+                            }
+                        }
+                        .participateStar {
+                            font-weight: 300;
+                        }
+                        .participateTit {
+                            font-size: 14/37.5rem;
+                            color: #333;
+                            font-weight: 600;
+                            span {
+                                font-weight: 300;
+                                e {
+                                    color: #f2f2f2;
+                                }
+                            }
+                        }
+                    }   
+                    .planContent {
+                        width: 95%;
+                        margin: 0 auto 0.15rem;
+                        padding-top: 20/37.5rem;
+                        position: relative;
+                        .planIcon {
+                            width: 50/37.5rem;
+                            position: absolute;
+                            right: 5/37.5rem;
+                            top: -10/37.5rem;
+                            -webkit-transform: rotate(15deg);
+                            -ms-transform: rotate(15deg);
+                            -moz-transform: rotate(15deg);
+                            transform: rotate(15deg);
+                        }
+                        .unpaidImg {
+                            width: 30%;
+                            float: left;
+                            -webkit-border-radius: 3/37.5rem;
+                            -moz-border-radius: 3/37.5rem;
+                            -o-border-radius: 3/37.5rem;
+                            border-radius: 3/37.5rem;
+                        }
+                        .unpaidText {
+                            width: 67%;
+                            float: right;
+                            .textP {
+                                width: 100%;
+                                .textTit {
+                                    text-align: left;
+                                    font-size: 14/37.5rem;
+                                    color: #333;
+                                }
+                                .participateStar {
+                                    font-weight: 300;
+                                }
+                                .participateTit {
+                                    font-size: 14/37.5rem;
+                                    color: #333;
+                                    font-weight: 600;
+                                    span {
+                                        font-weight: 300;
+                                        e {
+                                            color: #f2f2f2;
+                                        }
+                                    }
+                                }
+                                p {
+                                    padding-top: 10/37.5rem;
+                                    font-size: 12/37.5rem;
+                                    color: #AEAEAE;
+                                }
+                                .work {
+                                    padding-top: 15/37.5rem 0;
+                                    span {
+                                        color: rgb(255, 153, 51);
+                                        font-size: 20/37.5rem;
+                                        e {
+                                            font-size: 13/37.5rem;
+                                        }
+                                    }
+                                }
+                                .unpaidBtn {
+                                    width: 22%;
+                                    height: 15/37.5rem;
+                                    margin-top: 15/37.5rem;
+                                    // border: 1/37.5rem solid #F2F2F2;
+                                    -webkit-border-radius: 50/37.5rem;
+                                    -moz-border-radius: 50/37.5rem;
+                                    -ms-border-radius: 50/37.5rem;
+                                    border-radius: 50/37.5rem;
+                                    text-align: center;
+                                    img {
+                                        width: 15%;
+                                        float: left;
+                                        margin-left: 6/37.5rem;
+                                        margin-top: 4/37.5rem;
+                                    }
+                                    span {
+                                        display: block;
+                                        float: left;
+                                        font-size: 13/37.5rem;
+                                        transform: scale(0.5);
+                                        margin-top: -12/37.5rem;
+                                        margin-left: 5/37.5rem;
+                                        color: #AEAEAE;
+                                    }
+                                }
+                                .sign {
+                                    width: 23%;
+                                    height: 15/37.5rem;
+                                    margin-top: 15/37.5rem;
+                                    // border: 1/37.5rem solid rgb(255, 153, 51);
+                                    -webkit-border-radius: 50/37.5rem;
+                                    -moz-border-radius: 50/37.5rem;
+                                    -ms-border-radius: 50/37.5rem;
+                                    border-radius: 50/37.5rem;
+                                    text-align: center;
+                                    img{
+                                        margin-top: 2/37.5rem;
+                                    }
+                                    span {
+                                        font-size: 13/37.5rem;
+                                        transform: scale(0.5);
+                                        margin-top: -12/37.5rem;
+                                        margin-left: 8/37.5rem;
+                                        color:rgb(255, 153, 51);
+                                    } 
+                                }
+                                .task {
+                                    width: 100%;
+                                    margin-top: 10/37.5rem;
+                                    height: 18/37.5rem;
+                                    .taskTxt {
+                                        float: left;
+                                        font-size: 12/37.5rem;
+                                        line-height: 18/37.5rem;
+                                        .txtClass {
+                                            color: #333;
+                                            background: url(../img/kec.png) no-repeat left center;
+                                            background-size: 20%;
+                                            padding-left: 0.4rem;   
+                                        }
+                                        .txtDate {  
+                                            color: #AEAEAE;
+                                        }
+                                        .txtTask {
+                                            color: #AEAEAE;
+                                        }
+                                        .costNum {
+                                            color: rgb(255, 153, 51);
+                                            font-size: 20/37.5rem;
+                                            margin-left: 15/37.5rem;
+                                            font-style: oblique;
+                                            
+                                        }
+                                        .costOrig {
+                                            font-size: 14/37.5rem;
+                                            color: #AEAEAE;
+                                        }
+                                    }
+                                    a {
+                                        float: right;
+                                        font-size: 11/37.5rem;
+                                        line-height: 18/37.5rem;
+                                        color: #AEAEAE;
+                                        margin-right: 15/37.5rem;
+                                    }
+                                    .review {
+                                        width: 30%;
+                                        color: rgb(255, 153, 51);
+                                        text-align: center;
+                                        -webkit-border-radius: 3/37.5rem;
+                                        -moz-border-radius: 3/37.5rem;
+                                        -ms-border-radius: 3/37.5rem;
+                                        border-radius: 3/37.5rem;
+                                        padding: 1/37.5rem 15/37.5rem;
+                                        border: 1/37.5rem solid rgb(255, 153, 51);
+                                    }
+                                    .completedDet {
+                                        width: 30%;
+                                        color: #fff;
+                                        text-align: center;
+                                        border-radius: 3/37.5rem;
+                                        padding: 3/37.5rem 10/37.5rem;
+                                        background-color:  rgb(255, 153, 51);
+                                    }
+                                }
+                                .unpaidTask {
+                                    width: 70%;
+                                    position: absolute;
+                                    bottom: 0;
+                                    .taskT {
+                                        float: left; 
+                                        color: #AEAEAE;
+                                        .taskQ {
+                                            font-size: 0.8rem;
+                                            color: #FF9933;
+                                            float: left;
+                                        }
+                                        
+                                        .taskLine {
+                                            float: left;
+                                            padding-top: 0.27rem;
+                                            font-size: 0.5rem;      
+                                        }
+                                        .taskH {
+                                            font-size: 0.34rem;
+                                            float: left;
+                                            padding-top: 0.5rem;
+                                        }
+                                    }
+                                    .taskJoin {
+                                        float: right;
+                                        margin-right: 0.3rem;
+                                        margin-top: 0.39rem;
+                                        width: 2.5rem;
+                                        text-align: center;
+                                        padding: 5/37.5rem;
+                                        border-radius: 3/37.5rem;
+                                        background-color: #FF9933;
+                                        a {
+                                            font-size: 0.3rem;
+                                            color: #fff;
+                                            
+                                        }
+                                    }
+                                }
+                                .taskBot {
+                                    margin-top: 18/37.5rem;
+                                }
+                                .textLeftH {
+                                    // float: left;
+                                    width: 20%;
+                                    
+                                }
+                                .textLeftX {
+                                    // float: left;
+                                    width: 80%;
+                                }
+                            }   
+                        }
+                        .planImg {
+                            width: 100%;
+                        }
+                        .planText {
+                            width: 100%;
+                            height: auto;
+                            min-height: 2.5rem;
+                            .textP {    
+                                font-size: 13/37.5rem;                            
+                                p {                                   
+                                    color: #333;
+                                    padding-top: 8/37.5rem;
+                                    line-height: 0.6rem;
+                                }
+                                .textpLeft {
+                                    float: left;
+                                    width: 20%;
+
+                                }
+                                .textpRight {
+                                    float: left;
+                                    width: 80%;
+                                    color: #333;
+                                }
+                                .textpRight1 {
+                                    color: #333;
+                                    padding-top: 0;
+                                }
+                            }
+                            .planJoin {
+                                width: 60%;
+                                padding: 6/37.5rem 0;
+                                margin: 15/37.5rem auto 15/37.5rem;
+                                text-align: center;
+                                -webkit-border-radius: 50/37.5rem;
+                                -moz-border-radius: 50/37.5rem;
+                                -ms-border-radius: 50/37.5rem;
+                                border-radius: 50/37.5rem;
+                                background-color: rgba(255, 153, 0, 1);
+                                a {
+                                    color: #fff;
+                                    font-size: 13/37.5rem;
+                                }
+                            }
+                        }
+                    }  
+                    .line {
+                        width: 95%;
+                        height: 1px;
+                        background-color: #F2F2F2;
+                        margin: 3/37.5rem auto 8/37.5rem;
+                    }
+                .planJoin {
+                        width: 60%;
+                        padding: 6/37.5rem 0;
+                        margin: 5/37.5rem auto 15/37.5rem;
+                        text-align: center;
+                        -webkit-border-radius: 50/37.5rem;
+                        -moz-border-radius: 50/37.5rem;
+                        -ms-border-radius: 50/37.5rem;
+                        border-radius: 50/37.5rem;
+                        background-color: rgba(255, 153, 0, 1);
+                        a {
+                            color: #fff;
+                            font-size: 13/37.5rem;
+                         }
+                    }               
+                }
+                .taskDate {
+                    width: 90%;
+                    margin: 0 auto;
+                    color: #515151;
+                    font-size: 0.38rem;
+                    padding: 5/37.5rem 0 15/37.5rem;
+                    .txtClass {
+                        float: left;
+                        width: 50%;
+                        text-align: center;
+                        background: url(../img/u9504.png) no-repeat 1rem center;
+                        background-size: 18%;
+                        padding-left: 0.5rem;
+                        border-right: 1/37.5rem solid #F2F2F2;
+                        
+                    }
+                    .txtR {
+                        float: right;
+                        width: 50%;
+                        background: url(../img/u9743.png) no-repeat 1rem center;
+                        background-size: 0.6rem;
+                        padding-left: 0.8rem;
+                        text-align: center;
+                    }
+
+                }
+                .planSkill {
+                    margin-top: 5/37.5rem;
+                    .skillBottom {
+                        text-align: center;
+                        padding: 8/37.5rem 0;
+                        a {
+                            color: #FF9900;
+                            font-size: 15/37.5rem 0;
+                        }
+                    }
+                }
+                // .planEmotion {
+                //     padding-bottom: 30/37.5rem;
+                // }
+            }
+        } 
+        .homeLine {
+            width: 100%;
+            height: 5/37.5rem;
+            background-color:#f2f2f2; 
+        }      
+    }    
+}

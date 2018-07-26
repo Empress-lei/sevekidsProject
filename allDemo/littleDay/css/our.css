@@ -1,0 +1,120 @@
+@charset "utf-8";
+/**页面数据为空提示*/
+body{
+	width:100%;
+	max-width:640px;
+	margin:0 auto;
+}
+.noneData {
+	width: 80%;
+	text-align: center;
+	height: 36px!important;
+	padding-top: 16px!important;
+	font-size: 16px!important;
+	color: #a0a0a0;
+	margin: 30px auto!important;
+	
+}
+.noneData span {
+}
+
+/**视频播放蒙层**/
+.video_play_button img{
+	top:40% !important;
+}
+.video_mask_con1{
+	background: rgba(0,0,0,0.6) !important;
+}
+.video_mask_con1 h1 ,.video_mask_con1 h2,.video_mask_con1 h6{
+	color: #E6E2E2 !important;
+}
+
+.video_play_button{
+	background: rgba(0,0,0,0.3) !important;
+}
+
+.video_class_con{
+	position: relative;
+}
+.video_class_con .video_class_con5{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.horn_wrap {
+	display: none;
+	top:0.22rem;
+	bottom: auto;
+	width: auto!important;
+	height: 0.35rem;
+}
+.video_class_con1 h1,.video_class_con1 div h2,.video_class_con1 div h3,.video_class_con1 div p{
+	height:auto!important;
+	word-wrap: break-word;
+	word-break:normal;
+	word-spacing: normal;
+}
+
+.video_class_con2 .video_class_detail2{
+	width:100%!important;
+}
+/***会员卡卡号**/
+.vip_card_con{
+	position: relative;
+}
+.vip_card_con h2{
+	font-size: 0.18rem!important;
+}
+.vip_card_con span{
+	position: absolute;
+	right: 0.44rem;
+	bottom: 0.15rem;
+}
+/**直播答疑*/
+.video_class_answer .content{
+	float: left;
+	width: 60%;
+}
+.video_class_answer .content a {
+ color:blue;
+ text-decoration: underline; 
+}
+/**评论花*/
+.video_class_comment2 img{
+	height:0.43rem!important;
+	width: 0.43rem!important;
+}
+/**三千问标题*/
+.ask_wrap_em{
+	width: 94% !important;
+}
+
+.buttonDiv{
+	text-align: center;
+	font: 20px/30px Microsoft YaHei,Arial, Helvetica, sans-serif;
+	height: 60px;
+	width: 100%;
+	padding-top: 10px;
+}
+.buttonDiv .button{
+	margin:0 auto;
+	text-align:center;
+	width:60%;
+	border-radius:4px;
+	padding:8px 20%;
+	color:white;
+	background-color:#33a345;
+	box-shadow:0px 2px 1px #33a345;
+}
+
+/* 阻止长按出现的复制框 */
+body{
+	-webkit-user-select:none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	-webkit-touch-callout:none;
+	-ms-touch-callout:none;
+	-mozt-touch-callout:none;
+	touch-callout:none;
+}

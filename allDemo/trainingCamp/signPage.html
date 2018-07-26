@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--忽略页面中的邮箱格式为邮箱-->
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="keywords" content="喵姐,喵姐早教说,0到6岁早期教育,家庭教育,家长教育,父母课堂,育儿知识,儿童教育,母婴育儿,">
+    <meta name="description" content="喵姐早教说是喵姐高寿岩创办的为家庭教育提供专业靠谱的0到6岁早期教育、育儿知识的平台。">
+    <title>喵姐早教说</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/trainCamp.css">
+    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css" />
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <!--滑动-->
+    <script src="./js/swiper-3.4.2.min.js"></script>
+    <script src="./js/sign.js"></script>
+</head>
+
+<body  style="font-family: 'myFont';">
+<!--分享红包弹层-->
+<div class="promptShare">
+    <img src="./img/arrowWhite.png" alt="指示箭头" class="arrowWhiteImg">
+    <p class="promptP">点击这里，邀(fen)请(xiang)好友免费听<br><br>还有现金红包等你拿，等什么？开始吧！</p>
+</div>
+<!--打卡滑动朦层引导-->
+<div class="sildeShare">
+    <div class="sildeBox">
+        <div class="sildeImg" >
+            <div class="listLi" >
+                <div class="whiteDiv">
+                    <span class="listCir listSignedS"></span>
+                </div>
+                <p>01</p>
+            </div>
+            <div class="listLi" >
+                <div  class="whiteDiv">
+                    <span class="listCir listNosign"></span>
+                </div>
+                <p>02</p>
+            </div>
+            <div class="listLi">
+                <div  class="whiteDiv">
+                    <span class="listCir listSignedS"></span>
+                </div>
+                <p>03</p>
+            </div>
+            <div class="listLi">
+                <div class="whiteDiv">
+                    <span class="listCir listSigned"></span>
+                </div>
+                <p class="bigImgP">04</p>
+            </div>
+            <div class="listLi">
+                <div class="whiteDiv">
+                    <span class="listCir listOra"></span>
+                </div>
+                <p>05</p>
+            </div>
+            <div class="listLi">
+                <div  class="whiteDiv">
+                    <span class="listCir listGray"></span>
+                </div>
+                <p>06</p>
+            </div>
+            <div class="listLi">
+                <div class="whiteDiv">
+                    <span class="spanCir listGray"></span>
+                </div>
+                <p>07</p>
+            </div>
+        </div>
+        <img src="./img/u503.png" alt="" class="guideImg">
+    </div>
+    <img src="./img/list/finger.png" alt="" class="layerImg">
+    <p class="layerText">左右滑动可查看您的打卡记录哦~</p>
+    <a href="javascript:void(0)" class="knowBtn">知道啦</a>
+</div>
+<div class="wrapPage">
+    <div class="signPage">
+        <div class="signTitle clearfix">
+            <h3 class="fl">记录宝贝成长变化</h3>
+            <img src="./img/signPage/penImg.png" alt="" class="fl signImage">
+        </div>
+        <img src="./img/signPage/banner_1.jpg" alt="" class="bannerImg">
+        <!--
+            listLi：表示它下面的listCir正常显示的小图标
+            listLiBig：表示它下面的listCir正常显示的大图标
+         -->
+        <div class="signWeek">
+            <div class="swiper-container swiper-container-horizontal">
+                <div class="swiper-wrapper weekList" >
+                    <div class="swiper-slide listLi" >
+                        <div class="whiteDiv">
+                            <span class="listCir listSigned"></span>
+                        </div>
+                        <p>01</p>
+                    </div>
+                    <div class="swiper-slide listLiBig" >
+                        <div  class="whiteDivBig">
+                            <span class="listCir listGray"></span>
+                        </div>
+                        <p>02</p>
+                    </div>
+                    <div class="swiper-slide listLiBig">
+                        <div  class="whiteDivBig">
+                            <span class="listCir listSigned"></span>
+                        </div>
+                        <p>03</p>
+                    </div>
+                    <div class="swiper-slide listLi">
+                        <div class="whiteDiv">
+                            <span class="listCir listSigned"></span>
+                        </div>
+                        <p>04</p>
+                    </div>
+                    <div class="swiper-slide listLi">
+                        <div class="whiteDiv">
+                            <span class="listCir listNosign"></span>
+                        </div>
+                        <p>05</p>
+                    </div>
+                    <div class="swiper-slide listLiBig">
+                        <div  class="whiteDivBig">
+                            <span class="listCir listNosign"></span>
+                        </div>
+                        <p>06</p>
+                    </div>
+                    <div class="swiper-slide listLi">
+                        <div class="whiteDiv">
+                            <span class="spanCir listOra"></span>
+                        </div>
+
+                        <p>07</p>
+                    </div>
+                </div>
+            </div>
+            <img src="./img/u503.png" alt="" class="guideImg">
+        </div>
+        <div class="signSilde">
+            <div class="swiper-wrapper">
+                <!--进入当前显示的第几天-->
+                <div class="swiper-slide sign">
+                    <h3 class="sildeTitle">分享学习心得：</h3>
+                    <ul class="btnEvaluate clearfix">
+                        <li class="grayBtn"><p>进步很大，为TA感到高兴！</p></li>
+                        <li class="grayBtn"><p>今天是一个好的开始！</p></li>
+                        <li class="grayBtn"><p>表现还可以，我们继续努力！</p></li>
+                        <li class="grayBtn"><p>希望每天都跟今天一样开心！</p></li>
+                        <li class="grayBtn"><p>虽然没有做好，但是会坚持下去。</p></li>
+                    </ul>
+                    <div class="font13">
+                        <textarea class="txtarebox" onkeyup="fn()" onblur="fn()" rows="1" name="questionTxt" maxlength="50" placeholder="在这里可以记录更多学习体会..."></textarea>
+                        <p class="length" style="display: none;"><span>0</span>/50</p>
+                    </div>
+                    <p class="signFund">今日打卡可领取 <span>5</span> 枚成长基金币，<br>邀请好友一起学还有 <span>“现金红包”</span> 等你拿！</p>
+                    <a href="javascript:void(0);" class="signFundBtn">打卡领金币</a>
+                </div>
+                <div class="swiper-slide sign">
+                    <img src="./img/signPage/notask.png" alt="" class="missImg">
+                    <p class="missText">今天没有打卡任务！1</p>
+                    <p class="signFund"><span></span><br>邀请好友一起学还有 <span>“现金红包”</span> 等你拿！</p>
+                    <a href="javascript:void(0);" class="signFundBtn">邀请好友一起学</a>
+                </div>
+                <div class="swiper-slide sign">
+                    <img src="./img/signPage/notask.png" alt="" class="missImg">
+                    <p class="missText">今天没有打卡任务！2</p>
+                    <p class="signFund"><span></span><br>邀请好友一起学还有 <span>“现金红包”</span> 等你拿！</p>
+                    <a href="javascript:void(0);" class="signFundBtn">邀请好友一起学</a>
+                </div>
+                <div class="swiper-slide sign">
+                    <img src="./img/signPage/notask.png" alt="" class="missImg">
+                    <p class="missText">今天没有打卡任务！3</p>
+                    <p class="signFund"><span></span><br>邀请好友一起学还有 <span>“现金红包”</span> 等你拿！</p>
+                    <a href="javascript:void(0);" class="signFundBtn">邀请好友一起学</a>
+                </div>
+                <!--学习心得-->
+                <div class="swiper-slide sign">
+                    <h3 class="sildeTitle">今日学习心得：</h3>
+                    <ul class="btnEvaluate clearfix">
+                        <li class="orangeBtn"><p>进步很大，为TA感到高兴！</p></li>
+                    </ul>
+                    <div class="font13">
+                        <textarea class="txtarebox" onkeyup="fn()" onblur="fn()" rows="1" name="questionTxt" maxlength="50" placeholder="标签不合适？那就写下来...">宝贝今天表现特别棒，很开心，也很感谢乔乔老师的指导。</textarea>
+                        <p class="length" style="display: none;"><span>0</span>/50</p>
+                    </div>
+                    <p class="signFund">今日打卡可领取 <span>4</span> 枚成长基金币，<br>邀请好友一起学还有 <span>“现金红包”</span> 等你拿！</p>
+                    <a href="javascript:void(0);" class="signFundBtn">打卡领金币</a>
+                </div>
+                <div class="swiper-slide sign">
+                    <img src="./img/signPage/missImg.png" alt="" class="missImg">
+                    <p class="missText">遗憾，错过了打卡！</p>
+                    <p class="signFund"><span></span><br>邀请好友一起学还有 <span>“现金红包”</span> 等你拿！</p>
+                    <a href="javascript:void(0);" class="signFundBtn">邀请好友一起学</a>
+                </div>
+                <div class="swiper-slide sign">
+                    <img src="./img/signPage/notask.png" alt="" class="missImg">
+                    <p class="missText">今天没有打卡任务！</p>
+                    <p class="signFund"><span></span><br>邀请好友一起学还有 <span>“现金红包”</span> 等你拿！</p>
+                    <a href="javascript:void(0);" class="signFundBtn">邀请好友一起学</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var newStyle = $("<style> @font-face {font-family: 'myFont';  src: url('./fonts/HYQiHei-50S.ttf');} </style>");
+    var newStyle1 = $("<style> @font-face {font-family: 'cartoonFont';  src: url('./fonts/cartoon.TTF');} </style>");
+    $('body').append(newStyle);
+    $('.promptShare').append(newStyle1);
+    var font = "src: url('./fonts/HYQiHei-50S.ttf')";
+    var font1 = "src: url('./fonts/cartoon.TTF')";
+    if(font === true) {
+        $('body').css = newStyle;
+    } else {
+        $('body').css = "微软雅黑", "PingFangSC-Light";
+    }
+    if(font1 === true) {
+
+        $('.promptShare').css = newStyle1;
+    } else {
+        $('.promptShare').css = "微软雅黑", "PingFangSC-Light";
+    }
+</script>
+</body>
+</html>

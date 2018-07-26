@@ -1,0 +1,75 @@
+$(function(){
+	//点击加号效果
+	$(".slideBtn").click(function(){
+		if(!$(".slidebar").is(":visible")){
+			$(this).addClass("slideBtnActive");
+			$(this).removeClass("slideBtnActive2");
+			$(".slidebar").slideDown();
+		}
+		else{
+			$(this).addClass("slideBtnActive2");
+			$(this).removeClass("slideBtnActive");
+			$(".slidebar").slideUp();
+		}
+	})
+	$(".wrap").click(function(e){
+		e.stopPropagation();
+		if(!$(e.target).hasClass("voteBtn")){
+			$(".voteBar").animate({"width":0},200,function(){
+				$(".voteBar").hide();
+			});
+		}
+	})
+
+	//点击评论效果
+	$(".slidebar .voteBtn").click(function(e){
+		var w = $(".voteBarCont").width();
+		if(!$(".voteBar").is(":visible")){
+			$(".voteBar").show().animate({"width":w},200);
+		}
+		else{
+			$(".voteBar").animate({"width":0},200,function(){
+				$(".voteBar").hide();
+			});
+		}
+	})
+	//是否出现锚点
+	var dh = $(document).height();
+	var wh = $(window).height();
+	if(dh>wh){
+		$(".toTop").css("display","block");
+	}
+
+	$(".slidedownBtn").click(function(){
+		$(".wrap").show();
+		$(".readList").animate({"top":"100%"},300,function(){
+			$(this).hide();
+		});
+	})
+	//点击更多精彩
+	$(".moreBtn").click(function(){
+		$(".slideBtn").removeClass("slideBtnActive");
+		$(".slidebar").slideUp();
+		$(".readList").show().stop().animate({"top":"0"},300,function(){
+			$(".wrap").hide();
+		});
+	})
+	//点击有用效果
+	$(".handUp").click(function(){
+		if(!$(".plusone").hasClass("pluseoneActive")){
+			$(".plusone").show().addClass("pluseoneActive");
+			$(".handUp").addClass("handUpActive");
+		}
+		$(".voteBar").animate({"width":0},500,function(){
+			$(".voteBar").hide();
+			$(".plusone").hide();
+		});
+	})
+	//点击无趣
+	$(".handDown").click(function(){
+		$(this).addClass("handDownActive");
+		$(".voteBar").animate({"width":0},500,function(){
+			$(".voteBar").hide();
+		});
+	})
+})

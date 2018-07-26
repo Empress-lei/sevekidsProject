@@ -1,0 +1,92 @@
+@import "../base.css";
+.w_page_five {
+  width: 100%;
+  height: 17.71875rem;
+}
+.w_page_five .page_bgfive {
+  width: 10rem;
+  height: 17.71875rem;
+  background: url("../../img/homepage/z_bg.png") no-repeat;
+  position: relative;
+}
+.w_page_five .page_bgfive .page_five_top {
+  width: 100%;
+  height: 0.546875rem;
+}
+.w_page_five .page_bgfive .page_five_top img {
+  width: 5.140625rem;
+  height: 0.546875rem;
+  position: absolute;
+  top: 1.5625rem;
+  left: 50%;
+  margin-left: -2.578125rem;
+}
+.w_page_five .page_bgfive .page_five_top .line_w {
+  width: 7.53125rem;
+  height: 0.0625rem;
+  background-color: #fff;
+  position: absolute;
+  top: 2.625rem;
+  left: 50%;
+  margin-left: -3.765625rem;
+}
+.w_page_five .page_bgfive .welfare_five {
+  width: 3.5rem;
+  position: relative;
+}
+.w_page_five .page_bgfive .welfare_five .welfare_one {
+  width: 3.5rem;
+  height: 0.78125rem;
+  position: absolute;
+  top: 3.125rem;
+  left: 1.421875rem;
+}
+.w_page_five .page_bgfive .welfare_five .activity_time {
+  width: 6.53125rem;
+  height: 0.4375rem;
+  position: absolute;
+  top: 5.015625rem;
+  left: 1.421875rem;
+}
+.w_page_five .page_bgfive .welfare_five .activity_details {
+  width: 6.984375rem;
+  height: 2.734375rem;
+  position: absolute;
+  top: 6.4375rem;
+  left: 1.421875rem;
+}
+.w_page_five .page_bgfive .welfare_five .text img {
+  width: 7.8125rem;
+  height: 9.609375rem;
+  position: absolute;
+  top: 4.6875rem;
+  left: 1.421875rem;
+  z-index: 8;
+}
+.w_page_five .page_bgfive .luck {
+  width: 5.03125rem;
+  height: 0.90625rem;
+  position: absolute;
+  top: 14.84375rem;
+  left: 2.5625rem;
+}
+.w_page_five .page_bgfive .luck a {
+  display: block;
+  width: 5.03125rem;
+  height: 0.90625rem;
+}
+.w_page_five .page_bgfive .luck a img {
+  width: 5.03125rem;
+  height: 0.90625rem;
+}
+.w_page_five .page_bgfive .page_two_footer {
+  width: 10rem;
+  height: 3.265625rem;
+}
+.w_page_five .page_bgfive .page_two_footer img {
+  width: 10rem;
+  height: 3.265625rem;
+  position: absolute;
+  bottom: 2.34375rem;
+  left: 0.15625rem;
+}
