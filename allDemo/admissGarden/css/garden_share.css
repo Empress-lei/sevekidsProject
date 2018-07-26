@@ -26,12 +26,18 @@
   height: 1.14666667rem;
   padding: 0 0.53333333rem;
   background-color: #fff;
-  margin: 2.66666667rem 0 1.33333333rem;
+  margin: 4rem 0 0;
 }
 .garden_share .garden_inp input::-webkit-input-placeholder {
   /* WebKit browsers*/
   font-size: 0.37333333rem !important;
   color: #999 !important;
+}
+.garden_share .garden_inp .pro_txt_gar {
+  text-align: center;
+  color: #fff;
+  font-size: 0.32rem;
+  padding: 0.4rem 0 1.6rem;
 }
 .garden_share .garden_inp .input_btn {
   width: 6.2rem;
