@@ -13,42 +13,85 @@
     height: 100%;
     padding: 20/37.5rem 40/37.5rem;
     position: relative;
+    .inp_div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 8rem;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    .inp_title {
+      padding: 30/37.5rem 20/37.5rem;
+      background-color: #FF530B;
+      -webkit-border-radius: 4/37.5rem 4/37.5rem 0 0;
+      -moz-border-radius: 4/37.5rem 4/37.5rem 0 0;
+      -ms-border-radius: 4/37.5rem 4/37.5rem 0 0;
+      -o-border-radius: 4/37.5rem 4/37.5rem 0 0;
+      border-radius: 4/37.5rem 4/37.5rem 0 0;
+      .title_h3 {
+        font-size: 18/37.5rem;
+        color: #fff;
+        font-weight: 800;
+      }
+    }
     .close_input {
       width: 30/37.5rem;
       height: 30/37.5rem;
       position: absolute;
-      right: 40/37.5rem;
-      top: 20/37.5rem;
+      right: 10/37.5rem;
+      top: 10/37.5rem;
+    }
+    .inp_con {
+      padding: 30/37.5rem 10/37.5rem 0;
+      background-color: #fff;
+      -webkit-border-radius: 0 0 4/37.5rem 4/37.5rem;
+      -moz-border-radius: 0 0 4/37.5rem 4/37.5rem;
+      -ms-border-radius: 0 0 4/37.5rem 4/37.5rem;
+      -o-border-radius: 0 0 4/37.5rem 4/37.5rem;
+      border-radius: 0 0 4/37.5rem 4/37.5rem;
     }
     .input_text {
-      width: 100%;
+      display: block;
+      width: 95%;
+      margin: 0 auto;
+      color: #333;
       height: 43/37.5rem;
-      padding: 0 20/37.5rem;
-      background-color: #fff;
-      margin: 150/37.5rem 0 0;
+      line-height: 43/37.5rem;
+      border-bottom: 1px solid #EEEEEE;
     }
-    input::-webkit-input-placeholder { /* WebKit browsers*/
+    ::-webkit-input-placeholder {
       font-size: 14/37.5rem !important;
-      color: #999 !important;
+      color: #ddd !important;
+    }
+    ::-moz-placeholder {
+      font-size: 14/37.5rem !important;
+      color: #ddd !important;
+    }
+    :-ms-input-placeholder {
+      font-size: 14/37.5rem !important;
+      color: #ddd !important;
+    }
+    input:-moz-placeholder {
+      font-size: 14/37.5rem !important;
+      color: #ddd !important;
     }
     .pro_txt_gar {
-      text-align: center;
-      color: #fff;
+      text-align: left;
+      color: #999;
       font-size: 12/37.5rem;
-      padding: 15/37.5rem 0 60/37.5rem;
+      padding: 15/37.5rem 10/37.5rem 50/37.5rem;
     }
     .input_btn {
-      width: 6.2rem;
       display: block;
-      padding: 0.21333333rem 0;
+      padding: 20/37.5rem 0;
       margin: 0 auto;
       text-align: center;
-      -webkit-border-radius: 1.33333333rem;
-      -moz-border-radius: 1.33333333rem;
-      -ms-border-radius: 1.33333333rem;
-      border-radius: 1.33333333rem;
-      background-color: #FF9900;
-      color: #fff;
+      color: #FF530B;
+      border-top: 1px solid #EEEEEE;
     }
   }
 }
