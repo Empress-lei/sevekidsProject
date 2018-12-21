@@ -14,7 +14,7 @@ function vfn() {
 //左右滑动切换
 var ints = 0;
 //切换当前是第几天（后面的值从0开始）
-var initialSlide = 2;
+var initialSlide = 0;
 //记录成绩
 var transcript = false;
 //记录宝贝成长变化上面按钮的文字显示在文本框中
